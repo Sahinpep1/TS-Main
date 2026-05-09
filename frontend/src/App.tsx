@@ -5,6 +5,7 @@
 import { useLogistics } from "./hooks/useLogistics";
 import Sidebar from "./components/Sidebar/Sidebar";
 import MapView from "./components/Map/MapView";
+import SidebarOC from "./components/SidebarOpenClose/SidebarOC"
 import "./App.css";
 
 export default function App() {
@@ -66,6 +67,14 @@ export default function App() {
           onAssign={handleMapAssign}
         />
       </main>
+      <SidebarOC
+        trucks={trucks}
+        summary={summary}
+        selectedTruckId={selectedTruckId}
+        onSelectTruck={handleSelectTruck}
+        onAutoAssign={handleAutoAssign}
+        onReset={handleReset}
+      />
     </div>
   );
 }
