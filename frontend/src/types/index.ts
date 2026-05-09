@@ -57,3 +57,33 @@ export interface AutoAssignResult {
   skipped: number;
   message: string;
 }
+
+/* ── Filter Types ─────────────────────────────────────────────── */
+
+export type Priority = "high" | "medium" | "low";
+export type DeliveryStatus = "pending" | "assigned" | "delivered";
+
+export interface MapFilters {
+  priorities: Set<Priority>;
+  statuses: Set<DeliveryStatus>;
+  truckIds: Set<number>;
+  searchQuery: string;
+  weightRange: [number, number];
+}
+
+export interface FilterPreset {
+  id: string;
+  name: string;
+  filters: Omit<MapFilters, "priorities" | "statuses" | "truckIds"> & {
+    priorities: Priority[];
+    statuses: DeliveryStatus[];
+    truckIds: number[];
+  };
+}
+
+export interface SelectOption<T = string> {
+  value: T;
+  label: string;
+  color?: string;
+  icon?: string;
+}

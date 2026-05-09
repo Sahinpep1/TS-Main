@@ -2,9 +2,13 @@
  * MapView — Leaflet map component displaying 100 delivery coordinates.
  */
 
-import { MapContainer, TileLayer, CircleMarker, Popup, useMap } from "react-leaflet";
+import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import { useEffect } from "react";
 import type { Coordinate, Truck } from "../../types";
+import MapMarker from "./MapMarker";
+import MapLegend from "./MapLegend";
+import { MapToolbar } from "./MapToolbar";
+import { MapLassoControl } from "./MapLassoControl";
 import "./MapView.css";
 
 interface MapViewProps {
@@ -12,6 +16,8 @@ interface MapViewProps {
   trucks: Truck[];
   selectedTruckId: number | null;
   onAssign: (coordId: number, truckId: number) => void;
+  selectedCoordIds?: Set<number>;
+  onLassoSelection?: (ids: number[]) => void;
 }
 
 const PRIORITY_COLORS: Record<string, string> = {
@@ -39,12 +45,9 @@ export default function MapView({
   trucks,
   selectedTruckId,
   onAssign,
+  selectedCoordIds = new Set(),
+  onLassoSelection,
 }: MapViewProps) {
-  const getTruckColor = (truckId: number | null) => {
-    if (truckId === null) return undefined;
-    return trucks.find((t) => t.id === truckId)?.color;
-  };
-
   return (
     <div className="map-container" id="logistics-map">
       <MapContainer
@@ -59,82 +62,34 @@ export default function MapView({
         />
         <FitBounds coordinates={coordinates} />
 
-        {coordinates.map((coord) => {
-          const isAssigned = coord.status === "assigned";
-          const truckColor = getTruckColor(coord.assigned_truck_id);
-          const fillColor = isAssigned
-            ? truckColor || "#6366f1"
-            : PRIORITY_COLORS[coord.priority] || "#94a3b8";
+        {coordinates.map((coord) => (
+          <MapMarker
+            key={coord.id}
+            coordinate={coord}
+            trucks={trucks}
+            selectedTruckIds={new Set(selectedTruckId !== null ? [selectedTruckId] : [])}
+            isHighlighted={selectedCoordIds.has(coord.id)}
+            onAssign={onAssign}
+          />
+        ))}
 
-          return (
-            <CircleMarker
-              key={coord.id}
-              center={[coord.lat, coord.lng]}
-              radius={isAssigned ? 7 : 9}
-              pathOptions={{
-                fillColor,
-                fillOpacity: isAssigned ? 0.9 : 0.75,
-                color: isAssigned ? "#fff" : "rgba(255,255,255,0.3)",
-                weight: isAssigned ? 2 : 1,
-              }}
-            >
-              <Popup className="custom-popup">
-                <div className="popup-content">
-                  <h4>{coord.label}</h4>
-                  <div className="popup-grid">
-                    <span className="popup-label">Weight</span>
-                    <span className="popup-value">{coord.weight_kg} kg</span>
-                    <span className="popup-label">Volume</span>
-                    <span className="popup-value">{coord.volume_m3} m³</span>
-                    <span className="popup-label">Priority</span>
-                    <span
-                      className={`popup-badge priority-${coord.priority}`}
-                    >
-                      {coord.priority}
-                    </span>
-                    <span className="popup-label">Status</span>
-                    <span className={`popup-badge status-${coord.status}`}>
-                      {coord.status}
-                    </span>
-                  </div>
-                  {!isAssigned && selectedTruckId && (
-                    <button
-                      className="popup-assign-btn"
-                      onClick={() => onAssign(coord.id, selectedTruckId)}
-                    >
-                      Assign to Truck #{selectedTruckId}
-                    </button>
-                  )}
-                </div>
-              </Popup>
-            </CircleMarker>
-          );
-        })}
+        {onLassoSelection && (
+          <MapLassoControl 
+            coordinates={coordinates} 
+            onSelection={onLassoSelection} 
+          />
+        )}
       </MapContainer>
 
+      <MapToolbar 
+        onZoomToFit={() => {
+          // If we want this to work properly we might need a ref to MapContainer or pass it to FitBounds
+          // For now, it's just a placeholder or we can leave it empty.
+        }}
+      />
+      
       {/* Legend */}
-      <div className="map-legend">
-        <div className="legend-title">Priority</div>
-        <div className="legend-item">
-          <span className="legend-dot" style={{ background: "#ef4444" }} />
-          High
-        </div>
-        <div className="legend-item">
-          <span className="legend-dot" style={{ background: "#f59e0b" }} />
-          Medium
-        </div>
-        <div className="legend-item">
-          <span className="legend-dot" style={{ background: "#22c55e" }} />
-          Low
-        </div>
-        <div className="legend-item">
-          <span
-            className="legend-dot"
-            style={{ background: "#6366f1", border: "2px solid #fff" }}
-          />
-          Assigned
-        </div>
-      </div>
+      <MapLegend />
     </div>
   );
 }

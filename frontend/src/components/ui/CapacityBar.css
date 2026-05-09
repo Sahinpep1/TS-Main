@@ -1,0 +1,71 @@
+/* ── CapacityBar ───────────────────────────────────────────────── */
+
+.cap-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.cap-bar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cap-bar__label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.cap-bar__icon {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.cap-bar__pct {
+  font-weight: 700;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.cap-bar__track {
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.cap-bar__fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.cap-bar__fill--ok      { background: linear-gradient(90deg, #22c55e, #4ade80); }
+.cap-bar__fill--warning  { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
+.cap-bar__fill--danger   { background: linear-gradient(90deg, #ef4444, #f87171); }
+
+.cap-bar__values {
+  font-size: 10px;
+  color: var(--text-secondary);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Sizes ─────────────────────────────────────────────────────── */
+
+.cap-bar--sm .cap-bar__label { font-size: 10px; }
+.cap-bar--sm .cap-bar__pct   { font-size: 10px; }
+.cap-bar--sm .cap-bar__track { height: 4px; }
+
+.cap-bar--md .cap-bar__label { font-size: 11px; }
+.cap-bar--md .cap-bar__pct   { font-size: 11px; }
+.cap-bar--md .cap-bar__track { height: 6px; }
+
+.cap-bar--lg .cap-bar__label { font-size: 13px; }
+.cap-bar--lg .cap-bar__pct   { font-size: 13px; }
+.cap-bar--lg .cap-bar__track { height: 8px; }

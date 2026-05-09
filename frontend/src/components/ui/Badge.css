@@ -1,0 +1,51 @@
+/* ── Badge ─────────────────────────────────────────────────────── */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-transform: capitalize;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.badge--sm {
+  padding: 3px 8px;
+  font-size: 11px;
+}
+
+.badge--md {
+  padding: 5px 12px;
+  font-size: 12px;
+}
+
+.badge__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex-shrink: 0;
+}
+
+/* ── Variant Colors ───────────────────────────────────────────── */
+
+.badge--high      { background: rgba(239,68,68,0.15);  color: #f87171; }
+.badge--medium    { background: rgba(245,158,11,0.15); color: #fbbf24; }
+.badge--low       { background: rgba(34,197,94,0.15);  color: #4ade80; }
+
+.badge--pending   { background: rgba(148,163,184,0.12); color: #94a3b8; }
+.badge--assigned  { background: rgba(99,102,241,0.15);  color: #818cf8; }
+.badge--delivered { background: rgba(34,197,94,0.15);   color: #4ade80; }
+
+.badge--idle      { background: rgba(148,163,184,0.12); color: #94a3b8; }
+.badge--loading   { background: rgba(245,158,11,0.15);  color: #fbbf24; }
+.badge--en_route  { background: rgba(99,102,241,0.15);  color: #818cf8; }
+.badge--returning { background: rgba(168,85,247,0.15);  color: #c084fc; }
+
+.badge--info      { background: rgba(99,102,241,0.15);  color: #818cf8; }
+.badge--success   { background: rgba(34,197,94,0.15);   color: #4ade80; }
+.badge--warning   { background: rgba(245,158,11,0.15);  color: #fbbf24; }
+.badge--danger    { background: rgba(239,68,68,0.15);   color: #f87171; }
