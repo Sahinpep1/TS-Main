@@ -42,7 +42,8 @@ def Palet_Hesaplama(sales_df, customer_df, pallet_df):
         df = df.join(df_mus, on="NOKTA_Kodu", how="left")
         
         # NOKTA bazında toplam palet sayısını hesapla
-        df = df.group_by("NOKTA").agg([
+        df = df.group_by("NOKTA_Kodu").agg([
+            pl.col("NOKTA").first(),
             pl.col("SATIŞ_TEMSİLCİSİ").first(),
             pl.col("Palet_Sayısı").sum(),
             pl.col("Miktar").sum(),
