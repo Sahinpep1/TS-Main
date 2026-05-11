@@ -9,15 +9,12 @@ router = APIRouter(prefix="/coordinates", tags=["Coordinates"])
 @router.get("/")
 def get_all_coordinates(
     status: Optional[str] = Query(None, description="Filter by status"),
-    priority: Optional[str] = Query(None, description="Filter by priority"),
 ):
     """Get all delivery coordinates, optionally filtered."""
     from main import data_processor
 
     if status:
         return data_processor.get_coordinates_by_status(status)
-    if priority:
-        return data_processor.get_coordinates_by_priority(priority)
     return data_processor.get_all_coordinates()
 
 

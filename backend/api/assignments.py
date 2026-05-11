@@ -39,4 +39,4 @@ def reset_all():
 def get_summary():
     """Get overall logistics summary."""
     from main import data_processor
-    return data_processor.get_summary()
+    return #data_processor.get_summary()

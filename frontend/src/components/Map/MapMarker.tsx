@@ -16,10 +16,10 @@ interface MapMarkerProps {
   onToggleSelect?: (coordId: number) => void;
 }
 
-const PRIORITY_COLORS: Record<string, string> = {
-  high: "#ef4444",
-  medium: "#f59e0b",
-  low: "#22c55e",
+const STATUS_COLORS: Record<string, string> = {
+  delivered: "#ef4444",
+  assigned: "#f59e0b",
+  pending: "#22c55e",
 };
 
 export default function MapMarker({
@@ -38,7 +38,7 @@ export default function MapMarker({
 
   const fillColor = isAssigned
     ? truckColor || "#6366f1"
-    : PRIORITY_COLORS[c.priority] || "#94a3b8";
+    : STATUS_COLORS[c.status] || "#94a3b8";
 
   // Pick the first selected truck for the assign button
   const assignableTruckId =
@@ -69,14 +69,14 @@ export default function MapMarker({
     >
       <Popup className="custom-popup">
         <div className="popup-content">
-          <h4>{c.label}</h4>
+          <h4>{c.name}</h4>
           <div className="popup-grid">
             <span className="popup-label">Weight</span>
-            <span className="popup-value">{c.weight_kg} kg</span>
+            <span className="popup-value">{c.Miktar} kg</span>
             <span className="popup-label">Volume</span>
-            <span className="popup-value">{c.volume_m3} m³</span>
-            <span className="popup-label">Priority</span>
-            <Badge variant={c.priority}>{c.priority}</Badge>
+            <span className="popup-value">{c.Palet_Sayısı} m³</span>
+            <span className="popup-label">Status</span>
+            <Badge variant={c.status}>{c.status}</Badge>
             <span className="popup-label">Status</span>
             <Badge variant={c.status}>{c.status}</Badge>
           </div>

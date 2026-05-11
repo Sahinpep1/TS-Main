@@ -56,11 +56,11 @@ def Palet_Acıklama(sales_df, customer_df, pallet_df):
         
 
         # Pandas'a çevir ve geri döndür
-        df_pandas = df.to_pandas()
-        return df_pandas
+        df_dicts = df.to_dicts()
+        return df_dicts
 
     except Exception as e:
         print(f"Palet_Acıklama hatası: {e}")
-        return pd.DataFrame()
+        return {}
 
 #Palet_Acıklama(sales_df, customer_df, pallet_df)

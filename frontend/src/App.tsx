@@ -30,10 +30,8 @@ export default function App() {
     filteredCoordinates,
     activeFilterCount,
     truckOptions,
-    togglePriority,
     toggleStatus,
     toggleTruckFilter,
-    setPriorities,
     setStatuses,
     setTruckIds,
     resetFilters,
@@ -94,10 +92,8 @@ export default function App() {
           filters={filters}
           activeFilterCount={activeFilterCount}
           truckOptions={truckOptions}
-          togglePriority={togglePriority}
           toggleStatus={toggleStatus}
           toggleTruckFilter={toggleTruckFilter}
-          setPriorities={setPriorities}
           setStatuses={setStatuses}
           setTruckIds={setTruckIds}
           resetFilters={resetFilters}

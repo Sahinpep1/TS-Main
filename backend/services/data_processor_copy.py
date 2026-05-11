@@ -3,13 +3,15 @@
 import json
 import polars as pl
 from data.generator import generate_coordinates, generate_trucks
-
+from data.Read_data import *
 
 class DataProcessor:
     """Holds in-memory Polars DataFrames and provides query helpers."""
 
     def __init__(self) -> None:
-        self.coordinates_df: pl.DataFrame = generate_coordinates(100)
+        birlesik_df, palet_ve_konumlar = read_data()
+        self.coordinates_df: pl.DataFrame = palet_ve_konumlar
+        self.orders_df: pl.DataFrame = birlesik_df
         self.trucks_df: pl.DataFrame = generate_trucks(15)
 
     # ── Coordinates ──────────────────────────────────────────────────────
@@ -33,13 +35,7 @@ class DataProcessor:
             .to_dicts()
         )
 
-    def get_coordinates_by_priority(self, priority: str) -> list[dict]:
-        """Return coordinates filtered by priority."""
-        return (
-            self.coordinates_df
-            .filter(pl.col("priority") == priority)
-            .to_dicts()
-        )
+   
 
     def update_coordinate_status(
         self, coord_id: int, status: str, truck_id: int | None = None
@@ -151,5 +147,9 @@ class DataProcessor:
 
     def reset_all(self) -> None:
         """Reset all data to initial state."""
-        self.coordinates_df = generate_coordinates(100)
+        birlesik_df, palet_ve_konumlar = read_data()
+        self.coordinates_df = palet_ve_konumlar
         self.trucks_df = generate_trucks(15)
+
+
+  

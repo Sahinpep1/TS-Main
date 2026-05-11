@@ -9,10 +9,10 @@ class Coordinate(BaseModel):
     id: int
     lat: float
     lng: float
-    label: str
-    weight_kg: float
-    volume_m3: float
-    priority: str  # "high", "medium", "low"
+    name: str
+    sales_rep: str
+    Palet_Sayısı: float
+    Miktar: int
     status: str  # "pending", "assigned", "delivered"
     assigned_truck_id: Optional[int] = None
 

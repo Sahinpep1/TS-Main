@@ -3,11 +3,13 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from services.data_processor import DataProcessor
+from services.data_processor_copy import DataProcessor
 from services.truck_manager import TruckManager
 from api.coordinates import router as coordinates_router
 from api.trucks import router as trucks_router
 from api.assignments import router as assignments_router
+
+
 
 # ── Shared service instances ─────────────────────────────────────────────
 data_processor = DataProcessor()

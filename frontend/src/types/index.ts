@@ -4,12 +4,12 @@
 
 export interface Coordinate {
   id: number;
-  lat: number;
+  name: string;
+  sales_rep: string;
+  Palet_Sayısı: number;
+  Miktar: number;
   lng: number;
-  label: string;
-  weight_kg: number;
-  volume_m3: number;
-  priority: "high" | "medium" | "low";
+  lat: number;
   status: "pending" | "assigned" | "delivered";
   assigned_truck_id: number | null;
 }
@@ -60,11 +60,10 @@ export interface AutoAssignResult {
 
 /* ── Filter Types ─────────────────────────────────────────────── */
 
-export type Priority = "high" | "medium" | "low";
+
 export type DeliveryStatus = "pending" | "assigned" | "delivered";
 
 export interface MapFilters {
-  priorities: Set<Priority>;
   statuses: Set<DeliveryStatus>;
   truckIds: Set<number>;
   searchQuery: string;
@@ -74,8 +73,7 @@ export interface MapFilters {
 export interface FilterPreset {
   id: string;
   name: string;
-  filters: Omit<MapFilters, "priorities" | "statuses" | "truckIds"> & {
-    priorities: Priority[];
+  filters: Omit<MapFilters, "statuses" | "truckIds"> & {
     statuses: DeliveryStatus[];
     truckIds: number[];
   };

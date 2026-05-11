@@ -4,15 +4,14 @@
  */
 
 import { useState, useMemo, useCallback } from "react";
-import type { Coordinate, Truck, MapFilters, Priority, DeliveryStatus } from "../types";
+import type { Coordinate, Truck, MapFilters, DeliveryStatus } from "../types";
 import { useDebounce } from "./useDebounce";
 
-const ALL_PRIORITIES: Priority[] = ["high", "medium", "low"];
+
 const ALL_STATUSES: DeliveryStatus[] = ["pending", "assigned", "delivered"];
 
 function createDefaultFilters(): MapFilters {
   return {
-    priorities: new Set<Priority>(ALL_PRIORITIES),
     statuses: new Set<DeliveryStatus>(ALL_STATUSES),
     truckIds: new Set<number>(),
     searchQuery: "",
@@ -27,13 +26,7 @@ export function useMapFilters(coordinates: Coordinate[], trucks: Truck[]) {
 
   /* ── Setters ─────────────────────────────────────────────── */
 
-  const togglePriority = useCallback((p: Priority) => {
-    setFilters((prev) => {
-      const next = new Set(prev.priorities);
-      next.has(p) ? next.delete(p) : next.add(p);
-      return { ...prev, priorities: next };
-    });
-  }, []);
+
 
   const toggleStatus = useCallback((s: DeliveryStatus) => {
     setFilters((prev) => {
@@ -51,9 +44,7 @@ export function useMapFilters(coordinates: Coordinate[], trucks: Truck[]) {
     });
   }, []);
 
-  const setPriorities = useCallback((priorities: Priority[]) => {
-    setFilters((prev) => ({ ...prev, priorities: new Set(priorities) }));
-  }, []);
+
 
   const setStatuses = useCallback((statuses: DeliveryStatus[]) => {
     setFilters((prev) => ({ ...prev, statuses: new Set(statuses) }));
@@ -80,8 +71,14 @@ export function useMapFilters(coordinates: Coordinate[], trucks: Truck[]) {
   const filteredCoordinates = useMemo(() => {
     return coordinates.filter((c) => {
       // Priority filter
-      if (!filters.priorities.has(c.priority)) return false;
-
+  // CRITICAL: Leaflet safety check
+      if (
+        c.lat === null || c.lat === undefined || 
+        c.lng === null || c.lng === undefined ||
+        isNaN(c.lat) || isNaN(c.lng)
+      ) {
+        return false; 
+      }
       // Status filter
       if (!filters.statuses.has(c.status)) return false;
 
@@ -94,22 +91,21 @@ export function useMapFilters(coordinates: Coordinate[], trucks: Truck[]) {
       // Search filter
       if (debouncedSearch) {
         const q = debouncedSearch.toLowerCase();
-        if (!c.label.toLowerCase().includes(q)) return false;
+        if (!c.name.toLowerCase().includes(q)) return false;
       }
 
       // Weight range
       const [min, max] = filters.weightRange;
-      if (c.weight_kg < min || c.weight_kg > max) return false;
+      if (c.Miktar < min || c.Miktar > max) return false;
 
       return true;
     });
-  }, [coordinates, filters.priorities, filters.statuses, filters.truckIds, filters.weightRange, debouncedSearch]);
+  }, [coordinates, filters.statuses, filters.truckIds, filters.weightRange, debouncedSearch]);
 
   /* ── Stats ───────────────────────────────────────────────── */
 
   const activeFilterCount = useMemo(() => {
     let count = 0;
-    if (filters.priorities.size < ALL_PRIORITIES.length) count++;
     if (filters.statuses.size < ALL_STATUSES.length) count++;
     if (filters.truckIds.size > 0) count++;
     if (filters.searchQuery.length > 0) count++;
@@ -135,10 +131,8 @@ export function useMapFilters(coordinates: Coordinate[], trucks: Truck[]) {
     activeFilterCount,
     truckOptions,
     // setters
-    togglePriority,
     toggleStatus,
     toggleTruckFilter,
-    setPriorities,
     setStatuses,
     setTruckIds,
     setSearchQuery,
