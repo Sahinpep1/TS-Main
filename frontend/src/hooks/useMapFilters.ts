@@ -70,7 +70,7 @@ export function useMapFilters(coordinates: Coordinate[], trucks: Truck[]) {
 
   const filteredCoordinates = useMemo(() => {
     return coordinates.filter((c) => {
-      // Priority filter
+      
   // CRITICAL: Leaflet safety check
       if (
         c.lat === null || c.lat === undefined || 

@@ -3,7 +3,10 @@
  * Extracted from MapView for modularity and multi-select support.
  */
 
-import { CircleMarker, Popup } from "react-leaflet";
+import { Marker, Popup } from "react-leaflet";
+import L from "leaflet";
+import { renderToStaticMarkup } from "react-dom/server";
+import { Package, Truck as TruckIcon, MapPin } from "lucide-react";
 import type { Coordinate, Truck } from "../../types";
 import Badge from "../ui/Badge";
 
@@ -18,7 +21,7 @@ interface MapMarkerProps {
 
 const STATUS_COLORS: Record<string, string> = {
   delivered: "#ef4444",
-  assigned: "#f59e0b",
+  assigned: "#6366f1",
   pending: "#22c55e",
 };
 
@@ -31,33 +34,54 @@ export default function MapMarker({
   onToggleSelect,
 }: MapMarkerProps) {
   const isAssigned = c.status === "assigned";
-  const truckColor =
-    c.assigned_truck_id !== null
-      ? trucks.find((t) => t.id === c.assigned_truck_id)?.color
-      : undefined;
-
-  const fillColor = isAssigned
-    ? truckColor || "#6366f1"
+  const truck = c.assigned_truck_id !== null
+    ? trucks.find((t) => t.id === c.assigned_truck_id)
+    : undefined;
+  
+  const color = isAssigned
+    ? truck?.color || "#6366f1"
     : STATUS_COLORS[c.status] || "#94a3b8";
+
+  // Create a custom divIcon with Lucide Icon
+  const iconHtml = renderToStaticMarkup(
+    <div className={`custom-marker ${isHighlighted ? 'highlighted' : ''}`} style={{ 
+      backgroundColor: color,
+      color: 'white',
+      width: isHighlighted ? '40px' : '32px',
+      height: isHighlighted ? '40px' : '32px',
+      borderRadius: '50%',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      border: `2px solid ${isHighlighted ? '#facc15' : 'white'}`,
+      boxShadow: '0 2px 5px rgba(0,0,0,0.3)',
+      transition: 'all 0.2s ease-in-out'
+    }}>
+      {isAssigned ? (
+        <TruckIcon size={isHighlighted ? 22 : 18} />
+      ) : c.status === 'delivered' ? (
+        <MapPin size={isHighlighted ? 22 : 18} />
+      ) : (
+        <Package size={isHighlighted ? 22 : 18} />
+      )}
+    </div>
+  );
+
+  const customIcon = L.divIcon({
+    html: iconHtml,
+    className: 'custom-div-icon',
+    iconSize: isHighlighted ? [40, 40] : [32, 32],
+    iconAnchor: isHighlighted ? [20, 20] : [16, 16],
+  });
 
   // Pick the first selected truck for the assign button
   const assignableTruckId =
     selectedTruckIds.size === 1 ? [...selectedTruckIds][0] : null;
 
   return (
-    <CircleMarker
-      center={[c.lat, c.lng]}
-      radius={isHighlighted ? 11 : isAssigned ? 7 : 9}
-      pathOptions={{
-        fillColor,
-        fillOpacity: isAssigned ? 0.9 : 0.75,
-        color: isHighlighted
-          ? "#facc15"
-          : isAssigned
-            ? "#fff"
-            : "rgba(255,255,255,0.3)",
-        weight: isHighlighted ? 3 : isAssigned ? 2 : 1,
-      }}
+    <Marker
+      position={[c.lat, c.lng]}
+      icon={customIcon}
       eventHandlers={{
         click: (e) => {
           if (e.originalEvent.ctrlKey && onToggleSelect) {
@@ -77,19 +101,26 @@ export default function MapMarker({
             <span className="popup-value">{c.Palet_Sayısı} m³</span>
             <span className="popup-label">Status</span>
             <Badge variant={c.status}>{c.status}</Badge>
-            <span className="popup-label">Status</span>
-            <Badge variant={c.status}>{c.status}</Badge>
+            {isAssigned && truck && (
+              <>
+                <span className="popup-label">Assigned Truck</span>
+                <span className="popup-value" style={{ color: truck.color, fontWeight: 'bold' }}>
+                  {truck.plate} ({truck.name})
+                </span>
+              </>
+            )}
           </div>
           {!isAssigned && assignableTruckId && (
             <button
               className="popup-assign-btn"
               onClick={() => onAssign(c.id, assignableTruckId)}
+              style={{ marginTop: '12px', width: '100%' }}
             >
               Assign to Truck #{assignableTruckId}
             </button>
           )}
         </div>
       </Popup>
-    </CircleMarker>
+    </Marker>
   );
 }

@@ -20,12 +20,11 @@ class Coordinate(BaseModel):
 class Truck(BaseModel):
     """A logistics truck."""
     id: int
-    name: str
-    plate: str
-    max_weight_kg: float
-    max_volume_m3: float
-    current_weight_kg: float = 0.0
-    current_volume_m3: float = 0.0
+    Plaka: str
+    Driver: str
+    Capacity: float
+    Miktar: int
+    Palet: float
     assigned_deliveries: list[int] = []
     color: str = "#3b82f6"
     status: str  # "idle", "loading", "en_route", "returning"

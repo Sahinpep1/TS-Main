@@ -3,12 +3,13 @@
  */
 
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import type { Coordinate, Truck } from "../../types";
 import MapMarker from "./MapMarker";
 import MapLegend from "./MapLegend";
 import { MapToolbar } from "./MapToolbar";
 import { MapLassoControl } from "./MapLassoControl";
+import { MapHeatmapLayer } from "./MapHeatmapLayer";
 import "./MapView.css";
 
 interface MapViewProps {
@@ -19,12 +20,6 @@ interface MapViewProps {
   selectedCoordIds?: Set<number>;
   onLassoSelection?: (ids: number[]) => void;
 }
-
-const PRIORITY_COLORS: Record<string, string> = {
-  high: "#ef4444",
-  medium: "#f59e0b",
-  low: "#22c55e",
-};
 
 /** Fit bounds whenever coordinates change. */
 function FitBounds({ coordinates }: { coordinates: Coordinate[] }) {
@@ -48,6 +43,8 @@ export default function MapView({
   selectedCoordIds = new Set(),
   onLassoSelection,
 }: MapViewProps) {
+  const [isHeatmapVisible, setIsHeatmapVisible] = useState(false);
+
   return (
     <div className="map-container" id="logistics-map">
       <MapContainer
@@ -62,7 +59,11 @@ export default function MapView({
         />
         <FitBounds coordinates={coordinates} />
 
-        {coordinates.map((coord) => (
+        {isHeatmapVisible && (
+          <MapHeatmapLayer coordinates={coordinates} />
+        )}
+
+        {!isHeatmapVisible && coordinates.map((coord) => (
           <MapMarker
             key={coord.id}
             coordinate={coord}
@@ -83,9 +84,10 @@ export default function MapView({
 
       <MapToolbar 
         onZoomToFit={() => {
-          // If we want this to work properly we might need a ref to MapContainer or pass it to FitBounds
-          // For now, it's just a placeholder or we can leave it empty.
+          // Trigger fit bounds again if needed
         }}
+        onToggleHeatmap={() => setIsHeatmapVisible(!isHeatmapVisible)}
+        isHeatmapActive={isHeatmapVisible}
       />
       
       {/* Legend */}
