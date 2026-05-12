@@ -69,6 +69,7 @@ def read_data():
     palet_ve_konumlar = ozet.drop(["name_right", "sales_rep_right"])
     palet_ve_konumlar = palet_ve_konumlar.with_columns(
         pl.col("id").cast(pl.Int64),
+        pl.lit(None, dtype=pl.Int64).alias("assigned_truck_id"),
     )
     print(palet_ve_konumlar)
     return birlesik_df,palet_ve_konumlar

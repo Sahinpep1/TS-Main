@@ -41,13 +41,16 @@ class DataProcessor:
     def update_coordinate_status(
         self, coord_id: int, status: str, truck_id: int | None = None
     ) -> bool:
-        """Update the status and optionally the assigned truck of a coordinate."""
         mask = self.coordinates_df["id"] == coord_id
         if mask.sum() == 0:
             return False
+
         self.coordinates_df = self.coordinates_df.with_columns(
             pl.when(mask).then(pl.lit(status)).otherwise(pl.col("status")).alias("status"),
-            pl.when(mask).then(pl.lit(truck_id)).otherwise(pl.col("assigned_truck_id")).alias("assigned_truck_id"),
+            pl.when(mask)
+            .then(pl.lit(truck_id, dtype=pl.Int64)) # Explicit type prevents schema errors
+            .otherwise(pl.col("assigned_truck_id"))
+            .alias("assigned_truck_id"),
         )
         return True
 
@@ -85,6 +88,8 @@ class DataProcessor:
             return False
 
         deliveries: list[int] = truck["assigned_deliveries"]
+        if deliveries is None:
+            deliveries = []
         if add:
             deliveries.append(delivery_id)
             new_weight = truck["Miktar"] + Miktar
@@ -93,17 +98,24 @@ class DataProcessor:
         else:
             if delivery_id in deliveries:
                 deliveries.remove(delivery_id)
-            new_weight = max(0, truck["Miktar"] - Miktar)
+            new_weight = max(0, truck["Miktar"] - Miktar) 
             new_volume = max(0, truck["Palet"] - volume_delta)
-            new_status = "idle" if len(deliveries) == 0 else "loading"
 
         mask = self.trucks_df["id"] == truck_id
+
         self.trucks_df = self.trucks_df.with_columns(
-            pl.when(mask).then(pl.lit(round(new_weight, 1))).otherwise(pl.col("Miktar")).alias("Miktar"),
-            pl.when(mask).then(pl.lit(round(new_volume, 2))).otherwise(pl.col("Palet")).alias("Palet"),
-            pl.when(mask).then(pl.lit(json.dumps(deliveries))).otherwise(pl.col("assigned_deliveries")).alias("assigned_deliveries"),
-            pl.when(mask).then(pl.lit(new_status)).otherwise(pl.col("status")).alias("status"),
-        )
+        # Swap these back to match their actual meaning:
+        pl.when(mask).then(pl.lit(round(new_weight, 1))).otherwise(pl.col("Palet")).alias("Palet"),
+        pl.when(mask).then(pl.lit(round(new_volume, 2))).otherwise(pl.col("Miktar")).alias("Miktar"),
+        
+        # Ensure JSON is stored as a string
+        pl.when(mask)
+        .then(pl.lit(json.dumps(deliveries)))
+        .otherwise(pl.col("assigned_deliveries").cast(pl.String))
+        .alias("assigned_deliveries"),
+        
+        pl.when(mask).then(pl.lit(new_status)).otherwise(pl.col("status")).alias("status"),
+    )
         return True
 
     # ── Analytics ────────────────────────────────────────────────────────
@@ -131,14 +143,14 @@ class DataProcessor:
         }
 
     def get_truck_capacities(self) -> list[dict]:
-        """Return capacity percentages for all trucks."""
         rows = self.get_all_trucks()
         result = []
         for t in rows:
+            # Use 'Plaka' instead of 'name' to match your Schema
             wp = round((t["Palet"] / t["Capacity"]) * 100, 1) if t["Capacity"] > 0 else 0
             result.append({
                 "truck_id": t["id"],
-                "name": t["name"],
+                "Plaka": t["Plaka"], # Fixed field name
                 "Palet_percent": wp,
                 "delivery_count": len(t["assigned_deliveries"]),
             })

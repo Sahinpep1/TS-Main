@@ -31,17 +31,12 @@ class TruckManager:
                 "success": False,
                 "error": f"Weight overflow: {new_pallet:.1f}/{truck['Capacity']:.1f} pallet",
             }
-        if new_volume > truck["Miktar"]:
-            return {
-                "success": False,
-                "error": f"Volume overflow: {new_volume:.2f}/{truck['Miktar']:.2f} m³",
-            }
 
         # Perform assignment
         self.processor.update_coordinate_status(coord_id, "assigned", truck_id)
         self.processor.update_truck_load(truck_id, coord["Palet"], coord["Miktar"], coord_id, add=True)
 
-        return {"success": True, "message": f"Delivery {coord_id} assigned to {truck['name']}"}
+        return {"success": True, "message": f"Delivery {coord_id} assigned to {truck['Plaka']}"}
 
     def unassign_delivery(self, coord_id: int) -> dict:
         """Remove a delivery assignment from its truck."""

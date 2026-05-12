@@ -70,14 +70,14 @@ export function useMapFilters(coordinates: Coordinate[], trucks: Truck[]) {
 
   const filteredCoordinates = useMemo(() => {
     return coordinates.filter((c) => {
-      
-  // CRITICAL: Leaflet safety check
+
+      // CRITICAL: Leaflet safety check
       if (
-        c.lat === null || c.lat === undefined || 
+        c.lat === null || c.lat === undefined ||
         c.lng === null || c.lng === undefined ||
         isNaN(c.lat) || isNaN(c.lng)
       ) {
-        return false; 
+        return false;
       }
       // Status filter
       if (!filters.statuses.has(c.status)) return false;
@@ -119,7 +119,7 @@ export function useMapFilters(coordinates: Coordinate[], trucks: Truck[]) {
     () =>
       trucks.map((t) => ({
         value: t.id,
-        label: `${t.name} (${t.plate})`,
+        label: `${t.Driver} (${t.Plaka})`,
         color: t.color,
       })),
     [trucks]

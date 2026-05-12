@@ -12,13 +12,9 @@ interface TruckCardProps {
 }
 
 export default function TruckCard({ truck, isSelected, onSelect }: TruckCardProps) {
-  const weightPct = Math.min(
+  const palletPct = Math.min(
     100,
-    (truck.current_weight_kg / truck.max_weight_kg) * 100
-  );
-  const volumePct = Math.min(
-    100,
-    (truck.current_volume_m3 / truck.max_volume_m3) * 100
+    (truck.Palet / truck.Capacity) * 100
   );
 
   const getBarClass = (pct: number) => {
@@ -48,8 +44,8 @@ export default function TruckCard({ truck, isSelected, onSelect }: TruckCardProp
           style={{ background: truck.color }}
         />
         <div className="truck-card__info">
-          <span className="truck-card__name">{truck.name}</span>
-          <span className="truck-card__plate">{truck.plate}</span>
+          <span className="truck-card__name">{truck.Driver}</span>
+          <span className="truck-card__plate">{truck.Plaka}</span>
         </div>
         <div className="truck-card__status">
           <span className="truck-card__status-icon">
@@ -70,11 +66,11 @@ export default function TruckCard({ truck, isSelected, onSelect }: TruckCardProp
           </div>
           <div className="capacity-bar">
             <div
-              className={getBarClass(weightPct)}
-              style={{ width: `${weightPct}%` }}
+              className={getBarClass(palletPct)}
+              style={{ width: `${palletPct}%` }}
             />
           </div>
-          <span className="capacity-pct">{weightPct.toFixed(0)}%</span>
+          <span className="capacity-pct">{palletPct.toFixed(0)}%</span>
         </div>
 
         <div className="capacity-row">
@@ -84,18 +80,18 @@ export default function TruckCard({ truck, isSelected, onSelect }: TruckCardProp
           </div>
           <div className="capacity-bar">
             <div
-              className={getBarClass(volumePct)}
-              style={{ width: `${volumePct}%` }}
+              className={getBarClass(palletPct)}
+              style={{ width: `${palletPct}%` }}
             />
           </div>
-          <span className="capacity-pct">{volumePct.toFixed(0)}%</span>
+          <span className="capacity-pct">{palletPct.toFixed(0)}%</span>
         </div>
       </div>
 
       {/* Footer stats */}
       <div className="truck-card__footer">
         <span className="truck-card__stat">
-          {truck.current_weight_kg.toLocaleString()} / {truck.max_weight_kg.toLocaleString()} kg
+          {truck.Palet.toLocaleString()} / {truck.Capacity.toLocaleString()} Palet
         </span>
         <span className="truck-card__deliveries">
           {truck.assigned_deliveries.length} deliveries
