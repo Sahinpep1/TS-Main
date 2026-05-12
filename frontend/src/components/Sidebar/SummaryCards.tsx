@@ -25,9 +25,9 @@ export default function SummaryCards({ summary }: SummaryCardsProps) {
       </div>
       <div className="summary-card summary-card--weight">
         <span className="summary-card__value">
-          {(summary.total_weight_kg / 1000).toFixed(1)}t
+          {(summary.Palet_Sayısı)}
         </span>
-        <span className="summary-card__label">Weight</span>
+        <span className="summary-card__label">Pallets</span>
       </div>
     </div>
   );

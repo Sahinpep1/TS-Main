@@ -16,12 +16,11 @@ export interface Coordinate {
 
 export interface Truck {
   id: number;
-  name: string;
-  plate: string;
-  max_weight_kg: number;
-  max_volume_m3: number;
-  current_weight_kg: number;
-  current_volume_m3: number;
+  Plaka: string;
+  Driver: string;
+  Capacity: number;
+  Miktar: number;
+  Palet: number;
   assigned_deliveries: number[];
   color: string;
   status: "idle" | "loading" | "en_route" | "returning";
@@ -30,8 +29,7 @@ export interface Truck {
 export interface TruckCapacity {
   truck_id: number;
   name: string;
-  weight_percent: number;
-  volume_percent: number;
+  Palet_percent: number;
   delivery_count: number;
 }
 
@@ -39,8 +37,9 @@ export interface LogisticsSummary {
   total_deliveries: number;
   assigned_deliveries: number;
   pending_deliveries: number;
-  total_weight_kg: number;
-  total_volume_m3: number;
+  Miktar: number;
+  Palet_Sayısı: number;
+  Capacity: number;
   trucks_active: number;
   trucks_idle: number;
 }

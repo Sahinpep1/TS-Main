@@ -37,14 +37,14 @@ export default function MapMarker({
   const truck = c.assigned_truck_id !== null
     ? trucks.find((t) => t.id === c.assigned_truck_id)
     : undefined;
-  
+
   const color = isAssigned
     ? truck?.color || "#6366f1"
     : STATUS_COLORS[c.status] || "#94a3b8";
 
   // Create a custom divIcon with Lucide Icon
   const iconHtml = renderToStaticMarkup(
-    <div className={`custom-marker ${isHighlighted ? 'highlighted' : ''}`} style={{ 
+    <div className={`custom-marker ${isHighlighted ? 'highlighted' : ''}`} style={{
       backgroundColor: color,
       color: 'white',
       width: isHighlighted ? '40px' : '32px',
@@ -105,7 +105,7 @@ export default function MapMarker({
               <>
                 <span className="popup-label">Assigned Truck</span>
                 <span className="popup-value" style={{ color: truck.color, fontWeight: 'bold' }}>
-                  {truck.plate} ({truck.name})
+                  {truck.Plaka} ({truck.Driver})
                 </span>
               </>
             )}

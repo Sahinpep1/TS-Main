@@ -7,12 +7,12 @@ from typing import Optional
 class Coordinate(BaseModel):
     """A delivery point coordinate."""
     id: int
-    lat: float
-    lng: float
     name: str
     sales_rep: str
     Palet_Sayısı: float
     Miktar: int
+    lat: float
+    lng: float
     status: str  # "pending", "assigned", "delivered"
     assigned_truck_id: Optional[int] = None
 

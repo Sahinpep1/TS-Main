@@ -2,8 +2,9 @@
 
 import json
 import polars as pl
-from data.generator import generate_coordinates, generate_trucks
-from data.Read_data import *
+#from data.generator import generate_coordinates, generate_trucks
+from data.Read_data import read_data
+from data.Read_truck import read_trucks
 
 class DataProcessor:
     """Holds in-memory Polars DataFrames and provides query helpers."""
@@ -12,7 +13,7 @@ class DataProcessor:
         birlesik_df, palet_ve_konumlar = read_data()
         self.coordinates_df: pl.DataFrame = palet_ve_konumlar
         self.orders_df: pl.DataFrame = birlesik_df
-        self.trucks_df: pl.DataFrame = generate_trucks(15)
+        self.trucks_df: pl.DataFrame = read_trucks()
 
     # ── Coordinates ──────────────────────────────────────────────────────
 
@@ -73,7 +74,7 @@ class DataProcessor:
     def update_truck_load(
         self,
         truck_id: int,
-        weight_delta: float,
+        Miktar: float,
         volume_delta: float,
         delivery_id: int,
         add: bool = True,
@@ -86,20 +87,20 @@ class DataProcessor:
         deliveries: list[int] = truck["assigned_deliveries"]
         if add:
             deliveries.append(delivery_id)
-            new_weight = truck["current_weight_kg"] + weight_delta
-            new_volume = truck["current_volume_m3"] + volume_delta
+            new_weight = truck["Miktar"] + Miktar
+            new_volume = truck["Palet"] + volume_delta
             new_status = "loading"
         else:
             if delivery_id in deliveries:
                 deliveries.remove(delivery_id)
-            new_weight = max(0, truck["current_weight_kg"] - weight_delta)
-            new_volume = max(0, truck["current_volume_m3"] - volume_delta)
+            new_weight = max(0, truck["Miktar"] - Miktar)
+            new_volume = max(0, truck["Palet"] - volume_delta)
             new_status = "idle" if len(deliveries) == 0 else "loading"
 
         mask = self.trucks_df["id"] == truck_id
         self.trucks_df = self.trucks_df.with_columns(
-            pl.when(mask).then(pl.lit(round(new_weight, 1))).otherwise(pl.col("current_weight_kg")).alias("current_weight_kg"),
-            pl.when(mask).then(pl.lit(round(new_volume, 2))).otherwise(pl.col("current_volume_m3")).alias("current_volume_m3"),
+            pl.when(mask).then(pl.lit(round(new_weight, 1))).otherwise(pl.col("Miktar")).alias("Miktar"),
+            pl.when(mask).then(pl.lit(round(new_volume, 2))).otherwise(pl.col("Palet")).alias("Palet"),
             pl.when(mask).then(pl.lit(json.dumps(deliveries))).otherwise(pl.col("assigned_deliveries")).alias("assigned_deliveries"),
             pl.when(mask).then(pl.lit(new_status)).otherwise(pl.col("status")).alias("status"),
         )
@@ -113,8 +114,8 @@ class DataProcessor:
         assigned = self.coordinates_df.filter(pl.col("status") == "assigned").height
         pending = self.coordinates_df.filter(pl.col("status") == "pending").height
 
-        total_weight = self.coordinates_df["weight_kg"].sum()
-        total_volume = self.coordinates_df["volume_m3"].sum()
+        Miktar = self.coordinates_df["Miktar"].sum()
+        Palet_Sayısı = self.coordinates_df["Palet_Sayısı"].sum()
 
         trucks_active = self.trucks_df.filter(pl.col("status") != "idle").height
         trucks_idle = self.trucks_df.filter(pl.col("status") == "idle").height
@@ -123,8 +124,8 @@ class DataProcessor:
             "total_deliveries": total,
             "assigned_deliveries": assigned,
             "pending_deliveries": pending,
-            "total_weight_kg": round(total_weight, 1),
-            "total_volume_m3": round(total_volume, 2),
+            "Miktar": round(Miktar, 1),
+            "Palet_Sayısı": round(Palet_Sayısı, 2),
             "trucks_active": trucks_active,
             "trucks_idle": trucks_idle,
         }
@@ -134,13 +135,11 @@ class DataProcessor:
         rows = self.get_all_trucks()
         result = []
         for t in rows:
-            wp = round((t["current_weight_kg"] / t["max_weight_kg"]) * 100, 1) if t["max_weight_kg"] > 0 else 0
-            vp = round((t["current_volume_m3"] / t["max_volume_m3"]) * 100, 1) if t["max_volume_m3"] > 0 else 0
+            wp = round((t["Palet"] / t["Capacity"]) * 100, 1) if t["Capacity"] > 0 else 0
             result.append({
                 "truck_id": t["id"],
                 "name": t["name"],
-                "weight_percent": wp,
-                "volume_percent": vp,
+                "Palet_percent": wp,
                 "delivery_count": len(t["assigned_deliveries"]),
             })
         return result
@@ -149,7 +148,7 @@ class DataProcessor:
         """Reset all data to initial state."""
         birlesik_df, palet_ve_konumlar = read_data()
         self.coordinates_df = palet_ve_konumlar
-        self.trucks_df = generate_trucks(15)
+        self.trucks_df = read_trucks()
 
 
   

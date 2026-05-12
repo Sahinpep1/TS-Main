@@ -24,42 +24,42 @@ export default function TruckList({ trucks, selectedTruckId, onSelectTruck }: Tr
   const [sorting, setSorting] = useState<SortingState>([]);
 
   const filteredData = useMemo(() => {
-    return trucks.filter(t => 
-      t.plate.toLowerCase().includes(searchQuery.toLowerCase()) || 
-      t.name.toLowerCase().includes(searchQuery.toLowerCase())
+    return trucks.filter(t =>
+      t.Plaka.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      t.Driver.toLowerCase().includes(searchQuery.toLowerCase())
     );
   }, [trucks, searchQuery]);
 
   const columns = useMemo(() => [
-    columnHelper.accessor("plate", {
-      header: "Plate",
+    columnHelper.accessor("Plaka", {
+      header: "Plaka",
       cell: (info) => (
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <div style={{ 
-            width: '8px', 
-            height: '8px', 
-            borderRadius: '50%', 
-            backgroundColor: info.row.original.color 
+          <div style={{
+            width: '8px',
+            height: '8px',
+            borderRadius: '50%',
+            backgroundColor: info.row.original.color
           }} />
           <span style={{ fontWeight: 'bold' }}>{info.getValue()}</span>
         </div>
       ),
     }),
-    columnHelper.accessor("capacity_kg", {
-      header: "Cap (kg)",
+    columnHelper.accessor("Miktar", {
+      header: "Miktar",
       cell: (info) => info.getValue(),
     }),
-    columnHelper.accessor("current_weight", {
-      header: "Load",
+    columnHelper.accessor("Palet", {
+      header: "Palet",
       cell: (info) => {
-        const percent = Math.round((info.getValue() / info.row.original.capacity_kg) * 100);
+        const percent = Math.round((info.getValue() / info.row.original.Capacity) * 100);
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
             <span>{info.getValue()}kg</span>
             <div style={{ width: '40px', height: '4px', backgroundColor: '#1e293b', borderRadius: '2px' }}>
-              <div style={{ 
-                width: `${Math.min(percent, 100)}%`, 
-                height: '100%', 
+              <div style={{
+                width: `${Math.min(percent, 100)}%`,
+                height: '100%',
                 backgroundColor: percent > 90 ? '#ef4444' : '#22c55e',
                 borderRadius: '2px'
               }} />
@@ -90,7 +90,7 @@ export default function TruckList({ trucks, selectedTruckId, onSelectTruck }: Tr
 
       <div className="sidebar__search-wrapper">
         <Search size={16} className="search-icon" />
-        <input 
+        <input
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           placeholder="Search trucks..."
@@ -119,8 +119,8 @@ export default function TruckList({ trucks, selectedTruckId, onSelectTruck }: Tr
           </thead>
           <tbody>
             {table.getRowModel().rows.map(row => (
-              <tr 
-                key={row.id} 
+              <tr
+                key={row.id}
                 onClick={() => onSelectTruck(row.original.id)}
                 className={selectedTruckId === row.original.id ? 'selected' : ''}
               >

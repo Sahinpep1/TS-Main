@@ -23,23 +23,23 @@ class TruckManager:
             return {"success": False, "error": "Truck not found"}
 
         # Check capacity
-        new_weight = truck["current_weight_kg"] + coord["weight_kg"]
-        new_volume = truck["current_volume_m3"] + coord["volume_m3"]
+        new_pallet = truck["Palet"] + coord["Palet_Sayısı"]
+        new_volume = truck["Miktar"] + coord["Miktar"]
 
-        if new_weight > truck["max_weight_kg"]:
+        if new_pallet > truck["Capacity"]:
             return {
                 "success": False,
-                "error": f"Weight overflow: {new_weight:.1f}/{truck['max_weight_kg']:.1f} kg",
+                "error": f"Weight overflow: {new_pallet:.1f}/{truck['Capacity']:.1f} pallet",
             }
-        if new_volume > truck["max_volume_m3"]:
+        if new_volume > truck["Miktar"]:
             return {
                 "success": False,
-                "error": f"Volume overflow: {new_volume:.2f}/{truck['max_volume_m3']:.2f} m³",
+                "error": f"Volume overflow: {new_volume:.2f}/{truck['Miktar']:.2f} m³",
             }
 
         # Perform assignment
         self.processor.update_coordinate_status(coord_id, "assigned", truck_id)
-        self.processor.update_truck_load(truck_id, coord["weight_kg"], coord["volume_m3"], coord_id, add=True)
+        self.processor.update_truck_load(truck_id, coord["Palet_Sayısı"], coord["Miktar"], coord_id, add=True)
 
         return {"success": True, "message": f"Delivery {coord_id} assigned to {truck['name']}"}
 
@@ -54,7 +54,7 @@ class TruckManager:
 
         truck_id = coord["assigned_truck_id"]
         self.processor.update_coordinate_status(coord_id, "pending", None)
-        self.processor.update_truck_load(truck_id, coord["weight_kg"], coord["volume_m3"], coord_id, add=False)
+        self.processor.update_truck_load(truck_id, coord["Palet_Sayısı"], coord["Miktar"], coord_id, add=False)
 
         return {"success": True, "message": f"Delivery {coord_id} unassigned"}
 
@@ -64,9 +64,7 @@ class TruckManager:
         if not pending:
             return {"success": True, "assigned": 0, "message": "No pending deliveries"}
 
-        # Sort pending by priority (high first) then by weight descending
-        priority_order = {"high": 0, "medium": 1, "low": 2}
-        pending.sort(key=lambda c: (priority_order.get(c["priority"], 2), -c["weight_kg"]))
+
 
         assigned_count = 0
         skipped = 0
@@ -74,12 +72,12 @@ class TruckManager:
         for coord in pending:
             # Find the truck with the least current weight that can fit this delivery
             trucks = self.processor.get_all_trucks()
-            trucks.sort(key=lambda t: t["current_weight_kg"])
+            trucks.sort(key=lambda t: t["Palet"])
 
             placed = False
             for truck in trucks:
-                can_weight = truck["current_weight_kg"] + coord["weight_kg"] <= truck["max_weight_kg"]
-                can_volume = truck["current_volume_m3"] + coord["volume_m3"] <= truck["max_volume_m3"]
+                can_weight = truck["Palet"] + coord["Palet_Sayısı"] <= truck["Capacity"]
+                can_volume = truck["Miktar"] + coord["Miktar"] <= truck["Miktar"]
                 if can_weight and can_volume:
                     result = self.assign_delivery(coord["id"], truck["id"])
                     if result["success"]:
