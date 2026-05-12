@@ -32,7 +32,7 @@ def Konumlar_Hesaplama(sales_df, customer_df, pallet_df):
 
         # Palet sayısını hesapla
         df = df.with_columns([
-            (pl.col("Miktar") / pl.col("Palet")).alias("Palet_Sayısı")
+            (pl.col("Miktar") / pl.col("Palet")).alias("Palet")
         ])
 
         # Müşteri konum bilgilerini işle

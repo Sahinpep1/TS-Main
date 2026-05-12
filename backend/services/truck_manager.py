@@ -1,6 +1,6 @@
 """Truck management service — assignment logic and validation."""
 
-from services.data_processor import DataProcessor
+from services.data_processor_copy import DataProcessor
 
 
 class TruckManager:
@@ -23,7 +23,7 @@ class TruckManager:
             return {"success": False, "error": "Truck not found"}
 
         # Check capacity
-        new_pallet = truck["Palet"] + coord["Palet_Sayısı"]
+        new_pallet = truck["Palet"] + coord["Palet"]
         new_volume = truck["Miktar"] + coord["Miktar"]
 
         if new_pallet > truck["Capacity"]:
@@ -39,7 +39,7 @@ class TruckManager:
 
         # Perform assignment
         self.processor.update_coordinate_status(coord_id, "assigned", truck_id)
-        self.processor.update_truck_load(truck_id, coord["Palet_Sayısı"], coord["Miktar"], coord_id, add=True)
+        self.processor.update_truck_load(truck_id, coord["Palet"], coord["Miktar"], coord_id, add=True)
 
         return {"success": True, "message": f"Delivery {coord_id} assigned to {truck['name']}"}
 
@@ -54,7 +54,7 @@ class TruckManager:
 
         truck_id = coord["assigned_truck_id"]
         self.processor.update_coordinate_status(coord_id, "pending", None)
-        self.processor.update_truck_load(truck_id, coord["Palet_Sayısı"], coord["Miktar"], coord_id, add=False)
+        self.processor.update_truck_load(truck_id, coord["Palet"], coord["Miktar"], coord_id, add=False)
 
         return {"success": True, "message": f"Delivery {coord_id} unassigned"}
 
@@ -76,7 +76,7 @@ class TruckManager:
 
             placed = False
             for truck in trucks:
-                can_weight = truck["Palet"] + coord["Palet_Sayısı"] <= truck["Capacity"]
+                can_weight = truck["Palet"] + coord["Palet"] <= truck["Capacity"]
                 can_volume = truck["Miktar"] + coord["Miktar"] <= truck["Miktar"]
                 if can_weight and can_volume:
                     result = self.assign_delivery(coord["id"], truck["id"])

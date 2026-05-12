@@ -9,7 +9,7 @@ class Coordinate(BaseModel):
     id: int
     name: str
     sales_rep: str
-    Palet_Sayısı: float
+    Palet: float
     Miktar: int
     lat: float
     lng: float

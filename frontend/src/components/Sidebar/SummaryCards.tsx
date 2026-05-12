@@ -25,7 +25,7 @@ export default function SummaryCards({ summary }: SummaryCardsProps) {
       </div>
       <div className="summary-card summary-card--weight">
         <span className="summary-card__value">
-          {(summary.Palet_Sayısı)}
+          {(summary.Palet)}
         </span>
         <span className="summary-card__label">Pallets</span>
       </div>

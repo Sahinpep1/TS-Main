@@ -115,7 +115,7 @@ class DataProcessor:
         pending = self.coordinates_df.filter(pl.col("status") == "pending").height
 
         Miktar = self.coordinates_df["Miktar"].sum()
-        Palet_Sayısı = self.coordinates_df["Palet_Sayısı"].sum()
+        Palet = self.coordinates_df["Palet"].sum()
 
         trucks_active = self.trucks_df.filter(pl.col("status") != "idle").height
         trucks_idle = self.trucks_df.filter(pl.col("status") == "idle").height
@@ -125,7 +125,7 @@ class DataProcessor:
             "assigned_deliveries": assigned,
             "pending_deliveries": pending,
             "Miktar": round(Miktar, 1),
-            "Palet_Sayısı": round(Palet_Sayısı, 2),
+            "Palet": round(Palet, 2),
             "trucks_active": trucks_active,
             "trucks_idle": trucks_idle,
         }

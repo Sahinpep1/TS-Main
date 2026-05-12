@@ -36,7 +36,7 @@ def Palet_Acıklama(sales_df, customer_df, pallet_df):
 
         # Palet sayısını hesapla
         df = df.with_columns([
-            (pl.col("Miktar") / pl.col("Palet")).alias("Palet_Sayısı")
+            (pl.col("Miktar") / pl.col("Palet")).alias("Palet")
         ])
 
         # Müşteri konum bilgilerini işle
@@ -51,7 +51,7 @@ def Palet_Acıklama(sales_df, customer_df, pallet_df):
         
         df = df.group_by("İçerik").agg([
             pl.col("Miktar").sum(),
-            pl.col("Palet_Sayısı").sum(),
+            pl.col("Palet").sum(),
         ]).sort("İçerik")
         
 

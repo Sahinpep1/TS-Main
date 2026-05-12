@@ -6,7 +6,7 @@ export interface Coordinate {
   id: number;
   name: string;
   sales_rep: string;
-  Palet_Sayısı: number;
+  Palet: number;
   Miktar: number;
   lng: number;
   lat: number;
@@ -38,7 +38,7 @@ export interface LogisticsSummary {
   assigned_deliveries: number;
   pending_deliveries: number;
   Miktar: number;
-  Palet_Sayısı: number;
+  Palet: number;
   Capacity: number;
   trucks_active: number;
   trucks_idle: number;

@@ -98,7 +98,7 @@ export default function MapMarker({
             <span className="popup-label">Weight</span>
             <span className="popup-value">{c.Miktar} kg</span>
             <span className="popup-label">Volume</span>
-            <span className="popup-value">{c.Palet_Sayısı} m³</span>
+            <span className="popup-value">{c.Palet} m³</span>
             <span className="popup-label">Status</span>
             <Badge variant={c.status}>{c.status}</Badge>
             {isAssigned && truck && (

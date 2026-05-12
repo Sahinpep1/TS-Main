@@ -28,7 +28,7 @@ def Palet_Hesaplama(sales_df, customer_df, pallet_df):
 
         # Palet sayısını hesapla
         df = df.with_columns([
-            (pl.col("Miktar") / pl.col("Palet")).alias("Palet_Sayısı")
+            (pl.col("Miktar") / pl.col("Palet")).alias("Palet")
         ])
 
         # Müşteri konum bilgilerini işle
@@ -45,7 +45,7 @@ def Palet_Hesaplama(sales_df, customer_df, pallet_df):
         df = df.group_by("id").agg([
             pl.col("name").first(),
             pl.col("sales_rep").first(),
-            pl.col("Palet_Sayısı").sum(),
+            pl.col("Palet").sum(),
             pl.col("Miktar").sum(),
         ])
 
