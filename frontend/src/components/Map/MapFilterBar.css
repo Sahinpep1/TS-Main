@@ -1,46 +1,43 @@
+/* MapFilterBar.css */
 .map-filter-bar {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  pointer-events: auto;
-  background: rgba(25, 25, 30, 0.85);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  padding: 8px 12px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  background: rgba(15, 23, 42, 0.7);
+  padding: 12px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .map-filter-bar-inner {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
+  width: 100%;
 }
 
 .map-filter-group {
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .map-filter-divider {
   width: 1px;
   height: 24px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #e2e8f0;
 }
 
 .map-filter-reset {
-  background: transparent;
+  background: #fee2e2;
+  color: #b91c1c;
   border: none;
-  color: #ff6b6b;
-  font-size: 13px;
-  font-weight: 500;
-  cursor: pointer;
-  padding: 4px 8px;
+  padding: 6px 12px;
   border-radius: 6px;
-  transition: all 0.2s;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
 .map-filter-reset:hover {
-  background: rgba(255, 107, 107, 0.1);
+  background: #fecaca;
 }

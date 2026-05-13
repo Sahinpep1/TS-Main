@@ -23,6 +23,7 @@ export default function App() {
     handleAssign,
     handleAutoAssign,
     handleReset,
+    salesRepsData,
   } = useLogistics();
 
   const {
@@ -34,6 +35,7 @@ export default function App() {
     toggleTruckFilter,
     setStatuses,
     setTruckIds,
+    setSaleReps,
     resetFilters,
   } = useMapFilters(coordinates, trucks);
 
@@ -92,10 +94,12 @@ export default function App() {
           filters={filters}
           activeFilterCount={activeFilterCount}
           truckOptions={truckOptions}
+          salesRepsData={salesRepsData}
           toggleStatus={toggleStatus}
           toggleTruckFilter={toggleTruckFilter}
           setStatuses={setStatuses}
           setTruckIds={setTruckIds}
+          setSaleReps={setSaleReps}
           resetFilters={resetFilters}
         />
         <MapView
@@ -105,6 +109,7 @@ export default function App() {
           onAssign={handleMapAssign}
           selectedCoordIds={coordSelection.selected}
           onLassoSelection={(ids) => coordSelection.setSelected(ids)}
+          salesRepsData={salesRepsData}
         />
         
         {/* Batch Assign Overlay */}

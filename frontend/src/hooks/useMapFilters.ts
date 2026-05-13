@@ -4,16 +4,18 @@
  */
 
 import { useState, useMemo, useCallback } from "react";
-import type { Coordinate, Truck, MapFilters, DeliveryStatus } from "../types";
+import type { Coordinate, Truck, MapFilters, DeliveryStatus  } from "../types";
 import { useDebounce } from "./useDebounce";
 
 
 const ALL_STATUSES: DeliveryStatus[] = ["pending", "assigned", "delivered"];
+const ALL_SALE_REPS: string[] = []; // This will be populated from the API in useLogistics and passed down
 
-function createDefaultFilters(): MapFilters {
+function createDefaultFilters(): MapFilters { 
   return {
     statuses: new Set<DeliveryStatus>(ALL_STATUSES),
-    truckIds: new Set<number>(),
+    truckIds: new Set<number>() ,
+    saleReps: new Set<string>(ALL_SALE_REPS),
     searchQuery: "",
     weightRange: [0, Infinity],
   };
@@ -43,6 +45,13 @@ export function useMapFilters(coordinates: Coordinate[], trucks: Truck[]) {
       return { ...prev, truckIds: next };
     });
   }, []);
+  const toggleSaleRepFilter = useCallback((rep: string) => {
+    setFilters((prev) => {
+      const next = new Set(prev.saleReps);
+      next.has(rep) ? next.delete(rep) : next.add(rep);
+      return { ...prev, saleReps: next };
+    });
+  }, []);
 
 
 
@@ -58,6 +67,9 @@ export function useMapFilters(coordinates: Coordinate[], trucks: Truck[]) {
     setFilters((prev) => ({ ...prev, searchQuery: q }));
   }, []);
 
+  const setSaleReps = useCallback((reps: string[]) => {
+    setFilters((prev) => ({ ...prev, saleReps: new Set(reps) }));
+  }, []);
   const setWeightRange = useCallback((range: [number, number]) => {
     setFilters((prev) => ({ ...prev, weightRange: range }));
   }, []);
@@ -87,6 +99,11 @@ export function useMapFilters(coordinates: Coordinate[], trucks: Truck[]) {
         if (c.assigned_truck_id === null) return false;
         if (!filters.truckIds.has(c.assigned_truck_id)) return false;
       }
+      
+      // Sales rep filter (empty set = show all)
+      if (filters.saleReps.size > 0) {
+        if (!filters.saleReps.has(c.sales_rep)) return false;
+      }
 
       // Search filter
       if (debouncedSearch) {
@@ -100,7 +117,7 @@ export function useMapFilters(coordinates: Coordinate[], trucks: Truck[]) {
 
       return true;
     });
-  }, [coordinates, filters.statuses, filters.truckIds, filters.weightRange, debouncedSearch]);
+  }, [coordinates, filters.statuses, filters.truckIds, filters.saleReps, filters.weightRange, debouncedSearch]);
 
   /* ── Stats ───────────────────────────────────────────────── */
 
@@ -108,6 +125,7 @@ export function useMapFilters(coordinates: Coordinate[], trucks: Truck[]) {
     let count = 0;
     if (filters.statuses.size < ALL_STATUSES.length) count++;
     if (filters.truckIds.size > 0) count++;
+    if (filters.saleReps.size > 0) count++;
     if (filters.searchQuery.length > 0) count++;
     if (filters.weightRange[0] > 0 || filters.weightRange[1] < Infinity) count++;
     return count;
@@ -133,10 +151,13 @@ export function useMapFilters(coordinates: Coordinate[], trucks: Truck[]) {
     // setters
     toggleStatus,
     toggleTruckFilter,
+    toggleSaleRepFilter,
     setStatuses,
     setTruckIds,
     setSearchQuery,
+    setSaleReps,
     setWeightRange,
     resetFilters,
+    
   };
 }

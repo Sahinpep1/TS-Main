@@ -14,6 +14,9 @@ export interface Coordinate {
   assigned_truck_id: number | null;
 }
 
+export interface SalesRepOption {
+  sales_rep: string;
+}
 export interface Truck {
   id: number;
   Plaka: string;
@@ -65,6 +68,7 @@ export type DeliveryStatus = "pending" | "assigned" | "delivered";
 export interface MapFilters {
   statuses: Set<DeliveryStatus>;
   truckIds: Set<number>;
+  saleReps: Set<string>;
   searchQuery: string;
   weightRange: [number, number];
 }
@@ -72,9 +76,10 @@ export interface MapFilters {
 export interface FilterPreset {
   id: string;
   name: string;
-  filters: Omit<MapFilters, "statuses" | "truckIds"> & {
+  filters: Omit<MapFilters, "statuses" | "truckIds" | "saleReps"> & {
     statuses: DeliveryStatus[];
     truckIds: number[];
+    saleReps: string[];
   };
 }
 

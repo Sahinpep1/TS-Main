@@ -55,7 +55,7 @@ export default function TruckList({ trucks, selectedTruckId, onSelectTruck }: Tr
         const percent = Math.round((info.getValue() / info.row.original.Capacity) * 100);
         return (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-            <span>{info.getValue()}kg</span>
+            <span>{info.getValue()} plt</span>
             <div style={{ width: '40px', height: '4px', backgroundColor: '#1e293b', borderRadius: '2px' }}>
               <div style={{
                 width: `${Math.min(percent, 100)}%`,

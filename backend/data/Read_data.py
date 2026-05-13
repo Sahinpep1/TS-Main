@@ -72,6 +72,8 @@ def read_data():
         pl.lit(None, dtype=pl.Int64).alias("assigned_truck_id"),
     )
     print(palet_ve_konumlar)
+    
     return birlesik_df,palet_ve_konumlar
 
-read_data()
+
+

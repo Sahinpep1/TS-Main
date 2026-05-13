@@ -17,6 +17,13 @@ def get_all_coordinates(
         return data_processor.get_coordinates_by_status(status)
     return data_processor.get_all_coordinates()
 
+@router.get("/sale-rep_list")
+def get_sale_rep_list():
+
+    """Get all delivery coordinates, optionally filtered."""
+    from main import data_processor
+
+    return data_processor.get_sale_rep_list()
 
 @router.get("/{coord_id}")
 def get_coordinate(coord_id: int):
@@ -27,3 +34,4 @@ def get_coordinate(coord_id: int):
     if result is None:
         raise HTTPException(status_code=404, detail="Coordinate not found")
     return result
+

@@ -39,3 +39,4 @@ export async function fetchSummary(): Promise<LogisticsSummary> {
   const res = await axios.get<LogisticsSummary>(`${BASE}/summary`);
   return res.data;
 }
+  

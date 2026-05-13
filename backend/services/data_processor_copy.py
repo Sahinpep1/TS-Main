@@ -36,6 +36,9 @@ class DataProcessor:
             .to_dicts()
         )
 
+    def get_sale_rep_list(self) -> list[str]:
+        """Return a list of unique sales representatives."""
+        return self.orders_df.select(pl.col("sales_rep").unique()).to_dicts()
    
 
     def update_coordinate_status(
@@ -77,8 +80,8 @@ class DataProcessor:
     def update_truck_load(
         self,
         truck_id: int,
+        Palet: float,
         Miktar: float,
-        volume_delta: float,
         delivery_id: int,
         add: bool = True,
     ) -> bool:
@@ -92,21 +95,21 @@ class DataProcessor:
             deliveries = []
         if add:
             deliveries.append(delivery_id)
-            new_weight = truck["Miktar"] + Miktar
-            new_volume = truck["Palet"] + volume_delta
+            new_Miktar = truck["Miktar"] + Miktar
+            new_Palet = truck["Palet"] + Palet
             new_status = "loading"
         else:
             if delivery_id in deliveries:
                 deliveries.remove(delivery_id)
-            new_weight = max(0, truck["Miktar"] - Miktar) 
-            new_volume = max(0, truck["Palet"] - volume_delta)
+            new_Miktar = max(0, truck["Miktar"] - Miktar) 
+            new_Palet = max(0, truck["Palet"] - Palet)
 
         mask = self.trucks_df["id"] == truck_id
 
         self.trucks_df = self.trucks_df.with_columns(
         # Swap these back to match their actual meaning:
-        pl.when(mask).then(pl.lit(round(new_weight, 1))).otherwise(pl.col("Palet")).alias("Palet"),
-        pl.when(mask).then(pl.lit(round(new_volume, 2))).otherwise(pl.col("Miktar")).alias("Miktar"),
+        pl.when(mask).then(pl.lit(round(new_Palet, 1))).otherwise(pl.col("Palet")).alias("Palet"),
+        pl.when(mask).then(pl.lit(round(new_Miktar, 2))).otherwise(pl.col("Miktar")).alias("Miktar"),
         
         # Ensure JSON is stored as a string
         pl.when(mask)

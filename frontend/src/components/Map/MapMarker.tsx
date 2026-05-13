@@ -96,9 +96,9 @@ export default function MapMarker({
           <h4>{c.name}</h4>
           <div className="popup-grid">
             <span className="popup-label">Weight</span>
-            <span className="popup-value">{c.Miktar} kg</span>
+            <span className="popup-value">{c.Miktar} Adet</span>
             <span className="popup-label">Volume</span>
-            <span className="popup-value">{c.Palet} m³</span>
+            <span className="popup-value">{c.Palet} Palet</span>
             <span className="popup-label">Status</span>
             <Badge variant={c.status}>{c.status}</Badge>
             {isAssigned && truck && (

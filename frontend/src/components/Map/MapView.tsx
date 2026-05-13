@@ -4,7 +4,7 @@
 
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import { useEffect, useState } from "react";
-import type { Coordinate, Truck } from "../../types";
+import type { Coordinate, Truck ,SalesRepOption } from "../../types";
 import MapMarker from "./MapMarker";
 import MapLegend from "./MapLegend";
 import { MapToolbar } from "./MapToolbar";
@@ -19,6 +19,7 @@ interface MapViewProps {
   onAssign: (coordId: number, truckId: number) => void;
   selectedCoordIds?: Set<number>;
   onLassoSelection?: (ids: number[]) => void;
+  salesRepsData: SalesRepOption[];
 }
 
 /** Fit bounds whenever coordinates change. */
@@ -42,6 +43,7 @@ export default function MapView({
   onAssign,
   selectedCoordIds = new Set(),
   onLassoSelection,
+  salesRepsData,
 }: MapViewProps) {
   const [isHeatmapVisible, setIsHeatmapVisible] = useState(false);
 

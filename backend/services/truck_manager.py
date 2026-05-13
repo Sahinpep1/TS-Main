@@ -24,7 +24,6 @@ class TruckManager:
 
         # Check capacity
         new_pallet = truck["Palet"] + coord["Palet"]
-        new_volume = truck["Miktar"] + coord["Miktar"]
 
         if new_pallet > truck["Capacity"]:
             return {
@@ -72,8 +71,7 @@ class TruckManager:
             placed = False
             for truck in trucks:
                 can_weight = truck["Palet"] + coord["Palet"] <= truck["Capacity"]
-                can_volume = truck["Miktar"] + coord["Miktar"] <= truck["Miktar"]
-                if can_weight and can_volume:
+                if can_weight:
                     result = self.assign_delivery(coord["id"], truck["id"])
                     if result["success"]:
                         assigned_count += 1

@@ -3,7 +3,7 @@
  */
 
 import { useState, useEffect, useCallback } from "react";
-import type { Coordinate, Truck, LogisticsSummary } from "../types";
+import type { Coordinate, Truck, LogisticsSummary, SalesRepOption } from "../types";
 import {
   fetchCoordinates,
   fetchTrucks,
@@ -12,7 +12,8 @@ import {
   unassignDelivery,
   autoAssign,
   resetAll,
-} from "../api";
+  get_sale_rep_list,
+  } from "../api";
 
 export function useLogistics() {
   const [coordinates, setCoordinates] = useState<Coordinate[]>([]);
@@ -21,18 +22,23 @@ export function useLogistics() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedTruckId, setSelectedTruckId] = useState<number | null>(null);
+  const [salesRepsData, setSalesRepsData] = useState<SalesRepOption[]>([]);
+  const [selectedSaleRepIds, setSelectedSaleRepIds] = useState<string[]>([]);
 
   const refresh = useCallback(async () => {
     try {
       setError(null);
-      const [coords, tks, sum] = await Promise.all([
+      const [coords, tks, sum,reps] = await Promise.all([
         fetchCoordinates(),
         fetchTrucks(),
         fetchSummary(),
+        get_sale_rep_list(),
       ]);
       setCoordinates(coords);
       setTrucks(tks);
       setSummary(sum);
+      setSalesRepsData(reps);
+
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : "Failed to fetch data";
       setError(msg);
@@ -86,5 +92,7 @@ export function useLogistics() {
     handleUnassign,
     handleAutoAssign,
     handleReset,
+    selectedSaleRepIds,
+    salesRepsData,
   };
 }
