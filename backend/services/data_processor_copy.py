@@ -107,6 +107,7 @@ class DataProcessor:
                 deliveries.remove(delivery_id)
             new_Miktar = max(0, truck["Miktar"] - Miktar) 
             new_Palet = max(0, truck["Palet"] - Palet)
+            new_status = "idle"
 
         mask = self.trucks_df["id"] == truck_id
 
