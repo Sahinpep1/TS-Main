@@ -1,4 +1,5 @@
 
+from dateutil import parser
 import sys
 import os
 
@@ -7,6 +8,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from data.palet_sayisi import Palet_Hesaplama
 from data.konumlar import Konumlar_Hesaplama
+from data.ambalaj import Palet_Acıklama
 import polars as pl
 
 
@@ -71,9 +73,10 @@ def read_data():
         pl.col("id").cast(pl.Int64),
         pl.lit(None, dtype=pl.Int64).alias("assigned_truck_id"),
     )
-    print(palet_ve_konumlar)
-    
-    return birlesik_df,palet_ve_konumlar
+    #print(palet_ve_konumlar)
+    ambalaj = Palet_Acıklama(birlesik_df,customer_df,pallet_df)
+    return birlesik_df,palet_ve_konumlar,ambalaj
 
 
 
+read_data()

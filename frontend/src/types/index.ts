@@ -13,7 +13,11 @@ export interface Coordinate {
   status: "pending" | "assigned" | "delivered";
   assigned_truck_id: number | null;
 }
-
+export interface Ambalaj {
+  name: string;
+  Miktar: number;
+  Palet: number;
+}
 export interface SalesRepOption {
   sales_rep: string;
 }
@@ -27,6 +31,8 @@ export interface Truck {
   assigned_deliveries: number[];
   color: string;
   status: "idle" | "loading" | "en_route" | "returning";
+  Default_Sales_Rep: string;
+  Assigned_Route: string;
 }
 
 export interface TruckCapacity {

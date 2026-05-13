@@ -10,7 +10,9 @@ def read_trucks():
             pl.col("Capacity").cast(pl.Int64),
             pl.col("Miktar").cast(pl.Int64),
             pl.col("Palet").cast(pl.Int64),
-            pl.col("assigned_deliveries").cast(pl.Utf8)
+            pl.col("assigned_deliveries").cast(pl.Utf8),
+            pl.col("Default_Sales_Rep").cast(pl.Utf8),
+            pl.col("Assigned_Route").cast(pl.Utf8),
             
         )
         return trucks_df

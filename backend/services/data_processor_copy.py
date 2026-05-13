@@ -10,10 +10,11 @@ class DataProcessor:
     """Holds in-memory Polars DataFrames and provides query helpers."""
 
     def __init__(self) -> None:
-        birlesik_df, palet_ve_konumlar = read_data()
+        birlesik_df, palet_ve_konumlar,ambalaj_df = read_data()
         self.coordinates_df: pl.DataFrame = palet_ve_konumlar
         self.orders_df: pl.DataFrame = birlesik_df
         self.trucks_df: pl.DataFrame = read_trucks()
+        self.ambalaj_df: pl.DataFrame = ambalaj_df
 
     # ── Coordinates ──────────────────────────────────────────────────────
 
@@ -40,6 +41,9 @@ class DataProcessor:
         """Return a list of unique sales representatives."""
         return self.orders_df.select(pl.col("sales_rep").unique()).to_dicts()
    
+    def get_ambalaj(self) -> list[dict]:
+        """Return all ambalajs as list of dicts."""
+        return self.ambalaj_df
 
     def update_coordinate_status(
         self, coord_id: int, status: str, truck_id: int | None = None

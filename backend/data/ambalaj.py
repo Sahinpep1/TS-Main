@@ -3,8 +3,8 @@ import polars as pl
 import pandas as pd
 
 #sales_df =pl.read_excel("../data/sales.xlsx")
-customer_df = pl.read_excel("../data/Müşteri Listesi.xlsx")
-pallet_df = pl.read_excel("../data/Palet Koli Raporu.xlsx")
+#customer_df = pl.read_excel("../Müşteri Listesi.xlsx")
+#pallet_df = pl.read_excel("../Palet Koli Raporu.xlsx")
 
 
 
@@ -15,24 +15,25 @@ def Palet_Acıklama(sales_df, customer_df, pallet_df):
     try:
         # Satış verilerini işle
         df = sales_df.select([
-            pl.col("NOKTA Kodu").alias("NOKTA_Kodu"),
-            pl.col("NOKTA"),
-            pl.col("SATIŞ TEMSİLCİSİ").alias("SATIŞ_TEMSİLCİSİ"),
-            pl.col("ÜRÜN Kodu").alias("ÜRÜN_Kodu"),
-            pl.col("ÜRÜN"),
-            pl.col("Miktar").alias("Miktar")
+            pl.col("id"),
+            pl.col("name"),
+            pl.col("sales_rep"),
+            pl.col("product_code"),
+            pl.col("product_name"),
+            pl.col("Miktar").alias("Miktar"),
+            pl.col("status")
         ])
-        df = df.drop_nulls(subset=["NOKTA_Kodu"])
+        df = df.drop_nulls(subset=["id"])
 
         # Palet raporu işle
         df_koli_raporu = pallet_df.select([
-            pl.col("Ürün-> Ürün No").alias("ÜRÜN_Kodu"),
+            pl.col("Ürün-> Ürün No").alias("product_code"),
             pl.col("İçerik"),
             pl.col("Palet")
         ])
 
         # Palet bilgilerini birleştir
-        df = df.join(df_koli_raporu, on="ÜRÜN_Kodu", how="left")
+        df = df.join(df_koli_raporu, on="product_code", how="left")
 
         # Palet sayısını hesapla
         df = df.with_columns([
@@ -41,13 +42,13 @@ def Palet_Acıklama(sales_df, customer_df, pallet_df):
 
         # Müşteri konum bilgilerini işle
         df_mus = customer_df.select([
-            pl.col("Şube Id").cast(pl.Utf8).alias("NOKTA_Kodu"),
+            pl.col("Şube Id").cast(pl.Utf8).alias("id"),
             pl.col("Enlem").alias("latitude"),
             pl.col("Boylam").alias("longitude")
         ])
 
         # Konum bilgilerini birleştir
-        df = df.join(df_mus, on="NOKTA_Kodu", how="left")
+        df = df.join(df_mus, on="id", how="left")
         
         df = df.group_by("İçerik").agg([
             pl.col("Miktar").sum(),
