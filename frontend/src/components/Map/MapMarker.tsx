@@ -1,6 +1,7 @@
 /**
  * MapMarker — renders a single delivery point on the map.
  * Extracted from MapView for modularity and multi-select support.
+ * Supports two color modes: "status" (default) and "sales_rep".
  */
 
 import { Marker, Popup } from "react-leaflet";
@@ -10,6 +11,8 @@ import { Package, Truck as TruckIcon, MapPin } from "lucide-react";
 import type { Coordinate, Truck } from "../../types";
 import Badge from "../ui/Badge";
 
+export type ColorMode = "status" | "sales_rep";
+
 interface MapMarkerProps {
   coordinate: Coordinate;
   trucks: Truck[];
@@ -17,6 +20,10 @@ interface MapMarkerProps {
   isHighlighted: boolean;
   onAssign: (coordId: number, truckId: number) => void;
   onToggleSelect?: (coordId: number) => void;
+  /** Controls how marker colour is derived. Defaults to "status". */
+  colorMode?: ColorMode;
+  /** Mapping of sales_rep name → hex colour string (used when colorMode="sales_rep"). */
+  salesRepColorMap?: Record<string, string>;
 }
 
 const STATUS_COLORS: Record<string, string> = {
@@ -32,15 +39,25 @@ export default function MapMarker({
   isHighlighted,
   onAssign,
   onToggleSelect,
+  colorMode = "status",
+  salesRepColorMap = {},
 }: MapMarkerProps) {
   const isAssigned = c.status === "assigned";
   const truck = c.assigned_truck_id !== null
     ? trucks.find((t) => t.id === c.assigned_truck_id)
     : undefined;
 
-  const color = isAssigned
-    ? truck?.color || "#6366f1"
-    : STATUS_COLORS[c.status] || "#94a3b8";
+  // --- Colour resolution ---
+  let color: string;
+  if (colorMode === "sales_rep") {
+    // Use the per-rep colour; fall back to a neutral grey
+    color = salesRepColorMap[c.sales_rep] ?? "#94a3b8";
+  } else {
+    // Default: status-based (assigned trucks get their truck colour)
+    color = isAssigned
+      ? truck?.color || "#6366f1"
+      : STATUS_COLORS[c.status] || "#94a3b8";
+  }
 
   // Create a custom divIcon with Lucide Icon
   const iconHtml = renderToStaticMarkup(

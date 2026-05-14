@@ -1,5 +1,8 @@
 /**
- * MapLegend — extracted map legend component showing priority and status colors.
+ * MapLegend — dynamic map legend.
+ * Accepts explicit `items` + `title` props so it can reflect
+ * whichever colour mode is currently active (status or sales_rep).
+ * Falls back to the original static status items when used without props.
  */
 
 import "./MapLegend.css";
@@ -7,32 +10,33 @@ import "./MapLegend.css";
 interface LegendItem {
   color: string;
   label: string;
-  border?: boolean;
 }
 
 interface MapLegendProps {
   className?: string;
+  title?: string;
+  items?: LegendItem[];
 }
 
-const ITEMS: LegendItem[] = [
-  { color: "#ef4444", label: "High" },
-  { color: "#f59e0b", label: "Medium" },
-  { color: "#22c55e", label: "Low" },
-  { color: "#6366f1", label: "Assigned", border: true },
+const DEFAULT_ITEMS: LegendItem[] = [
+  { color: "#ef4444", label: "Delivered" },
+  { color: "#22c55e", label: "Pending" },
+  { color: "#6366f1", label: "Assigned" },
 ];
 
-export default function MapLegend({ className = "" }: MapLegendProps) {
+export default function MapLegend({
+  className = "",
+  title = "Status",
+  items = DEFAULT_ITEMS,
+}: MapLegendProps) {
   return (
     <div className={`map-legend ${className}`} id="map-legend">
-      <div className="map-legend__title">Priority</div>
-      {ITEMS.map((item) => (
+      <div className="map-legend__title">{title}</div>
+      {items.map((item) => (
         <div key={item.label} className="map-legend__item">
           <span
             className="map-legend__dot"
-            style={{
-              background: item.color,
-              border: item.border ? "2px solid #fff" : undefined,
-            }}
+            style={{ background: item.color }}
           />
           {item.label}
         </div>
