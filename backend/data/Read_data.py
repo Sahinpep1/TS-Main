@@ -66,7 +66,7 @@ def read_data():
     konumlar = Konumlar_Hesaplama(birlesik_df,customer_df,pallet_df)
     #print(konumlar)
     #print(palet_sayisi)
-    #print(birlesik_df)
+    print(palet_sayisi.columns)
     ozet = palet_sayisi.join(konumlar, on="id", how="left")
     palet_ve_konumlar = ozet.drop(["name_right", "sales_rep_right"])
     palet_ve_konumlar = palet_ve_konumlar.with_columns(
@@ -74,8 +74,13 @@ def read_data():
         pl.lit(None, dtype=pl.Int64).alias("assigned_truck_id"),
     )
     #print(palet_ve_konumlar)
+    st_bazli_df = palet_sayisi.group_by("sales_rep").agg([
+        pl.col("Palet").sum(),
+        pl.col("Miktar").sum(),
+    ]).to_dicts()
+    print(st_bazli_df)
     ambalaj = Palet_Acıklama(birlesik_df,customer_df,pallet_df)
-    return birlesik_df,palet_ve_konumlar,ambalaj
+    return birlesik_df,palet_ve_konumlar,ambalaj,st_bazli_df
 
 
 

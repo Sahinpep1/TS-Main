@@ -18,6 +18,11 @@ export interface Ambalaj {
   Miktar: number;
   Palet: number;
 }
+export interface st_bazli {
+  name: string;
+  Miktar: number;
+  Palet: number;
+}
 export interface SalesRepOption {
   sales_rep: string;
 }

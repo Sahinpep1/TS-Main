@@ -4,7 +4,7 @@
 import { Map, LayoutDashboard } from "lucide-react";
 import "./AppNav.css";
 
-export type AppPage = "map" | "dashboard";
+export type AppPage = "map" | "dashboard" | "statistics";
 
 interface AppNavProps {
   page: AppPage;
@@ -34,6 +34,14 @@ export function AppNav({ page, onChangePage }: AppNavProps) {
         >
           <LayoutDashboard size={16} />
           Dashboard
+        </button>
+        <button
+          id="nav-tab-statistics"
+          className={`app-nav__tab ${page === "statistics" ? "app-nav__tab--active" : ""}`}
+          onClick={() => onChangePage("statistics")}
+        >
+          <LayoutDashboard size={16} />
+          Statistics
         </button>
       </div>
       <div className="app-nav__spacer" />

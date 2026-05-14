@@ -3,7 +3,7 @@
  */
 
 import { useState, useEffect, useCallback } from "react";
-import type { Coordinate, Truck, LogisticsSummary, SalesRepOption } from "../types";
+import type { Coordinate, Truck, LogisticsSummary, SalesRepOption, Ambalaj, st_bazli } from "../types";
 import {
   fetchCoordinates,
   fetchTrucks,
@@ -13,7 +13,9 @@ import {
   autoAssign,
   resetAll,
   get_sale_rep_list,
-  } from "../api";
+  get_ambalaj,
+  get_st_bazli
+} from "../api";
 
 export function useLogistics() {
   const [coordinates, setCoordinates] = useState<Coordinate[]>([]);
@@ -24,21 +26,25 @@ export function useLogistics() {
   const [selectedTruckId, setSelectedTruckId] = useState<number | null>(null);
   const [salesRepsData, setSalesRepsData] = useState<SalesRepOption[]>([]);
   const [selectedSaleRepIds, setSelectedSaleRepIds] = useState<string[]>([]);
-
+  const [ambalajData, setAmbalajData] = useState<Ambalaj[]>([]);
+  const [st_bazliData, set_st_bazliData] = useState<st_bazli[]>([]);
   const refresh = useCallback(async () => {
     try {
       setError(null);
-      const [coords, tks, sum,reps] = await Promise.all([
+      const [coords, tks, sum, reps, amb, st_bazli] = await Promise.all([
         fetchCoordinates(),
         fetchTrucks(),
         fetchSummary(),
         get_sale_rep_list(),
+        get_ambalaj(),
+        get_st_bazli()
       ]);
       setCoordinates(coords);
       setTrucks(tks);
       setSummary(sum);
       setSalesRepsData(reps);
-
+      setAmbalajData(amb);
+      set_st_bazliData(st_bazli);
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : "Failed to fetch data";
       setError(msg);
@@ -93,6 +99,9 @@ export function useLogistics() {
     handleAutoAssign,
     handleReset,
     selectedSaleRepIds,
+    setSelectedSaleRepIds,
     salesRepsData,
+    ambalajData,
+    st_bazliData
   };
 }

@@ -3,7 +3,7 @@
  */
 
 import axios from "axios";
-import type { Coordinate, Ambalaj } from "../types";
+import type { Coordinate, Ambalaj, st_bazli } from "../types";
 
 const BASE = "http://localhost:8000/api/coordinates";
 
@@ -18,17 +18,21 @@ export async function fetchCoordinatesByStatus(
   const res = await axios.get<Coordinate[]>(BASE, { params: { status } });
   return res.data;
 }
-
-export async function fetchCoordinateById(id: number): Promise<Coordinate> {
-  const res = await axios.get<Coordinate>(`${BASE}/${id}`);
-  return res.data;
-}
 export async function get_ambalaj(): Promise<Ambalaj[]> {
   const res = await axios.get<Ambalaj[]>(`${BASE}/ambalaj`);
+  return res.data;
+}
+export async function get_st_bazli(): Promise<st_bazli[]> {
+  const res = await axios.get<st_bazli[]>(`${BASE}/st_bazli`);
   return res.data;
 }
 export async function get_sale_rep_list(): Promise<string[]> {
   const res = await axios.get<string[]>(`${BASE}/sale-rep_list`);
   return res.data;
 }
+export async function fetchCoordinateById(id: number): Promise<Coordinate> {
+  const res = await axios.get<Coordinate>(`${BASE}/${id}`);
+  return res.data;
+}
+
 

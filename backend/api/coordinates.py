@@ -24,11 +24,18 @@ def get_sale_rep_list():
     from main import data_processor
 
     return data_processor.get_sale_rep_list()
+    
 @router.get("/ambalaj")
 def get_ambalaj():
     """Get all ambalajs as list of dicts."""
     from main import data_processor
     return data_processor.get_ambalaj()
+
+@router.get("/st_bazli")
+def get_st_bazli():
+    """Get all st bazli as list of dicts."""
+    from main import data_processor
+    return data_processor.get_st_bazli()
     
 @router.get("/{coord_id}")
 def get_coordinate(coord_id: int):
