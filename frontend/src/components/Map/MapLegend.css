@@ -27,11 +27,21 @@
   margin-bottom: 2px;
 }
 
+.map-legend__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* Creates 2 equal columns */
+  gap: 8px 16px;
+  /* Vertical and horizontal spacing */
+}
+
 .map-legend__item {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-weight: 500;
+  white-space: nowrap;
+  /* Keeps names on one line */
+  font-size: 0.85rem;
+  /* Slightly smaller font helps "squeeze" */
 }
 
 .map-legend__dot {

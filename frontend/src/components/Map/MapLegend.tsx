@@ -32,15 +32,18 @@ export default function MapLegend({
   return (
     <div className={`map-legend ${className}`} id="map-legend">
       <div className="map-legend__title">{title}</div>
-      {items.map((item) => (
-        <div key={item.label} className="map-legend__item">
-          <span
-            className="map-legend__dot"
-            style={{ background: item.color }}
-          />
-          {item.label}
-        </div>
-      ))}
+      {/* Added a wrapper div with a grid class */}
+      <div className="map-legend__grid">
+        {items.map((item) => (
+          <div key={item.label} className="map-legend__item">
+            <span
+              className="map-legend__dot"
+              style={{ background: item.color }}
+            />
+            <span className="map-legend__label">{item.label}</span>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
