@@ -75,13 +75,14 @@ if __name__ == "__main__":
     # Example usage
     today = datetime.now()
     five_days_ago = today - timedelta(days=5)
-    
-    today_str = today.strftime("%d.%m.%Y")
+    target_date = today +timedelta(days=1)
+
+    target_date = target_date.strftime("%d.%m.%Y")
     five_days_ago_str = five_days_ago.strftime("%d.%m.%Y")
     
-    logger.info(f"Starting automation for dates: {five_days_ago_str} to {today_str}")
+    logger.info(f"Starting automation for dates: {five_days_ago_str} to {target_date}")
     
-    worker = AutomationWorker(today_str, five_days_ago_str)
+    worker = AutomationWorker(target_date, five_days_ago_str)
     success, message = worker.run()
     
     if success:

@@ -13,6 +13,7 @@ import { MapFilterBar } from "./components/Map/MapFilterBar";
 import { AppNav, type AppPage } from "./components/AppNav/AppNav";
 import { QuickSwitch } from "./components/QuickSwitch/QuickSwitch";
 import { DashboardPage } from "./pages/Dashboard/DashboardPage";
+import { StatisticsPage } from "./pages/Statistics/StatisticsPage";
 
 import "./App.css";
 
@@ -170,45 +171,13 @@ export default function App() {
           />
         );
 
-      case "statistics": // YOUR NEW PAGE
+      case "statistics":
         return (
-          <div style={{ display: "flex", gap: "20px", alignItems: "flex-start" }}>
-
-            {/* Left Side: Ambalaj Data */}
-            <div style={{ flex: 1, border: "1px solid #ccc", padding: "10px" }}>
-              <h3>Packaging Data</h3>
-              <ul>
-                {ambalajData.map((c) => (
-                  <li key={c.name}>
-                    <pre style={{ fontSize: "12px" }}>{JSON.stringify(c, null, 2)}</pre>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Right Side: Coordinate Data */}
-            <div style={{ flex: 1, border: "1px solid #ccc", padding: "10px" }}>
-              <h3>Coordinates</h3>
-              <ul>
-                {coordinates.map((c) => (
-                  <li key={c.id}>
-                    <pre style={{ fontSize: "12px" }}>{JSON.stringify(c, null, 2)}</pre>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            {/* Right Side: Coordinate Data */}
-            <div style={{ flex: 1, border: "1px solid #ccc", padding: "10px" }}>
-              <h3>St_Bazlı</h3>
-              <ul>
-                {st_bazliData.map((c) => (
-                  <li key={c.name}>
-                    <pre style={{ fontSize: "12px" }}>{JSON.stringify(c, null, 2)}</pre>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          <StatisticsPage
+            st_bazliData={st_bazliData}
+            ambalajData={ambalajData}
+            coordinates={coordinates}
+          />
         );
 
       default:

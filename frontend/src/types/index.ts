@@ -14,12 +14,12 @@ export interface Coordinate {
   assigned_truck_id: number | null;
 }
 export interface Ambalaj {
-  name: string;
+  İçerik: string;
   Miktar: number;
   Palet: number;
 }
 export interface st_bazli {
-  name: string;
+  sales_rep: string;
   Miktar: number;
   Palet: number;
 }
