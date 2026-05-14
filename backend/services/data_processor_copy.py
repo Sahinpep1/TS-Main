@@ -166,8 +166,9 @@ class DataProcessor:
 
     def reset_all(self) -> None:
         """Reset all data to initial state."""
-        birlesik_df, palet_ve_konumlar = read_data()
+        birlesik_df, palet_ve_konumlar, ambalaj_df = read_data()
         self.coordinates_df = palet_ve_konumlar
+        self.ambalaj_df: pl.DataFrame = ambalaj_df
         self.trucks_df = read_trucks()
 
 

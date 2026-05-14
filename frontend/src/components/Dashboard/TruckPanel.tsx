@@ -49,7 +49,7 @@ export function TruckPanel({ trucks, selectedTruckId, onSelectTruck }: TruckPane
               </div>
               <div className="truck-panel__stats">
                 <span>{truck.Palet} / {truck.Capacity} plt</span>
-                <span>{truck.assigned_deliveries.length} orders</span>
+                <span>{truck.assigned_deliveries?.length ?? 0} orders</span>
               </div>
             </div>
           );

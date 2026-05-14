@@ -88,7 +88,7 @@ export default function App() {
   return (
     <div className="app-shell" id="logistics-app">
       <AppNav page={page} onChangePage={setPage} />
-      <QuickSwitch page={page} onChangePage={setPage} />
+      {/*<QuickSwitch page={page} onChangePage={setPage} />*/}
 
       {page === "map" ? (
         <div className="app">

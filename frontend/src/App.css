@@ -1,4 +1,10 @@
 /* ── App Layout ───────────────────────────────────────────────────── */
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+
+@custom-variant dark (&:is(.dark *));
 
 /* Shell: column flex — nav on top, content below */
 .app-shell {
@@ -11,24 +17,19 @@
 }
 
 /* Map layout fills remaining height under the nav */
-.app-shell > .app {
+.app-shell>.app {
   flex: 1;
   overflow: hidden;
   min-height: 0;
 }
 
 /* Dashboard fills remaining height and scrolls internally */
-.app-shell > .dashboard {
+.app-shell>.dashboard {
   flex: 1;
   min-height: 0;
 }
 
-@import "tailwindcss";
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
-@import "@fontsource-variable/geist";
 
-@custom-variant dark (&:is(.dark *));
 
 .app {
   display: flex;
@@ -212,9 +213,11 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   html {
     @apply font-sans;
   }
