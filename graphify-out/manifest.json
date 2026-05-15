@@ -1,0 +1,442 @@
+{
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\main.py": {
+    "mtime": 1778497331.0936303,
+    "ast_hash": "d4af051359ec886c517d66de4d7c9c7e",
+    "semantic_hash": "d4af051359ec886c517d66de4d7c9c7e"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\api\\assignments.py": {
+    "mtime": 1778490540.55039,
+    "ast_hash": "2a50a9962f328e7fef937d9ef0a9a67c",
+    "semantic_hash": "2a50a9962f328e7fef937d9ef0a9a67c"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\api\\coordinates.py": {
+    "mtime": 1778762620.996812,
+    "ast_hash": "0ca4776a14da8baa6312c05f18ada863",
+    "semantic_hash": "0ca4776a14da8baa6312c05f18ada863"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\api\\trucks.py": {
+    "mtime": 1778226789.2469964,
+    "ast_hash": "0f072470e8c2053faca7c9423624dc1a",
+    "semantic_hash": "0f072470e8c2053faca7c9423624dc1a"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\api\\__init__.py": {
+    "mtime": 1778226617.8702438,
+    "ast_hash": "790ff78283ce08dac8c3345bbff08800",
+    "semantic_hash": "790ff78283ce08dac8c3345bbff08800"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\data\\ambalaj.py": {
+    "mtime": 1778684170.003646,
+    "ast_hash": "0175b67d218974ef1a9224d6b9e27dfb",
+    "semantic_hash": "0175b67d218974ef1a9224d6b9e27dfb"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\data\\konumlar.py": {
+    "mtime": 1778584349.327468,
+    "ast_hash": "e9ca006a6e64ce244b63cd64231e8e5b",
+    "semantic_hash": "e9ca006a6e64ce244b63cd64231e8e5b"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\data\\palet_sayisi.py": {
+    "mtime": 1778584349.327468,
+    "ast_hash": "bfec93ec45a36de00d4556d81931828a",
+    "semantic_hash": "bfec93ec45a36de00d4556d81931828a"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\data\\Read_data.py": {
+    "mtime": 1778763434.5033693,
+    "ast_hash": "baf1bd54c786762fe4f97f284471e8c0",
+    "semantic_hash": "baf1bd54c786762fe4f97f284471e8c0"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\data\\Read_truck.py": {
+    "mtime": 1778688428.8822453,
+    "ast_hash": "ce12fe56903e1a01c41d729b68ea8bde",
+    "semantic_hash": "ce12fe56903e1a01c41d729b68ea8bde"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\data\\__init__.py": {
+    "mtime": 1778226627.7535987,
+    "ast_hash": "30a2036370268194955c8b835327828e",
+    "semantic_hash": "30a2036370268194955c8b835327828e"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\Data-pulling-Automation\\automation.py": {
+    "mtime": 1778771042.8017452,
+    "ast_hash": "b591d147bc4852bfa155d5a96ccc2779",
+    "semantic_hash": "b591d147bc4852bfa155d5a96ccc2779"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\Data-pulling-Automation\\config.json": {
+    "mtime": 1777552317.96323,
+    "ast_hash": "52902352c1c86b310184d950523f1133",
+    "semantic_hash": "52902352c1c86b310184d950523f1133"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\Data-pulling-Automation\\rapor_otomasyon_servisi.py": {
+    "mtime": 1778325090.0955007,
+    "ast_hash": "03731e9a848ed6942fdbb0e8a2b6079c",
+    "semantic_hash": "03731e9a848ed6942fdbb0e8a2b6079c"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\Data-pulling-Automation\\yapilandirma_yoneticisi.py": {
+    "mtime": 1778325947.5119655,
+    "ast_hash": "edcd004aa2ab025795f58c87e7e495b5",
+    "semantic_hash": "edcd004aa2ab025795f58c87e7e495b5"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\models\\schemas.py": {
+    "mtime": 1778584349.3210323,
+    "ast_hash": "12a7df2826ad1a7a153fab2e4d913dd5",
+    "semantic_hash": "12a7df2826ad1a7a153fab2e4d913dd5"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\models\\__init__.py": {
+    "mtime": 1778226614.041381,
+    "ast_hash": "d8d9995bd4eef57d49aed40c82854bc9",
+    "semantic_hash": "d8d9995bd4eef57d49aed40c82854bc9"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\services\\data_processor_copy.py": {
+    "mtime": 1778776374.4922535,
+    "ast_hash": "35db11632b814ee3329a19eddb57ac1b",
+    "semantic_hash": "35db11632b814ee3329a19eddb57ac1b"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\services\\truck_manager.py": {
+    "mtime": 1778599776.12676,
+    "ast_hash": "e7462a7d9488de8f8d4f8d291f8a78e1",
+    "semantic_hash": "e7462a7d9488de8f8d4f8d291f8a78e1"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\services\\__init__.py": {
+    "mtime": 1778226625.6909878,
+    "ast_hash": "9c5d000f789b0650f5663b362f6ae61b",
+    "semantic_hash": "9c5d000f789b0650f5663b362f6ae61b"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\components.json": {
+    "mtime": 1778601074.3643994,
+    "ast_hash": "f6613f6fdbac4a541aa383a04bdfba28",
+    "semantic_hash": "f6613f6fdbac4a541aa383a04bdfba28"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\eslint.config.js": {
+    "mtime": 1778167485.352898,
+    "ast_hash": "0355276bc79439afe3c53e3a2470ca1e",
+    "semantic_hash": "0355276bc79439afe3c53e3a2470ca1e"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\package.json": {
+    "mtime": 1778770182.699204,
+    "ast_hash": "b946b955ffc80fdd96e8e7506aaaf868",
+    "semantic_hash": "b946b955ffc80fdd96e8e7506aaaf868"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\postcss.config.js": {
+    "mtime": 1778602243.6026356,
+    "ast_hash": "dd916c1caf4123823b6818e0bf1f708a",
+    "semantic_hash": "dd916c1caf4123823b6818e0bf1f708a"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\tailwind.config.js": {
+    "mtime": 1778599928.2186844,
+    "ast_hash": "f4a0b8534053d68ad9cf22623b2b8b3d",
+    "semantic_hash": "f4a0b8534053d68ad9cf22623b2b8b3d"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\tsconfig.app.json": {
+    "mtime": 1778652642.1691358,
+    "ast_hash": "a33651f256b576b98651d701d04f4ea5",
+    "semantic_hash": "a33651f256b576b98651d701d04f4ea5"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\tsconfig.json": {
+    "mtime": 1778664783.4730017,
+    "ast_hash": "ecc2565dff08a93a8dfa631701d3d0dd",
+    "semantic_hash": "ecc2565dff08a93a8dfa631701d3d0dd"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\tsconfig.node.json": {
+    "mtime": 1778167485.4036796,
+    "ast_hash": "70bdd0a673bcfc0e828080b306e7c680",
+    "semantic_hash": "70bdd0a673bcfc0e828080b306e7c680"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\vite.config.ts": {
+    "mtime": 1778602156.0486712,
+    "ast_hash": "2a604d29759cd03b588f0301aaa25a8d",
+    "semantic_hash": "2a604d29759cd03b588f0301aaa25a8d"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\App.tsx": {
+    "mtime": 1778771420.3528607,
+    "ast_hash": "34eadb8395e12d9b0e0c6c331587d69d",
+    "semantic_hash": "34eadb8395e12d9b0e0c6c331587d69d"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\main.tsx": {
+    "mtime": 1778504876.190158,
+    "ast_hash": "8496bef43847178f87456b088c3029f8",
+    "semantic_hash": "8496bef43847178f87456b088c3029f8"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\api\\assignmentsApi.ts": {
+    "mtime": 1778672069.1614492,
+    "ast_hash": "ce06afe79e9a6c4f34508dd317b17e1e",
+    "semantic_hash": "ce06afe79e9a6c4f34508dd317b17e1e"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\api\\coordinatesApi.ts": {
+    "mtime": 1778763095.37713,
+    "ast_hash": "d7f06ec3029563ce880f52ee7916b568",
+    "semantic_hash": "d7f06ec3029563ce880f52ee7916b568"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\api\\index.ts": {
+    "mtime": 1778762857.580869,
+    "ast_hash": "420d0c13d1f816e1b42207a637fdb0d0",
+    "semantic_hash": "420d0c13d1f816e1b42207a637fdb0d0"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\api\\trucksApi.ts": {
+    "mtime": 1778226925.3752728,
+    "ast_hash": "5f16f6737a17cc960ad2d60e70b76ca4",
+    "semantic_hash": "5f16f6737a17cc960ad2d60e70b76ca4"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\AppNav\\AppNav.tsx": {
+    "mtime": 1778757895.091405,
+    "ast_hash": "eed5044b42ffc6b62980b801241c09bb",
+    "semantic_hash": "eed5044b42ffc6b62980b801241c09bb"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Dashboard\\KpiCards.tsx": {
+    "mtime": 1778689330.7906306,
+    "ast_hash": "e87e3d09a9d5ddbb9a59ecb18aeb6b83",
+    "semantic_hash": "e87e3d09a9d5ddbb9a59ecb18aeb6b83"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Dashboard\\OrdersTable.tsx": {
+    "mtime": 1778689379.2002757,
+    "ast_hash": "1d6b9bd8a362a5cdc2f0add2a906d089",
+    "semantic_hash": "1d6b9bd8a362a5cdc2f0add2a906d089"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Dashboard\\TruckPanel.tsx": {
+    "mtime": 1778745241.8557348,
+    "ast_hash": "421e8d91337d185a27c53eae104f2001",
+    "semantic_hash": "421e8d91337d185a27c53eae104f2001"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Map\\MapFilterBar.tsx": {
+    "mtime": 1778679580.0723987,
+    "ast_hash": "e3668428757ad0a96971790ec26bcccd",
+    "semantic_hash": "e3668428757ad0a96971790ec26bcccd"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Map\\MapHeatmapLayer.tsx": {
+    "mtime": 1778504935.9233644,
+    "ast_hash": "398d9b76cfb09ae2c6de29af20177dd4",
+    "semantic_hash": "398d9b76cfb09ae2c6de29af20177dd4"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Map\\MapLassoControl.tsx": {
+    "mtime": 1778504924.6442492,
+    "ast_hash": "6096a9e40b11aeca1666efc9b08a9be2",
+    "semantic_hash": "6096a9e40b11aeca1666efc9b08a9be2"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Map\\MapLegend.tsx": {
+    "mtime": 1778750113.5259585,
+    "ast_hash": "444e81302279f9cdf491f78e23e73a3e",
+    "semantic_hash": "444e81302279f9cdf491f78e23e73a3e"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Map\\MapMarker.tsx": {
+    "mtime": 1778749558.2750905,
+    "ast_hash": "62bb0c2a5da619af58b6a096ed9a2a9b",
+    "semantic_hash": "62bb0c2a5da619af58b6a096ed9a2a9b"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Map\\MapToolbar.tsx": {
+    "mtime": 1778504963.4627438,
+    "ast_hash": "943209611cf7575e59f02077d3f06dd5",
+    "semantic_hash": "943209611cf7575e59f02077d3f06dd5"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Map\\MapView.tsx": {
+    "mtime": 1778749587.0489316,
+    "ast_hash": "43ec87345f49fdc013a508db7091c0c5",
+    "semantic_hash": "43ec87345f49fdc013a508db7091c0c5"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\QuickSwitch\\QuickSwitch.tsx": {
+    "mtime": 1778746726.6252708,
+    "ast_hash": "cb63886cc6de3042c4dc4c7d5c9887f4",
+    "semantic_hash": "cb63886cc6de3042c4dc4c7d5c9887f4"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Sidebar\\ActionBar.tsx": {
+    "mtime": 1778320886.0136216,
+    "ast_hash": "f2695647bb28fa76274471e379c6768a",
+    "semantic_hash": "f2695647bb28fa76274471e379c6768a"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Sidebar\\Sidebar.tsx": {
+    "mtime": 1778320913.1860383,
+    "ast_hash": "a043d8703b47dc52cb9279d22fe99e5a",
+    "semantic_hash": "a043d8703b47dc52cb9279d22fe99e5a"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Sidebar\\SummaryCards.tsx": {
+    "mtime": 1778584349.336984,
+    "ast_hash": "0e364bb5160f2850def938862b1da092",
+    "semantic_hash": "0e364bb5160f2850def938862b1da092"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Sidebar\\TruckList.tsx": {
+    "mtime": 1778591104.7795868,
+    "ast_hash": "60666cfc675c8c17e3d09b89c2637df8",
+    "semantic_hash": "60666cfc675c8c17e3d09b89c2637df8"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\TruckCard\\TruckCard.tsx": {
+    "mtime": 1778586472.25153,
+    "ast_hash": "88124cbad821916f452ec60687149786",
+    "semantic_hash": "88124cbad821916f452ec60687149786"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\ui\\Badge.tsx": {
+    "mtime": 1778319656.148792,
+    "ast_hash": "b14c75c74c4d406cd7ea6265ba79bb55",
+    "semantic_hash": "b14c75c74c4d406cd7ea6265ba79bb55"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\ui\\CapacityBar.tsx": {
+    "mtime": 1778319671.2172172,
+    "ast_hash": "ebefb4cb29fef19c08f0f3c37ee40448",
+    "semantic_hash": "ebefb4cb29fef19c08f0f3c37ee40448"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\ui\\Chip.tsx": {
+    "mtime": 1778319682.787681,
+    "ast_hash": "a8a03aaf1fa1f038a47f4e0297f236c6",
+    "semantic_hash": "a8a03aaf1fa1f038a47f4e0297f236c6"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\ui\\MultiSelect.tsx": {
+    "mtime": 1778586761.061345,
+    "ast_hash": "387dd1c6a8f24e6eb46bb926ad38f5b5",
+    "semantic_hash": "387dd1c6a8f24e6eb46bb926ad38f5b5"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\ui\\native-select.tsx": {
+    "mtime": 1778601116.398263,
+    "ast_hash": "8ecaa1257740ed8c6d6da39076f4a30f",
+    "semantic_hash": "8ecaa1257740ed8c6d6da39076f4a30f"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\ui\\SearchInput.tsx": {
+    "mtime": 1778319693.939981,
+    "ast_hash": "f2a7b61792d0393cc98b875b93532138",
+    "semantic_hash": "f2a7b61792d0393cc98b875b93532138"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\ui\\select.tsx": {
+    "mtime": 1778601317.1160562,
+    "ast_hash": "dfcff6f77a481139163a4179d323cc0d",
+    "semantic_hash": "dfcff6f77a481139163a4179d323cc0d"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\hooks\\useDebounce.ts": {
+    "mtime": 1778319606.9002738,
+    "ast_hash": "6049d547ef95a3728b7dcd98420d76e8",
+    "semantic_hash": "6049d547ef95a3728b7dcd98420d76e8"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\hooks\\useLocalStorage.ts": {
+    "mtime": 1778319617.1908836,
+    "ast_hash": "d8df31c2c0082170da150ff07c670465",
+    "semantic_hash": "d8df31c2c0082170da150ff07c670465"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\hooks\\useLogistics.ts": {
+    "mtime": 1778762879.2645028,
+    "ast_hash": "c6f5cce3bf68b437d07d5db66da6d9d3",
+    "semantic_hash": "c6f5cce3bf68b437d07d5db66da6d9d3"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\hooks\\useMapFilters.ts": {
+    "mtime": 1778678464.4307854,
+    "ast_hash": "e6bfa9623a3c615e1ff82fdf1ad8482f",
+    "semantic_hash": "e6bfa9623a3c615e1ff82fdf1ad8482f"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\hooks\\useMultiSelect.ts": {
+    "mtime": 1778319633.343073,
+    "ast_hash": "20acac848cf7ea30dcc6de364268f4ce",
+    "semantic_hash": "20acac848cf7ea30dcc6de364268f4ce"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\lib\\utils.ts": {
+    "mtime": 1778601116.6025722,
+    "ast_hash": "5a6fd53fdcf2be529e9cc0b718fde352",
+    "semantic_hash": "5a6fd53fdcf2be529e9cc0b718fde352"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\pages\\Dashboard\\DashboardPage.tsx": {
+    "mtime": 1778689455.781229,
+    "ast_hash": "5604831475f175df553cc1fb9e0bd110",
+    "semantic_hash": "5604831475f175df553cc1fb9e0bd110"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\pages\\Statistics\\StatisticsPage.tsx": {
+    "mtime": 1778775894.5984201,
+    "ast_hash": "20029a543b56c573972afd4f8f1b6f47",
+    "semantic_hash": "20029a543b56c573972afd4f8f1b6f47"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\types\\index.ts": {
+    "mtime": 1778774263.0628533,
+    "ast_hash": "f9cb8108ac83bc34c752b96bb7c00b55",
+    "semantic_hash": "f9cb8108ac83bc34c752b96bb7c00b55"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\project_architecture.md": {
+    "mtime": 1778829673.2419555,
+    "ast_hash": "292c763f5032e04b428f5016c43f6228",
+    "semantic_hash": "292c763f5032e04b428f5016c43f6228"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\requirements.txt": {
+    "mtime": 1778226449.5466127,
+    "ast_hash": "31948661d079f2a03bbaaf921f1661d1",
+    "semantic_hash": "31948661d079f2a03bbaaf921f1661d1"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Bekleyen_Siparisler_c4a7feba.md": {
+    "mtime": 1778840123.6365144,
+    "ast_hash": "2ae582c9fea272a6a409a22f9d067150",
+    "semantic_hash": "2ae582c9fea272a6a409a22f9d067150"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Hazir_Siparisler_d229c32f.md": {
+    "mtime": 1778840124.043306,
+    "ast_hash": "b7a1f25fb9e51167d005cb7481cd936c",
+    "semantic_hash": "b7a1f25fb9e51167d005cb7481cd936c"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\M\u00fc\u015fteri Listesi_2c2757a4.md": {
+    "mtime": 1778840125.383912,
+    "ast_hash": "17e74dbc9a1d60a1cde22d86d499b254",
+    "semantic_hash": "17e74dbc9a1d60a1cde22d86d499b254"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Palet Koli Raporu_a7a2c99e.md": {
+    "mtime": 1778840125.4887812,
+    "ast_hash": "7833cbb79ed16063a66d72095ade532e",
+    "semantic_hash": "7833cbb79ed16063a66d72095ade532e"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\trucks_ed6e51a3.md": {
+    "mtime": 1778840125.5352829,
+    "ast_hash": "41ee4ae5ee7cfdabc9c91af8fe4c2fa9",
+    "semantic_hash": "41ee4ae5ee7cfdabc9c91af8fe4c2fa9"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Bekleyen_Siparisler_006859e6.md": {
+    "mtime": 1778840125.6239686,
+    "ast_hash": "70bcd5266afdf7035ffba8896ed50b55",
+    "semantic_hash": "70bcd5266afdf7035ffba8896ed50b55"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Hazir_Siparisler_ef59ec85.md": {
+    "mtime": 1778840125.9418044,
+    "ast_hash": "206a8a6e3b6dba0a819e9e6018da2c2b",
+    "semantic_hash": "206a8a6e3b6dba0a819e9e6018da2c2b"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\index.html": {
+    "mtime": 1778226810.3126593,
+    "ast_hash": "33bd262affcefea92f1509cda449a19c",
+    "semantic_hash": "33bd262affcefea92f1509cda449a19c"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\project_tree.txt": {
+    "mtime": 1778601714.084013,
+    "ast_hash": "e1b9d5980369271b8c32f5fafc5d8d74",
+    "semantic_hash": "e1b9d5980369271b8c32f5fafc5d8d74"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\README.md": {
+    "mtime": 1778167485.4169745,
+    "ast_hash": "f6e3faf55d738cf2affe1b44195f27cf",
+    "semantic_hash": "f6e3faf55d738cf2affe1b44195f27cf"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\output\\Notlar.md": {
+    "mtime": 1778837879.0848947,
+    "ast_hash": "cebd35975a691e737b8b427bbb00b9d5",
+    "semantic_hash": "cebd35975a691e737b8b427bbb00b9d5"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\output\\project_overview.md": {
+    "mtime": 1778228984.1640255,
+    "ast_hash": "ca0ed1d19e2cdd244f12aa5e99a28d76",
+    "semantic_hash": "ca0ed1d19e2cdd244f12aa5e99a28d76"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\output\\start_server.md": {
+    "mtime": 1778827908.026309,
+    "ast_hash": "2fc222bb5da49aa3ae2f063e646ef033",
+    "semantic_hash": "2fc222bb5da49aa3ae2f063e646ef033"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\public\\favicon.svg": {
+    "mtime": 1778167485.4765108,
+    "ast_hash": "7e840862161341271697daa99a40d76b",
+    "semantic_hash": "7e840862161341271697daa99a40d76b"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\public\\icons.svg": {
+    "mtime": 1778167485.499668,
+    "ast_hash": "3b4fcfcf393eca4d264dca4a4663bc37",
+    "semantic_hash": "3b4fcfcf393eca4d264dca4a4663bc37"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\assets\\hero.png": {
+    "mtime": 1778167485.4500802,
+    "ast_hash": "aead493361b27e7510691c5d7072dfc1",
+    "semantic_hash": "aead493361b27e7510691c5d7072dfc1"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\assets\\react.svg": {
+    "mtime": 1778167485.5181856,
+    "ast_hash": "f0402b67b6ce880f65666bb49e841696",
+    "semantic_hash": "f0402b67b6ce880f65666bb49e841696"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\assets\\vite.svg": {
+    "mtime": 1778167485.5333736,
+    "ast_hash": "9960a24288958394ac50e57ff638b036",
+    "semantic_hash": "9960a24288958394ac50e57ff638b036"
+  }
+}
