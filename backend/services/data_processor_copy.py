@@ -1,5 +1,6 @@
 """Polars-based data processing service for logistics data."""
 
+from enum import auto
 import json
 import polars as pl
 #from data.generator import generate_coordinates, generate_trucks
@@ -35,6 +36,14 @@ class DataProcessor:
         return (
             self.coordinates_df
             .filter(pl.col("status") == status)
+            .to_dicts()
+        )
+
+    def get_coordinates_except_one_status(self, status: str) -> list[dict]:
+        """Return coordinates filtered by status."""
+        return (
+            self.coordinates_df
+            .filter(pl.col("status") != status)
             .to_dicts()
         )
 
@@ -165,7 +174,7 @@ class DataProcessor:
                 "truck_id": t["id"],
                 "Plaka": t["Plaka"], # Fixed field name
                 "Palet_percent": wp,
-                "delivery_count": len(t["assigned_deliveries"]),
+                "delivery_count": len(t["assigned_deliveries"]) if t.get("assigned_deliveries") is not None else 0,
             })
         return result
 

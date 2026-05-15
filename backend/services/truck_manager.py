@@ -52,7 +52,7 @@ class TruckManager:
 
         return {"success": True, "message": f"Delivery {coord_id} unassigned"}
 
-    def auto_assign_balanced(self) -> dict:
+    def auto_assign_balanced_den(self) -> dict:
         """Auto-assign all pending deliveries across trucks, balanced by weight."""
         pending = self.processor.get_coordinates_by_status("pending")
         if not pending:
@@ -72,6 +72,41 @@ class TruckManager:
             for truck in trucks:
                 can_weight = truck["Palet"] + coord["Palet"] <= truck["Capacity"]
                 if can_weight:
+                    result = self.assign_delivery(coord["id"], truck["id"])
+                    if result["success"]:
+                        assigned_count += 1
+                        placed = True
+                        break
+            if not placed:
+                skipped += 1
+
+        return {
+            "success": True,
+            "assigned": assigned_count,
+            "skipped": skipped,
+            "message": f"Assigned {assigned_count} deliveries, {skipped} skipped (no capacity)",
+        }
+
+    def auto_assign_balanced(self) -> dict:
+        """Auto-assign all pending deliveries across trucks, balanced by weight."""
+        pending = self.processor.get_coordinates_by_status("pending")
+        if not pending:
+            return {"success": True, "assigned": 0, "message": "No pending deliveries"}
+
+
+
+        assigned_count = 0
+        skipped = 0
+
+        for coord in pending:
+            # Find the truck with the least current weight that can fit this delivery
+            trucks = self.processor.get_all_trucks()
+            trucks.sort(key=lambda t: t["Palet"])
+
+            placed = False
+            for truck in trucks:
+                default_sales_rep = truck["Default_Sales_Rep"] == coord["sales_rep"] 
+                if default_sales_rep:
                     result = self.assign_delivery(coord["id"], truck["id"])
                     if result["success"]:
                         assigned_count += 1

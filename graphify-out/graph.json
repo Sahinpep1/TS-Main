@@ -4,11 +4,47 @@
   "graph": {},
   "nodes": [
     {
+      "label": "StatisticsPage.tsx",
+      "file_type": "code",
+      "source_file": "StatisticsPage.tsx",
+      "source_location": "L1",
+      "id": "statisticspage_tsx",
+      "community": 0,
+      "norm_label": "statisticspage.tsx"
+    },
+    {
+      "label": "StatisticsPageProps",
+      "file_type": "code",
+      "source_file": "StatisticsPage.tsx",
+      "source_location": "L19",
+      "id": "statistics_statisticspage_statisticspageprops",
+      "community": 0,
+      "norm_label": "statisticspageprops"
+    },
+    {
+      "label": "COLORS",
+      "file_type": "code",
+      "source_file": "StatisticsPage.tsx",
+      "source_location": "L25",
+      "id": "statistics_statisticspage_colors",
+      "community": 0,
+      "norm_label": "colors"
+    },
+    {
+      "label": "StatisticsPage()",
+      "file_type": "code",
+      "source_file": "StatisticsPage.tsx",
+      "source_location": "L27",
+      "id": "statistics_statisticspage_statisticspage",
+      "community": 0,
+      "norm_label": "statisticspage()"
+    },
+    {
       "label": "root()",
       "file_type": "code",
       "source_file": "backend/main.py",
       "source_location": "L41",
-      "community": 1,
+      "community": 11,
       "norm_label": "root()",
       "id": "backend_main_root"
     },
@@ -17,7 +53,7 @@
       "file_type": "rationale",
       "source_file": "backend/main.py",
       "source_location": "L1",
-      "community": 1,
+      "community": 11,
       "norm_label": "fastapi application entry point for the logistics tracker.",
       "id": "backend_main_rationale_1"
     },
@@ -26,7 +62,7 @@
       "file_type": "rationale",
       "source_file": "backend/main.py",
       "source_location": "L42",
-      "community": 1,
+      "community": 11,
       "norm_label": "health check endpoint.",
       "id": "backend_main_rationale_42"
     },
@@ -224,7 +260,7 @@
       "file_type": "code",
       "source_file": "backend/api/trucks.py",
       "source_location": "L9",
-      "community": 1,
+      "community": 11,
       "norm_label": "get_all_trucks()",
       "id": "api_trucks_get_all_trucks"
     },
@@ -233,7 +269,7 @@
       "file_type": "code",
       "source_file": "backend/api/trucks.py",
       "source_location": "L16",
-      "community": 1,
+      "community": 11,
       "norm_label": "get_truck_capacities()",
       "id": "api_trucks_get_truck_capacities"
     },
@@ -242,7 +278,7 @@
       "file_type": "code",
       "source_file": "backend/api/trucks.py",
       "source_location": "L23",
-      "community": 1,
+      "community": 11,
       "norm_label": "get_truck()",
       "id": "api_trucks_get_truck"
     },
@@ -251,7 +287,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/trucks.py",
       "source_location": "L10",
-      "community": 1,
+      "community": 11,
       "norm_label": "get all trucks with current load info.",
       "id": "api_trucks_rationale_10"
     },
@@ -260,7 +296,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/trucks.py",
       "source_location": "L17",
-      "community": 1,
+      "community": 11,
       "norm_label": "get capacity percentages for all trucks.",
       "id": "api_trucks_rationale_17"
     },
@@ -269,7 +305,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/trucks.py",
       "source_location": "L24",
-      "community": 1,
+      "community": 11,
       "norm_label": "get a single truck by id.",
       "id": "api_trucks_rationale_24"
     },
@@ -926,7 +962,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L72",
-      "community": 1,
+      "community": 11,
       "norm_label": "return all trucks as list of dicts, parsing assigned_deliveries.",
       "id": "services_data_processor_copy_rationale_72"
     },
@@ -1376,7 +1412,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L19",
-      "community": 10,
+      "community": 3,
       "norm_label": "clsx",
       "id": "frontend_package_dependencies_clsx"
     },
@@ -1916,7 +1952,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/coordinatesApi.ts",
       "source_location": "L10",
-      "community": 0,
+      "community": 1,
       "norm_label": "fetchcoordinates()",
       "id": "api_coordinatesapi_fetchcoordinates"
     },
@@ -1925,7 +1961,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/coordinatesApi.ts",
       "source_location": "L15",
-      "community": 0,
+      "community": 1,
       "norm_label": "fetchcoordinatesbystatus()",
       "id": "api_coordinatesapi_fetchcoordinatesbystatus"
     },
@@ -1934,7 +1970,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/coordinatesApi.ts",
       "source_location": "L33",
-      "community": 0,
+      "community": 1,
       "norm_label": "fetchcoordinatebyid()",
       "id": "api_coordinatesapi_fetchcoordinatebyid"
     },
@@ -2150,7 +2186,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapLassoControl.tsx",
       "source_location": "L11",
-      "community": 8,
+      "community": 0,
       "norm_label": "maplassocontrol()",
       "id": "map_maplassocontrol_maplassocontrol"
     },
@@ -2159,7 +2195,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapLassoControl.tsx",
       "source_location": "L86",
-      "community": 8,
+      "community": 0,
       "norm_label": "ispointinpolygon()",
       "id": "map_maplassocontrol_ispointinpolygon"
     },
@@ -2204,7 +2240,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapMarker.tsx",
       "source_location": "L14",
-      "community": 8,
+      "community": 0,
       "norm_label": "colormode",
       "id": "map_mapmarker_colormode"
     },
@@ -2213,7 +2249,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapMarker.tsx",
       "source_location": "L16",
-      "community": 8,
+      "community": 0,
       "norm_label": "mapmarkerprops",
       "id": "map_mapmarker_mapmarkerprops"
     },
@@ -2231,7 +2267,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapMarker.tsx",
       "source_location": "L35",
-      "community": 8,
+      "community": 0,
       "norm_label": "mapmarker()",
       "id": "map_mapmarker_mapmarker"
     },
@@ -2240,7 +2276,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapToolbar.tsx",
       "source_location": "L1",
-      "community": 8,
+      "community": 0,
       "norm_label": "maptoolbar.tsx",
       "id": "frontend_src_components_map_maptoolbar_tsx"
     },
@@ -2249,7 +2285,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapToolbar.tsx",
       "source_location": "L5",
-      "community": 8,
+      "community": 0,
       "norm_label": "maptoolbarprops",
       "id": "map_maptoolbar_maptoolbarprops"
     },
@@ -2258,7 +2294,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapToolbar.tsx",
       "source_location": "L13",
-      "community": 8,
+      "community": 0,
       "norm_label": "maptoolbar()",
       "id": "map_maptoolbar_maptoolbar"
     },
@@ -2267,7 +2303,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapView.tsx",
       "source_location": "L1",
-      "community": 8,
+      "community": 0,
       "norm_label": "mapview.tsx",
       "id": "frontend_src_components_map_mapview_tsx"
     },
@@ -2276,7 +2312,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapView.tsx",
       "source_location": "L20",
-      "community": 8,
+      "community": 0,
       "norm_label": "mapviewprops",
       "id": "map_mapview_mapviewprops"
     },
@@ -2285,7 +2321,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapView.tsx",
       "source_location": "L31",
-      "community": 8,
+      "community": 0,
       "norm_label": "sales_rep_palette",
       "id": "map_mapview_sales_rep_palette"
     },
@@ -2294,7 +2330,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapView.tsx",
       "source_location": "L47",
-      "community": 8,
+      "community": 0,
       "norm_label": "fitbounds()",
       "id": "map_mapview_fitbounds"
     },
@@ -2303,7 +2339,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapView.tsx",
       "source_location": "L60",
-      "community": 8,
+      "community": 0,
       "norm_label": "mapview()",
       "id": "map_mapview_mapview"
     },
@@ -2456,7 +2492,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/ui/Badge.tsx",
       "source_location": "L1",
-      "community": 8,
+      "community": 31,
       "norm_label": "badge.tsx",
       "id": "frontend_src_components_ui_badge_tsx"
     },
@@ -2465,7 +2501,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/ui/Badge.tsx",
       "source_location": "L9",
-      "community": 8,
+      "community": 31,
       "norm_label": "badgevariant",
       "id": "ui_badge_badgevariant"
     },
@@ -2474,7 +2510,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/ui/Badge.tsx",
       "source_location": "L25",
-      "community": 8,
+      "community": 31,
       "norm_label": "badgeprops",
       "id": "ui_badge_badgeprops"
     },
@@ -2483,7 +2519,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/ui/Badge.tsx",
       "source_location": "L33",
-      "community": 8,
+      "community": 31,
       "norm_label": "badge()",
       "id": "ui_badge_badge"
     },
@@ -2810,24 +2846,6 @@
       "community": 0,
       "norm_label": "dashboardpage()",
       "id": "dashboard_dashboardpage_dashboardpage"
-    },
-    {
-      "label": "COLORS",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/Statistics/StatisticsPage.tsx",
-      "source_location": "L24",
-      "community": 0,
-      "norm_label": "colors",
-      "id": "statistics_statisticspage_colors"
-    },
-    {
-      "label": "StatisticsPage()",
-      "file_type": "code",
-      "source_file": "frontend/src/pages/Statistics/StatisticsPage.tsx",
-      "source_location": "L26",
-      "community": 0,
-      "norm_label": "statisticspage()",
-      "id": "statistics_statisticspage_statisticspage"
     },
     {
       "label": "Coordinate",
@@ -3268,7 +3286,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "coordinates api",
       "id": "backend_api_coordinates"
     },
@@ -3294,7 +3312,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "data processor service",
       "id": "backend_services_data_processor"
     },
@@ -3320,7 +3338,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "pydantic schemas",
       "id": "backend_models_schemas"
     },
@@ -3385,7 +3403,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 1,
       "norm_label": "pending orders data",
       "id": "data_bekleyen_siparisler"
     },
@@ -3424,9 +3442,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "main_py",
-      "community": 1,
-      "norm_label": "main.py"
+      "community": 11,
+      "norm_label": "main.py",
+      "id": "main_py"
     },
     {
       "label": "assignments.py",
@@ -3437,9 +3455,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "assignments_py",
       "community": 4,
-      "norm_label": "assignments.py"
+      "norm_label": "assignments.py",
+      "id": "assignments_py"
     },
     {
       "label": "coordinates.py",
@@ -3450,9 +3468,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "coordinates_py",
       "community": 1,
-      "norm_label": "coordinates.py"
+      "norm_label": "coordinates.py",
+      "id": "coordinates_py"
     },
     {
       "label": "trucks.py",
@@ -3463,9 +3481,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "trucks_py",
-      "community": 1,
-      "norm_label": "trucks.py"
+      "community": 11,
+      "norm_label": "trucks.py",
+      "id": "trucks_py"
     },
     {
       "label": "Read_data.py",
@@ -3476,9 +3494,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "read_data_py",
       "community": 13,
-      "norm_label": "read_data.py"
+      "norm_label": "read_data.py",
+      "id": "read_data_py"
     },
     {
       "label": "Read_truck.py",
@@ -3489,9 +3507,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "read_truck_py",
       "community": 4,
-      "norm_label": "read_truck.py"
+      "norm_label": "read_truck.py",
+      "id": "read_truck_py"
     },
     {
       "label": "schemas.py",
@@ -3502,9 +3520,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "schemas_py",
       "community": 0,
-      "norm_label": "schemas.py"
+      "norm_label": "schemas.py",
+      "id": "schemas_py"
     },
     {
       "label": "data_processor_copy.py",
@@ -3515,9 +3533,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "data_processor_copy_py",
       "community": 13,
-      "norm_label": "data_processor_copy.py"
+      "norm_label": "data_processor_copy.py",
+      "id": "data_processor_copy_py"
     },
     {
       "label": "truck_manager.py",
@@ -3528,9 +3546,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "truck_manager_py",
       "community": 4,
-      "norm_label": "truck_manager.py"
+      "norm_label": "truck_manager.py",
+      "id": "truck_manager_py"
     },
     {
       "label": "automation.py",
@@ -3541,9 +3559,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "automation_py",
       "community": 2,
-      "norm_label": "automation.py"
+      "norm_label": "automation.py",
+      "id": "automation_py"
     },
     {
       "label": "rapor_otomasyon_servisi.py",
@@ -3554,9 +3572,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "rapor_otomasyon_servisi_py",
       "community": 2,
-      "norm_label": "rapor_otomasyon_servisi.py"
+      "norm_label": "rapor_otomasyon_servisi.py",
+      "id": "rapor_otomasyon_servisi_py"
     },
     {
       "label": "main.tsx",
@@ -3567,9 +3585,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "frontend_main_tsx",
       "community": 5,
-      "norm_label": "main.tsx"
+      "norm_label": "main.tsx",
+      "id": "frontend_main_tsx"
     },
     {
       "label": "Gemini API Configuration",
@@ -3580,9 +3598,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "notlar_gemini_api",
       "community": 21,
-      "norm_label": "gemini api configuration"
+      "norm_label": "gemini api configuration",
+      "id": "notlar_gemini_api"
     },
     {
       "label": "Graphify CLI",
@@ -3593,12 +3611,184 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graphify_tool",
       "community": 21,
-      "norm_label": "graphify cli"
+      "norm_label": "graphify cli",
+      "id": "graphify_tool"
     }
   ],
   "links": [
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "StatisticsPage.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "statisticspage_tsx",
+      "target": "types_index_st_bazli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "StatisticsPage.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "statisticspage_tsx",
+      "target": "types_index_ambalaj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "StatisticsPage.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "statisticspage_tsx",
+      "target": "types_index_coordinate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "StatisticsPage.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "statisticspage_tsx",
+      "target": "types_index_truck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "StatisticsPage.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "statisticspage_tsx",
+      "target": "types_index_truckcapacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "StatisticsPage.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "statisticspage_tsx",
+      "target": "api_trucksapi_fetchtrucks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "StatisticsPage.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "statisticspage_tsx",
+      "target": "api_trucksapi_fetchtruckcapacities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "StatisticsPage.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "statisticspage_tsx",
+      "target": "statistics_statisticspage_statisticspageprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "StatisticsPage.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "statisticspage_tsx",
+      "target": "statistics_statisticspage_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "StatisticsPage.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "statisticspage_tsx",
+      "target": "statistics_statisticspage_statisticspage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/Statistics/StatisticsPage.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "statistics_statisticspage_statisticspage",
+      "target": "statistics_statisticspage_colors"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "statistics_statisticspage_statisticspage"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/Statistics/StatisticsPage.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "statistics_statisticspage_statisticspage",
+      "target": "frontend_src_api_index_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/Statistics/StatisticsPage.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "statistics_statisticspage_statisticspage",
+      "target": "types_index_st_bazli"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/Statistics/StatisticsPage.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "statistics_statisticspage_statisticspage",
+      "target": "types_index_ambalaj"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/Statistics/StatisticsPage.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "statistics_statisticspage_statisticspage",
+      "target": "types_index_coordinate"
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -6363,17 +6553,6 @@
       "target": "dashboard_dashboardpage_dashboardpage"
     },
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/App.tsx",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_src_app_tsx",
-      "target": "statistics_statisticspage_statisticspage"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/App.tsx",
@@ -6652,17 +6831,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "dashboard_dashboardpage_dashboardpage",
-      "target": "frontend_src_api_index_ts"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/Statistics/StatisticsPage.tsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "statistics_statisticspage_statisticspage",
       "target": "frontend_src_api_index_ts"
     },
     {
@@ -8183,49 +8351,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/Statistics/StatisticsPage.tsx",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "statistics_statisticspage_statisticspage",
-      "target": "statistics_statisticspage_colors"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/Statistics/StatisticsPage.tsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "statistics_statisticspage_statisticspage",
-      "target": "types_index_st_bazli"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/Statistics/StatisticsPage.tsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "statistics_statisticspage_statisticspage",
-      "target": "types_index_ambalaj"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/Statistics/StatisticsPage.tsx",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "statistics_statisticspage_statisticspage",
-      "target": "types_index_coordinate"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "backend/models/schemas.py",
       "source_location": "L7",
       "weight": 1.0,
@@ -8803,5 +8928,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c931e32dcd41d54ae59a06dc1fa14d54b1c87bad"
+  "built_at_commit": "26f02e04ec511f330efc9c320151962d29c105f5"
 }
