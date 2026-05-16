@@ -32,7 +32,10 @@ class TruckManager:
             }
 
         # Perform assignment
-        self.processor.update_coordinate_status(coord_id, "assigned", truck_id)
+        if coord["status"] == "pending":
+            self.processor.update_coordinate_status(coord_id, "assigned", truck_id)
+        elif coord["status"] == "delivered":
+            self.processor.update_coordinate_status(coord_id, "delivered", truck_id)
         self.processor.update_truck_load(truck_id, coord["Palet"], coord["Miktar"], coord_id, add=True)
 
         return {"success": True, "message": f"Delivery {coord_id} assigned to {truck['Plaka']}"}
@@ -89,7 +92,7 @@ class TruckManager:
 
     def auto_assign_balanced(self) -> dict:
         """Auto-assign all pending deliveries across trucks, balanced by weight."""
-        pending = self.processor.get_coordinates_by_status("pending")
+        pending = self.processor.get_coordinates_except_one_status("assigned")
         if not pending:
             return {"success": True, "assigned": 0, "message": "No pending deliveries"}
 

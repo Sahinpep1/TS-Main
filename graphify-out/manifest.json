@@ -5,7 +5,7 @@
     "semantic_hash": "d4af051359ec886c517d66de4d7c9c7e"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\backend\\api\\assignments.py": {
-    "mtime": 1778490540.55039,
+    "mtime": 1778860679.3647337,
     "ast_hash": "2a50a9962f328e7fef937d9ef0a9a67c",
     "semantic_hash": "2a50a9962f328e7fef937d9ef0a9a67c"
   },
@@ -40,7 +40,7 @@
     "semantic_hash": "bfec93ec45a36de00d4556d81931828a"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\backend\\data\\Read_data.py": {
-    "mtime": 1778763434.5033693,
+    "mtime": 1778857303.7156408,
     "ast_hash": "baf1bd54c786762fe4f97f284471e8c0",
     "semantic_hash": "baf1bd54c786762fe4f97f284471e8c0"
   },
@@ -85,14 +85,14 @@
     "semantic_hash": "d8d9995bd4eef57d49aed40c82854bc9"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\backend\\services\\data_processor_copy.py": {
-    "mtime": 1778776374.4922535,
-    "ast_hash": "35db11632b814ee3329a19eddb57ac1b",
-    "semantic_hash": "35db11632b814ee3329a19eddb57ac1b"
+    "mtime": 1778859321.678346,
+    "ast_hash": "cc16f4ce114f0b7ce961b868aab79e28",
+    "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\backend\\services\\truck_manager.py": {
-    "mtime": 1778599776.12676,
-    "ast_hash": "e7462a7d9488de8f8d4f8d291f8a78e1",
-    "semantic_hash": "e7462a7d9488de8f8d4f8d291f8a78e1"
+    "mtime": 1778860751.6861317,
+    "ast_hash": "c9a2181d5eeb176e1c82f57def310c97",
+    "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\backend\\services\\__init__.py": {
     "mtime": 1778226625.6909878,
@@ -350,37 +350,37 @@
     "semantic_hash": "31948661d079f2a03bbaaf921f1661d1"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Bekleyen_Siparisler_c4a7feba.md": {
-    "mtime": 1778849093.6410594,
-    "ast_hash": "5a8fd5e4cb6cb295cd2a93518547dd9d",
+    "mtime": 1778860791.2559314,
+    "ast_hash": "ced0678e2a6f1d5c599a20b9579937a2",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Hazir_Siparisler_d229c32f.md": {
-    "mtime": 1778849094.1589105,
-    "ast_hash": "b7a1f25fb9e51167d005cb7481cd936c",
-    "semantic_hash": "b7a1f25fb9e51167d005cb7481cd936c"
+    "mtime": 1778860791.4300199,
+    "ast_hash": "4c5b8bc4857ce46026fbaef189fa12fa",
+    "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\M\u00fc\u015fteri Listesi_2c2757a4.md": {
-    "mtime": 1778849096.7680414,
+    "mtime": 1778860792.9419808,
     "ast_hash": "17e74dbc9a1d60a1cde22d86d499b254",
     "semantic_hash": "17e74dbc9a1d60a1cde22d86d499b254"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Palet Koli Raporu_a7a2c99e.md": {
-    "mtime": 1778849097.0718057,
+    "mtime": 1778860793.0574288,
     "ast_hash": "7833cbb79ed16063a66d72095ade532e",
     "semantic_hash": "7833cbb79ed16063a66d72095ade532e"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\trucks_ed6e51a3.md": {
-    "mtime": 1778849097.1239417,
-    "ast_hash": "f2c85cce09c82895f0d32a1e362f75e3",
+    "mtime": 1778860793.0741673,
+    "ast_hash": "01d4f0dc6dc588b4d007b20e10db8555",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Bekleyen_Siparisler_006859e6.md": {
-    "mtime": 1778849097.187719,
+    "mtime": 1778860793.101534,
     "ast_hash": "70bcd5266afdf7035ffba8896ed50b55",
     "semantic_hash": "70bcd5266afdf7035ffba8896ed50b55"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Hazir_Siparisler_ef59ec85.md": {
-    "mtime": 1778849098.8494096,
+    "mtime": 1778860793.5023425,
     "ast_hash": "206a8a6e3b6dba0a819e9e6018da2c2b",
     "semantic_hash": "206a8a6e3b6dba0a819e9e6018da2c2b"
   },
