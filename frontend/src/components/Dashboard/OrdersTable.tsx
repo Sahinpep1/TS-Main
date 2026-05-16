@@ -41,8 +41,11 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
   const [loadingIds, setLoadingIds]       = useState<number[]>([]);
   const [rowSelection, setRowSelection]   = useState<RowSelectionState>({});
 
-  const doAssign = async (coordId: number, truckId: number) => {
+  const doAssign = async (coordId: number, truckId: number, isAssigned: boolean) => {
     setLoadingIds((prev) => [...prev, coordId]);
+    if (isAssigned) {
+      await onUnassign(coordId);
+    }
     await onAssign(coordId, truckId);
     setAssigningId(null);
     setLoadingIds((prev) => prev.filter((id) => id !== coordId));
@@ -125,7 +128,13 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
       header: "Actions",
       cell: ({ row }) => {
         const c = row.original;
+        const isAnyLoading = loadingIds.length > 0;
+        
         if (loadingIds.includes(c.id)) return <span className="cell-muted">…</span>;
+
+        if (c.status === "delivered") {
+          return <span className="cell-muted">Delivered</span>;
+        }
 
         if (assigningId === c.id) {
           return (
@@ -134,14 +143,15 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
                 autoFocus
                 className="assign-select"
                 defaultValue=""
-                onChange={(e) => e.target.value && doAssign(c.id, Number(e.target.value))}
+                disabled={isAnyLoading}
+                onChange={(e) => e.target.value && doAssign(c.id, Number(e.target.value), !!c.assigned_truck_id)}
               >
                 <option value="" disabled>Select truck…</option>
                 {trucks.map((t) => (
                   <option key={t.id} value={t.id}>{t.Plaka} – {t.Driver}</option>
                 ))}
               </select>
-              <button className="btn-cancel" onClick={() => setAssigningId(null)}>✕</button>
+              <button className="btn-cancel" disabled={isAnyLoading} onClick={() => setAssigningId(null)}>✕</button>
             </span>
           );
         }
@@ -149,9 +159,9 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
         return (
           <span className="action-assign-row">
             {c.assigned_truck_id && (
-              <button className="btn-unassign" onClick={() => doUnassign(c.id)}>Unassign</button>
+              <button className="btn-unassign" disabled={isAnyLoading} onClick={() => doUnassign(c.id)}>Unassign</button>
             )}
-            <button className="btn-assign" onClick={() => setAssigningId(c.id)}>
+            <button className="btn-assign" disabled={isAnyLoading} onClick={() => setAssigningId(c.id)}>
               {c.assigned_truck_id ? "Reassign" : "Assign"}
             </button>
           </span>
@@ -180,14 +190,17 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
     const selectedRows = table.getSelectedRowModel().rows;
     if (!selectedRows.length) return;
     
-    const ids = selectedRows.map((r) => r.original.id);
-    setLoadingIds((prev) => [...prev, ...ids]);
+    const coords = selectedRows.map((r) => r.original);
+    setLoadingIds((prev) => [...prev, ...coords.map(c => c.id)]);
     
-    for (const id of ids) {
-      await onAssign(id, truckId);
+    for (const c of coords) {
+      if (c.assigned_truck_id) {
+        await onUnassign(c.id);
+      }
+      await onAssign(c.id, truckId);
     }
     
-    setLoadingIds((prev) => prev.filter((id) => !ids.includes(id)));
+    setLoadingIds((prev) => prev.filter((id) => !coords.some(c => c.id === id)));
     setRowSelection({});
   };
 

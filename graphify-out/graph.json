@@ -4,481 +4,571 @@
   "graph": {},
   "nodes": [
     {
+      "label": "-yeni-algorthim-palet_sayisi - Copy.py",
+      "file_type": "code",
+      "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
+      "source_location": "L1",
+      "id": "backend_data_yeni_algorthim_palet_sayisi_copy_py",
+      "community": 9,
+      "norm_label": "-yeni-algorthim-palet_sayisi - copy.py"
+    },
+    {
+      "label": "Palet_Hesaplama()",
+      "file_type": "code",
+      "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
+      "source_location": "L3",
+      "id": "data_yeni_algorthim_palet_sayisi_copy_palet_hesaplama",
+      "community": 9,
+      "norm_label": "palet_hesaplama()"
+    },
+    {
+      "label": "100x120 \u0130\u00e7ecek Paleti Standartlar\u0131na ve Saha Kurallar\u0131na Uygun     Geli\u015fmi\u015f Pal",
+      "file_type": "rationale",
+      "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
+      "source_location": "L4",
+      "id": "data_yeni_algorthim_palet_sayisi_copy_rationale_4",
+      "community": 9,
+      "norm_label": "100x120 icecek paleti standartlar\u0131na ve saha kurallar\u0131na uygun     gelismis pal"
+    },
+    {
+      "label": "de.py",
+      "file_type": "code",
+      "source_file": "backend/data/de.py",
+      "source_location": "L1",
+      "id": "backend_data_de_py",
+      "community": 35,
+      "norm_label": "de.py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "backend/data/de.py",
+      "source_location": "L3",
+      "id": "data_de_main",
+      "community": 35,
+      "norm_label": "main()"
+    },
+    {
+      "label": "OrdersTable.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L1",
+      "id": "frontend_src_components_dashboard_orderstable_tsx",
+      "community": 0,
+      "norm_label": "orderstable.tsx"
+    },
+    {
+      "label": "OrdersTableProps",
+      "file_type": "code",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L21",
+      "id": "dashboard_orderstable_orderstableprops",
+      "community": 0,
+      "norm_label": "orderstableprops"
+    },
+    {
+      "label": "STATUS_COLOR",
+      "file_type": "code",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L28",
+      "id": "dashboard_orderstable_status_color",
+      "community": 0,
+      "norm_label": "status_color"
+    },
+    {
+      "label": "col",
+      "file_type": "code",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L34",
+      "id": "dashboard_orderstable_col",
+      "community": 0,
+      "norm_label": "col"
+    },
+    {
+      "label": "OrdersTable()",
+      "file_type": "code",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L36",
+      "id": "dashboard_orderstable_orderstable",
+      "community": 0,
+      "norm_label": "orderstable()"
+    },
+    {
       "label": "package.json",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L1",
-      "id": "package_json",
       "community": 3,
-      "norm_label": "package.json"
+      "norm_label": "package.json",
+      "id": "package_json"
     },
     {
       "label": "name",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L2",
-      "id": "frontend_package_name",
       "community": 3,
-      "norm_label": "name"
+      "norm_label": "name",
+      "id": "frontend_package_name"
     },
     {
       "label": "private",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L3",
-      "id": "frontend_package_private",
       "community": 3,
-      "norm_label": "private"
+      "norm_label": "private",
+      "id": "frontend_package_private"
     },
     {
       "label": "version",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L4",
-      "id": "frontend_package_version",
       "community": 3,
-      "norm_label": "version"
+      "norm_label": "version",
+      "id": "frontend_package_version"
     },
     {
       "label": "type",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L5",
-      "id": "frontend_package_type",
       "community": 3,
-      "norm_label": "type"
+      "norm_label": "type",
+      "id": "frontend_package_type"
     },
     {
       "label": "scripts",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L6",
-      "id": "frontend_package_scripts",
       "community": 3,
-      "norm_label": "scripts"
+      "norm_label": "scripts",
+      "id": "frontend_package_scripts"
     },
     {
       "label": "dev",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L7",
-      "id": "frontend_package_scripts_dev",
       "community": 3,
-      "norm_label": "dev"
+      "norm_label": "dev",
+      "id": "frontend_package_scripts_dev"
     },
     {
       "label": "build",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L8",
-      "id": "frontend_package_scripts_build",
       "community": 3,
-      "norm_label": "build"
+      "norm_label": "build",
+      "id": "frontend_package_scripts_build"
     },
     {
       "label": "lint",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L9",
-      "id": "frontend_package_scripts_lint",
       "community": 3,
-      "norm_label": "lint"
+      "norm_label": "lint",
+      "id": "frontend_package_scripts_lint"
     },
     {
       "label": "preview",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L10",
-      "id": "frontend_package_scripts_preview",
       "community": 3,
-      "norm_label": "preview"
+      "norm_label": "preview",
+      "id": "frontend_package_scripts_preview"
     },
     {
       "label": "dependencies",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L12",
-      "id": "frontend_package_dependencies",
       "community": 3,
-      "norm_label": "dependencies"
+      "norm_label": "dependencies",
+      "id": "frontend_package_dependencies"
     },
     {
       "label": "@fontsource-variable/geist",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L13",
-      "id": "frontend_package_dependencies_fontsource_variable_geist",
       "community": 3,
-      "norm_label": "@fontsource-variable/geist"
+      "norm_label": "@fontsource-variable/geist",
+      "id": "frontend_package_dependencies_fontsource_variable_geist"
     },
     {
       "label": "@geoman-io/leaflet-geoman-free",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L14",
-      "id": "frontend_package_dependencies_geoman_io_leaflet_geoman_free",
       "community": 3,
-      "norm_label": "@geoman-io/leaflet-geoman-free"
+      "norm_label": "@geoman-io/leaflet-geoman-free",
+      "id": "frontend_package_dependencies_geoman_io_leaflet_geoman_free"
     },
     {
       "label": "@tanstack/react-table",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L15",
-      "id": "frontend_package_dependencies_tanstack_react_table",
       "community": 3,
-      "norm_label": "@tanstack/react-table"
+      "norm_label": "@tanstack/react-table",
+      "id": "frontend_package_dependencies_tanstack_react_table"
     },
     {
       "label": "@types/leaflet",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L16",
-      "id": "frontend_package_dependencies_types_leaflet",
       "community": 3,
-      "norm_label": "@types/leaflet"
+      "norm_label": "@types/leaflet",
+      "id": "frontend_package_dependencies_types_leaflet"
     },
     {
       "label": "axios",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L17",
-      "id": "frontend_package_dependencies_axios",
       "community": 3,
-      "norm_label": "axios"
+      "norm_label": "axios",
+      "id": "frontend_package_dependencies_axios"
     },
     {
       "label": "class-variance-authority",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L18",
-      "id": "frontend_package_dependencies_class_variance_authority",
       "community": 3,
-      "norm_label": "class-variance-authority"
+      "norm_label": "class-variance-authority",
+      "id": "frontend_package_dependencies_class_variance_authority"
     },
     {
       "label": "clsx",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L19",
-      "id": "frontend_package_dependencies_clsx",
-      "community": 3,
-      "norm_label": "clsx"
+      "community": 10,
+      "norm_label": "clsx",
+      "id": "frontend_package_dependencies_clsx"
     },
     {
       "label": "leaflet",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L20",
-      "id": "frontend_package_dependencies_leaflet",
       "community": 3,
-      "norm_label": "leaflet"
+      "norm_label": "leaflet",
+      "id": "frontend_package_dependencies_leaflet"
     },
     {
       "label": "leaflet-lasso",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L21",
-      "id": "frontend_package_dependencies_leaflet_lasso",
       "community": 3,
-      "norm_label": "leaflet-lasso"
+      "norm_label": "leaflet-lasso",
+      "id": "frontend_package_dependencies_leaflet_lasso"
     },
     {
       "label": "leaflet.heat",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L22",
-      "id": "frontend_package_dependencies_leaflet_heat",
       "community": 3,
-      "norm_label": "leaflet.heat"
+      "norm_label": "leaflet.heat",
+      "id": "frontend_package_dependencies_leaflet_heat"
     },
     {
       "label": "lucide-react",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L23",
-      "id": "frontend_package_dependencies_lucide_react",
       "community": 3,
-      "norm_label": "lucide-react"
+      "norm_label": "lucide-react",
+      "id": "frontend_package_dependencies_lucide_react"
     },
     {
       "label": "radix-ui",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L24",
-      "id": "frontend_package_dependencies_radix_ui",
       "community": 3,
-      "norm_label": "radix-ui"
+      "norm_label": "radix-ui",
+      "id": "frontend_package_dependencies_radix_ui"
     },
     {
       "label": "react",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L25",
-      "id": "frontend_package_dependencies_react",
       "community": 3,
-      "norm_label": "react"
+      "norm_label": "react",
+      "id": "frontend_package_dependencies_react"
     },
     {
       "label": "react-dom",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L26",
-      "id": "frontend_package_dependencies_react_dom",
       "community": 3,
-      "norm_label": "react-dom"
+      "norm_label": "react-dom",
+      "id": "frontend_package_dependencies_react_dom"
     },
     {
       "label": "react-leaflet",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L27",
-      "id": "frontend_package_dependencies_react_leaflet",
       "community": 3,
-      "norm_label": "react-leaflet"
+      "norm_label": "react-leaflet",
+      "id": "frontend_package_dependencies_react_leaflet"
     },
     {
       "label": "react-resizable-panels",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L28",
-      "id": "frontend_package_dependencies_react_resizable_panels",
       "community": 3,
-      "norm_label": "react-resizable-panels"
+      "norm_label": "react-resizable-panels",
+      "id": "frontend_package_dependencies_react_resizable_panels"
     },
     {
       "label": "react-router-dom",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L29",
-      "id": "frontend_package_dependencies_react_router_dom",
       "community": 3,
-      "norm_label": "react-router-dom"
+      "norm_label": "react-router-dom",
+      "id": "frontend_package_dependencies_react_router_dom"
     },
     {
       "label": "recharts",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L30",
-      "id": "frontend_package_dependencies_recharts",
       "community": 3,
-      "norm_label": "recharts"
+      "norm_label": "recharts",
+      "id": "frontend_package_dependencies_recharts"
     },
     {
       "label": "shadcn",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L31",
-      "id": "frontend_package_dependencies_shadcn",
       "community": 3,
-      "norm_label": "shadcn"
+      "norm_label": "shadcn",
+      "id": "frontend_package_dependencies_shadcn"
     },
     {
       "label": "tailwind-merge",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L32",
-      "id": "frontend_package_dependencies_tailwind_merge",
       "community": 3,
-      "norm_label": "tailwind-merge"
+      "norm_label": "tailwind-merge",
+      "id": "frontend_package_dependencies_tailwind_merge"
     },
     {
       "label": "tw-animate-css",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L33",
-      "id": "frontend_package_dependencies_tw_animate_css",
       "community": 3,
-      "norm_label": "tw-animate-css"
+      "norm_label": "tw-animate-css",
+      "id": "frontend_package_dependencies_tw_animate_css"
     },
     {
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L35",
-      "id": "frontend_package_devdependencies",
-      "community": 9,
-      "norm_label": "devdependencies"
+      "community": 3,
+      "norm_label": "devdependencies",
+      "id": "frontend_package_devdependencies"
     },
     {
       "label": "@eslint/js",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L36",
-      "id": "frontend_package_devdependencies_eslint_js",
-      "community": 9,
-      "norm_label": "@eslint/js"
+      "community": 3,
+      "norm_label": "@eslint/js",
+      "id": "frontend_package_devdependencies_eslint_js"
     },
     {
       "label": "@tailwindcss/postcss",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L37",
-      "id": "frontend_package_devdependencies_tailwindcss_postcss",
-      "community": 9,
-      "norm_label": "@tailwindcss/postcss"
+      "community": 3,
+      "norm_label": "@tailwindcss/postcss",
+      "id": "frontend_package_devdependencies_tailwindcss_postcss"
     },
     {
       "label": "@types/node",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L38",
-      "id": "frontend_package_devdependencies_types_node",
-      "community": 9,
-      "norm_label": "@types/node"
+      "community": 3,
+      "norm_label": "@types/node",
+      "id": "frontend_package_devdependencies_types_node"
     },
     {
       "label": "@types/react",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L39",
-      "id": "frontend_package_devdependencies_types_react",
-      "community": 9,
-      "norm_label": "@types/react"
+      "community": 3,
+      "norm_label": "@types/react",
+      "id": "frontend_package_devdependencies_types_react"
     },
     {
       "label": "@types/react-dom",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L40",
-      "id": "frontend_package_devdependencies_types_react_dom",
-      "community": 9,
-      "norm_label": "@types/react-dom"
+      "community": 3,
+      "norm_label": "@types/react-dom",
+      "id": "frontend_package_devdependencies_types_react_dom"
     },
     {
       "label": "@vitejs/plugin-react",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L41",
-      "id": "frontend_package_devdependencies_vitejs_plugin_react",
-      "community": 9,
-      "norm_label": "@vitejs/plugin-react"
+      "community": 3,
+      "norm_label": "@vitejs/plugin-react",
+      "id": "frontend_package_devdependencies_vitejs_plugin_react"
     },
     {
       "label": "autoprefixer",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L42",
-      "id": "frontend_package_devdependencies_autoprefixer",
-      "community": 9,
-      "norm_label": "autoprefixer"
+      "community": 3,
+      "norm_label": "autoprefixer",
+      "id": "frontend_package_devdependencies_autoprefixer"
     },
     {
       "label": "eslint",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L43",
-      "id": "frontend_package_devdependencies_eslint",
-      "community": 9,
-      "norm_label": "eslint"
+      "community": 3,
+      "norm_label": "eslint",
+      "id": "frontend_package_devdependencies_eslint"
     },
     {
       "label": "eslint-plugin-react-hooks",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L44",
-      "id": "frontend_package_devdependencies_eslint_plugin_react_hooks",
-      "community": 9,
-      "norm_label": "eslint-plugin-react-hooks"
+      "community": 3,
+      "norm_label": "eslint-plugin-react-hooks",
+      "id": "frontend_package_devdependencies_eslint_plugin_react_hooks"
     },
     {
       "label": "eslint-plugin-react-refresh",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L45",
-      "id": "frontend_package_devdependencies_eslint_plugin_react_refresh",
-      "community": 9,
-      "norm_label": "eslint-plugin-react-refresh"
+      "community": 3,
+      "norm_label": "eslint-plugin-react-refresh",
+      "id": "frontend_package_devdependencies_eslint_plugin_react_refresh"
     },
     {
       "label": "globals",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L46",
-      "id": "frontend_package_devdependencies_globals",
-      "community": 9,
-      "norm_label": "globals"
+      "community": 3,
+      "norm_label": "globals",
+      "id": "frontend_package_devdependencies_globals"
     },
     {
       "label": "postcss",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L47",
-      "id": "frontend_package_devdependencies_postcss",
-      "community": 9,
-      "norm_label": "postcss"
+      "community": 3,
+      "norm_label": "postcss",
+      "id": "frontend_package_devdependencies_postcss"
     },
     {
       "label": "tailwindcss",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L48",
-      "id": "frontend_package_devdependencies_tailwindcss",
-      "community": 9,
-      "norm_label": "tailwindcss"
+      "community": 3,
+      "norm_label": "tailwindcss",
+      "id": "frontend_package_devdependencies_tailwindcss"
     },
     {
       "label": "typescript",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L49",
-      "id": "frontend_package_devdependencies_typescript",
-      "community": 9,
-      "norm_label": "typescript"
+      "community": 3,
+      "norm_label": "typescript",
+      "id": "frontend_package_devdependencies_typescript"
     },
     {
       "label": "typescript-eslint",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L50",
-      "id": "frontend_package_devdependencies_typescript_eslint",
-      "community": 9,
-      "norm_label": "typescript-eslint"
+      "community": 3,
+      "norm_label": "typescript-eslint",
+      "id": "frontend_package_devdependencies_typescript_eslint"
     },
     {
       "label": "vite",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L51",
-      "id": "frontend_package_devdependencies_vite",
-      "community": 9,
-      "norm_label": "vite"
+      "community": 3,
+      "norm_label": "vite",
+      "id": "frontend_package_devdependencies_vite"
     },
     {
       "label": "App.tsx",
       "file_type": "code",
       "source_file": "src/App.tsx",
       "source_location": "L1",
-      "id": "src_app_tsx",
       "community": 5,
-      "norm_label": "app.tsx"
+      "norm_label": "app.tsx",
+      "id": "src_app_tsx"
     },
     {
       "label": "App()",
       "file_type": "code",
       "source_file": "src/App.tsx",
       "source_location": "L20",
-      "id": "src_app_app",
       "community": 5,
-      "norm_label": "app()"
+      "norm_label": "app()",
+      "id": "src_app_app"
     },
     {
       "label": "AppNav.tsx",
       "file_type": "code",
       "source_file": "src/components/AppNav/AppNav.tsx",
       "source_location": "L1",
-      "id": "src_components_appnav_appnav_tsx",
       "community": 5,
-      "norm_label": "appnav.tsx"
+      "norm_label": "appnav.tsx",
+      "id": "src_components_appnav_appnav_tsx"
     },
     {
       "label": "AppNav()",
       "file_type": "code",
       "source_file": "src/components/AppNav/AppNav.tsx",
       "source_location": "L5",
-      "id": "appnav_appnav_appnav",
       "community": 5,
-      "norm_label": "appnav()"
+      "norm_label": "appnav()",
+      "id": "appnav_appnav_appnav"
     },
     {
       "label": "truck_manager.py",
@@ -692,7 +782,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L27",
-      "community": 35,
+      "community": 16,
       "norm_label": ".get_coordinate_by_id()",
       "id": "services_data_processor_copy_dataprocessor_get_coordinate_by_id"
     },
@@ -737,7 +827,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L58",
-      "community": 16,
+      "community": 38,
       "norm_label": ".get_st_bazli()",
       "id": "services_data_processor_copy_dataprocessor_get_st_bazli"
     },
@@ -782,7 +872,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L145",
-      "community": 38,
+      "community": 16,
       "norm_label": ".get_summary()",
       "id": "services_data_processor_copy_dataprocessor_get_summary"
     },
@@ -836,7 +926,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L28",
-      "community": 35,
+      "community": 16,
       "norm_label": "return a single coordinate by id.",
       "id": "services_data_processor_copy_rationale_28"
     },
@@ -881,7 +971,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L59",
-      "community": 16,
+      "community": 38,
       "norm_label": "return all st bazli as list of dicts.",
       "id": "services_data_processor_copy_rationale_59"
     },
@@ -917,7 +1007,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L146",
-      "community": 38,
+      "community": 16,
       "norm_label": "return an overall logistics summary computed with polars.",
       "id": "services_data_processor_copy_rationale_146"
     },
@@ -962,7 +1052,7 @@
       "file_type": "code",
       "source_file": "StatisticsPage.tsx",
       "source_location": "L1",
-      "community": 31,
+      "community": 0,
       "norm_label": "statisticspage.tsx",
       "id": "statisticspage_tsx"
     },
@@ -971,7 +1061,7 @@
       "file_type": "code",
       "source_file": "StatisticsPage.tsx",
       "source_location": "L19",
-      "community": 31,
+      "community": 0,
       "norm_label": "statisticspageprops",
       "id": "statistics_statisticspage_statisticspageprops"
     },
@@ -980,7 +1070,7 @@
       "file_type": "code",
       "source_file": "StatisticsPage.tsx",
       "source_location": "L25",
-      "community": 31,
+      "community": 0,
       "norm_label": "colors",
       "id": "statistics_statisticspage_colors"
     },
@@ -989,7 +1079,7 @@
       "file_type": "code",
       "source_file": "StatisticsPage.tsx",
       "source_location": "L27",
-      "community": 31,
+      "community": 0,
       "norm_label": "statisticspage()",
       "id": "statistics_statisticspage_statisticspage"
     },
@@ -1124,7 +1214,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L10",
-      "community": 33,
+      "community": 1,
       "norm_label": "get_all_coordinates()",
       "id": "api_coordinates_get_all_coordinates"
     },
@@ -1133,7 +1223,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L21",
-      "community": 33,
+      "community": 1,
       "norm_label": "get_sale_rep_list()",
       "id": "api_coordinates_get_sale_rep_list"
     },
@@ -1142,7 +1232,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L29",
-      "community": 1,
+      "community": 31,
       "norm_label": "get_ambalaj()",
       "id": "api_coordinates_get_ambalaj"
     },
@@ -1178,7 +1268,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L13",
-      "community": 33,
+      "community": 1,
       "norm_label": "get all delivery coordinates, optionally filtered.",
       "id": "api_coordinates_rationale_13"
     },
@@ -1187,7 +1277,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L30",
-      "community": 1,
+      "community": 31,
       "norm_label": "get all ambalajs as list of dicts.",
       "id": "api_coordinates_rationale_30"
     },
@@ -1358,7 +1448,7 @@
       "file_type": "code",
       "source_file": "backend/Data-pulling-Automation/automation.py",
       "source_location": "L22",
-      "community": 2,
+      "community": 4,
       "norm_label": "automationworker",
       "id": "data_pulling_automation_automation_automationworker"
     },
@@ -1763,7 +1853,7 @@
       "file_type": "rationale",
       "source_file": "backend/models/schemas.py",
       "source_location": "L8",
-      "community": 8,
+      "community": 0,
       "norm_label": "a delivery point coordinate.",
       "id": "models_schemas_rationale_8"
     },
@@ -1817,7 +1907,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L23",
-      "community": 33,
+      "community": 1,
       "norm_label": "return all coordinates as list of dicts.",
       "id": "services_data_processor_copy_rationale_23"
     },
@@ -1844,7 +1934,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L42",
-      "community": 33,
+      "community": 1,
       "norm_label": "return a list of unique sales representatives.",
       "id": "services_data_processor_copy_rationale_42"
     },
@@ -2375,7 +2465,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/assignmentsApi.ts",
       "source_location": "L38",
-      "community": 0,
+      "community": 4,
       "norm_label": "fetchsummary()",
       "id": "api_assignmentsapi_fetchsummary"
     },
@@ -2420,7 +2510,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/trucksApi.ts",
       "source_location": "L10",
-      "community": 31,
+      "community": 0,
       "norm_label": "fetchtrucks()",
       "id": "api_trucksapi_fetchtrucks"
     },
@@ -2429,7 +2519,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/trucksApi.ts",
       "source_location": "L15",
-      "community": 31,
+      "community": 0,
       "norm_label": "fetchtruckcapacities()",
       "id": "api_trucksapi_fetchtruckcapacities"
     },
@@ -2438,7 +2528,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/trucksApi.ts",
       "source_location": "L20",
-      "community": 31,
+      "community": 0,
       "norm_label": "fetchtruckbyid()",
       "id": "api_trucksapi_fetchtruckbyid"
     },
@@ -2506,33 +2596,6 @@
       "id": "dashboard_kpicards_kpicards"
     },
     {
-      "label": "OrdersTableProps",
-      "file_type": "code",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L20",
-      "community": 0,
-      "norm_label": "orderstableprops",
-      "id": "dashboard_orderstable_orderstableprops"
-    },
-    {
-      "label": "col",
-      "file_type": "code",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L33",
-      "community": 0,
-      "norm_label": "col",
-      "id": "dashboard_orderstable_col"
-    },
-    {
-      "label": "OrdersTable()",
-      "file_type": "code",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L35",
-      "community": 0,
-      "norm_label": "orderstable()",
-      "id": "dashboard_orderstable_orderstable"
-    },
-    {
       "label": "TruckPanel.tsx",
       "file_type": "code",
       "source_file": "frontend/src/components/Dashboard/TruckPanel.tsx",
@@ -2564,7 +2627,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapFilterBar.tsx",
       "source_location": "L1",
-      "community": 5,
+      "community": 0,
       "norm_label": "mapfilterbar.tsx",
       "id": "frontend_src_components_map_mapfilterbar_tsx"
     },
@@ -2573,7 +2636,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapFilterBar.tsx",
       "source_location": "L11",
-      "community": 5,
+      "community": 0,
       "norm_label": "mapfilterbarprops",
       "id": "map_mapfilterbar_mapfilterbarprops"
     },
@@ -2582,7 +2645,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapFilterBar.tsx",
       "source_location": "L26",
-      "community": 5,
+      "community": 0,
       "norm_label": "status_options",
       "id": "map_mapfilterbar_status_options"
     },
@@ -2681,7 +2744,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapMarker.tsx",
       "source_location": "L29",
-      "community": 0,
+      "community": 8,
       "norm_label": "status_colors",
       "id": "map_mapmarker_status_colors"
     },
@@ -2789,7 +2852,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Sidebar/ActionBar.tsx",
       "source_location": "L1",
-      "community": 0,
+      "community": 33,
       "norm_label": "actionbar.tsx",
       "id": "frontend_src_components_sidebar_actionbar_tsx"
     },
@@ -2798,7 +2861,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Sidebar/ActionBar.tsx",
       "source_location": "L4",
-      "community": 0,
+      "community": 33,
       "norm_label": "actionbarprops",
       "id": "sidebar_actionbar_actionbarprops"
     },
@@ -2807,7 +2870,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Sidebar/ActionBar.tsx",
       "source_location": "L10",
-      "community": 0,
+      "community": 33,
       "norm_label": "actionbar()",
       "id": "sidebar_actionbar_actionbar"
     },
@@ -3185,7 +3248,7 @@
       "file_type": "code",
       "source_file": "frontend/src/hooks/useLogistics.ts",
       "source_location": "L20",
-      "community": 5,
+      "community": 0,
       "norm_label": "uselogistics()",
       "id": "hooks_uselogistics_uselogistics"
     },
@@ -3275,7 +3338,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L5",
-      "community": 8,
+      "community": 0,
       "norm_label": "coordinate",
       "id": "types_index_coordinate"
     },
@@ -3284,7 +3347,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L16",
-      "community": 31,
+      "community": 0,
       "norm_label": "ambalaj",
       "id": "types_index_ambalaj"
     },
@@ -3293,7 +3356,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L21",
-      "community": 31,
+      "community": 0,
       "norm_label": "st_bazli",
       "id": "types_index_st_bazli"
     },
@@ -3302,7 +3365,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L26",
-      "community": 5,
+      "community": 0,
       "norm_label": "salesrepoption",
       "id": "types_index_salesrepoption"
     },
@@ -3338,7 +3401,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L61",
-      "community": 0,
+      "community": 4,
       "norm_label": "assignresult",
       "id": "types_index_assignresult"
     },
@@ -3347,7 +3410,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L67",
-      "community": 0,
+      "community": 4,
       "norm_label": "autoassignresult",
       "id": "types_index_autoassignresult"
     },
@@ -3356,7 +3419,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L77",
-      "community": 5,
+      "community": 0,
       "norm_label": "deliverystatus",
       "id": "types_index_deliverystatus"
     },
@@ -3647,7 +3710,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 0,
       "norm_label": "main entry point",
       "id": "backend_main"
     },
@@ -3660,7 +3723,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "assignments api",
       "id": "backend_api_assignments"
     },
@@ -3686,7 +3749,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 0,
       "norm_label": "trucks api",
       "id": "backend_api_trucks"
     },
@@ -3712,7 +3775,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "truck manager service",
       "id": "backend_services_truck_manager"
     },
@@ -3751,7 +3814,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "assignments api client",
       "id": "frontend_api_assignments"
     },
@@ -3764,7 +3827,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "uselogistics hook",
       "id": "frontend_hooks_uselogistics"
     },
@@ -3777,7 +3840,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "mapview component",
       "id": "frontend_components_mapview"
     },
@@ -3816,7 +3879,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "trucks inventory",
       "id": "data_trucks_list"
     },
@@ -3946,7 +4009,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "automation.py",
       "id": "automation_py"
     },
@@ -4007,12 +4070,178 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "backend_data_yeni_algorthim_palet_sayisi_copy_py",
+      "target": "data_yeni_algorthim_palet_sayisi_copy_palet_hesaplama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "data_yeni_algorthim_palet_sayisi_copy_rationale_4",
+      "target": "data_yeni_algorthim_palet_sayisi_copy_palet_hesaplama",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/data/de.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "backend_data_de_py",
+      "target": "data_de_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "target": "types_index_coordinate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "target": "types_index_truck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "target": "dashboard_orderstable_orderstableprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "target": "dashboard_orderstable_status_color",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "target": "dashboard_orderstable_col",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "target": "dashboard_orderstable_orderstable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_orderstable_orderstable",
+      "target": "dashboard_orderstable_orderstableprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_orderstable_orderstable",
+      "target": "dashboard_orderstable_col"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_orderstable_orderstable",
+      "target": "frontend_src_api_index_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_orderstable_orderstable",
+      "target": "types_index_coordinate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_orderstable_orderstable",
+      "target": "types_index_truck"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_orderstable_orderstable",
+      "target": "map_mapmarker_status_colors"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/pages/Dashboard/DashboardPage.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_dashboardpage_dashboardpage",
+      "target": "dashboard_orderstable_orderstable"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "package.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "frontend_package_name",
-      "confidence_score": 1.0
+      "target": "frontend_package_name"
     },
     {
       "relation": "contains",
@@ -4020,9 +4249,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "frontend_package_private",
-      "confidence_score": 1.0
+      "target": "frontend_package_private"
     },
     {
       "relation": "contains",
@@ -4030,9 +4259,9 @@
       "source_file": "package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "frontend_package_version",
-      "confidence_score": 1.0
+      "target": "frontend_package_version"
     },
     {
       "relation": "contains",
@@ -4040,9 +4269,9 @@
       "source_file": "package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "frontend_package_type",
-      "confidence_score": 1.0
+      "target": "frontend_package_type"
     },
     {
       "relation": "contains",
@@ -4050,9 +4279,9 @@
       "source_file": "package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "frontend_package_scripts",
-      "confidence_score": 1.0
+      "target": "frontend_package_scripts"
     },
     {
       "relation": "contains",
@@ -4060,9 +4289,9 @@
       "source_file": "package.json",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "frontend_package_dependencies",
-      "confidence_score": 1.0
+      "target": "frontend_package_dependencies"
     },
     {
       "relation": "contains",
@@ -4070,9 +4299,9 @@
       "source_file": "package.json",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_json",
-      "target": "frontend_package_devdependencies",
-      "confidence_score": 1.0
+      "target": "frontend_package_devdependencies"
     },
     {
       "relation": "contains",
@@ -4320,9 +4549,9 @@
       "source_file": "package.json",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react_resizable_panels",
-      "confidence_score": 1.0
+      "target": "frontend_package_dependencies_react_resizable_panels"
     },
     {
       "relation": "contains",
@@ -4330,9 +4559,9 @@
       "source_file": "package.json",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react_router_dom",
-      "confidence_score": 1.0
+      "target": "frontend_package_dependencies_react_router_dom"
     },
     {
       "relation": "contains",
@@ -4441,9 +4670,9 @@
       "source_file": "package.json",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_types_react_dom",
-      "confidence_score": 1.0
+      "target": "frontend_package_devdependencies_types_react_dom"
     },
     {
       "relation": "contains",
@@ -4572,9 +4801,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "hooks_uselogistics_uselogistics",
-      "confidence_score": 1.0
+      "target": "hooks_uselogistics_uselogistics"
     },
     {
       "relation": "imports",
@@ -4583,9 +4812,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "hooks_usemapfilters_usemapfilters",
-      "confidence_score": 1.0
+      "target": "hooks_usemapfilters_usemapfilters"
     },
     {
       "relation": "imports",
@@ -4594,9 +4823,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "hooks_usemultiselect_usemultiselect",
-      "confidence_score": 1.0
+      "target": "hooks_usemultiselect_usemultiselect"
     },
     {
       "relation": "imports",
@@ -4605,9 +4834,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "map_mapfilterbar_mapfilterbar",
-      "confidence_score": 1.0
+      "target": "map_mapfilterbar_mapfilterbar"
     },
     {
       "relation": "imports_from",
@@ -4616,9 +4845,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "src_components_appnav_appnav_tsx",
-      "confidence_score": 1.0
+      "target": "src_components_appnav_appnav_tsx"
     },
     {
       "relation": "imports",
@@ -4627,9 +4856,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "appnav_appnav_appnav",
-      "confidence_score": 1.0
+      "target": "appnav_appnav_appnav"
     },
     {
       "relation": "imports",
@@ -4638,9 +4867,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "dashboard_dashboardpage_dashboardpage",
-      "confidence_score": 1.0
+      "target": "dashboard_dashboardpage_dashboardpage"
     },
     {
       "relation": "imports",
@@ -4649,9 +4878,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "statistics_statisticspage_statisticspage",
-      "confidence_score": 1.0
+      "target": "statistics_statisticspage_statisticspage"
     },
     {
       "relation": "contains",
@@ -4659,9 +4888,9 @@
       "source_file": "src/App.tsx",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_app_tsx",
-      "target": "src_app_app",
-      "confidence_score": 1.0
+      "target": "src_app_app"
     },
     {
       "relation": "contains",
@@ -4712,9 +4941,9 @@
       "source_file": "src/components/AppNav/AppNav.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_components_appnav_appnav_tsx",
-      "target": "appnav_appnav_appnav",
-      "confidence_score": 1.0
+      "target": "appnav_appnav_appnav"
     },
     {
       "relation": "imports",
@@ -7843,17 +8072,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "dashboard_orderstable_orderstable",
-      "target": "frontend_src_api_index_ts"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "frontend/src/components/Dashboard/TruckPanel.tsx",
       "source_location": "L4",
       "weight": 1.0,
@@ -8235,69 +8453,6 @@
       "confidence_score": 1.0,
       "source": "dashboard_dashboardpage_dashboardpage",
       "target": "dashboard_kpicards_kpicards"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "dashboard_orderstable_orderstable",
-      "target": "dashboard_orderstable_orderstableprops"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L33",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "dashboard_orderstable_orderstable",
-      "target": "dashboard_orderstable_col"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "dashboard_orderstable_orderstable",
-      "target": "types_index_coordinate"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "dashboard_orderstable_orderstable",
-      "target": "types_index_truck"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L27",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "dashboard_orderstable_orderstable",
-      "target": "map_mapmarker_status_colors"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/pages/Dashboard/DashboardPage.tsx",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "dashboard_dashboardpage_dashboardpage",
-      "target": "dashboard_orderstable_orderstable"
     },
     {
       "relation": "imports",
@@ -9996,5 +10151,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1a15a9a79a0a6ba3f4db4c9e767e0a288cc6f209"
+  "built_at_commit": "3d8ad8b988b8447e5527b69cc20f8bcf5d5b93e8"
 }

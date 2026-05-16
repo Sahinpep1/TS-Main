@@ -1,16 +1,16 @@
 # Graph Report - TS-Main  (2026-05-16)
 
 ## Corpus Check
-- 80 files · ~886,718 words
+- 82 files · ~887,250 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 431 nodes · 583 edges · 40 communities (28 shown, 12 thin omitted)
+- 438 nodes · 592 edges · 40 communities (27 shown, 13 thin omitted)
 - Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 26 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `1a15a9a7`
+- Built from commit: `3d8ad8b9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -41,7 +41,6 @@
 - [[_COMMUNITY_Community 32|Community 32]]
 - [[_COMMUNITY_Community 33|Community 33]]
 - [[_COMMUNITY_Community 34|Community 34]]
-- [[_COMMUNITY_Community 35|Community 35]]
 - [[_COMMUNITY_Community 36|Community 36]]
 - [[_COMMUNITY_Community 37|Community 37]]
 - [[_COMMUNITY_Community 38|Community 38]]
@@ -52,50 +51,50 @@
 2. `dependencies` - 23 edges
 3. `compilerOptions` - 20 edges
 4. `devDependencies` - 18 edges
-5. `Truck` - 15 edges
-6. `Coordinate` - 14 edges
+5. `Truck` - 16 edges
+6. `Coordinate` - 15 edges
 7. `useMapFilters()` - 13 edges
 8. `cn()` - 12 edges
 9. `DashboardPage()` - 12 edges
 10. `Assignments API` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `cn()` --calls--> `clsx`  [INFERRED]
-  frontend/src/lib/utils.ts → package.json
 - `Data Processor Service` --references--> `Pending Orders Data`  [INFERRED]
   backend/services/data_processor_copy.py → graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md
 - `Truck Manager Service` --references--> `Trucks Inventory`  [INFERRED]
   backend/services/truck_manager.py → graphify-out/converted/trucks_ed6e51a3.md
+- `cn()` --calls--> `clsx`  [INFERRED]
+  frontend/src/lib/utils.ts → package.json
+- `App()` --calls--> `useLogistics()`  [EXTRACTED]
+  src/App.tsx → frontend/src/hooks/useLogistics.ts
 - `A delivery point coordinate.` --rationale_for--> `Coordinate`  [EXTRACTED]
   backend/models/schemas.py → frontend/src/types/index.ts
-- `Truck capacity summary.` --rationale_for--> `TruckCapacity`  [EXTRACTED]
-  backend/models/schemas.py → frontend/src/types/index.ts
 
-## Communities (40 total, 12 thin omitted)
+## Communities (40 total, 13 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.06
-Nodes (39): Assignments API, Truck Manager Service, BaseModel, DashboardPage(), DashboardPageProps, CARDS, KpiCards(), KpiCardsProps (+31 more)
+Cohesion: 0.07
+Nodes (46): fetchTruckCapacities(), fetchTrucks(), Trucks API, Main Entry Point, BaseModel, DashboardPage(), DashboardPageProps, CARDS (+38 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.2
-Nodes (9): get_ambalaj(), get_coordinate(), get_st_bazli(), Coordinates API routes., Get all ambalajs as list of dicts., Get all st bazli as list of dicts., Get a single coordinate by ID., Return a single coordinate by ID. (+1 more)
+Cohesion: 0.17
+Nodes (12): get_all_coordinates(), get_coordinate(), get_sale_rep_list(), get_st_bazli(), Coordinates API routes., Get all delivery coordinates, optionally filtered., Get all st bazli as list of dicts., Get a single coordinate by ID. (+4 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.1
-Nodes (20): AutomationWorker, range, dagitici_toplam_sutunu_dahil_etme, gunluk_veri_araligi, kasa_acik_sutun_araligi, toplam_arama_araligi_satir, toplam_veri_araligi, Belirtilen Telerik alanına metni Playwright ile girer ve          Telerik'in Cl (+12 more)
+Nodes (19): range, dagitici_toplam_sutunu_dahil_etme, gunluk_veri_araligi, kasa_acik_sutun_araligi, toplam_arama_araligi_satir, toplam_veri_araligi, Belirtilen Telerik alanına metni Playwright ile girer ve          Telerik'in Cl, Belirtilen kimlik bilgileriyle giriş yapmayı dener ve ana menünün görünmesini do (+11 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.07
-Nodes (31): dependencies, axios, class-variance-authority, clsx, @fontsource-variable/geist, @geoman-io/leaflet-geoman-free, leaflet, leaflet.heat (+23 more)
+Cohesion: 0.05
+Nodes (47): dependencies, axios, class-variance-authority, @fontsource-variable/geist, @geoman-io/leaflet-geoman-free, leaflet, leaflet.heat, leaflet-lasso (+39 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.07
-Nodes (28): assign_delivery(), auto_assign(), get_summary(), Assignment API routes — assign/unassign deliveries to trucks., Assign a delivery to a truck., Remove a delivery assignment., Auto-assign all pending deliveries (balanced strategy)., Reset all data to initial state. (+20 more)
+Cohesion: 0.05
+Nodes (37): assign_delivery(), auto_assign(), get_summary(), Assignment API routes — assign/unassign deliveries to trucks., Assign a delivery to a truck., Remove a delivery assignment., Auto-assign all pending deliveries (balanced strategy)., Reset all data to initial state. (+29 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.12
-Nodes (21): AppNav(), AppNavProps, AppPage, useDebounce(), useLogistics(), ALL_SALE_REPS, ALL_STATUSES, useMapFilters() (+13 more)
+Cohesion: 0.13
+Nodes (16): AppNav(), AppNavProps, AppPage, useDebounce(), ALL_SALE_REPS, ALL_STATUSES, useMapFilters(), useMultiSelect() (+8 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.09
@@ -106,16 +105,12 @@ Cohesion: 0.1
 Nodes (20): allowImportingTsExtensions, erasableSyntaxOnly, jsx, module, moduleDetection, moduleResolution, noEmit, noFallthroughCasesInSwitch (+12 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.1
-Nodes (17): MapHeatmapLayer(), MapLassoControl(), DEFAULT_ITEMS, LegendItem, MapLegend(), MapLegendProps, ColorMode, MapMarker() (+9 more)
-
-### Community 9 - "Community 9"
-Cohesion: 0.12
-Nodes (17): devDependencies, autoprefixer, eslint, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-refresh, globals, postcss (+9 more)
+Cohesion: 0.09
+Nodes (16): MapHeatmapLayer(), MapLassoControl(), DEFAULT_ITEMS, LegendItem, MapLegend(), MapLegendProps, ColorMode, MapMarker() (+8 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.23
-Nodes (11): cn(), NativeSelect(), NativeSelectProps, SelectContent(), SelectGroup(), SelectItem(), SelectLabel(), SelectScrollDownButton() (+3 more)
+Cohesion: 0.21
+Nodes (12): clsx, cn(), NativeSelect(), NativeSelectProps, SelectContent(), SelectGroup(), SelectItem(), SelectLabel() (+4 more)
 
 ### Community 11 - "Community 11"
 Cohesion: 0.08
@@ -134,40 +129,36 @@ Cohesion: 0.33
 Nodes (5): code:js (export default defineConfig([), code:js (// eslint.config.js), Expanding the ESLint configuration, React Compiler, React + TypeScript + Vite
 
 ### Community 16 - "Community 16"
-Cohesion: 0.15
-Nodes (7): DataProcessor, Holds in-memory Polars DataFrames and provides query helpers., Holds in-memory Polars DataFrames and provides query helpers., Return all coordinates as list of dicts., Return all ambalajs as list of dicts., Return all st bazli as list of dicts., Return all trucks as list of dicts, parsing assigned_deliveries.
+Cohesion: 0.13
+Nodes (8): DataProcessor, Holds in-memory Polars DataFrames and provides query helpers., Holds in-memory Polars DataFrames and provides query helpers., Return an overall logistics summary computed with Polars., Return all coordinates as list of dicts., Return a single coordinate by ID., Return all ambalajs as list of dicts., Return all trucks as list of dicts, parsing assigned_deliveries.
 
 ### Community 31 - "Community 31"
-Cohesion: 0.15
-Nodes (13): fetchTruckCapacities(), fetchTrucks(), Coordinates API, Trucks API, Main Entry Point, Pydantic Schemas, Data Processor Service, Pending Orders Data (+5 more)
+Cohesion: 0.22
+Nodes (6): get_ambalaj(), Get all ambalajs as list of dicts., Coordinates API, Pydantic Schemas, Data Processor Service, Pending Orders Data
 
 ### Community 32 - "Community 32"
 Cohesion: 0.33
 Nodes (4): Add or remove a delivery's load from a truck., Return a single truck by ID., Return a single truck by ID., Add or remove a delivery's load from a truck.
 
-### Community 33 - "Community 33"
-Cohesion: 0.4
-Nodes (5): get_all_coordinates(), get_sale_rep_list(), Get all delivery coordinates, optionally filtered., Return all coordinates as list of dicts., Return a list of unique sales representatives.
-
 ## Knowledge Gaps
-- **205 isolated node(s):** `dev`, `build`, `lint`, `preview`, `@fontsource-variable/geist` (+200 more)
+- **205 isolated node(s):** `100x120 İçecek Paleti Standartlarına ve Saha Kurallarına Uygun     Gelişmiş Pal`, `STATUS_COLOR`, `dev`, `build`, `lint` (+200 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `DataProcessor` connect `Community 16` to `Community 32`, `Community 33`, `Community 34`, `Community 35`, `Community 4`, `Community 36`, `Community 37`, `Community 38`, `Community 39`, `Community 1`, `Community 11`, `Community 13`?**
-  _High betweenness centrality (0.322) - this node is a cross-community bridge._
-- **Why does `NativeSelect()` connect `Community 10` to `Community 5`?**
-  _High betweenness centrality (0.230) - this node is a cross-community bridge._
+- **Why does `DataProcessor` connect `Community 16` to `Community 32`, `Community 1`, `Community 34`, `Community 4`, `Community 37`, `Community 36`, `Community 38`, `Community 39`, `Community 11`, `Community 13`, `Community 31`?**
+  _High betweenness centrality (0.315) - this node is a cross-community bridge._
+- **Why does `NativeSelect()` connect `Community 10` to `Community 0`?**
+  _High betweenness centrality (0.224) - this node is a cross-community bridge._
 - **Why does `range` connect `Community 2` to `Community 12`?**
-  _High betweenness centrality (0.230) - this node is a cross-community bridge._
+  _High betweenness centrality (0.224) - this node is a cross-community bridge._
 - **Are the 2 inferred relationships involving `DataProcessor` (e.g. with `TruckManager` and `truck_manager.py`) actually correct?**
   _`DataProcessor` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `dev`, `build`, `lint` to the rest of the system?**
+- **What connects `100x120 İçecek Paleti Standartlarına ve Saha Kurallarına Uygun     Gelişmiş Pal`, `STATUS_COLOR`, `dev` to the rest of the system?**
   _205 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.06 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.07 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.1 - nodes in this community are weakly interconnected._
