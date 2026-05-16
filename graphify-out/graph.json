@@ -4,285 +4,6 @@
   "graph": {},
   "nodes": [
     {
-      "label": "data_processor_copy.py",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L1",
-      "id": "backend_services_data_processor_copy_py",
-      "community": 13,
-      "norm_label": "data_processor_copy.py"
-    },
-    {
-      "label": "DataProcessor",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L10",
-      "id": "services_data_processor_copy_dataprocessor",
-      "community": 16,
-      "norm_label": "dataprocessor"
-    },
-    {
-      "label": ".__init__()",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L13",
-      "id": "services_data_processor_copy_dataprocessor_init",
-      "community": 16,
-      "norm_label": ".__init__()"
-    },
-    {
-      "label": ".get_all_coordinates()",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L23",
-      "id": "services_data_processor_copy_dataprocessor_get_all_coordinates",
-      "community": 35,
-      "norm_label": ".get_all_coordinates()"
-    },
-    {
-      "label": ".get_coordinate_by_id()",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L27",
-      "id": "services_data_processor_copy_dataprocessor_get_coordinate_by_id",
-      "community": 16,
-      "norm_label": ".get_coordinate_by_id()"
-    },
-    {
-      "label": ".get_coordinates_by_status()",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L34",
-      "id": "services_data_processor_copy_dataprocessor_get_coordinates_by_status",
-      "community": 34,
-      "norm_label": ".get_coordinates_by_status()"
-    },
-    {
-      "label": ".get_coordinates_except_one_status()",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L42",
-      "id": "services_data_processor_copy_dataprocessor_get_coordinates_except_one_status",
-      "community": 36,
-      "norm_label": ".get_coordinates_except_one_status()"
-    },
-    {
-      "label": ".get_sale_rep_list()",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L50",
-      "id": "services_data_processor_copy_dataprocessor_get_sale_rep_list",
-      "community": 37,
-      "norm_label": ".get_sale_rep_list()"
-    },
-    {
-      "label": ".get_ambalaj()",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L54",
-      "id": "services_data_processor_copy_dataprocessor_get_ambalaj",
-      "community": 16,
-      "norm_label": ".get_ambalaj()"
-    },
-    {
-      "label": ".get_st_bazli()",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L58",
-      "id": "services_data_processor_copy_dataprocessor_get_st_bazli",
-      "community": 16,
-      "norm_label": ".get_st_bazli()"
-    },
-    {
-      "label": ".update_coordinate_status()",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L62",
-      "id": "services_data_processor_copy_dataprocessor_update_coordinate_status",
-      "community": 16,
-      "norm_label": ".update_coordinate_status()"
-    },
-    {
-      "label": ".get_all_trucks()",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L80",
-      "id": "services_data_processor_copy_dataprocessor_get_all_trucks",
-      "community": 16,
-      "norm_label": ".get_all_trucks()"
-    },
-    {
-      "label": ".get_truck_by_id()",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L88",
-      "id": "services_data_processor_copy_dataprocessor_get_truck_by_id",
-      "community": 32,
-      "norm_label": ".get_truck_by_id()"
-    },
-    {
-      "label": ".update_truck_load()",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L98",
-      "id": "services_data_processor_copy_dataprocessor_update_truck_load",
-      "community": 32,
-      "norm_label": ".update_truck_load()"
-    },
-    {
-      "label": ".get_summary()",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L145",
-      "id": "services_data_processor_copy_dataprocessor_get_summary",
-      "community": 38,
-      "norm_label": ".get_summary()"
-    },
-    {
-      "label": ".get_truck_capacities()",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L167",
-      "id": "services_data_processor_copy_dataprocessor_get_truck_capacities",
-      "community": 16,
-      "norm_label": ".get_truck_capacities()"
-    },
-    {
-      "label": ".reset_all()",
-      "file_type": "code",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L181",
-      "id": "services_data_processor_copy_dataprocessor_reset_all",
-      "community": 16,
-      "norm_label": ".reset_all()"
-    },
-    {
-      "label": "Polars-based data processing service for logistics data.",
-      "file_type": "rationale",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L1",
-      "id": "services_data_processor_copy_rationale_1",
-      "community": 13,
-      "norm_label": "polars-based data processing service for logistics data."
-    },
-    {
-      "label": "Holds in-memory Polars DataFrames and provides query helpers.",
-      "file_type": "rationale",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L11",
-      "id": "services_data_processor_copy_rationale_11",
-      "community": 16,
-      "norm_label": "holds in-memory polars dataframes and provides query helpers."
-    },
-    {
-      "label": "Return all coordinates as list of dicts.",
-      "file_type": "rationale",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L24",
-      "id": "services_data_processor_copy_rationale_24",
-      "community": 35,
-      "norm_label": "return all coordinates as list of dicts."
-    },
-    {
-      "label": "Return a single coordinate by ID.",
-      "file_type": "rationale",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L28",
-      "id": "services_data_processor_copy_rationale_28",
-      "community": 16,
-      "norm_label": "return a single coordinate by id."
-    },
-    {
-      "label": "Return coordinates filtered by status.",
-      "file_type": "rationale",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L35",
-      "id": "services_data_processor_copy_rationale_35",
-      "community": 34,
-      "norm_label": "return coordinates filtered by status."
-    },
-    {
-      "label": "Return coordinates filtered by status.",
-      "file_type": "rationale",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L43",
-      "id": "services_data_processor_copy_rationale_43",
-      "community": 36,
-      "norm_label": "return coordinates filtered by status."
-    },
-    {
-      "label": "Return a list of unique sales representatives.",
-      "file_type": "rationale",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L51",
-      "id": "services_data_processor_copy_rationale_51",
-      "community": 37,
-      "norm_label": "return a list of unique sales representatives."
-    },
-    {
-      "label": "Return all ambalajs as list of dicts.",
-      "file_type": "rationale",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L55",
-      "id": "services_data_processor_copy_rationale_55",
-      "community": 16,
-      "norm_label": "return all ambalajs as list of dicts."
-    },
-    {
-      "label": "Return all st bazli as list of dicts.",
-      "file_type": "rationale",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L59",
-      "id": "services_data_processor_copy_rationale_59",
-      "community": 16,
-      "norm_label": "return all st bazli as list of dicts."
-    },
-    {
-      "label": "Return all trucks as list of dicts, parsing assigned_deliveries.",
-      "file_type": "rationale",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L81",
-      "id": "services_data_processor_copy_rationale_81",
-      "community": 16,
-      "norm_label": "return all trucks as list of dicts, parsing assigned_deliveries."
-    },
-    {
-      "label": "Return a single truck by ID.",
-      "file_type": "rationale",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L89",
-      "id": "services_data_processor_copy_rationale_89",
-      "community": 32,
-      "norm_label": "return a single truck by id."
-    },
-    {
-      "label": "Add or remove a delivery's load from a truck.",
-      "file_type": "rationale",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L106",
-      "id": "services_data_processor_copy_rationale_106",
-      "community": 32,
-      "norm_label": "add or remove a delivery's load from a truck."
-    },
-    {
-      "label": "Return an overall logistics summary computed with Polars.",
-      "file_type": "rationale",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L146",
-      "id": "services_data_processor_copy_rationale_146",
-      "community": 38,
-      "norm_label": "return an overall logistics summary computed with polars."
-    },
-    {
-      "label": "Reset all data to initial state.",
-      "file_type": "rationale",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L182",
-      "id": "services_data_processor_copy_rationale_182",
-      "community": 16,
-      "norm_label": "reset all data to initial state."
-    },
-    {
       "label": "truck_manager.py",
       "file_type": "code",
       "source_file": "backend/services/truck_manager.py",
@@ -322,7 +43,7 @@
       "label": ".unassign_delivery()",
       "file_type": "code",
       "source_file": "backend/services/truck_manager.py",
-      "source_location": "L40",
+      "source_location": "L43",
       "id": "services_truck_manager_truckmanager_unassign_delivery",
       "community": 4,
       "norm_label": ".unassign_delivery()"
@@ -331,7 +52,7 @@
       "label": ".auto_assign_balanced_den()",
       "file_type": "code",
       "source_file": "backend/services/truck_manager.py",
-      "source_location": "L55",
+      "source_location": "L58",
       "id": "services_truck_manager_truckmanager_auto_assign_balanced_den",
       "community": 4,
       "norm_label": ".auto_assign_balanced_den()"
@@ -340,7 +61,7 @@
       "label": ".auto_assign_balanced()",
       "file_type": "code",
       "source_file": "backend/services/truck_manager.py",
-      "source_location": "L90",
+      "source_location": "L93",
       "id": "services_truck_manager_truckmanager_auto_assign_balanced",
       "community": 4,
       "norm_label": ".auto_assign_balanced()"
@@ -376,8 +97,8 @@
       "label": "Remove a delivery assignment from its truck.",
       "file_type": "rationale",
       "source_file": "backend/services/truck_manager.py",
-      "source_location": "L41",
-      "id": "services_truck_manager_rationale_41",
+      "source_location": "L44",
+      "id": "services_truck_manager_rationale_44",
       "community": 4,
       "norm_label": "remove a delivery assignment from its truck."
     },
@@ -385,8 +106,8 @@
       "label": "Auto-assign all pending deliveries across trucks, balanced by weight.",
       "file_type": "rationale",
       "source_file": "backend/services/truck_manager.py",
-      "source_location": "L56",
-      "id": "services_truck_manager_rationale_56",
+      "source_location": "L59",
+      "id": "services_truck_manager_rationale_59",
       "community": 4,
       "norm_label": "auto-assign all pending deliveries across trucks, balanced by weight."
     },
@@ -394,8 +115,8 @@
       "label": "Auto-assign all pending deliveries across trucks, balanced by weight.",
       "file_type": "rationale",
       "source_file": "backend/services/truck_manager.py",
-      "source_location": "L91",
-      "id": "services_truck_manager_rationale_91",
+      "source_location": "L94",
+      "id": "services_truck_manager_rationale_94",
       "community": 4,
       "norm_label": "auto-assign all pending deliveries across trucks, balanced by weight."
     },
@@ -418,6 +139,24 @@
       "norm_label": "sheet: sheet1"
     },
     {
+      "label": "Hazir_Siparisler_d229c32f.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
+      "source_location": "L1",
+      "id": "graphify_out_converted_hazir_siparisler_d229c32f_md",
+      "community": 14,
+      "norm_label": "hazir_siparisler_d229c32f.md"
+    },
+    {
+      "label": "Sheet: Sheet1",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
+      "source_location": "L3",
+      "id": "converted_hazir_siparisler_d229c32f_sheet_sheet1",
+      "community": 14,
+      "norm_label": "sheet: sheet1"
+    },
+    {
       "label": "trucks_ed6e51a3.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/trucks_ed6e51a3.md",
@@ -434,6 +173,312 @@
       "id": "converted_trucks_ed6e51a3_sheet_sheet1",
       "community": 14,
       "norm_label": "sheet: sheet1"
+    },
+    {
+      "label": "data_processor_copy.py",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L1",
+      "community": 13,
+      "norm_label": "data_processor_copy.py",
+      "id": "backend_services_data_processor_copy_py"
+    },
+    {
+      "label": "DataProcessor",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L10",
+      "community": 16,
+      "norm_label": "dataprocessor",
+      "id": "services_data_processor_copy_dataprocessor"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L13",
+      "community": 16,
+      "norm_label": ".__init__()",
+      "id": "services_data_processor_copy_dataprocessor_init"
+    },
+    {
+      "label": ".get_all_coordinates()",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L23",
+      "community": 16,
+      "norm_label": ".get_all_coordinates()",
+      "id": "services_data_processor_copy_dataprocessor_get_all_coordinates"
+    },
+    {
+      "label": ".get_coordinate_by_id()",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L27",
+      "community": 16,
+      "norm_label": ".get_coordinate_by_id()",
+      "id": "services_data_processor_copy_dataprocessor_get_coordinate_by_id"
+    },
+    {
+      "label": ".get_coordinates_by_status()",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L34",
+      "community": 34,
+      "norm_label": ".get_coordinates_by_status()",
+      "id": "services_data_processor_copy_dataprocessor_get_coordinates_by_status"
+    },
+    {
+      "label": ".get_coordinates_except_one_status()",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L42",
+      "community": 36,
+      "norm_label": ".get_coordinates_except_one_status()",
+      "id": "services_data_processor_copy_dataprocessor_get_coordinates_except_one_status"
+    },
+    {
+      "label": ".get_sale_rep_list()",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L50",
+      "community": 37,
+      "norm_label": ".get_sale_rep_list()",
+      "id": "services_data_processor_copy_dataprocessor_get_sale_rep_list"
+    },
+    {
+      "label": ".get_ambalaj()",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L54",
+      "community": 16,
+      "norm_label": ".get_ambalaj()",
+      "id": "services_data_processor_copy_dataprocessor_get_ambalaj"
+    },
+    {
+      "label": ".get_st_bazli()",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L58",
+      "community": 35,
+      "norm_label": ".get_st_bazli()",
+      "id": "services_data_processor_copy_dataprocessor_get_st_bazli"
+    },
+    {
+      "label": ".update_coordinate_status()",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L62",
+      "community": 16,
+      "norm_label": ".update_coordinate_status()",
+      "id": "services_data_processor_copy_dataprocessor_update_coordinate_status"
+    },
+    {
+      "label": ".get_all_trucks()",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L80",
+      "community": 16,
+      "norm_label": ".get_all_trucks()",
+      "id": "services_data_processor_copy_dataprocessor_get_all_trucks"
+    },
+    {
+      "label": ".get_truck_by_id()",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L88",
+      "community": 32,
+      "norm_label": ".get_truck_by_id()",
+      "id": "services_data_processor_copy_dataprocessor_get_truck_by_id"
+    },
+    {
+      "label": ".update_truck_load()",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L98",
+      "community": 32,
+      "norm_label": ".update_truck_load()",
+      "id": "services_data_processor_copy_dataprocessor_update_truck_load"
+    },
+    {
+      "label": ".get_summary()",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L145",
+      "community": 38,
+      "norm_label": ".get_summary()",
+      "id": "services_data_processor_copy_dataprocessor_get_summary"
+    },
+    {
+      "label": ".get_truck_capacities()",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L167",
+      "community": 16,
+      "norm_label": ".get_truck_capacities()",
+      "id": "services_data_processor_copy_dataprocessor_get_truck_capacities"
+    },
+    {
+      "label": ".reset_all()",
+      "file_type": "code",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L181",
+      "community": 16,
+      "norm_label": ".reset_all()",
+      "id": "services_data_processor_copy_dataprocessor_reset_all"
+    },
+    {
+      "label": "Polars-based data processing service for logistics data.",
+      "file_type": "rationale",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L1",
+      "community": 13,
+      "norm_label": "polars-based data processing service for logistics data.",
+      "id": "services_data_processor_copy_rationale_1"
+    },
+    {
+      "label": "Holds in-memory Polars DataFrames and provides query helpers.",
+      "file_type": "rationale",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L11",
+      "community": 16,
+      "norm_label": "holds in-memory polars dataframes and provides query helpers.",
+      "id": "services_data_processor_copy_rationale_11"
+    },
+    {
+      "label": "Return all coordinates as list of dicts.",
+      "file_type": "rationale",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L24",
+      "community": 16,
+      "norm_label": "return all coordinates as list of dicts.",
+      "id": "services_data_processor_copy_rationale_24"
+    },
+    {
+      "label": "Return a single coordinate by ID.",
+      "file_type": "rationale",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L28",
+      "community": 16,
+      "norm_label": "return a single coordinate by id.",
+      "id": "services_data_processor_copy_rationale_28"
+    },
+    {
+      "label": "Return coordinates filtered by status.",
+      "file_type": "rationale",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L35",
+      "community": 34,
+      "norm_label": "return coordinates filtered by status.",
+      "id": "services_data_processor_copy_rationale_35"
+    },
+    {
+      "label": "Return coordinates filtered by status.",
+      "file_type": "rationale",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L43",
+      "community": 36,
+      "norm_label": "return coordinates filtered by status.",
+      "id": "services_data_processor_copy_rationale_43"
+    },
+    {
+      "label": "Return a list of unique sales representatives.",
+      "file_type": "rationale",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L51",
+      "community": 37,
+      "norm_label": "return a list of unique sales representatives.",
+      "id": "services_data_processor_copy_rationale_51"
+    },
+    {
+      "label": "Return all ambalajs as list of dicts.",
+      "file_type": "rationale",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L55",
+      "community": 16,
+      "norm_label": "return all ambalajs as list of dicts.",
+      "id": "services_data_processor_copy_rationale_55"
+    },
+    {
+      "label": "Return all st bazli as list of dicts.",
+      "file_type": "rationale",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L59",
+      "community": 35,
+      "norm_label": "return all st bazli as list of dicts.",
+      "id": "services_data_processor_copy_rationale_59"
+    },
+    {
+      "label": "Return all trucks as list of dicts, parsing assigned_deliveries.",
+      "file_type": "rationale",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L81",
+      "community": 16,
+      "norm_label": "return all trucks as list of dicts, parsing assigned_deliveries.",
+      "id": "services_data_processor_copy_rationale_81"
+    },
+    {
+      "label": "Return a single truck by ID.",
+      "file_type": "rationale",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L89",
+      "community": 32,
+      "norm_label": "return a single truck by id.",
+      "id": "services_data_processor_copy_rationale_89"
+    },
+    {
+      "label": "Add or remove a delivery's load from a truck.",
+      "file_type": "rationale",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L106",
+      "community": 32,
+      "norm_label": "add or remove a delivery's load from a truck.",
+      "id": "services_data_processor_copy_rationale_106"
+    },
+    {
+      "label": "Return an overall logistics summary computed with Polars.",
+      "file_type": "rationale",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L146",
+      "community": 38,
+      "norm_label": "return an overall logistics summary computed with polars.",
+      "id": "services_data_processor_copy_rationale_146"
+    },
+    {
+      "label": "Reset all data to initial state.",
+      "file_type": "rationale",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L182",
+      "community": 16,
+      "norm_label": "reset all data to initial state.",
+      "id": "services_data_processor_copy_rationale_182"
+    },
+    {
+      "label": "Remove a delivery assignment from its truck.",
+      "file_type": "rationale",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L41",
+      "community": 4,
+      "norm_label": "remove a delivery assignment from its truck.",
+      "id": "services_truck_manager_rationale_41"
+    },
+    {
+      "label": "Auto-assign all pending deliveries across trucks, balanced by weight.",
+      "file_type": "rationale",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L56",
+      "community": 4,
+      "norm_label": "auto-assign all pending deliveries across trucks, balanced by weight.",
+      "id": "services_truck_manager_rationale_56"
+    },
+    {
+      "label": "Auto-assign all pending deliveries across trucks, balanced by weight.",
+      "file_type": "rationale",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L91",
+      "community": 4,
+      "norm_label": "auto-assign all pending deliveries across trucks, balanced by weight.",
+      "id": "services_truck_manager_rationale_91"
     },
     {
       "label": "StatisticsPage.tsx",
@@ -602,7 +647,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L10",
-      "community": 33,
+      "community": 1,
       "norm_label": "get_all_coordinates()",
       "id": "api_coordinates_get_all_coordinates"
     },
@@ -611,7 +656,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L21",
-      "community": 33,
+      "community": 1,
       "norm_label": "get_sale_rep_list()",
       "id": "api_coordinates_get_sale_rep_list"
     },
@@ -620,7 +665,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L29",
-      "community": 1,
+      "community": 31,
       "norm_label": "get_ambalaj()",
       "id": "api_coordinates_get_ambalaj"
     },
@@ -629,7 +674,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L35",
-      "community": 1,
+      "community": 33,
       "norm_label": "get_st_bazli()",
       "id": "api_coordinates_get_st_bazli"
     },
@@ -656,7 +701,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L13",
-      "community": 33,
+      "community": 1,
       "norm_label": "get all delivery coordinates, optionally filtered.",
       "id": "api_coordinates_rationale_13"
     },
@@ -665,7 +710,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L30",
-      "community": 1,
+      "community": 31,
       "norm_label": "get all ambalajs as list of dicts.",
       "id": "api_coordinates_rationale_30"
     },
@@ -674,7 +719,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L36",
-      "community": 1,
+      "community": 33,
       "norm_label": "get all st bazli as list of dicts.",
       "id": "api_coordinates_rationale_36"
     },
@@ -692,7 +737,7 @@
       "file_type": "code",
       "source_file": "backend/api/trucks.py",
       "source_location": "L9",
-      "community": 31,
+      "community": 11,
       "norm_label": "get_all_trucks()",
       "id": "api_trucks_get_all_trucks"
     },
@@ -701,7 +746,7 @@
       "file_type": "code",
       "source_file": "backend/api/trucks.py",
       "source_location": "L16",
-      "community": 31,
+      "community": 11,
       "norm_label": "get_truck_capacities()",
       "id": "api_trucks_get_truck_capacities"
     },
@@ -710,7 +755,7 @@
       "file_type": "code",
       "source_file": "backend/api/trucks.py",
       "source_location": "L23",
-      "community": 31,
+      "community": 11,
       "norm_label": "get_truck()",
       "id": "api_trucks_get_truck"
     },
@@ -719,7 +764,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/trucks.py",
       "source_location": "L10",
-      "community": 31,
+      "community": 11,
       "norm_label": "get all trucks with current load info.",
       "id": "api_trucks_rationale_10"
     },
@@ -728,7 +773,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/trucks.py",
       "source_location": "L17",
-      "community": 31,
+      "community": 11,
       "norm_label": "get capacity percentages for all trucks.",
       "id": "api_trucks_rationale_17"
     },
@@ -737,7 +782,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/trucks.py",
       "source_location": "L24",
-      "community": 31,
+      "community": 11,
       "norm_label": "get a single truck by id.",
       "id": "api_trucks_rationale_24"
     },
@@ -836,7 +881,7 @@
       "file_type": "code",
       "source_file": "backend/Data-pulling-Automation/automation.py",
       "source_location": "L22",
-      "community": 4,
+      "community": 2,
       "norm_label": "automationworker",
       "id": "data_pulling_automation_automation_automationworker"
     },
@@ -1295,7 +1340,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L23",
-      "community": 33,
+      "community": 1,
       "norm_label": "return all coordinates as list of dicts.",
       "id": "services_data_processor_copy_rationale_23"
     },
@@ -1322,7 +1367,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L42",
-      "community": 33,
+      "community": 1,
       "norm_label": "return a list of unique sales representatives.",
       "id": "services_data_processor_copy_rationale_42"
     },
@@ -1331,7 +1376,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L50",
-      "community": 1,
+      "community": 33,
       "norm_label": "return all st bazli as list of dicts.",
       "id": "services_data_processor_copy_rationale_50"
     },
@@ -1340,7 +1385,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L72",
-      "community": 31,
+      "community": 11,
       "norm_label": "return all trucks as list of dicts, parsing assigned_deliveries.",
       "id": "services_data_processor_copy_rationale_72"
     },
@@ -1583,7 +1628,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L1",
-      "community": 3,
+      "community": 9,
       "norm_label": "package.json",
       "id": "frontend_package_json"
     },
@@ -1592,7 +1637,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L2",
-      "community": 3,
+      "community": 9,
       "norm_label": "name",
       "id": "frontend_package_name"
     },
@@ -1601,7 +1646,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L3",
-      "community": 3,
+      "community": 9,
       "norm_label": "private",
       "id": "frontend_package_private"
     },
@@ -1610,7 +1655,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L4",
-      "community": 3,
+      "community": 9,
       "norm_label": "version",
       "id": "frontend_package_version"
     },
@@ -1619,7 +1664,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L5",
-      "community": 3,
+      "community": 9,
       "norm_label": "type",
       "id": "frontend_package_type"
     },
@@ -1628,7 +1673,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L6",
-      "community": 3,
+      "community": 9,
       "norm_label": "scripts",
       "id": "frontend_package_scripts"
     },
@@ -1637,7 +1682,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L7",
-      "community": 3,
+      "community": 9,
       "norm_label": "dev",
       "id": "frontend_package_scripts_dev"
     },
@@ -1646,7 +1691,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L8",
-      "community": 3,
+      "community": 9,
       "norm_label": "build",
       "id": "frontend_package_scripts_build"
     },
@@ -1655,7 +1700,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L9",
-      "community": 3,
+      "community": 9,
       "norm_label": "lint",
       "id": "frontend_package_scripts_lint"
     },
@@ -1664,7 +1709,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L10",
-      "community": 3,
+      "community": 9,
       "norm_label": "preview",
       "id": "frontend_package_scripts_preview"
     },
@@ -1736,7 +1781,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L19",
-      "community": 3,
+      "community": 10,
       "norm_label": "clsx",
       "id": "frontend_package_dependencies_clsx"
     },
@@ -2276,7 +2321,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/coordinatesApi.ts",
       "source_location": "L10",
-      "community": 0,
+      "community": 31,
       "norm_label": "fetchcoordinates()",
       "id": "api_coordinatesapi_fetchcoordinates"
     },
@@ -2285,7 +2330,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/coordinatesApi.ts",
       "source_location": "L15",
-      "community": 0,
+      "community": 31,
       "norm_label": "fetchcoordinatesbystatus()",
       "id": "api_coordinatesapi_fetchcoordinatesbystatus"
     },
@@ -2294,7 +2339,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/coordinatesApi.ts",
       "source_location": "L33",
-      "community": 0,
+      "community": 31,
       "norm_label": "fetchcoordinatebyid()",
       "id": "api_coordinatesapi_fetchcoordinatebyid"
     },
@@ -3316,15 +3361,6 @@
       "id": "ts_main_project_architecture_codeblock_2"
     },
     {
-      "label": "Hazir_Siparisler_d229c32f.md",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
-      "source_location": "L1",
-      "community": 14,
-      "norm_label": "hazir_siparisler_d229c32f.md",
-      "id": "graphify_out_converted_hazir_siparisler_d229c32f_md"
-    },
-    {
       "label": "M\u00fc\u015fteri Listesi_2c2757a4.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/M\u00fc\u015fteri Listesi_2c2757a4.md",
@@ -3583,7 +3619,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 31,
       "norm_label": "coordinates api",
       "id": "backend_api_coordinates"
     },
@@ -3609,7 +3645,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 31,
       "norm_label": "data processor service",
       "id": "backend_services_data_processor"
     },
@@ -3635,7 +3671,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 31,
       "norm_label": "pydantic schemas",
       "id": "backend_models_schemas"
     },
@@ -3700,7 +3736,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 31,
       "norm_label": "pending orders data",
       "id": "data_bekleyen_siparisler"
     },
@@ -3778,7 +3814,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 11,
       "norm_label": "trucks.py",
       "id": "trucks_py"
     },
@@ -3856,7 +3892,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 2,
       "norm_label": "automation.py",
       "id": "automation_py"
     },
@@ -3917,12 +3953,397 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_services_truck_manager_py",
+      "target": "services_truck_manager_truckmanager"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_rationale_1",
+      "target": "backend_services_truck_manager_py"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_truckmanager",
+      "target": "services_truck_manager_truckmanager_init"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_truckmanager",
+      "target": "services_truck_manager_truckmanager_assign_delivery"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_truckmanager",
+      "target": "services_truck_manager_truckmanager_unassign_delivery"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_truckmanager",
+      "target": "services_truck_manager_truckmanager_auto_assign_balanced_den"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_truckmanager",
+      "target": "services_truck_manager_truckmanager_auto_assign_balanced"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_rationale_7",
+      "target": "services_truck_manager_truckmanager"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L3",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "services_truck_manager_truckmanager",
+      "target": "services_data_processor_copy_dataprocessor"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_data_processor_copy_dataprocessor",
+      "target": "services_truck_manager_truckmanager_init"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "services_truck_manager_truckmanager_init",
+      "target": "data_read_data_read_data"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_automation_automationworker",
+      "target": "services_truck_manager_truckmanager_init"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/services/data_processor_copy.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "services_truck_manager_truckmanager_init",
+      "target": "read_truck_py"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rapor_otomasyon_servisi_py",
+      "target": "services_truck_manager_truckmanager_init"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "truck_manager_py",
+      "target": "services_truck_manager_truckmanager_init"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_truckmanager_auto_assign_balanced_den",
+      "target": "services_truck_manager_truckmanager_assign_delivery"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_truckmanager_auto_assign_balanced",
+      "target": "services_truck_manager_truckmanager_assign_delivery"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_rationale_13",
+      "target": "services_truck_manager_truckmanager_assign_delivery"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "services_truck_manager_rationale_44",
+      "target": "services_truck_manager_truckmanager_unassign_delivery",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_rationale_41",
+      "target": "services_truck_manager_truckmanager_unassign_delivery"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "services_truck_manager_rationale_59",
+      "target": "services_truck_manager_truckmanager_auto_assign_balanced_den",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_rationale_56",
+      "target": "services_truck_manager_truckmanager_auto_assign_balanced_den"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "services_truck_manager_rationale_94",
+      "target": "services_truck_manager_truckmanager_auto_assign_balanced",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_rationale_91",
+      "target": "services_truck_manager_truckmanager_auto_assign_balanced"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_truckmanager_auto_assign_balanced",
+      "target": "api_assignments_assign_delivery"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "api_assignments_rationale_25",
+      "target": "services_truck_manager_truckmanager_auto_assign_balanced"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "truck_manager_py",
+      "target": "services_truck_manager_truckmanager_auto_assign_balanced"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_rationale_1",
+      "target": "truck_manager_py"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_rationale_7",
+      "target": "truck_manager_py"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/services/truck_manager.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "services_truck_manager_rationale_13",
+      "target": "api_assignments_assign_delivery"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_bekleyen_siparisler_c4a7feba_md",
+      "target": "converted_bekleyen_siparisler_c4a7feba_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_bekleyen_siparisler_c4a7feba_md",
+      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "graphify_out_converted_hazir_siparisler_d229c32f_md",
+      "target": "converted_hazir_siparisler_d229c32f_sheet_sheet1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_hazir_siparisler_d229c32f_md",
+      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/trucks_ed6e51a3.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_trucks_ed6e51a3_md",
+      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/M\u00fc\u015fteri Listesi_2c2757a4.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_m\u00fc\u015fteri_listesi_2c2757a4_md",
+      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Bekleyen_Siparisler_006859e6.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_bekleyen_siparisler_006859e6_md",
+      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Hazir_Siparisler_ef59ec85.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_hazir_siparisler_ef59ec85_md",
+      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_services_data_processor_copy_py",
-      "target": "services_data_processor_copy_dataprocessor",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor"
     },
     {
       "relation": "rationale_for",
@@ -3930,9 +4351,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_rationale_1",
-      "target": "backend_services_data_processor_copy_py",
-      "confidence_score": 1.0
+      "target": "backend_services_data_processor_copy_py"
     },
     {
       "relation": "method",
@@ -3940,9 +4361,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_dataprocessor",
-      "target": "services_data_processor_copy_dataprocessor_init",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_init"
     },
     {
       "relation": "method",
@@ -3950,9 +4371,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_dataprocessor",
-      "target": "services_data_processor_copy_dataprocessor_get_all_coordinates",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_all_coordinates"
     },
     {
       "relation": "method",
@@ -3960,9 +4381,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_dataprocessor",
-      "target": "services_data_processor_copy_dataprocessor_get_coordinate_by_id",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_coordinate_by_id"
     },
     {
       "relation": "method",
@@ -3980,9 +4401,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_dataprocessor",
-      "target": "services_data_processor_copy_dataprocessor_get_coordinates_except_one_status",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_coordinates_except_one_status"
     },
     {
       "relation": "method",
@@ -3990,9 +4411,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_dataprocessor",
-      "target": "services_data_processor_copy_dataprocessor_get_sale_rep_list",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_sale_rep_list"
     },
     {
       "relation": "method",
@@ -4000,9 +4421,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_dataprocessor",
-      "target": "services_data_processor_copy_dataprocessor_get_ambalaj",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_ambalaj"
     },
     {
       "relation": "method",
@@ -4010,9 +4431,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_dataprocessor",
-      "target": "services_data_processor_copy_dataprocessor_get_st_bazli",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_st_bazli"
     },
     {
       "relation": "method",
@@ -4030,9 +4451,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_dataprocessor",
-      "target": "services_data_processor_copy_dataprocessor_get_all_trucks",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_all_trucks"
     },
     {
       "relation": "method",
@@ -4060,9 +4481,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_dataprocessor",
-      "target": "services_data_processor_copy_dataprocessor_get_summary",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_summary"
     },
     {
       "relation": "method",
@@ -4070,9 +4491,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_dataprocessor",
-      "target": "services_data_processor_copy_dataprocessor_get_truck_capacities",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_truck_capacities"
     },
     {
       "relation": "method",
@@ -4080,9 +4501,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L181",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_dataprocessor",
-      "target": "services_data_processor_copy_dataprocessor_reset_all",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_reset_all"
     },
     {
       "relation": "rationale_for",
@@ -4090,19 +4511,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_rationale_11",
-      "target": "services_data_processor_copy_dataprocessor",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L3",
-      "weight": 0.8,
-      "source": "services_truck_manager_truckmanager",
-      "target": "services_data_processor_copy_dataprocessor",
-      "confidence_score": 0.5
+      "target": "services_data_processor_copy_dataprocessor"
     },
     {
       "relation": "method",
@@ -4205,16 +4616,6 @@
       "target": "services_data_processor_copy_dataprocessor"
     },
     {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_data_processor_copy_dataprocessor",
-      "target": "services_truck_manager_truckmanager_init"
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "backend/services/data_processor_copy.py",
@@ -4240,9 +4641,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_rationale_24",
-      "target": "services_data_processor_copy_dataprocessor_get_all_coordinates",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_all_coordinates"
     },
     {
       "relation": "rationale_for",
@@ -4250,9 +4651,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_rationale_28",
-      "target": "services_data_processor_copy_dataprocessor_get_coordinate_by_id",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_coordinate_by_id"
     },
     {
       "relation": "rationale_for",
@@ -4260,9 +4661,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_rationale_35",
-      "target": "services_data_processor_copy_dataprocessor_get_coordinates_by_status",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_coordinates_by_status"
     },
     {
       "relation": "rationale_for",
@@ -4280,9 +4681,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_rationale_43",
-      "target": "services_data_processor_copy_dataprocessor_get_coordinates_except_one_status",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_coordinates_except_one_status"
     },
     {
       "relation": "rationale_for",
@@ -4290,9 +4691,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_rationale_51",
-      "target": "services_data_processor_copy_dataprocessor_get_sale_rep_list",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_sale_rep_list"
     },
     {
       "relation": "rationale_for",
@@ -4300,9 +4701,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_rationale_55",
-      "target": "services_data_processor_copy_dataprocessor_get_ambalaj",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_ambalaj"
     },
     {
       "relation": "rationale_for",
@@ -4310,9 +4711,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_rationale_59",
-      "target": "services_data_processor_copy_dataprocessor_get_st_bazli",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_st_bazli"
     },
     {
       "relation": "calls",
@@ -4321,9 +4722,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L168",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_dataprocessor_get_truck_capacities",
-      "target": "services_data_processor_copy_dataprocessor_get_all_trucks",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_all_trucks"
     },
     {
       "relation": "rationale_for",
@@ -4331,9 +4732,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_rationale_81",
-      "target": "services_data_processor_copy_dataprocessor_get_all_trucks",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_all_trucks"
     },
     {
       "relation": "calls",
@@ -4352,9 +4753,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_rationale_89",
-      "target": "services_data_processor_copy_dataprocessor_get_truck_by_id",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_truck_by_id"
     },
     {
       "relation": "rationale_for",
@@ -4372,9 +4773,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L106",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_rationale_106",
-      "target": "services_data_processor_copy_dataprocessor_update_truck_load",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_update_truck_load"
     },
     {
       "relation": "rationale_for",
@@ -4392,9 +4793,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L146",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_rationale_146",
-      "target": "services_data_processor_copy_dataprocessor_get_summary",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_get_summary"
     },
     {
       "relation": "rationale_for",
@@ -4402,9 +4803,9 @@
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L182",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_data_processor_copy_rationale_182",
-      "target": "services_data_processor_copy_dataprocessor_reset_all",
-      "confidence_score": 1.0
+      "target": "services_data_processor_copy_dataprocessor_reset_all"
     },
     {
       "relation": "rationale_for",
@@ -4417,261 +4818,6 @@
       "target": "data_processor_copy_py"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L6",
-      "weight": 1.0,
-      "source": "backend_services_truck_manager_py",
-      "target": "services_truck_manager_truckmanager",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "source": "services_truck_manager_rationale_1",
-      "target": "backend_services_truck_manager_py",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L9",
-      "weight": 1.0,
-      "source": "services_truck_manager_truckmanager",
-      "target": "services_truck_manager_truckmanager_init",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L12",
-      "weight": 1.0,
-      "source": "services_truck_manager_truckmanager",
-      "target": "services_truck_manager_truckmanager_assign_delivery",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L40",
-      "weight": 1.0,
-      "source": "services_truck_manager_truckmanager",
-      "target": "services_truck_manager_truckmanager_unassign_delivery",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L55",
-      "weight": 1.0,
-      "source": "services_truck_manager_truckmanager",
-      "target": "services_truck_manager_truckmanager_auto_assign_balanced_den",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L90",
-      "weight": 1.0,
-      "source": "services_truck_manager_truckmanager",
-      "target": "services_truck_manager_truckmanager_auto_assign_balanced",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L7",
-      "weight": 1.0,
-      "source": "services_truck_manager_rationale_7",
-      "target": "services_truck_manager_truckmanager",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "services_truck_manager_truckmanager_init",
-      "target": "data_read_data_read_data"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/automation.py",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_automation_automationworker",
-      "target": "services_truck_manager_truckmanager_init"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/services/data_processor_copy.py",
-      "source_location": "L16",
-      "weight": 1.0,
-      "source": "services_truck_manager_truckmanager_init",
-      "target": "read_truck_py"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rapor_otomasyon_servisi_py",
-      "target": "services_truck_manager_truckmanager_init"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "truck_manager_py",
-      "target": "services_truck_manager_truckmanager_init"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L75",
-      "weight": 1.0,
-      "source": "services_truck_manager_truckmanager_auto_assign_balanced_den",
-      "target": "services_truck_manager_truckmanager_assign_delivery",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L110",
-      "weight": 1.0,
-      "source": "services_truck_manager_truckmanager_auto_assign_balanced",
-      "target": "services_truck_manager_truckmanager_assign_delivery",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L13",
-      "weight": 1.0,
-      "source": "services_truck_manager_rationale_13",
-      "target": "services_truck_manager_truckmanager_assign_delivery",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L41",
-      "weight": 1.0,
-      "source": "services_truck_manager_rationale_41",
-      "target": "services_truck_manager_truckmanager_unassign_delivery",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L56",
-      "weight": 1.0,
-      "source": "services_truck_manager_rationale_56",
-      "target": "services_truck_manager_truckmanager_auto_assign_balanced_den",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L91",
-      "weight": 1.0,
-      "source": "services_truck_manager_rationale_91",
-      "target": "services_truck_manager_truckmanager_auto_assign_balanced",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L75",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_truck_manager_truckmanager_auto_assign_balanced",
-      "target": "api_assignments_assign_delivery"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L56",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "api_assignments_rationale_25",
-      "target": "services_truck_manager_truckmanager_auto_assign_balanced"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L55",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "truck_manager_py",
-      "target": "services_truck_manager_truckmanager_auto_assign_balanced"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_truck_manager_rationale_1",
-      "target": "truck_manager_py"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_truck_manager_rationale_7",
-      "target": "truck_manager_py"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/services/truck_manager.py",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "services_truck_manager_rationale_13",
-      "target": "api_assignments_assign_delivery"
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "backend/services/truck_manager.py",
@@ -4680,76 +4826,6 @@
       "confidence_score": 1.0,
       "source": "services_truck_manager_rationale_41",
       "target": "api_assignments_unassign_delivery"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "graphify_out_converted_bekleyen_siparisler_c4a7feba_md",
-      "target": "converted_bekleyen_siparisler_c4a7feba_sheet_sheet1",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_bekleyen_siparisler_c4a7feba_md",
-      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/trucks_ed6e51a3.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_trucks_ed6e51a3_md",
-      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_hazir_siparisler_d229c32f_md",
-      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/M\u00fc\u015fteri Listesi_2c2757a4.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_m\u00fc\u015fteri_listesi_2c2757a4_md",
-      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/Bekleyen_Siparisler_006859e6.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_bekleyen_siparisler_006859e6_md",
-      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/Hazir_Siparisler_ef59ec85.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_hazir_siparisler_ef59ec85_md",
-      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
     },
     {
       "relation": "imports",
@@ -9658,5 +9734,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "e9e9100fe19a045d0cbba6290246e699e304d37e"
+  "built_at_commit": "088e6012ae732f658a864fcc8b7be89b32652596"
 }

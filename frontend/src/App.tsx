@@ -1,8 +1,9 @@
 /**
- * App — root component. Switches between MapView and DashboardPage.
+ * App — root component. Handles routing between different views.
  */
 
-import { useState } from "react";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Group, Panel, Separator } from "react-resizable-panels";
 import { useLogistics } from "./hooks/useLogistics";
 import { useMapFilters } from "./hooks/useMapFilters";
 import { useMultiSelect } from "./hooks/useMultiSelect";
@@ -10,16 +11,13 @@ import { useMultiSelect } from "./hooks/useMultiSelect";
 import Sidebar from "./components/Sidebar/Sidebar";
 import MapView from "./components/Map/MapView";
 import { MapFilterBar } from "./components/Map/MapFilterBar";
-import { AppNav, type AppPage } from "./components/AppNav/AppNav";
-import { QuickSwitch } from "./components/QuickSwitch/QuickSwitch";
+import { AppNav } from "./components/AppNav/AppNav";
 import { DashboardPage } from "./pages/Dashboard/DashboardPage";
 import { StatisticsPage } from "./pages/Statistics/StatisticsPage";
 
 import "./App.css";
 
 export default function App() {
-  const [page, setPage] = useState<AppPage>("map");
-
   const {
     coordinates,
     trucks,
@@ -87,107 +85,147 @@ export default function App() {
     }
     coordSelection.deselectAll();
   };
-  const renderPage = () => {
-    switch (page) {
-      case "map":
-        return (
-          <div className="app">
-            <Sidebar
-              trucks={trucks}
-              summary={summary}
-              selectedTruckId={selectedTruckId}
-              onSelectTruck={handleSelectTruck}
-              onAutoAssign={handleAutoAssign}
-              onReset={handleReset}
-            />
-            <main className="app__main" style={{ position: "relative" }}>
-              <MapFilterBar
-                filters={filters}
-                activeFilterCount={activeFilterCount}
-                truckOptions={truckOptions}
-                salesRepsData={salesRepsData}
-                toggleStatus={toggleStatus}
-                toggleTruckFilter={toggleTruckFilter}
-                setStatuses={setStatuses}
-                setTruckIds={setTruckIds}
-                setSaleReps={setSaleReps}
-                resetFilters={resetFilters}
-              />
-              <MapView
-                coordinates={filteredCoordinates}
-                trucks={trucks}
-                selectedTruckId={selectedTruckId}
-                onAssign={handleMapAssign}
-                selectedCoordIds={coordSelection.selected}
-                onLassoSelection={(ids) => coordSelection.setSelected(ids)}
-                salesRepsData={salesRepsData}
-              />
 
-              {/* Batch Assign Overlay */}
-              {coordSelection.count > 0 && (
-                <div className="batch-assign-overlay" style={{
-                  position: "absolute", bottom: 30, left: "50%", transform: "translateX(-50%)",
-                  background: "rgba(15, 23, 42, 0.9)", padding: "12px 24px", borderRadius: "12px",
-                  boxShadow: "0 8px 32px rgba(0,0,0,0.3)", border: "1px solid rgba(99,102,241,0.3)",
-                  display: "flex", alignItems: "center", gap: "16px", zIndex: 1000, color: "white",
-                  backdropFilter: "blur(12px)",
-                }}>
-                  <span><strong>{coordSelection.count}</strong> locations selected</span>
-                  {selectedTruckId ? (
-                    <button
-                      onClick={handleBatchAssign}
-                      style={{
-                        background: "#6366f1", color: "white", border: "none", padding: "8px 16px",
-                        borderRadius: "6px", fontWeight: "bold", cursor: "pointer",
-                      }}
-                    >
-                      Assign to Truck #{selectedTruckId}
-                    </button>
-                  ) : (
-                    <span style={{ color: "#94a3b8", fontSize: "14px" }}>Select a truck in sidebar</span>
-                  )}
-                  <button
-                    onClick={coordSelection.deselectAll}
-                    style={{ background: "transparent", border: "none", color: "#ff6b6b", cursor: "pointer", padding: "8px" }}
-                  >
-                    Clear
-                  </button>
-                </div>
-              )}
-            </main>
+  const mapContent = (
+    <div className="app">
+      <Sidebar
+        trucks={trucks}
+        summary={summary}
+        selectedTruckId={selectedTruckId}
+        onSelectTruck={handleSelectTruck}
+        onAutoAssign={handleAutoAssign}
+        onReset={handleReset}
+      />
+      <main className="app__main" style={{ position: "relative" }}>
+        <MapFilterBar
+          filters={filters}
+          activeFilterCount={activeFilterCount}
+          truckOptions={truckOptions}
+          salesRepsData={salesRepsData}
+          toggleStatus={toggleStatus}
+          toggleTruckFilter={toggleTruckFilter}
+          setStatuses={setStatuses}
+          setTruckIds={setTruckIds}
+          setSaleReps={setSaleReps}
+          resetFilters={resetFilters}
+        />
+        <MapView
+          coordinates={filteredCoordinates}
+          trucks={trucks}
+          selectedTruckId={selectedTruckId}
+          onAssign={handleMapAssign}
+          selectedCoordIds={coordSelection.selected}
+          onLassoSelection={(ids) => coordSelection.setSelected(ids)}
+          salesRepsData={salesRepsData}
+        />
+
+        {/* Batch Assign Overlay */}
+        {coordSelection.count > 0 && (
+          <div className="batch-assign-overlay" style={{
+            position: "absolute", bottom: 30, left: "50%", transform: "translateX(-50%)",
+            background: "rgba(15, 23, 42, 0.9)", padding: "12px 24px", borderRadius: "12px",
+            boxShadow: "0 8px 32px rgba(0,0,0,0.3)", border: "1px solid rgba(99,102,241,0.3)",
+            display: "flex", alignItems: "center", gap: "16px", zIndex: 1000, color: "white",
+            backdropFilter: "blur(12px)",
+          }}>
+            <span><strong>{coordSelection.count}</strong> locations selected</span>
+            {selectedTruckId ? (
+              <button
+                onClick={handleBatchAssign}
+                style={{
+                  background: "#6366f1", color: "white", border: "none", padding: "8px 16px",
+                  borderRadius: "6px", fontWeight: "bold", cursor: "pointer",
+                }}
+              >
+                Assign to Truck #{selectedTruckId}
+              </button>
+            ) : (
+              <span style={{ color: "#94a3b8", fontSize: "14px" }}>Select a truck in sidebar</span>
+            )}
+            <button
+              onClick={coordSelection.deselectAll}
+              style={{ background: "transparent", border: "none", color: "#ff6b6b", cursor: "pointer", padding: "8px" }}
+            >
+              Clear
+            </button>
           </div>
-        );
-
-      case "dashboard":
-        return (
-          <DashboardPage
-            coordinates={coordinates}
-            trucks={trucks}
-            summary={summary}
-            selectedTruckId={selectedTruckId}
-            onSelectTruck={handleSelectTruck}
-            onAssign={handleAssign}
-            onUnassign={handleUnassign}
-          />
-        );
-
-      case "statistics":
-        return (
-          <StatisticsPage
-            st_bazliData={st_bazliData}
-            ambalajData={ambalajData}
-            coordinates={coordinates}
-          />
-        );
-
-      default:
-        return <div>Page not found</div>;
-    }
-  };
-  return (
-    <div className="app-shell" id="logistics-app">
-      <AppNav page={page} onChangePage={setPage} />
-      {renderPage()}
+        )}
+      </main>
     </div>
+  );
+
+  const dashboardContent = (
+    <DashboardPage
+      coordinates={coordinates}
+      trucks={trucks}
+      summary={summary}
+      selectedTruckId={selectedTruckId}
+      onSelectTruck={handleSelectTruck}
+      onAssign={handleAssign}
+      onUnassign={handleUnassign}
+    />
+  );
+
+  const statisticsContent = (
+    <StatisticsPage
+      st_bazliData={st_bazliData}
+      ambalajData={ambalajData}
+      coordinates={coordinates}
+    />
+  );
+
+  const workspaceContent = (
+    <Group orientation="horizontal" style={{ width: "100%", height: "100%", overflow: "hidden", display: "flex" }}>
+      <Panel 
+        defaultSize={50} 
+        minSize={20} 
+        onResize={() => window.dispatchEvent(new Event('resize'))}
+      >
+        <div style={{ height: "100%", width: "100%", overflow: "hidden", display: "flex", flexDirection: "column" }}>
+          {mapContent}
+        </div>
+      </Panel>
+      
+      <Separator 
+        style={{
+          width: "6px", 
+          background: "#1e293b", 
+          cursor: "col-resize",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          zIndex: 10
+        }}
+      >
+        <div style={{ width: "2px", height: "24px", background: "#475569", borderRadius: "2px" }} />
+      </Separator>
+
+      <Panel 
+        defaultSize={50} 
+        minSize={20}
+        onResize={() => window.dispatchEvent(new Event('resize'))}
+      >
+        <div style={{ height: "100%", width: "100%", overflow: "hidden", display: "flex", flexDirection: "column" }}>
+          {dashboardContent}
+        </div>
+      </Panel>
+    </Group>
+  );
+
+  return (
+    <BrowserRouter>
+      <div className="app-shell" id="logistics-app">
+        <AppNav />
+        <div style={{ flex: 1, overflow: "hidden", display: "flex", flexDirection: "column" }}>
+          <Routes>
+            <Route path="/" element={<Navigate to="/workspace" replace />} />
+            <Route path="/workspace" element={workspaceContent} />
+            <Route path="/map" element={mapContent} />
+            <Route path="/dashboard" element={dashboardContent} />
+            <Route path="/statistics" element={statisticsContent} />
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }

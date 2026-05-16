@@ -1,17 +1,8 @@
-/**
- * AppNav — top navigation bar for page switching.
- */
-import { Map, LayoutDashboard } from "lucide-react";
+import { NavLink } from "react-router-dom";
+import { Map, LayoutDashboard, Columns, BarChart2 } from "lucide-react";
 import "./AppNav.css";
 
-export type AppPage = "map" | "dashboard" | "statistics";
-
-interface AppNavProps {
-  page: AppPage;
-  onChangePage: (page: AppPage) => void;
-}
-
-export function AppNav({ page, onChangePage }: AppNavProps) {
+export function AppNav() {
   return (
     <nav className="app-nav" id="app-nav">
       <div className="app-nav__brand">
@@ -19,30 +10,34 @@ export function AppNav({ page, onChangePage }: AppNavProps) {
         <span className="app-nav__title">Logistics Tracker</span>
       </div>
       <div className="app-nav__tabs">
-        <button
-          id="nav-tab-map"
-          className={`app-nav__tab ${page === "map" ? "app-nav__tab--active" : ""}`}
-          onClick={() => onChangePage("map")}
+        <NavLink 
+          to="/workspace" 
+          className={({ isActive }) => `app-nav__tab ${isActive ? "app-nav__tab--active" : ""}`}
+        >
+          <Columns size={16} />
+          Workspace
+        </NavLink>
+        <NavLink 
+          to="/map" 
+          className={({ isActive }) => `app-nav__tab ${isActive ? "app-nav__tab--active" : ""}`}
         >
           <Map size={16} />
           Map View
-        </button>
-        <button
-          id="nav-tab-dashboard"
-          className={`app-nav__tab ${page === "dashboard" ? "app-nav__tab--active" : ""}`}
-          onClick={() => onChangePage("dashboard")}
+        </NavLink>
+        <NavLink 
+          to="/dashboard" 
+          className={({ isActive }) => `app-nav__tab ${isActive ? "app-nav__tab--active" : ""}`}
         >
           <LayoutDashboard size={16} />
           Dashboard
-        </button>
-        <button
-          id="nav-tab-statistics"
-          className={`app-nav__tab ${page === "statistics" ? "app-nav__tab--active" : ""}`}
-          onClick={() => onChangePage("statistics")}
+        </NavLink>
+        <NavLink 
+          to="/statistics" 
+          className={({ isActive }) => `app-nav__tab ${isActive ? "app-nav__tab--active" : ""}`}
         >
-          <LayoutDashboard size={16} />
+          <BarChart2 size={16} />
           Statistics
-        </button>
+        </NavLink>
       </div>
       <div className="app-nav__spacer" />
     </nav>
