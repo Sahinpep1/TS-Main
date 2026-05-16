@@ -110,9 +110,9 @@
     "semantic_hash": "0355276bc79439afe3c53e3a2470ca1e"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\package.json": {
-    "mtime": 1778770182.699204,
-    "ast_hash": "b946b955ffc80fdd96e8e7506aaaf868",
-    "semantic_hash": "b946b955ffc80fdd96e8e7506aaaf868"
+    "mtime": 1778916421.0640483,
+    "ast_hash": "bc319aaf853cd99fe59a299204bb024e",
+    "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\postcss.config.js": {
     "mtime": 1778602243.6026356,
@@ -145,9 +145,9 @@
     "semantic_hash": "2a604d29759cd03b588f0301aaa25a8d"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\App.tsx": {
-    "mtime": 1778771420.3528607,
-    "ast_hash": "34eadb8395e12d9b0e0c6c331587d69d",
-    "semantic_hash": "34eadb8395e12d9b0e0c6c331587d69d"
+    "mtime": 1778917605.5305018,
+    "ast_hash": "b23bbdf05f560dffbf4d4bff0c87f779",
+    "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\main.tsx": {
     "mtime": 1778504876.190158,
@@ -175,9 +175,9 @@
     "semantic_hash": "5f16f6737a17cc960ad2d60e70b76ca4"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\AppNav\\AppNav.tsx": {
-    "mtime": 1778757895.091405,
-    "ast_hash": "eed5044b42ffc6b62980b801241c09bb",
-    "semantic_hash": "eed5044b42ffc6b62980b801241c09bb"
+    "mtime": 1778915682.5907967,
+    "ast_hash": "51f413093c5dc9c3787e872a595942c6",
+    "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Dashboard\\KpiCards.tsx": {
     "mtime": 1778689330.7906306,
@@ -225,7 +225,7 @@
     "semantic_hash": "943209611cf7575e59f02077d3f06dd5"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Map\\MapView.tsx": {
-    "mtime": 1778749587.0489316,
+    "mtime": 1778918300.7267842,
     "ast_hash": "43ec87345f49fdc013a508db7091c0c5",
     "semantic_hash": "43ec87345f49fdc013a508db7091c0c5"
   },
@@ -350,37 +350,37 @@
     "semantic_hash": "31948661d079f2a03bbaaf921f1661d1"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Bekleyen_Siparisler_c4a7feba.md": {
-    "mtime": 1778914407.4895556,
+    "mtime": 1778918476.4836998,
     "ast_hash": "ced0678e2a6f1d5c599a20b9579937a2",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Hazir_Siparisler_d229c32f.md": {
-    "mtime": 1778914407.6718447,
+    "mtime": 1778918476.657578,
     "ast_hash": "4c5b8bc4857ce46026fbaef189fa12fa",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\M\u00fc\u015fteri Listesi_2c2757a4.md": {
-    "mtime": 1778914409.152101,
+    "mtime": 1778918477.9138818,
     "ast_hash": "17e74dbc9a1d60a1cde22d86d499b254",
     "semantic_hash": "17e74dbc9a1d60a1cde22d86d499b254"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Palet Koli Raporu_a7a2c99e.md": {
-    "mtime": 1778914409.262517,
+    "mtime": 1778918478.0063672,
     "ast_hash": "7833cbb79ed16063a66d72095ade532e",
     "semantic_hash": "7833cbb79ed16063a66d72095ade532e"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\trucks_ed6e51a3.md": {
-    "mtime": 1778914409.293647,
+    "mtime": 1778918478.0230477,
     "ast_hash": "01d4f0dc6dc588b4d007b20e10db8555",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Bekleyen_Siparisler_006859e6.md": {
-    "mtime": 1778914409.3871357,
+    "mtime": 1778918478.045362,
     "ast_hash": "70bcd5266afdf7035ffba8896ed50b55",
     "semantic_hash": "70bcd5266afdf7035ffba8896ed50b55"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Hazir_Siparisler_ef59ec85.md": {
-    "mtime": 1778914409.7275617,
+    "mtime": 1778918478.3781965,
     "ast_hash": "206a8a6e3b6dba0a819e9e6018da2c2b",
     "semantic_hash": "206a8a6e3b6dba0a819e9e6018da2c2b"
   },

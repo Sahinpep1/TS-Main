@@ -12,6 +12,7 @@ import {
   createColumnHelper,
   type SortingState,
   type ColumnFiltersState,
+  type RowSelectionState,
 } from "@tanstack/react-table";
 import { ChevronUp, ChevronDown, Search } from "lucide-react";
 import type { Coordinate, Truck } from "../../types";
@@ -37,22 +38,42 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
   const [globalFilter, setGlobalFilter]   = useState("");
   const [assigningId, setAssigningId]     = useState<number | null>(null);
-  const [loadingId, setLoadingId]         = useState<number | null>(null);
+  const [loadingIds, setLoadingIds]       = useState<number[]>([]);
+  const [rowSelection, setRowSelection]   = useState<RowSelectionState>({});
 
   const doAssign = async (coordId: number, truckId: number) => {
-    setLoadingId(coordId);
+    setLoadingIds((prev) => [...prev, coordId]);
     await onAssign(coordId, truckId);
     setAssigningId(null);
-    setLoadingId(null);
+    setLoadingIds((prev) => prev.filter((id) => id !== coordId));
   };
 
   const doUnassign = async (coordId: number) => {
-    setLoadingId(coordId);
+    setLoadingIds((prev) => [...prev, coordId]);
     await onUnassign(coordId);
-    setLoadingId(null);
+    setLoadingIds((prev) => prev.filter((id) => id !== coordId));
   };
 
   const columns = useMemo(() => [
+    col.display({
+      id: "select",
+      header: ({ table }) => (
+        <input
+          type="checkbox"
+          checked={table.getIsAllPageRowsSelected()}
+          onChange={table.getToggleAllPageRowsSelectedHandler()}
+          aria-label="Select all"
+        />
+      ),
+      cell: ({ row }) => (
+        <input
+          type="checkbox"
+          checked={row.getIsSelected()}
+          onChange={row.getToggleSelectedHandler()}
+          aria-label="Select row"
+        />
+      ),
+    }),
     col.accessor("id", {
       header: "ID",
       size: 60,
@@ -104,7 +125,7 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
       header: "Actions",
       cell: ({ row }) => {
         const c = row.original;
-        if (loadingId === c.id) return <span className="cell-muted">…</span>;
+        if (loadingIds.includes(c.id)) return <span className="cell-muted">…</span>;
 
         if (assigningId === c.id) {
           return (
@@ -137,12 +158,14 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
         );
       },
     }),
-  ], [trucks, assigningId, loadingId]);
+  ], [trucks, assigningId, loadingIds]);
 
   const table = useReactTable({
     data: coordinates,
     columns,
-    state: { sorting, columnFilters, globalFilter },
+    state: { sorting, columnFilters, globalFilter, rowSelection },
+    enableRowSelection: true,
+    onRowSelectionChange: setRowSelection,
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
     onGlobalFilterChange: setGlobalFilter,
@@ -152,6 +175,36 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
     getPaginationRowModel: getPaginationRowModel(),
     initialState: { pagination: { pageSize: 20 } },
   });
+
+  const doBulkAssign = async (truckId: number) => {
+    const selectedRows = table.getSelectedRowModel().rows;
+    if (!selectedRows.length) return;
+    
+    const ids = selectedRows.map((r) => r.original.id);
+    setLoadingIds((prev) => [...prev, ...ids]);
+    
+    for (const id of ids) {
+      await onAssign(id, truckId);
+    }
+    
+    setLoadingIds((prev) => prev.filter((id) => !ids.includes(id)));
+    setRowSelection({});
+  };
+
+  const doBulkUnassign = async () => {
+    const selectedRows = table.getSelectedRowModel().rows;
+    if (!selectedRows.length) return;
+    
+    const ids = selectedRows.map((r) => r.original.id);
+    setLoadingIds((prev) => [...prev, ...ids]);
+    
+    for (const id of ids) {
+      await onUnassign(id);
+    }
+    
+    setLoadingIds((prev) => prev.filter((id) => !ids.includes(id)));
+    setRowSelection({});
+  };
 
   const uniqueReps = useMemo(
     () => [...new Set(coordinates.map((c) => c.sales_rep))].sort(),
@@ -173,8 +226,35 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
   return (
     <div className="orders-table-container">
       {/* Toolbar */}
-      <div className="orders-toolbar">
-        <div className="orders-search-wrap">
+      <div className="orders-toolbar" style={{ flexWrap: "wrap", gap: "10px" }}>
+        {Object.keys(rowSelection).length > 0 && (
+          <div className="orders-bulk-actions" style={{ display: "flex", gap: "8px", alignItems: "center", marginRight: "auto", background: "#e0e7ff", padding: "4px 8px", borderRadius: "6px" }}>
+            <span style={{ fontSize: "13px", fontWeight: 600, color: "#4338ca" }}>
+              {Object.keys(rowSelection).length} selected
+            </span>
+            <select
+              className="assign-select"
+              defaultValue=""
+              onChange={(e) => {
+                if (e.target.value) doBulkAssign(Number(e.target.value));
+              }}
+              style={{ padding: "4px 8px", fontSize: "13px", height: "auto" }}
+            >
+              <option value="" disabled>Bulk Assign to…</option>
+              {trucks.map((t) => (
+                <option key={t.id} value={t.id}>{t.Plaka}</option>
+              ))}
+            </select>
+            <button 
+              className="btn-unassign" 
+              onClick={doBulkUnassign}
+              style={{ padding: "4px 8px", fontSize: "13px", height: "auto" }}
+            >
+              Bulk Unassign
+            </button>
+          </div>
+        )}
+        <div className="orders-search-wrap" style={{ marginLeft: Object.keys(rowSelection).length > 0 ? "0" : "auto" }}>
           <Search size={14} className="orders-search-icon" />
           <input
             id="orders-search"

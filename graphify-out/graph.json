@@ -4,175 +4,652 @@
   "graph": {},
   "nodes": [
     {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "id": "package_json",
+      "community": 3,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "id": "frontend_package_name",
+      "community": 3,
+      "norm_label": "name"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "id": "frontend_package_private",
+      "community": 3,
+      "norm_label": "private"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "id": "frontend_package_version",
+      "community": 3,
+      "norm_label": "version"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "id": "frontend_package_type",
+      "community": 3,
+      "norm_label": "type"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "id": "frontend_package_scripts",
+      "community": 3,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "id": "frontend_package_scripts_dev",
+      "community": 3,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "id": "frontend_package_scripts_build",
+      "community": 3,
+      "norm_label": "build"
+    },
+    {
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "id": "frontend_package_scripts_lint",
+      "community": 3,
+      "norm_label": "lint"
+    },
+    {
+      "label": "preview",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "id": "frontend_package_scripts_preview",
+      "community": 3,
+      "norm_label": "preview"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "id": "frontend_package_dependencies",
+      "community": 3,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "@fontsource-variable/geist",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "id": "frontend_package_dependencies_fontsource_variable_geist",
+      "community": 3,
+      "norm_label": "@fontsource-variable/geist"
+    },
+    {
+      "label": "@geoman-io/leaflet-geoman-free",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L14",
+      "id": "frontend_package_dependencies_geoman_io_leaflet_geoman_free",
+      "community": 3,
+      "norm_label": "@geoman-io/leaflet-geoman-free"
+    },
+    {
+      "label": "@tanstack/react-table",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "id": "frontend_package_dependencies_tanstack_react_table",
+      "community": 3,
+      "norm_label": "@tanstack/react-table"
+    },
+    {
+      "label": "@types/leaflet",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "id": "frontend_package_dependencies_types_leaflet",
+      "community": 3,
+      "norm_label": "@types/leaflet"
+    },
+    {
+      "label": "axios",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "id": "frontend_package_dependencies_axios",
+      "community": 3,
+      "norm_label": "axios"
+    },
+    {
+      "label": "class-variance-authority",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "id": "frontend_package_dependencies_class_variance_authority",
+      "community": 3,
+      "norm_label": "class-variance-authority"
+    },
+    {
+      "label": "clsx",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "id": "frontend_package_dependencies_clsx",
+      "community": 3,
+      "norm_label": "clsx"
+    },
+    {
+      "label": "leaflet",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "id": "frontend_package_dependencies_leaflet",
+      "community": 3,
+      "norm_label": "leaflet"
+    },
+    {
+      "label": "leaflet-lasso",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "id": "frontend_package_dependencies_leaflet_lasso",
+      "community": 3,
+      "norm_label": "leaflet-lasso"
+    },
+    {
+      "label": "leaflet.heat",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "id": "frontend_package_dependencies_leaflet_heat",
+      "community": 3,
+      "norm_label": "leaflet.heat"
+    },
+    {
+      "label": "lucide-react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "id": "frontend_package_dependencies_lucide_react",
+      "community": 3,
+      "norm_label": "lucide-react"
+    },
+    {
+      "label": "radix-ui",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "id": "frontend_package_dependencies_radix_ui",
+      "community": 3,
+      "norm_label": "radix-ui"
+    },
+    {
+      "label": "react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "id": "frontend_package_dependencies_react",
+      "community": 3,
+      "norm_label": "react"
+    },
+    {
+      "label": "react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "id": "frontend_package_dependencies_react_dom",
+      "community": 3,
+      "norm_label": "react-dom"
+    },
+    {
+      "label": "react-leaflet",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "id": "frontend_package_dependencies_react_leaflet",
+      "community": 3,
+      "norm_label": "react-leaflet"
+    },
+    {
+      "label": "react-resizable-panels",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "id": "frontend_package_dependencies_react_resizable_panels",
+      "community": 3,
+      "norm_label": "react-resizable-panels"
+    },
+    {
+      "label": "react-router-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "id": "frontend_package_dependencies_react_router_dom",
+      "community": 3,
+      "norm_label": "react-router-dom"
+    },
+    {
+      "label": "recharts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "id": "frontend_package_dependencies_recharts",
+      "community": 3,
+      "norm_label": "recharts"
+    },
+    {
+      "label": "shadcn",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "id": "frontend_package_dependencies_shadcn",
+      "community": 3,
+      "norm_label": "shadcn"
+    },
+    {
+      "label": "tailwind-merge",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "id": "frontend_package_dependencies_tailwind_merge",
+      "community": 3,
+      "norm_label": "tailwind-merge"
+    },
+    {
+      "label": "tw-animate-css",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "id": "frontend_package_dependencies_tw_animate_css",
+      "community": 3,
+      "norm_label": "tw-animate-css"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "id": "frontend_package_devdependencies",
+      "community": 9,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "@eslint/js",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "id": "frontend_package_devdependencies_eslint_js",
+      "community": 9,
+      "norm_label": "@eslint/js"
+    },
+    {
+      "label": "@tailwindcss/postcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "id": "frontend_package_devdependencies_tailwindcss_postcss",
+      "community": 9,
+      "norm_label": "@tailwindcss/postcss"
+    },
+    {
+      "label": "@types/node",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L38",
+      "id": "frontend_package_devdependencies_types_node",
+      "community": 9,
+      "norm_label": "@types/node"
+    },
+    {
+      "label": "@types/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L39",
+      "id": "frontend_package_devdependencies_types_react",
+      "community": 9,
+      "norm_label": "@types/react"
+    },
+    {
+      "label": "@types/react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L40",
+      "id": "frontend_package_devdependencies_types_react_dom",
+      "community": 9,
+      "norm_label": "@types/react-dom"
+    },
+    {
+      "label": "@vitejs/plugin-react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L41",
+      "id": "frontend_package_devdependencies_vitejs_plugin_react",
+      "community": 9,
+      "norm_label": "@vitejs/plugin-react"
+    },
+    {
+      "label": "autoprefixer",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L42",
+      "id": "frontend_package_devdependencies_autoprefixer",
+      "community": 9,
+      "norm_label": "autoprefixer"
+    },
+    {
+      "label": "eslint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L43",
+      "id": "frontend_package_devdependencies_eslint",
+      "community": 9,
+      "norm_label": "eslint"
+    },
+    {
+      "label": "eslint-plugin-react-hooks",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L44",
+      "id": "frontend_package_devdependencies_eslint_plugin_react_hooks",
+      "community": 9,
+      "norm_label": "eslint-plugin-react-hooks"
+    },
+    {
+      "label": "eslint-plugin-react-refresh",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L45",
+      "id": "frontend_package_devdependencies_eslint_plugin_react_refresh",
+      "community": 9,
+      "norm_label": "eslint-plugin-react-refresh"
+    },
+    {
+      "label": "globals",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L46",
+      "id": "frontend_package_devdependencies_globals",
+      "community": 9,
+      "norm_label": "globals"
+    },
+    {
+      "label": "postcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L47",
+      "id": "frontend_package_devdependencies_postcss",
+      "community": 9,
+      "norm_label": "postcss"
+    },
+    {
+      "label": "tailwindcss",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L48",
+      "id": "frontend_package_devdependencies_tailwindcss",
+      "community": 9,
+      "norm_label": "tailwindcss"
+    },
+    {
+      "label": "typescript",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L49",
+      "id": "frontend_package_devdependencies_typescript",
+      "community": 9,
+      "norm_label": "typescript"
+    },
+    {
+      "label": "typescript-eslint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L50",
+      "id": "frontend_package_devdependencies_typescript_eslint",
+      "community": 9,
+      "norm_label": "typescript-eslint"
+    },
+    {
+      "label": "vite",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L51",
+      "id": "frontend_package_devdependencies_vite",
+      "community": 9,
+      "norm_label": "vite"
+    },
+    {
+      "label": "App.tsx",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L1",
+      "id": "src_app_tsx",
+      "community": 5,
+      "norm_label": "app.tsx"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L20",
+      "id": "src_app_app",
+      "community": 5,
+      "norm_label": "app()"
+    },
+    {
+      "label": "AppNav.tsx",
+      "file_type": "code",
+      "source_file": "src/components/AppNav/AppNav.tsx",
+      "source_location": "L1",
+      "id": "src_components_appnav_appnav_tsx",
+      "community": 5,
+      "norm_label": "appnav.tsx"
+    },
+    {
+      "label": "AppNav()",
+      "file_type": "code",
+      "source_file": "src/components/AppNav/AppNav.tsx",
+      "source_location": "L5",
+      "id": "appnav_appnav_appnav",
+      "community": 5,
+      "norm_label": "appnav()"
+    },
+    {
       "label": "truck_manager.py",
       "file_type": "code",
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L1",
-      "id": "backend_services_truck_manager_py",
       "community": 4,
-      "norm_label": "truck_manager.py"
+      "norm_label": "truck_manager.py",
+      "id": "backend_services_truck_manager_py"
     },
     {
       "label": "TruckManager",
       "file_type": "code",
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L6",
-      "id": "services_truck_manager_truckmanager",
       "community": 4,
-      "norm_label": "truckmanager"
+      "norm_label": "truckmanager",
+      "id": "services_truck_manager_truckmanager"
     },
     {
       "label": ".__init__()",
       "file_type": "code",
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L9",
-      "id": "services_truck_manager_truckmanager_init",
       "community": 4,
-      "norm_label": ".__init__()"
+      "norm_label": ".__init__()",
+      "id": "services_truck_manager_truckmanager_init"
     },
     {
       "label": ".assign_delivery()",
       "file_type": "code",
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L12",
-      "id": "services_truck_manager_truckmanager_assign_delivery",
       "community": 4,
-      "norm_label": ".assign_delivery()"
+      "norm_label": ".assign_delivery()",
+      "id": "services_truck_manager_truckmanager_assign_delivery"
     },
     {
       "label": ".unassign_delivery()",
       "file_type": "code",
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L43",
-      "id": "services_truck_manager_truckmanager_unassign_delivery",
       "community": 4,
-      "norm_label": ".unassign_delivery()"
+      "norm_label": ".unassign_delivery()",
+      "id": "services_truck_manager_truckmanager_unassign_delivery"
     },
     {
       "label": ".auto_assign_balanced_den()",
       "file_type": "code",
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L58",
-      "id": "services_truck_manager_truckmanager_auto_assign_balanced_den",
       "community": 4,
-      "norm_label": ".auto_assign_balanced_den()"
+      "norm_label": ".auto_assign_balanced_den()",
+      "id": "services_truck_manager_truckmanager_auto_assign_balanced_den"
     },
     {
       "label": ".auto_assign_balanced()",
       "file_type": "code",
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L93",
-      "id": "services_truck_manager_truckmanager_auto_assign_balanced",
       "community": 4,
-      "norm_label": ".auto_assign_balanced()"
+      "norm_label": ".auto_assign_balanced()",
+      "id": "services_truck_manager_truckmanager_auto_assign_balanced"
     },
     {
       "label": "Truck management service \u2014 assignment logic and validation.",
       "file_type": "rationale",
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L1",
-      "id": "services_truck_manager_rationale_1",
       "community": 4,
-      "norm_label": "truck management service \u2014 assignment logic and validation."
+      "norm_label": "truck management service \u2014 assignment logic and validation.",
+      "id": "services_truck_manager_rationale_1"
     },
     {
       "label": "Business logic layer for truck assignment operations.",
       "file_type": "rationale",
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L7",
-      "id": "services_truck_manager_rationale_7",
       "community": 4,
-      "norm_label": "business logic layer for truck assignment operations."
+      "norm_label": "business logic layer for truck assignment operations.",
+      "id": "services_truck_manager_rationale_7"
     },
     {
       "label": "Assign a single delivery coordinate to a truck.",
       "file_type": "rationale",
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L13",
-      "id": "services_truck_manager_rationale_13",
       "community": 4,
-      "norm_label": "assign a single delivery coordinate to a truck."
+      "norm_label": "assign a single delivery coordinate to a truck.",
+      "id": "services_truck_manager_rationale_13"
     },
     {
       "label": "Remove a delivery assignment from its truck.",
       "file_type": "rationale",
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L44",
-      "id": "services_truck_manager_rationale_44",
       "community": 4,
-      "norm_label": "remove a delivery assignment from its truck."
+      "norm_label": "remove a delivery assignment from its truck.",
+      "id": "services_truck_manager_rationale_44"
     },
     {
       "label": "Auto-assign all pending deliveries across trucks, balanced by weight.",
       "file_type": "rationale",
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L59",
-      "id": "services_truck_manager_rationale_59",
       "community": 4,
-      "norm_label": "auto-assign all pending deliveries across trucks, balanced by weight."
+      "norm_label": "auto-assign all pending deliveries across trucks, balanced by weight.",
+      "id": "services_truck_manager_rationale_59"
     },
     {
       "label": "Auto-assign all pending deliveries across trucks, balanced by weight.",
       "file_type": "rationale",
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L94",
-      "id": "services_truck_manager_rationale_94",
       "community": 4,
-      "norm_label": "auto-assign all pending deliveries across trucks, balanced by weight."
+      "norm_label": "auto-assign all pending deliveries across trucks, balanced by weight.",
+      "id": "services_truck_manager_rationale_94"
     },
     {
       "label": "Bekleyen_Siparisler_c4a7feba.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
       "source_location": "L1",
-      "id": "graphify_out_converted_bekleyen_siparisler_c4a7feba_md",
       "community": 14,
-      "norm_label": "bekleyen_siparisler_c4a7feba.md"
+      "norm_label": "bekleyen_siparisler_c4a7feba.md",
+      "id": "graphify_out_converted_bekleyen_siparisler_c4a7feba_md"
     },
     {
       "label": "Sheet: Sheet1",
       "file_type": "document",
       "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
       "source_location": "L3",
-      "id": "converted_bekleyen_siparisler_c4a7feba_sheet_sheet1",
       "community": 14,
-      "norm_label": "sheet: sheet1"
+      "norm_label": "sheet: sheet1",
+      "id": "converted_bekleyen_siparisler_c4a7feba_sheet_sheet1"
     },
     {
       "label": "Hazir_Siparisler_d229c32f.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
       "source_location": "L1",
-      "id": "graphify_out_converted_hazir_siparisler_d229c32f_md",
       "community": 14,
-      "norm_label": "hazir_siparisler_d229c32f.md"
+      "norm_label": "hazir_siparisler_d229c32f.md",
+      "id": "graphify_out_converted_hazir_siparisler_d229c32f_md"
     },
     {
       "label": "Sheet: Sheet1",
       "file_type": "document",
       "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
       "source_location": "L3",
-      "id": "converted_hazir_siparisler_d229c32f_sheet_sheet1",
       "community": 14,
-      "norm_label": "sheet: sheet1"
+      "norm_label": "sheet: sheet1",
+      "id": "converted_hazir_siparisler_d229c32f_sheet_sheet1"
     },
     {
       "label": "trucks_ed6e51a3.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/trucks_ed6e51a3.md",
       "source_location": "L1",
-      "id": "graphify_out_converted_trucks_ed6e51a3_md",
       "community": 14,
-      "norm_label": "trucks_ed6e51a3.md"
+      "norm_label": "trucks_ed6e51a3.md",
+      "id": "graphify_out_converted_trucks_ed6e51a3_md"
     },
     {
       "label": "Sheet: Sheet1",
       "file_type": "document",
       "source_file": "graphify-out/converted/trucks_ed6e51a3.md",
       "source_location": "L3",
-      "id": "converted_trucks_ed6e51a3_sheet_sheet1",
       "community": 14,
-      "norm_label": "sheet: sheet1"
+      "norm_label": "sheet: sheet1",
+      "id": "converted_trucks_ed6e51a3_sheet_sheet1"
     },
     {
       "label": "data_processor_copy.py",
@@ -215,7 +692,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L27",
-      "community": 16,
+      "community": 35,
       "norm_label": ".get_coordinate_by_id()",
       "id": "services_data_processor_copy_dataprocessor_get_coordinate_by_id"
     },
@@ -260,7 +737,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L58",
-      "community": 35,
+      "community": 16,
       "norm_label": ".get_st_bazli()",
       "id": "services_data_processor_copy_dataprocessor_get_st_bazli"
     },
@@ -323,7 +800,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L181",
-      "community": 16,
+      "community": 39,
       "norm_label": ".reset_all()",
       "id": "services_data_processor_copy_dataprocessor_reset_all"
     },
@@ -359,7 +836,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L28",
-      "community": 16,
+      "community": 35,
       "norm_label": "return a single coordinate by id.",
       "id": "services_data_processor_copy_rationale_28"
     },
@@ -404,7 +881,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L59",
-      "community": 35,
+      "community": 16,
       "norm_label": "return all st bazli as list of dicts.",
       "id": "services_data_processor_copy_rationale_59"
     },
@@ -449,7 +926,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L182",
-      "community": 16,
+      "community": 39,
       "norm_label": "reset all data to initial state.",
       "id": "services_data_processor_copy_rationale_182"
     },
@@ -485,7 +962,7 @@
       "file_type": "code",
       "source_file": "StatisticsPage.tsx",
       "source_location": "L1",
-      "community": 0,
+      "community": 31,
       "norm_label": "statisticspage.tsx",
       "id": "statisticspage_tsx"
     },
@@ -494,7 +971,7 @@
       "file_type": "code",
       "source_file": "StatisticsPage.tsx",
       "source_location": "L19",
-      "community": 0,
+      "community": 31,
       "norm_label": "statisticspageprops",
       "id": "statistics_statisticspage_statisticspageprops"
     },
@@ -503,7 +980,7 @@
       "file_type": "code",
       "source_file": "StatisticsPage.tsx",
       "source_location": "L25",
-      "community": 0,
+      "community": 31,
       "norm_label": "colors",
       "id": "statistics_statisticspage_colors"
     },
@@ -512,7 +989,7 @@
       "file_type": "code",
       "source_file": "StatisticsPage.tsx",
       "source_location": "L27",
-      "community": 0,
+      "community": 31,
       "norm_label": "statisticspage()",
       "id": "statistics_statisticspage_statisticspage"
     },
@@ -647,7 +1124,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L10",
-      "community": 1,
+      "community": 33,
       "norm_label": "get_all_coordinates()",
       "id": "api_coordinates_get_all_coordinates"
     },
@@ -656,7 +1133,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L21",
-      "community": 1,
+      "community": 33,
       "norm_label": "get_sale_rep_list()",
       "id": "api_coordinates_get_sale_rep_list"
     },
@@ -665,7 +1142,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L29",
-      "community": 31,
+      "community": 1,
       "norm_label": "get_ambalaj()",
       "id": "api_coordinates_get_ambalaj"
     },
@@ -674,7 +1151,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L35",
-      "community": 33,
+      "community": 1,
       "norm_label": "get_st_bazli()",
       "id": "api_coordinates_get_st_bazli"
     },
@@ -701,7 +1178,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L13",
-      "community": 1,
+      "community": 33,
       "norm_label": "get all delivery coordinates, optionally filtered.",
       "id": "api_coordinates_rationale_13"
     },
@@ -710,7 +1187,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L30",
-      "community": 31,
+      "community": 1,
       "norm_label": "get all ambalajs as list of dicts.",
       "id": "api_coordinates_rationale_30"
     },
@@ -719,7 +1196,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L36",
-      "community": 33,
+      "community": 1,
       "norm_label": "get all st bazli as list of dicts.",
       "id": "api_coordinates_rationale_36"
     },
@@ -1286,7 +1763,7 @@
       "file_type": "rationale",
       "source_file": "backend/models/schemas.py",
       "source_location": "L8",
-      "community": 0,
+      "community": 8,
       "norm_label": "a delivery point coordinate.",
       "id": "models_schemas_rationale_8"
     },
@@ -1340,7 +1817,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L23",
-      "community": 1,
+      "community": 33,
       "norm_label": "return all coordinates as list of dicts.",
       "id": "services_data_processor_copy_rationale_23"
     },
@@ -1367,7 +1844,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L42",
-      "community": 1,
+      "community": 33,
       "norm_label": "return a list of unique sales representatives.",
       "id": "services_data_processor_copy_rationale_42"
     },
@@ -1376,7 +1853,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L50",
-      "community": 33,
+      "community": 1,
       "norm_label": "return all st bazli as list of dicts.",
       "id": "services_data_processor_copy_rationale_50"
     },
@@ -1628,414 +2105,9 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L1",
-      "community": 9,
+      "community": 3,
       "norm_label": "package.json",
       "id": "frontend_package_json"
-    },
-    {
-      "label": "name",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L2",
-      "community": 9,
-      "norm_label": "name",
-      "id": "frontend_package_name"
-    },
-    {
-      "label": "private",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L3",
-      "community": 9,
-      "norm_label": "private",
-      "id": "frontend_package_private"
-    },
-    {
-      "label": "version",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L4",
-      "community": 9,
-      "norm_label": "version",
-      "id": "frontend_package_version"
-    },
-    {
-      "label": "type",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L5",
-      "community": 9,
-      "norm_label": "type",
-      "id": "frontend_package_type"
-    },
-    {
-      "label": "scripts",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L6",
-      "community": 9,
-      "norm_label": "scripts",
-      "id": "frontend_package_scripts"
-    },
-    {
-      "label": "dev",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L7",
-      "community": 9,
-      "norm_label": "dev",
-      "id": "frontend_package_scripts_dev"
-    },
-    {
-      "label": "build",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L8",
-      "community": 9,
-      "norm_label": "build",
-      "id": "frontend_package_scripts_build"
-    },
-    {
-      "label": "lint",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L9",
-      "community": 9,
-      "norm_label": "lint",
-      "id": "frontend_package_scripts_lint"
-    },
-    {
-      "label": "preview",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L10",
-      "community": 9,
-      "norm_label": "preview",
-      "id": "frontend_package_scripts_preview"
-    },
-    {
-      "label": "dependencies",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L12",
-      "community": 3,
-      "norm_label": "dependencies",
-      "id": "frontend_package_dependencies"
-    },
-    {
-      "label": "@fontsource-variable/geist",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L13",
-      "community": 3,
-      "norm_label": "@fontsource-variable/geist",
-      "id": "frontend_package_dependencies_fontsource_variable_geist"
-    },
-    {
-      "label": "@geoman-io/leaflet-geoman-free",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L14",
-      "community": 3,
-      "norm_label": "@geoman-io/leaflet-geoman-free",
-      "id": "frontend_package_dependencies_geoman_io_leaflet_geoman_free"
-    },
-    {
-      "label": "@tanstack/react-table",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L15",
-      "community": 3,
-      "norm_label": "@tanstack/react-table",
-      "id": "frontend_package_dependencies_tanstack_react_table"
-    },
-    {
-      "label": "@types/leaflet",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L16",
-      "community": 3,
-      "norm_label": "@types/leaflet",
-      "id": "frontend_package_dependencies_types_leaflet"
-    },
-    {
-      "label": "axios",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L17",
-      "community": 3,
-      "norm_label": "axios",
-      "id": "frontend_package_dependencies_axios"
-    },
-    {
-      "label": "class-variance-authority",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L18",
-      "community": 3,
-      "norm_label": "class-variance-authority",
-      "id": "frontend_package_dependencies_class_variance_authority"
-    },
-    {
-      "label": "clsx",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L19",
-      "community": 10,
-      "norm_label": "clsx",
-      "id": "frontend_package_dependencies_clsx"
-    },
-    {
-      "label": "leaflet",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L20",
-      "community": 3,
-      "norm_label": "leaflet",
-      "id": "frontend_package_dependencies_leaflet"
-    },
-    {
-      "label": "leaflet-lasso",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L21",
-      "community": 3,
-      "norm_label": "leaflet-lasso",
-      "id": "frontend_package_dependencies_leaflet_lasso"
-    },
-    {
-      "label": "leaflet.heat",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L22",
-      "community": 3,
-      "norm_label": "leaflet.heat",
-      "id": "frontend_package_dependencies_leaflet_heat"
-    },
-    {
-      "label": "lucide-react",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L23",
-      "community": 3,
-      "norm_label": "lucide-react",
-      "id": "frontend_package_dependencies_lucide_react"
-    },
-    {
-      "label": "radix-ui",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L24",
-      "community": 3,
-      "norm_label": "radix-ui",
-      "id": "frontend_package_dependencies_radix_ui"
-    },
-    {
-      "label": "react",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L25",
-      "community": 3,
-      "norm_label": "react",
-      "id": "frontend_package_dependencies_react"
-    },
-    {
-      "label": "react-dom",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L26",
-      "community": 3,
-      "norm_label": "react-dom",
-      "id": "frontend_package_dependencies_react_dom"
-    },
-    {
-      "label": "react-leaflet",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L27",
-      "community": 3,
-      "norm_label": "react-leaflet",
-      "id": "frontend_package_dependencies_react_leaflet"
-    },
-    {
-      "label": "recharts",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L28",
-      "community": 3,
-      "norm_label": "recharts",
-      "id": "frontend_package_dependencies_recharts"
-    },
-    {
-      "label": "shadcn",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L29",
-      "community": 3,
-      "norm_label": "shadcn",
-      "id": "frontend_package_dependencies_shadcn"
-    },
-    {
-      "label": "tailwind-merge",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L30",
-      "community": 3,
-      "norm_label": "tailwind-merge",
-      "id": "frontend_package_dependencies_tailwind_merge"
-    },
-    {
-      "label": "tw-animate-css",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L31",
-      "community": 3,
-      "norm_label": "tw-animate-css",
-      "id": "frontend_package_dependencies_tw_animate_css"
-    },
-    {
-      "label": "devDependencies",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L33",
-      "community": 9,
-      "norm_label": "devdependencies",
-      "id": "frontend_package_devdependencies"
-    },
-    {
-      "label": "@eslint/js",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L34",
-      "community": 9,
-      "norm_label": "@eslint/js",
-      "id": "frontend_package_devdependencies_eslint_js"
-    },
-    {
-      "label": "@tailwindcss/postcss",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L35",
-      "community": 9,
-      "norm_label": "@tailwindcss/postcss",
-      "id": "frontend_package_devdependencies_tailwindcss_postcss"
-    },
-    {
-      "label": "@types/node",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L36",
-      "community": 9,
-      "norm_label": "@types/node",
-      "id": "frontend_package_devdependencies_types_node"
-    },
-    {
-      "label": "@types/react",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L37",
-      "community": 9,
-      "norm_label": "@types/react",
-      "id": "frontend_package_devdependencies_types_react"
-    },
-    {
-      "label": "@vitejs/plugin-react",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L39",
-      "community": 9,
-      "norm_label": "@vitejs/plugin-react",
-      "id": "frontend_package_devdependencies_vitejs_plugin_react"
-    },
-    {
-      "label": "autoprefixer",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L40",
-      "community": 9,
-      "norm_label": "autoprefixer",
-      "id": "frontend_package_devdependencies_autoprefixer"
-    },
-    {
-      "label": "eslint",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L41",
-      "community": 9,
-      "norm_label": "eslint",
-      "id": "frontend_package_devdependencies_eslint"
-    },
-    {
-      "label": "eslint-plugin-react-hooks",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L42",
-      "community": 9,
-      "norm_label": "eslint-plugin-react-hooks",
-      "id": "frontend_package_devdependencies_eslint_plugin_react_hooks"
-    },
-    {
-      "label": "eslint-plugin-react-refresh",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L43",
-      "community": 9,
-      "norm_label": "eslint-plugin-react-refresh",
-      "id": "frontend_package_devdependencies_eslint_plugin_react_refresh"
-    },
-    {
-      "label": "globals",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L44",
-      "community": 9,
-      "norm_label": "globals",
-      "id": "frontend_package_devdependencies_globals"
-    },
-    {
-      "label": "postcss",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L45",
-      "community": 9,
-      "norm_label": "postcss",
-      "id": "frontend_package_devdependencies_postcss"
-    },
-    {
-      "label": "tailwindcss",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L46",
-      "community": 9,
-      "norm_label": "tailwindcss",
-      "id": "frontend_package_devdependencies_tailwindcss"
-    },
-    {
-      "label": "typescript",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L47",
-      "community": 9,
-      "norm_label": "typescript",
-      "id": "frontend_package_devdependencies_typescript"
-    },
-    {
-      "label": "typescript-eslint",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L48",
-      "community": 9,
-      "norm_label": "typescript-eslint",
-      "id": "frontend_package_devdependencies_typescript_eslint"
-    },
-    {
-      "label": "vite",
-      "file_type": "code",
-      "source_file": "frontend/package.json",
-      "source_location": "L49",
-      "community": 9,
-      "norm_label": "vite",
-      "id": "frontend_package_devdependencies_vite"
     },
     {
       "label": "postcss.config.js",
@@ -2299,15 +2371,6 @@
       "id": "frontend_src_app_tsx"
     },
     {
-      "label": "App()",
-      "file_type": "code",
-      "source_file": "frontend/src/App.tsx",
-      "source_location": "L20",
-      "community": 5,
-      "norm_label": "app()",
-      "id": "src_app_app"
-    },
-    {
       "label": "fetchSummary()",
       "file_type": "code",
       "source_file": "frontend/src/api/assignmentsApi.ts",
@@ -2357,7 +2420,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/trucksApi.ts",
       "source_location": "L10",
-      "community": 0,
+      "community": 31,
       "norm_label": "fetchtrucks()",
       "id": "api_trucksapi_fetchtrucks"
     },
@@ -2366,7 +2429,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/trucksApi.ts",
       "source_location": "L15",
-      "community": 0,
+      "community": 31,
       "norm_label": "fetchtruckcapacities()",
       "id": "api_trucksapi_fetchtruckcapacities"
     },
@@ -2375,7 +2438,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/trucksApi.ts",
       "source_location": "L20",
-      "community": 0,
+      "community": 31,
       "norm_label": "fetchtruckbyid()",
       "id": "api_trucksapi_fetchtruckbyid"
     },
@@ -2405,15 +2468,6 @@
       "community": 5,
       "norm_label": "appnavprops",
       "id": "appnav_appnav_appnavprops"
-    },
-    {
-      "label": "AppNav()",
-      "file_type": "code",
-      "source_file": "frontend/src/components/AppNav/AppNav.tsx",
-      "source_location": "L14",
-      "community": 5,
-      "norm_label": "appnav()",
-      "id": "appnav_appnav_appnav"
     },
     {
       "label": "KpiCards.tsx",
@@ -3131,7 +3185,7 @@
       "file_type": "code",
       "source_file": "frontend/src/hooks/useLogistics.ts",
       "source_location": "L20",
-      "community": 0,
+      "community": 5,
       "norm_label": "uselogistics()",
       "id": "hooks_uselogistics_uselogistics"
     },
@@ -3221,7 +3275,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L5",
-      "community": 0,
+      "community": 8,
       "norm_label": "coordinate",
       "id": "types_index_coordinate"
     },
@@ -3230,7 +3284,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L16",
-      "community": 0,
+      "community": 31,
       "norm_label": "ambalaj",
       "id": "types_index_ambalaj"
     },
@@ -3239,7 +3293,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L21",
-      "community": 0,
+      "community": 31,
       "norm_label": "st_bazli",
       "id": "types_index_st_bazli"
     },
@@ -3593,7 +3647,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 31,
       "norm_label": "main entry point",
       "id": "backend_main"
     },
@@ -3632,7 +3686,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 31,
       "norm_label": "trucks api",
       "id": "backend_api_trucks"
     },
@@ -3953,6 +4007,739 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "frontend_package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "frontend_package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "frontend_package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "frontend_package_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "frontend_package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "frontend_package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "package_json",
+      "target": "frontend_package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_json",
+      "target": "frontend_package_name"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_json",
+      "target": "frontend_package_private"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_json",
+      "target": "frontend_package_version"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_json",
+      "target": "frontend_package_type"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_scripts",
+      "target": "frontend_package_scripts_dev"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_scripts",
+      "target": "frontend_package_scripts_build"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_scripts",
+      "target": "frontend_package_scripts_lint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_scripts",
+      "target": "frontend_package_scripts_preview"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_json",
+      "target": "frontend_package_scripts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_fontsource_variable_geist"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_geoman_io_leaflet_geoman_free"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_tanstack_react_table"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_types_leaflet"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_axios"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_class_variance_authority"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_clsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_leaflet"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_leaflet_lasso"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_leaflet_heat"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_lucide_react"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_radix_ui"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_react"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_react_dom"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_react_leaflet"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_react_resizable_panels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_react_router_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_recharts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_shadcn"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_tailwind_merge"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_dependencies",
+      "target": "frontend_package_dependencies_tw_animate_css"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_json",
+      "target": "frontend_package_dependencies"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "frontend/src/lib/utils.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "lib_utils_cn",
+      "target": "frontend_package_dependencies_clsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_eslint_js"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_tailwindcss_postcss"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_types_node"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_types_react"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_types_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_vitejs_plugin_react"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_autoprefixer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_eslint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_eslint_plugin_react_hooks"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_eslint_plugin_react_refresh"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L44",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_globals"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_postcss"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_tailwindcss"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_typescript"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L48",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_typescript_eslint"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L49",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_devdependencies",
+      "target": "frontend_package_devdependencies_vite"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/package.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_package_json",
+      "target": "frontend_package_devdependencies"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "hooks_uselogistics_uselogistics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "hooks_usemapfilters_usemapfilters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "hooks_usemultiselect_usemultiselect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "map_mapfilterbar_mapfilterbar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_components_appnav_appnav_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "appnav_appnav_appnav",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "dashboard_dashboardpage_dashboardpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "statistics_statisticspage_statisticspage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "src_app_tsx",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "src_app_app"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "hooks_uselogistics_uselogistics"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "hooks_usemapfilters_usemapfilters"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "src_app_app",
+      "target": "hooks_usemultiselect_usemultiselect"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/AppNav/AppNav.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "src_components_appnav_appnav_tsx",
+      "target": "appnav_appnav_appnav",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/App.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_app_tsx",
+      "target": "appnav_appnav_appnav"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/AppNav/AppNav.tsx",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_appnav_appnav_tsx",
+      "target": "appnav_appnav_appnav"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L6",
       "weight": 1.0,
@@ -4140,9 +4927,9 @@
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_truck_manager_rationale_44",
-      "target": "services_truck_manager_truckmanager_unassign_delivery",
-      "confidence_score": 1.0
+      "target": "services_truck_manager_truckmanager_unassign_delivery"
     },
     {
       "relation": "rationale_for",
@@ -4160,9 +4947,9 @@
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_truck_manager_rationale_59",
-      "target": "services_truck_manager_truckmanager_auto_assign_balanced_den",
-      "confidence_score": 1.0
+      "target": "services_truck_manager_truckmanager_auto_assign_balanced_den"
     },
     {
       "relation": "rationale_for",
@@ -4180,9 +4967,9 @@
       "source_file": "backend/services/truck_manager.py",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "services_truck_manager_rationale_94",
-      "target": "services_truck_manager_truckmanager_auto_assign_balanced",
-      "confidence_score": 1.0
+      "target": "services_truck_manager_truckmanager_auto_assign_balanced"
     },
     {
       "relation": "rationale_for",
@@ -4281,9 +5068,9 @@
       "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_hazir_siparisler_d229c32f_md",
-      "target": "converted_hazir_siparisler_d229c32f_sheet_sheet1",
-      "confidence_score": 1.0
+      "target": "converted_hazir_siparisler_d229c32f_sheet_sheet1"
     },
     {
       "relation": "contains",
@@ -6578,467 +7365,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_json",
-      "target": "frontend_package_name"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_json",
-      "target": "frontend_package_private"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L4",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_json",
-      "target": "frontend_package_version"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_json",
-      "target": "frontend_package_type"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_json",
-      "target": "frontend_package_scripts"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_json",
-      "target": "frontend_package_dependencies"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L33",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_json",
-      "target": "frontend_package_devdependencies"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_scripts",
-      "target": "frontend_package_scripts_dev"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_scripts",
-      "target": "frontend_package_scripts_build"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L9",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_scripts",
-      "target": "frontend_package_scripts_lint"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L10",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_scripts",
-      "target": "frontend_package_scripts_preview"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_fontsource_variable_geist"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_geoman_io_leaflet_geoman_free"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_tanstack_react_table"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L16",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_types_leaflet"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_axios"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_class_variance_authority"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_clsx"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_leaflet"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_leaflet_lasso"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L22",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_leaflet_heat"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L23",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_lucide_react"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_radix_ui"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L25",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L26",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react_dom"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L27",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_react_leaflet"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L28",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_recharts"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L29",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_shadcn"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L30",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_tailwind_merge"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L31",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_dependencies",
-      "target": "frontend_package_dependencies_tw_animate_css"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "frontend/src/lib/utils.ts",
-      "source_location": "L5",
-      "weight": 1.0,
-      "source": "lib_utils_cn",
-      "target": "frontend_package_dependencies_clsx"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L34",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_eslint_js"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L35",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_tailwindcss_postcss"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L36",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_types_node"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L38",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_types_react"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L39",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_vitejs_plugin_react"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L40",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_autoprefixer"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L41",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_eslint"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L42",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_eslint_plugin_react_hooks"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L43",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_eslint_plugin_react_refresh"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L44",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_globals"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L45",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_postcss"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L46",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_tailwindcss"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L47",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_typescript"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L48",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_typescript_eslint"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/package.json",
-      "source_location": "L49",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_package_devdependencies",
-      "target": "frontend_package_devdependencies_vite"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "frontend/tsconfig.app.json",
       "source_location": "L2",
       "weight": 1.0,
@@ -7383,17 +7709,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "frontend_src_app_tsx",
-      "target": "appnav_appnav_appnav"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/App.tsx",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_src_app_tsx",
       "target": "appnav_appnav_apppage"
     },
     {
@@ -7419,16 +7734,6 @@
       "target": "dashboard_dashboardpage_dashboardpage"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/App.tsx",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_src_app_tsx",
-      "target": "src_app_app"
-    },
-    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -7438,39 +7743,6 @@
       "confidence_score": 1.0,
       "source": "frontend_main_tsx",
       "target": "frontend_src_app_tsx"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/App.tsx",
-      "source_location": "L39",
-      "weight": 1.0,
-      "source": "src_app_app",
-      "target": "hooks_uselogistics_uselogistics"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/App.tsx",
-      "source_location": "L52",
-      "weight": 1.0,
-      "source": "src_app_app",
-      "target": "hooks_usemapfilters_usemapfilters"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "frontend/src/App.tsx",
-      "source_location": "L54",
-      "weight": 1.0,
-      "source": "src_app_app",
-      "target": "hooks_usemultiselect_usemultiselect"
     },
     {
       "relation": "contains",
@@ -7878,16 +8150,6 @@
       "confidence_score": 1.0,
       "source": "frontend_src_components_appnav_appnav_tsx",
       "target": "appnav_appnav_appnavprops"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/AppNav/AppNav.tsx",
-      "source_location": "L14",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_src_components_appnav_appnav_tsx",
-      "target": "appnav_appnav_appnav"
     },
     {
       "relation": "imports_from",
@@ -9734,5 +9996,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "088e6012ae732f658a864fcc8b7be89b32652596"
+  "built_at_commit": "1a15a9a79a0a6ba3f4db4c9e767e0a288cc6f209"
 }
