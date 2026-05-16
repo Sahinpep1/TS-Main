@@ -65,9 +65,9 @@
     "semantic_hash": "30a2036370268194955c8b835327828e"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\backend\\Data-pulling-Automation\\automation.py": {
-    "mtime": 1778771042.8017452,
-    "ast_hash": "b591d147bc4852bfa155d5a96ccc2779",
-    "semantic_hash": "b591d147bc4852bfa155d5a96ccc2779"
+    "mtime": 1778943745.9724536,
+    "ast_hash": "aa6f3041f593f5fe6b6d64124a46fac6",
+    "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\backend\\Data-pulling-Automation\\config.json": {
     "mtime": 1777552317.96323,
@@ -195,8 +195,8 @@
     "semantic_hash": "e87e3d09a9d5ddbb9a59ecb18aeb6b83"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Dashboard\\OrdersTable.tsx": {
-    "mtime": 1778937719.6386383,
-    "ast_hash": "442061c4b91bbb90dfc85e90c28cf762",
+    "mtime": 1778943002.4652767,
+    "ast_hash": "a156d8d7ea156b1663b1f6e9c6914296",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\src\\components\\Dashboard\\TruckPanel.tsx": {
@@ -360,39 +360,39 @@
     "semantic_hash": "31948661d079f2a03bbaaf921f1661d1"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Bekleyen_Siparisler_c4a7feba.md": {
-    "mtime": 1778938346.25348,
-    "ast_hash": "ced0678e2a6f1d5c599a20b9579937a2",
+    "mtime": 1778944403.7307427,
+    "ast_hash": "7275bbc7fcc9a8f0004657df35c6a046",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Hazir_Siparisler_d229c32f.md": {
-    "mtime": 1778938346.4188004,
-    "ast_hash": "4c5b8bc4857ce46026fbaef189fa12fa",
+    "mtime": 1778944404.0576954,
+    "ast_hash": "3bf986b6550798ed488ac715136a647e",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\M\u00fc\u015fteri Listesi_2c2757a4.md": {
-    "mtime": 1778938348.2492568,
+    "mtime": 1778944405.8054867,
     "ast_hash": "17e74dbc9a1d60a1cde22d86d499b254",
     "semantic_hash": "17e74dbc9a1d60a1cde22d86d499b254"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Palet Koli Raporu_a7a2c99e.md": {
-    "mtime": 1778938348.3789408,
+    "mtime": 1778944405.9056504,
     "ast_hash": "7833cbb79ed16063a66d72095ade532e",
     "semantic_hash": "7833cbb79ed16063a66d72095ade532e"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\trucks_ed6e51a3.md": {
-    "mtime": 1778938348.4007218,
+    "mtime": 1778944405.9226322,
     "ast_hash": "01d4f0dc6dc588b4d007b20e10db8555",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Bekleyen_Siparisler_006859e6.md": {
-    "mtime": 1778938348.4497118,
-    "ast_hash": "70bcd5266afdf7035ffba8896ed50b55",
-    "semantic_hash": "70bcd5266afdf7035ffba8896ed50b55"
+    "mtime": 1778944405.9665334,
+    "ast_hash": "7275bbc7fcc9a8f0004657df35c6a046",
+    "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Hazir_Siparisler_ef59ec85.md": {
-    "mtime": 1778938348.8987463,
-    "ast_hash": "206a8a6e3b6dba0a819e9e6018da2c2b",
-    "semantic_hash": "206a8a6e3b6dba0a819e9e6018da2c2b"
+    "mtime": 1778944406.2026627,
+    "ast_hash": "3bf986b6550798ed488ac715136a647e",
+    "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\index.html": {
     "mtime": 1778226810.3126593,

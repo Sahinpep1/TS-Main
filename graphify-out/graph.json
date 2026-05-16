@@ -4,64 +4,19 @@
   "graph": {},
   "nodes": [
     {
-      "label": "-yeni-algorthim-palet_sayisi - Copy.py",
-      "file_type": "code",
-      "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
-      "source_location": "L1",
-      "id": "backend_data_yeni_algorthim_palet_sayisi_copy_py",
-      "community": 9,
-      "norm_label": "-yeni-algorthim-palet_sayisi - copy.py"
-    },
-    {
-      "label": "Palet_Hesaplama()",
-      "file_type": "code",
-      "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
-      "source_location": "L3",
-      "id": "data_yeni_algorthim_palet_sayisi_copy_palet_hesaplama",
-      "community": 9,
-      "norm_label": "palet_hesaplama()"
-    },
-    {
-      "label": "100x120 \u0130\u00e7ecek Paleti Standartlar\u0131na ve Saha Kurallar\u0131na Uygun     Geli\u015fmi\u015f Pal",
-      "file_type": "rationale",
-      "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
-      "source_location": "L4",
-      "id": "data_yeni_algorthim_palet_sayisi_copy_rationale_4",
-      "community": 9,
-      "norm_label": "100x120 icecek paleti standartlar\u0131na ve saha kurallar\u0131na uygun     gelismis pal"
-    },
-    {
-      "label": "de.py",
-      "file_type": "code",
-      "source_file": "backend/data/de.py",
-      "source_location": "L1",
-      "id": "backend_data_de_py",
-      "community": 35,
-      "norm_label": "de.py"
-    },
-    {
-      "label": "main()",
-      "file_type": "code",
-      "source_file": "backend/data/de.py",
-      "source_location": "L3",
-      "id": "data_de_main",
-      "community": 35,
-      "norm_label": "main()"
-    },
-    {
       "label": "OrdersTable.tsx",
       "file_type": "code",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_file": "OrdersTable.tsx",
       "source_location": "L1",
-      "id": "frontend_src_components_dashboard_orderstable_tsx",
+      "id": "orderstable_tsx",
       "community": 0,
       "norm_label": "orderstable.tsx"
     },
     {
       "label": "OrdersTableProps",
       "file_type": "code",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L21",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L22",
       "id": "dashboard_orderstable_orderstableprops",
       "community": 0,
       "norm_label": "orderstableprops"
@@ -69,8 +24,8 @@
     {
       "label": "STATUS_COLOR",
       "file_type": "code",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L28",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L29",
       "id": "dashboard_orderstable_status_color",
       "community": 0,
       "norm_label": "status_color"
@@ -78,8 +33,8 @@
     {
       "label": "col",
       "file_type": "code",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L34",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L35",
       "id": "dashboard_orderstable_col",
       "community": 0,
       "norm_label": "col"
@@ -87,11 +42,65 @@
     {
       "label": "OrdersTable()",
       "file_type": "code",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L36",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L37",
       "id": "dashboard_orderstable_orderstable",
       "community": 0,
       "norm_label": "orderstable()"
+    },
+    {
+      "label": "-yeni-algorthim-palet_sayisi - Copy.py",
+      "file_type": "code",
+      "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
+      "source_location": "L1",
+      "community": 9,
+      "norm_label": "-yeni-algorthim-palet_sayisi - copy.py",
+      "id": "backend_data_yeni_algorthim_palet_sayisi_copy_py"
+    },
+    {
+      "label": "Palet_Hesaplama()",
+      "file_type": "code",
+      "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
+      "source_location": "L3",
+      "community": 9,
+      "norm_label": "palet_hesaplama()",
+      "id": "data_yeni_algorthim_palet_sayisi_copy_palet_hesaplama"
+    },
+    {
+      "label": "100x120 \u0130\u00e7ecek Paleti Standartlar\u0131na ve Saha Kurallar\u0131na Uygun     Geli\u015fmi\u015f Pal",
+      "file_type": "rationale",
+      "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
+      "source_location": "L4",
+      "community": 9,
+      "norm_label": "100x120 icecek paleti standartlar\u0131na ve saha kurallar\u0131na uygun     gelismis pal",
+      "id": "data_yeni_algorthim_palet_sayisi_copy_rationale_4"
+    },
+    {
+      "label": "de.py",
+      "file_type": "code",
+      "source_file": "backend/data/de.py",
+      "source_location": "L1",
+      "community": 35,
+      "norm_label": "de.py",
+      "id": "backend_data_de_py"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "backend/data/de.py",
+      "source_location": "L3",
+      "community": 35,
+      "norm_label": "main()",
+      "id": "data_de_main"
+    },
+    {
+      "label": "OrdersTable.tsx",
+      "file_type": "code",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "orderstable.tsx",
+      "id": "frontend_src_components_dashboard_orderstable_tsx"
     },
     {
       "label": "package.json",
@@ -386,7 +395,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L35",
-      "community": 3,
+      "community": 31,
       "norm_label": "devdependencies",
       "id": "frontend_package_devdependencies"
     },
@@ -395,7 +404,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L36",
-      "community": 3,
+      "community": 31,
       "norm_label": "@eslint/js",
       "id": "frontend_package_devdependencies_eslint_js"
     },
@@ -404,7 +413,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L37",
-      "community": 3,
+      "community": 31,
       "norm_label": "@tailwindcss/postcss",
       "id": "frontend_package_devdependencies_tailwindcss_postcss"
     },
@@ -413,7 +422,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L38",
-      "community": 3,
+      "community": 31,
       "norm_label": "@types/node",
       "id": "frontend_package_devdependencies_types_node"
     },
@@ -422,7 +431,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L39",
-      "community": 3,
+      "community": 31,
       "norm_label": "@types/react",
       "id": "frontend_package_devdependencies_types_react"
     },
@@ -431,7 +440,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L40",
-      "community": 3,
+      "community": 31,
       "norm_label": "@types/react-dom",
       "id": "frontend_package_devdependencies_types_react_dom"
     },
@@ -440,7 +449,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L41",
-      "community": 3,
+      "community": 31,
       "norm_label": "@vitejs/plugin-react",
       "id": "frontend_package_devdependencies_vitejs_plugin_react"
     },
@@ -449,7 +458,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L42",
-      "community": 3,
+      "community": 31,
       "norm_label": "autoprefixer",
       "id": "frontend_package_devdependencies_autoprefixer"
     },
@@ -458,7 +467,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L43",
-      "community": 3,
+      "community": 31,
       "norm_label": "eslint",
       "id": "frontend_package_devdependencies_eslint"
     },
@@ -467,7 +476,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L44",
-      "community": 3,
+      "community": 31,
       "norm_label": "eslint-plugin-react-hooks",
       "id": "frontend_package_devdependencies_eslint_plugin_react_hooks"
     },
@@ -476,7 +485,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L45",
-      "community": 3,
+      "community": 31,
       "norm_label": "eslint-plugin-react-refresh",
       "id": "frontend_package_devdependencies_eslint_plugin_react_refresh"
     },
@@ -485,7 +494,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L46",
-      "community": 3,
+      "community": 31,
       "norm_label": "globals",
       "id": "frontend_package_devdependencies_globals"
     },
@@ -494,7 +503,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L47",
-      "community": 3,
+      "community": 31,
       "norm_label": "postcss",
       "id": "frontend_package_devdependencies_postcss"
     },
@@ -503,7 +512,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L48",
-      "community": 3,
+      "community": 31,
       "norm_label": "tailwindcss",
       "id": "frontend_package_devdependencies_tailwindcss"
     },
@@ -512,7 +521,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L49",
-      "community": 3,
+      "community": 31,
       "norm_label": "typescript",
       "id": "frontend_package_devdependencies_typescript"
     },
@@ -521,7 +530,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L50",
-      "community": 3,
+      "community": 31,
       "norm_label": "typescript-eslint",
       "id": "frontend_package_devdependencies_typescript_eslint"
     },
@@ -530,7 +539,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L51",
-      "community": 3,
+      "community": 31,
       "norm_label": "vite",
       "id": "frontend_package_devdependencies_vite"
     },
@@ -773,7 +782,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L23",
-      "community": 16,
+      "community": 38,
       "norm_label": ".get_all_coordinates()",
       "id": "services_data_processor_copy_dataprocessor_get_all_coordinates"
     },
@@ -818,7 +827,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L54",
-      "community": 16,
+      "community": 40,
       "norm_label": ".get_ambalaj()",
       "id": "services_data_processor_copy_dataprocessor_get_ambalaj"
     },
@@ -827,7 +836,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L58",
-      "community": 38,
+      "community": 16,
       "norm_label": ".get_st_bazli()",
       "id": "services_data_processor_copy_dataprocessor_get_st_bazli"
     },
@@ -872,7 +881,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L145",
-      "community": 16,
+      "community": 41,
       "norm_label": ".get_summary()",
       "id": "services_data_processor_copy_dataprocessor_get_summary"
     },
@@ -917,7 +926,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L24",
-      "community": 16,
+      "community": 38,
       "norm_label": "return all coordinates as list of dicts.",
       "id": "services_data_processor_copy_rationale_24"
     },
@@ -962,7 +971,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L55",
-      "community": 16,
+      "community": 40,
       "norm_label": "return all ambalajs as list of dicts.",
       "id": "services_data_processor_copy_rationale_55"
     },
@@ -971,7 +980,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L59",
-      "community": 38,
+      "community": 16,
       "norm_label": "return all st bazli as list of dicts.",
       "id": "services_data_processor_copy_rationale_59"
     },
@@ -1007,7 +1016,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L146",
-      "community": 16,
+      "community": 41,
       "norm_label": "return an overall logistics summary computed with polars.",
       "id": "services_data_processor_copy_rationale_146"
     },
@@ -1214,7 +1223,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L10",
-      "community": 1,
+      "community": 33,
       "norm_label": "get_all_coordinates()",
       "id": "api_coordinates_get_all_coordinates"
     },
@@ -1223,7 +1232,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L21",
-      "community": 1,
+      "community": 33,
       "norm_label": "get_sale_rep_list()",
       "id": "api_coordinates_get_sale_rep_list"
     },
@@ -1232,7 +1241,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L29",
-      "community": 31,
+      "community": 1,
       "norm_label": "get_ambalaj()",
       "id": "api_coordinates_get_ambalaj"
     },
@@ -1268,7 +1277,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L13",
-      "community": 1,
+      "community": 33,
       "norm_label": "get all delivery coordinates, optionally filtered.",
       "id": "api_coordinates_rationale_13"
     },
@@ -1277,7 +1286,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L30",
-      "community": 31,
+      "community": 1,
       "norm_label": "get all ambalajs as list of dicts.",
       "id": "api_coordinates_rationale_30"
     },
@@ -1448,7 +1457,7 @@
       "file_type": "code",
       "source_file": "backend/Data-pulling-Automation/automation.py",
       "source_location": "L22",
-      "community": 4,
+      "community": 2,
       "norm_label": "automationworker",
       "id": "data_pulling_automation_automation_automationworker"
     },
@@ -1907,7 +1916,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L23",
-      "community": 1,
+      "community": 33,
       "norm_label": "return all coordinates as list of dicts.",
       "id": "services_data_processor_copy_rationale_23"
     },
@@ -1934,7 +1943,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L42",
-      "community": 1,
+      "community": 33,
       "norm_label": "return a list of unique sales representatives.",
       "id": "services_data_processor_copy_rationale_42"
     },
@@ -2465,7 +2474,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/assignmentsApi.ts",
       "source_location": "L38",
-      "community": 4,
+      "community": 0,
       "norm_label": "fetchsummary()",
       "id": "api_assignmentsapi_fetchsummary"
     },
@@ -2474,7 +2483,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/coordinatesApi.ts",
       "source_location": "L10",
-      "community": 31,
+      "community": 0,
       "norm_label": "fetchcoordinates()",
       "id": "api_coordinatesapi_fetchcoordinates"
     },
@@ -2483,7 +2492,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/coordinatesApi.ts",
       "source_location": "L15",
-      "community": 31,
+      "community": 0,
       "norm_label": "fetchcoordinatesbystatus()",
       "id": "api_coordinatesapi_fetchcoordinatesbystatus"
     },
@@ -2492,7 +2501,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/coordinatesApi.ts",
       "source_location": "L33",
-      "community": 31,
+      "community": 0,
       "norm_label": "fetchcoordinatebyid()",
       "id": "api_coordinatesapi_fetchcoordinatebyid"
     },
@@ -2627,7 +2636,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapFilterBar.tsx",
       "source_location": "L1",
-      "community": 0,
+      "community": 5,
       "norm_label": "mapfilterbar.tsx",
       "id": "frontend_src_components_map_mapfilterbar_tsx"
     },
@@ -2636,7 +2645,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapFilterBar.tsx",
       "source_location": "L11",
-      "community": 0,
+      "community": 5,
       "norm_label": "mapfilterbarprops",
       "id": "map_mapfilterbar_mapfilterbarprops"
     },
@@ -2645,7 +2654,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapFilterBar.tsx",
       "source_location": "L26",
-      "community": 0,
+      "community": 5,
       "norm_label": "status_options",
       "id": "map_mapfilterbar_status_options"
     },
@@ -2852,7 +2861,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Sidebar/ActionBar.tsx",
       "source_location": "L1",
-      "community": 33,
+      "community": 0,
       "norm_label": "actionbar.tsx",
       "id": "frontend_src_components_sidebar_actionbar_tsx"
     },
@@ -2861,7 +2870,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Sidebar/ActionBar.tsx",
       "source_location": "L4",
-      "community": 33,
+      "community": 0,
       "norm_label": "actionbarprops",
       "id": "sidebar_actionbar_actionbarprops"
     },
@@ -2870,7 +2879,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Sidebar/ActionBar.tsx",
       "source_location": "L10",
-      "community": 33,
+      "community": 0,
       "norm_label": "actionbar()",
       "id": "sidebar_actionbar_actionbar"
     },
@@ -3248,7 +3257,7 @@
       "file_type": "code",
       "source_file": "frontend/src/hooks/useLogistics.ts",
       "source_location": "L20",
-      "community": 0,
+      "community": 5,
       "norm_label": "uselogistics()",
       "id": "hooks_uselogistics_uselogistics"
     },
@@ -3365,7 +3374,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L26",
-      "community": 0,
+      "community": 5,
       "norm_label": "salesrepoption",
       "id": "types_index_salesrepoption"
     },
@@ -3401,7 +3410,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L61",
-      "community": 4,
+      "community": 0,
       "norm_label": "assignresult",
       "id": "types_index_assignresult"
     },
@@ -3410,7 +3419,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L67",
-      "community": 4,
+      "community": 0,
       "norm_label": "autoassignresult",
       "id": "types_index_autoassignresult"
     },
@@ -3419,7 +3428,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L77",
-      "community": 0,
+      "community": 5,
       "norm_label": "deliverystatus",
       "id": "types_index_deliverystatus"
     },
@@ -3723,7 +3732,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 0,
       "norm_label": "assignments api",
       "id": "backend_api_assignments"
     },
@@ -3736,7 +3745,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 0,
       "norm_label": "coordinates api",
       "id": "backend_api_coordinates"
     },
@@ -3762,7 +3771,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 0,
       "norm_label": "data processor service",
       "id": "backend_services_data_processor"
     },
@@ -3775,7 +3784,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 0,
       "norm_label": "truck manager service",
       "id": "backend_services_truck_manager"
     },
@@ -3788,7 +3797,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 0,
       "norm_label": "pydantic schemas",
       "id": "backend_models_schemas"
     },
@@ -3814,7 +3823,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 0,
       "norm_label": "assignments api client",
       "id": "frontend_api_assignments"
     },
@@ -3827,7 +3836,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 0,
       "norm_label": "uselogistics hook",
       "id": "frontend_hooks_uselogistics"
     },
@@ -3840,7 +3849,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 0,
       "norm_label": "mapview component",
       "id": "frontend_components_mapview"
     },
@@ -3853,7 +3862,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 31,
+      "community": 0,
       "norm_label": "pending orders data",
       "id": "data_bekleyen_siparisler"
     },
@@ -3879,7 +3888,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 0,
       "norm_label": "trucks inventory",
       "id": "data_trucks_list"
     },
@@ -4009,7 +4018,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 4,
+      "community": 2,
       "norm_label": "automation.py",
       "id": "automation_py"
     },
@@ -4068,43 +4077,13 @@
   ],
   "links": [
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "backend_data_yeni_algorthim_palet_sayisi_copy_py",
-      "target": "data_yeni_algorthim_palet_sayisi_copy_palet_hesaplama",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
-      "source_location": "L4",
-      "weight": 1.0,
-      "source": "data_yeni_algorthim_palet_sayisi_copy_rationale_4",
-      "target": "data_yeni_algorthim_palet_sayisi_copy_palet_hesaplama",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/data/de.py",
-      "source_location": "L3",
-      "weight": 1.0,
-      "source": "backend_data_de_py",
-      "target": "data_de_main",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_file": "OrdersTable.tsx",
       "source_location": "L18",
       "weight": 1.0,
-      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "source": "orderstable_tsx",
       "target": "types_index_coordinate",
       "confidence_score": 1.0
     },
@@ -4112,11 +4091,62 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_file": "OrdersTable.tsx",
       "source_location": "L18",
       "weight": 1.0,
-      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "source": "orderstable_tsx",
       "target": "types_index_truck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "orderstable_tsx",
+      "target": "ui_multiselect_multiselect",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "orderstable_tsx",
+      "target": "dashboard_orderstable_orderstableprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "orderstable_tsx",
+      "target": "dashboard_orderstable_status_color",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "orderstable_tsx",
+      "target": "dashboard_orderstable_col",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "orderstable_tsx",
+      "target": "dashboard_orderstable_orderstable",
       "confidence_score": 1.0
     },
     {
@@ -4125,39 +4155,9 @@
       "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_src_components_dashboard_orderstable_tsx",
-      "target": "dashboard_orderstable_orderstableprops",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L28",
-      "weight": 1.0,
-      "source": "frontend_src_components_dashboard_orderstable_tsx",
-      "target": "dashboard_orderstable_status_color",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L34",
-      "weight": 1.0,
-      "source": "frontend_src_components_dashboard_orderstable_tsx",
-      "target": "dashboard_orderstable_col",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L36",
-      "weight": 1.0,
-      "source": "frontend_src_components_dashboard_orderstable_tsx",
-      "target": "dashboard_orderstable_orderstable",
-      "confidence_score": 1.0
+      "target": "dashboard_orderstable_orderstableprops"
     },
     {
       "relation": "contains",
@@ -4173,11 +4173,41 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "target": "dashboard_orderstable_status_color"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "target": "dashboard_orderstable_col"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
       "source_location": "L33",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "dashboard_orderstable_orderstable",
       "target": "dashboard_orderstable_col"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "target": "dashboard_orderstable_orderstable"
     },
     {
       "relation": "imports_from",
@@ -4232,6 +4262,58 @@
       "confidence_score": 1.0,
       "source": "dashboard_dashboardpage_dashboardpage",
       "target": "dashboard_orderstable_orderstable"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_data_yeni_algorthim_palet_sayisi_copy_py",
+      "target": "data_yeni_algorthim_palet_sayisi_copy_palet_hesaplama"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_yeni_algorthim_palet_sayisi_copy_rationale_4",
+      "target": "data_yeni_algorthim_palet_sayisi_copy_palet_hesaplama"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/data/de.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_data_de_py",
+      "target": "data_de_main"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "target": "types_index_coordinate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "target": "types_index_truck"
     },
     {
       "relation": "contains",
@@ -10151,5 +10233,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3d8ad8b988b8447e5527b69cc20f8bcf5d5b93e8"
+  "built_at_commit": "d118b59bbbf35d1494d5cfcb0e8e88d0d7bb1e70"
 }

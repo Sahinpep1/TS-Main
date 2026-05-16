@@ -16,6 +16,7 @@ import {
 } from "@tanstack/react-table";
 import { ChevronUp, ChevronDown, Search } from "lucide-react";
 import type { Coordinate, Truck } from "../../types";
+import { MultiSelect } from "../ui/MultiSelect";
 import "./Dashboard.css";
 
 interface OrdersTableProps {
@@ -40,6 +41,9 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
   const [assigningId, setAssigningId]     = useState<number | null>(null);
   const [loadingIds, setLoadingIds]       = useState<number[]>([]);
   const [rowSelection, setRowSelection]   = useState<RowSelectionState>({});
+  const [selectedStatuses, setSelectedStatuses] = useState<Set<string>>(new Set());
+  const [selectedReps, setSelectedReps] = useState<Set<string>>(new Set());
+  const [selectedTrucks, setSelectedTrucks] = useState<Set<string>>(new Set());
 
   const doAssign = async (coordId: number, truckId: number, isAssigned: boolean) => {
     setLoadingIds((prev) => [...prev, coordId]);
@@ -88,10 +92,18 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
     }),
     col.accessor("sales_rep", {
       header: "Sales Rep",
+      filterFn: (row, columnId, filterValue: string[]) => {
+        if (!filterValue?.length) return true;
+        return filterValue.includes(row.getValue(columnId));
+      },
       cell: (i) => <span className="badge badge--indigo">{i.getValue()}</span>,
     }),
     col.accessor("status", {
       header: "Status",
+      filterFn: (row, columnId, filterValue: string[]) => {
+        if (!filterValue?.length) return true;
+        return filterValue.includes(row.getValue(columnId));
+      },
       cell: (i) => {
         const s = i.getValue();
         return (
@@ -103,6 +115,10 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
     }),
     col.accessor("assigned_truck_id", {
       header: "Truck",
+      filterFn: (row, columnId, filterValue: (number | null)[]) => {
+        if (!filterValue?.length) return true;
+        return filterValue.includes(row.getValue(columnId));
+      },
       cell: (i) => {
         const id = i.getValue();
         if (!id) return <span className="cell-muted">—</span>;
@@ -224,17 +240,45 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
     [coordinates]
   );
 
-  const setStatusFilter = (v: string) =>
-    setColumnFilters((prev) =>
-      v ? [...prev.filter((f) => f.id !== "status"), { id: "status", value: v }]
-        : prev.filter((f) => f.id !== "status")
-    );
+  const statusOptions = [
+    { value: "pending", label: "Pending", color: STATUS_COLOR["pending"] },
+    { value: "assigned", label: "Assigned", color: STATUS_COLOR["assigned"] },
+    { value: "delivered", label: "Delivered", color: STATUS_COLOR["delivered"] },
+  ];
 
-  const setRepFilter = (v: string) =>
-    setColumnFilters((prev) =>
-      v ? [...prev.filter((f) => f.id !== "sales_rep"), { id: "sales_rep", value: v }]
-        : prev.filter((f) => f.id !== "sales_rep")
-    );
+  const repOptions = uniqueReps.map(r => ({ value: r, label: r }));
+
+  const truckOptions = [
+    { value: "null", label: "Unassigned" },
+    ...trucks.map(t => ({ value: String(t.id), label: `${t.Plaka} - ${t.Driver}`, color: t.color }))
+  ];
+
+  const handleStatusChange = (next: Set<string>) => {
+    setSelectedStatuses(next);
+    setColumnFilters(prev => {
+      const cleaned = prev.filter(f => f.id !== "status");
+      if (next.size === 0) return cleaned;
+      return [...cleaned, { id: "status", value: Array.from(next) }];
+    });
+  };
+
+  const handleRepChange = (next: Set<string>) => {
+    setSelectedReps(next);
+    setColumnFilters(prev => {
+      const cleaned = prev.filter(f => f.id !== "sales_rep");
+      if (next.size === 0) return cleaned;
+      return [...cleaned, { id: "sales_rep", value: Array.from(next) }];
+    });
+  };
+
+  const handleTruckChange = (next: Set<string>) => {
+    setSelectedTrucks(next);
+    setColumnFilters(prev => {
+      const cleaned = prev.filter(f => f.id !== "assigned_truck_id");
+      if (next.size === 0) return cleaned;
+      return [...cleaned, { id: "assigned_truck_id", value: Array.from(next).map(v => v === "null" ? null : Number(v)) }];
+    });
+  };
 
   return (
     <div className="orders-table-container">
@@ -277,16 +321,30 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
             onChange={(e) => setGlobalFilter(e.target.value)}
           />
         </div>
-        <select id="filter-status" className="orders-filter-select" onChange={(e) => setStatusFilter(e.target.value)}>
-          <option value="">All Statuses</option>
-          <option value="pending">Pending</option>
-          <option value="assigned">Assigned</option>
-          <option value="delivered">Delivered</option>
-        </select>
-        <select id="filter-sales-rep" className="orders-filter-select" onChange={(e) => setRepFilter(e.target.value)}>
-          <option value="">All Sales Reps</option>
-          {uniqueReps.map((r) => <option key={r} value={r}>{r}</option>)}
-        </select>
+        <div style={{ width: "160px" }}>
+          <MultiSelect
+            label="Status"
+            options={statusOptions}
+            selected={selectedStatuses}
+            onChange={handleStatusChange}
+          />
+        </div>
+        <div style={{ width: "160px" }}>
+          <MultiSelect
+            label="Sales Rep"
+            options={repOptions}
+            selected={selectedReps}
+            onChange={handleRepChange}
+          />
+        </div>
+        <div style={{ width: "200px" }}>
+          <MultiSelect
+            label="Truck"
+            options={truckOptions}
+            selected={selectedTrucks}
+            onChange={handleTruckChange}
+          />
+        </div>
         <span className="orders-count">{table.getFilteredRowModel().rows.length} orders</span>
       </div>
 
