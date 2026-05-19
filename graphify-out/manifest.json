@@ -64,9 +64,14 @@
     "ast_hash": "30a2036370268194955c8b835327828e",
     "semantic_hash": "30a2036370268194955c8b835327828e"
   },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\Data-pulling-Automation\\-Bu yakal\u0131yor2-automation - Copy.py": {
+    "mtime": 1779204224.780668,
+    "ast_hash": "c7cb54eb98db898be8f6ca137c23c579",
+    "semantic_hash": ""
+  },
   "C:\\Users\\user\\Desktop\\TS-Main\\backend\\Data-pulling-Automation\\automation.py": {
-    "mtime": 1778943745.9724536,
-    "ast_hash": "aa6f3041f593f5fe6b6d64124a46fac6",
+    "mtime": 1779199037.9601138,
+    "ast_hash": "e13edcbec3a857af997bfaf810e9704b",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\backend\\Data-pulling-Automation\\config.json": {
@@ -75,14 +80,34 @@
     "semantic_hash": "52902352c1c86b310184d950523f1133"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\backend\\Data-pulling-Automation\\rapor_otomasyon_servisi.py": {
-    "mtime": 1778325090.0955007,
-    "ast_hash": "03731e9a848ed6942fdbb0e8a2b6079c",
-    "semantic_hash": "03731e9a848ed6942fdbb0e8a2b6079c"
+    "mtime": 1779204487.925258,
+    "ast_hash": "2638bc4a6c8512b0cec7fd2604603e41",
+    "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\backend\\Data-pulling-Automation\\yapilandirma_yoneticisi.py": {
-    "mtime": 1778325947.5119655,
+    "mtime": 1779202681.4003417,
     "ast_hash": "edcd004aa2ab025795f58c87e7e495b5",
     "semantic_hash": "edcd004aa2ab025795f58c87e7e495b5"
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\Data-pulling-Automation\\browser_profile\\component_crx_cache\\metadata.json": {
+    "mtime": 1779185948.0695274,
+    "ast_hash": "2aa9e263ee3796d9ce358460a2451b4c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\Data-pulling-Automation\\browser_profile\\extensions_crx_cache\\metadata.json": {
+    "mtime": 1779185960.6185434,
+    "ast_hash": "2aa9e263ee3796d9ce358460a2451b4c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\Data-pulling-Automation\\chrome_profile\\component_crx_cache\\metadata.json": {
+    "mtime": 1779181519.155398,
+    "ast_hash": "2aa9e263ee3796d9ce358460a2451b4c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\user\\Desktop\\TS-Main\\backend\\Data-pulling-Automation\\chrome_profile\\extensions_crx_cache\\metadata.json": {
+    "mtime": 1779181465.5267599,
+    "ast_hash": "2aa9e263ee3796d9ce358460a2451b4c",
+    "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\backend\\models\\schemas.py": {
     "mtime": 1778584349.3210323,
@@ -360,38 +385,38 @@
     "semantic_hash": "31948661d079f2a03bbaaf921f1661d1"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Bekleyen_Siparisler_c4a7feba.md": {
-    "mtime": 1778944438.309102,
-    "ast_hash": "7275bbc7fcc9a8f0004657df35c6a046",
+    "mtime": 1779204617.4827833,
+    "ast_hash": "a5adde40eff45efaaffc2dc460af9d2e",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Hazir_Siparisler_d229c32f.md": {
-    "mtime": 1778944438.5564423,
-    "ast_hash": "3bf986b6550798ed488ac715136a647e",
+    "mtime": 1779204617.6734328,
+    "ast_hash": "d7d7b685d7e858d0640fbd21a28af043",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\M\u00fc\u015fteri Listesi_2c2757a4.md": {
-    "mtime": 1778944439.9253445,
+    "mtime": 1779204619.2999253,
     "ast_hash": "17e74dbc9a1d60a1cde22d86d499b254",
     "semantic_hash": "17e74dbc9a1d60a1cde22d86d499b254"
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Palet Koli Raporu_a7a2c99e.md": {
-    "mtime": 1778944440.0320866,
-    "ast_hash": "7833cbb79ed16063a66d72095ade532e",
-    "semantic_hash": "7833cbb79ed16063a66d72095ade532e"
+    "mtime": 1779204619.401309,
+    "ast_hash": "9c66379b6c157d465fb8e207051ad6c6",
+    "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\trucks_ed6e51a3.md": {
-    "mtime": 1778944440.048219,
+    "mtime": 1779204619.4177938,
     "ast_hash": "01d4f0dc6dc588b4d007b20e10db8555",
     "semantic_hash": ""
   },
-  "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Bekleyen_Siparisler_006859e6.md": {
-    "mtime": 1778944440.0755284,
-    "ast_hash": "7275bbc7fcc9a8f0004657df35c6a046",
+  "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Bekleyen_Siparisler_57b3a462.md": {
+    "mtime": 1779204631.8331943,
+    "ast_hash": "a5adde40eff45efaaffc2dc460af9d2e",
     "semantic_hash": ""
   },
-  "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Hazir_Siparisler_ef59ec85.md": {
-    "mtime": 1778944440.3058214,
-    "ast_hash": "3bf986b6550798ed488ac715136a647e",
+  "C:\\Users\\user\\Desktop\\TS-Main\\graphify-out\\converted\\Hazir_Siparisler_a57e0d6b.md": {
+    "mtime": 1779204632.053414,
+    "ast_hash": "d7d7b685d7e858d0640fbd21a28af043",
     "semantic_hash": ""
   },
   "C:\\Users\\user\\Desktop\\TS-Main\\frontend\\index.html": {

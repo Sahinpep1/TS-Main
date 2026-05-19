@@ -6,155 +6,596 @@
     {
       "label": "automation.py",
       "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_file": "automation.py",
       "source_location": "L1",
-      "id": "backend_data_pulling_automation_automation_py",
-      "community": 4,
+      "id": "automation_py",
+      "community": 2,
       "norm_label": "automation.py"
     },
     {
       "label": "AutomationWorker",
       "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_file": "automation.py",
       "source_location": "L22",
       "id": "data_pulling_automation_automation_automationworker",
-      "community": 4,
+      "community": 2,
       "norm_label": "automationworker"
     },
     {
       "label": ".__init__()",
       "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_file": "automation.py",
       "source_location": "L24",
       "id": "data_pulling_automation_automation_automationworker_init",
-      "community": 4,
+      "community": 2,
       "norm_label": ".__init__()"
     },
     {
       "label": ".run()",
       "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_file": "automation.py",
       "source_location": "L28",
       "id": "data_pulling_automation_automation_automationworker_run",
       "community": 2,
       "norm_label": ".run()"
     },
     {
+      "label": "metadata.json",
+      "file_type": "code",
+      "source_file": "browser_profile/component_crx_cache/metadata.json",
+      "source_location": "L1",
+      "id": "browser_profile_component_crx_cache_metadata_json",
+      "community": 33,
+      "norm_label": "metadata.json"
+    },
+    {
+      "label": "hashes",
+      "file_type": "code",
+      "source_file": "chrome_profile/component_crx_cache/metadata.json",
+      "source_location": "L1",
+      "id": "component_crx_cache_metadata_hashes",
+      "community": 33,
+      "norm_label": "hashes"
+    },
+    {
+      "label": "metadata.json",
+      "file_type": "code",
+      "source_file": "browser_profile/extensions_crx_cache/metadata.json",
+      "source_location": "L1",
+      "id": "browser_profile_extensions_crx_cache_metadata_json",
+      "community": 38,
+      "norm_label": "metadata.json"
+    },
+    {
+      "label": "hashes",
+      "file_type": "code",
+      "source_file": "chrome_profile/extensions_crx_cache/metadata.json",
+      "source_location": "L1",
+      "id": "extensions_crx_cache_metadata_hashes",
+      "community": 38,
+      "norm_label": "hashes"
+    },
+    {
+      "label": "metadata.json",
+      "file_type": "code",
+      "source_file": "chrome_profile/component_crx_cache/metadata.json",
+      "source_location": "L1",
+      "id": "chrome_profile_component_crx_cache_metadata_json",
+      "community": 33,
+      "norm_label": "metadata.json"
+    },
+    {
+      "label": "metadata.json",
+      "file_type": "code",
+      "source_file": "chrome_profile/extensions_crx_cache/metadata.json",
+      "source_location": "L1",
+      "id": "chrome_profile_extensions_crx_cache_metadata_json",
+      "community": 38,
+      "norm_label": "metadata.json"
+    },
+    {
+      "label": "rapor_otomasyon_servisi.py",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L1",
+      "id": "rapor_otomasyon_servisi_py",
+      "community": 2,
+      "norm_label": "rapor_otomasyon_servisi.py"
+    },
+    {
+      "label": "RaporOtomasyonServisi",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L13",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "community": 2,
+      "norm_label": "raporotomasyonservisi"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L18",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_init",
+      "community": 2,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".perform_login()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L28",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_perform_login",
+      "community": 2,
+      "norm_label": ".perform_login()"
+    },
+    {
+      "label": ".url_git()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L86",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git",
+      "community": 2,
+      "norm_label": ".url_git()"
+    },
+    {
+      "label": ".favori_sablon_sec_ve_yukle()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L105",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle",
+      "community": 2,
+      "norm_label": ".favori_sablon_sec_ve_yukle()"
+    },
+    {
+      "label": ".tarih_saat_gir()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L147",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir",
+      "community": 2,
+      "norm_label": ".tarih_saat_gir()"
+    },
+    {
+      "label": ".rapor_olustur_ve_goruntule()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L241",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_olustur_ve_goruntule",
+      "community": 2,
+      "norm_label": ".rapor_olustur_ve_goruntule()"
+    },
+    {
+      "label": ".raporu_excel_indir_onayli()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L267",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli",
+      "community": 2,
+      "norm_label": ".raporu_excel_indir_onayli()"
+    },
+    {
+      "label": ".calisma_akisi_gunluk()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L316",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk",
+      "community": 2,
+      "norm_label": ".calisma_akisi_gunluk()"
+    },
+    {
+      "label": ".calisma_akisi_aylik()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L348",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik",
+      "community": 2,
+      "norm_label": ".calisma_akisi_aylik()"
+    },
+    {
+      "label": ".calisma_akisi_siparisler()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L378",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler",
+      "community": 2,
+      "norm_label": ".calisma_akisi_siparisler()"
+    },
+    {
+      "label": ".st_sec()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L409",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_st_sec",
+      "community": 2,
+      "norm_label": ".st_sec()"
+    },
+    {
+      "label": ".select_grid_by_customer_id_fast()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L471",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_select_grid_by_customer_id_fast",
+      "community": 2,
+      "norm_label": ".select_grid_by_customer_id_fast()"
+    },
+    {
+      "label": ".select_documents_by_id_list()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L515",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_select_documents_by_id_list",
+      "community": 2,
+      "norm_label": ".select_documents_by_id_list()"
+    },
+    {
+      "label": ".select_document_domain()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L578",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_select_document_domain",
+      "community": 2,
+      "norm_label": ".select_document_domain()"
+    },
+    {
+      "label": ".select_document_e_belge()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L613",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_select_document_e_belge",
+      "community": 2,
+      "norm_label": ".select_document_e_belge()"
+    },
+    {
+      "label": ".git_temsilci_yukleme_listesi()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L660",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_git_temsilci_yukleme_listesi",
+      "community": 2,
+      "norm_label": ".git_temsilci_yukleme_listesi()"
+    },
+    {
+      "label": ".rapor_kapat()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L695",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_kapat",
+      "community": 2,
+      "norm_label": ".rapor_kapat()"
+    },
+    {
+      "label": ".telerik_print_pdf_kaydet()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L718",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_telerik_print_pdf_kaydet",
+      "community": 2,
+      "norm_label": ".telerik_print_pdf_kaydet()"
+    },
+    {
+      "label": ".sipraris_duzenle()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L789",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_sipraris_duzenle",
+      "community": 2,
+      "norm_label": ".sipraris_duzenle()"
+    },
+    {
+      "label": ".faturalasmis_duzenle()",
+      "file_type": "code",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L805",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_faturalasmis_duzenle",
+      "community": 2,
+      "norm_label": ".faturalasmis_duzenle()"
+    },
+    {
+      "label": "Playwright Page ve Yap\u0131land\u0131rma verilerini alarak t\u00fcm otomasyon ad\u0131mlar\u0131n\u0131",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L14",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_14",
+      "community": 2,
+      "norm_label": "playwright page ve yap\u0131land\u0131rma verilerini alarak tum otomasyon ad\u0131mlar\u0131n\u0131"
+    },
+    {
+      "label": "Belirtilen kimlik bilgileriyle giri\u015f yapmay\u0131 dener ve ana men\u00fcn\u00fcn g\u00f6r\u00fcnmesini do",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L29",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_29",
+      "community": 2,
+      "norm_label": "belirtilen kimlik bilgileriyle giris yapmay\u0131 dener ve ana menunun gorunmesini do"
+    },
+    {
+      "label": "Hedef URL'ye gider ve 'Rapor' butonunun g\u00f6r\u00fcnmesini bekler.",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L87",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_87",
+      "community": 2,
+      "norm_label": "hedef url'ye gider ve 'rapor' butonunun gorunmesini bekler."
+    },
+    {
+      "label": "Favori \u015eablonlar butonuna t\u0131klar, a\u00e7\u0131lan pencereden belirtilen \u015fablonu se\u00e7er.",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L106",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_106",
+      "community": 2,
+      "norm_label": "favori sablonlar butonuna t\u0131klar, ac\u0131lan pencereden belirtilen sablonu secer."
+    },
+    {
+      "label": "Belirtilen Telerik alan\u0131na metni Playwright ile girer ve          Telerik'in Cl",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L148",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_148",
+      "community": 2,
+      "norm_label": "belirtilen telerik alan\u0131na metni playwright ile girer ve          telerik'in cl"
+    },
+    {
+      "label": "Rapor' butonuna t\u0131klar ve Rapor G\u00f6r\u00fcnt\u00fcleyici penceresinin a\u00e7\u0131lmas\u0131n\u0131 bekler.",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L242",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_242",
+      "community": 2,
+      "norm_label": "rapor' butonuna t\u0131klar ve rapor goruntuleyici penceresinin ac\u0131lmas\u0131n\u0131 bekler."
+    },
+    {
+      "label": "Export butonuna t\u0131klar, Excel'i se\u00e7er ve Playwright ile indirme i\u015flemini y\u00f6netir",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L268",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_268",
+      "community": 2,
+      "norm_label": "export butonuna t\u0131klar, excel'i secer ve playwright ile indirme islemini yonetir"
+    },
+    {
+      "label": "Belirtilen tarih, URL ve \u015fablonu kullanarak tek bir rapor indirme ak\u0131\u015f\u0131n\u0131 y\u00f6neti",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L317",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_317",
+      "community": 2,
+      "norm_label": "belirtilen tarih, url ve sablonu kullanarak tek bir rapor indirme ak\u0131s\u0131n\u0131 yoneti"
+    },
+    {
+      "label": "Belirtilen tarih, URL ve \u015fablonu kullanarak tek bir rapor indirme ak\u0131\u015f\u0131n\u0131 y\u00f6neti",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L349",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_349",
+      "community": 2,
+      "norm_label": "belirtilen tarih, url ve sablonu kullanarak tek bir rapor indirme ak\u0131s\u0131n\u0131 yoneti"
+    },
+    {
+      "label": "Bekleyen ve Teslimata Haz\u0131r Sipari\u015fler i\u00e7in rapor indirme ak\u0131\u015f\u0131n\u0131 y\u00f6netir.",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L379",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_379",
+      "community": 2,
+      "norm_label": "bekleyen ve teslimata haz\u0131r siparisler icin rapor indirme ak\u0131s\u0131n\u0131 yonetir."
+    },
+    {
+      "label": "Rapor' butonuna t\u0131klar ve Rapor G\u00f6r\u00fcnt\u00fcleyici penceresinin a\u00e7\u0131lmas\u0131n\u0131 bekler.",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L410",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_410",
+      "community": 2,
+      "norm_label": "rapor' butonuna t\u0131klar ve rapor goruntuleyici penceresinin ac\u0131lmas\u0131n\u0131 bekler."
+    },
+    {
+      "label": "M\u00fc\u015fteri ID'sine ait sat\u0131r\u0131 bulur, Telerik index numaras\u0131n\u0131 \u00e7eker ve saniyede se\u00e7",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L472",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_472",
+      "community": 2,
+      "norm_label": "musteri id'sine ait sat\u0131r\u0131 bulur, telerik index numaras\u0131n\u0131 ceker ve saniyede sec"
+    },
+    {
+      "label": "Verilen m\u00fc\u015fteri ID listesindeki t\u00fcm sat\u0131rlar\u0131 bulur ve Telerik \u00fczerinde toplu se",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L516",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_516",
+      "community": 2,
+      "norm_label": "verilen musteri id listesindeki tum sat\u0131rlar\u0131 bulur ve telerik uzerinde toplu se"
+    },
+    {
+      "label": "Belge t\u00fcr\u00fcn\u00fc se\u00e7er: 'Fatura' veya 'Sipari\u015f'         \u00d6rnek girdi: \"Fatura\" veya",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L579",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_579",
+      "community": 2,
+      "norm_label": "belge turunu secer: 'fatura' veya 'siparis'         ornek girdi: \"fatura\" veya"
+    },
+    {
+      "label": "Belge t\u00fcr\u00fcn\u00fc se\u00e7er: 'E-Fatura kullananlar' veya 'E-Ar\u015fiv kullananlar'         \u00d6",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L614",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_614",
+      "community": 2,
+      "norm_label": "belge turunu secer: 'e-fatura kullananlar' veya 'e-arsiv kullananlar'         o"
+    },
+    {
+      "label": "'Listeler' men\u00fcs\u00fcn\u00fc a\u00e7ar ve 'Temsilci Y\u00fckleme Listele' se\u00e7ene\u011fine t\u0131klar.",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L661",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_661",
+      "community": 2,
+      "norm_label": "'listeler' menusunu acar ve 'temsilci yukleme listele' secenegine t\u0131klar."
+    },
+    {
+      "label": "Rapor G\u00f6r\u00fcnt\u00fcleyici modal penceresindeki '\u00d7' (Kapat) butonuna t\u0131klar.",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L696",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_696",
+      "community": 2,
+      "norm_label": "rapor goruntuleyici modal penceresindeki '\u00d7' (kapat) butonuna t\u0131klar."
+    },
+    {
+      "label": "Sayfaya bir 'window.print' dinleyicisi yerle\u015ftirir.          Telerik yazd\u0131rma t",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L719",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_719",
+      "community": 2,
+      "norm_label": "sayfaya bir 'window.print' dinleyicisi yerlestirir.          telerik yazd\u0131rma t"
+    },
+    {
+      "label": "Bekleyen ve Teslimata Haz\u0131r Sipari\u015fler i\u00e7in rapor indirme ak\u0131\u015f\u0131n\u0131 y\u00f6netir.",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L790",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_790",
+      "community": 2,
+      "norm_label": "bekleyen ve teslimata haz\u0131r siparisler icin rapor indirme ak\u0131s\u0131n\u0131 yonetir."
+    },
+    {
+      "label": "Bekleyen ve Teslimata Haz\u0131r Sipari\u015fler i\u00e7in rapor indirme ak\u0131\u015f\u0131n\u0131 y\u00f6netir.",
+      "file_type": "rationale",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L806",
+      "id": "data_pulling_automation_rapor_otomasyon_servisi_rationale_806",
+      "community": 2,
+      "norm_label": "bekleyen ve teslimata haz\u0131r siparisler icin rapor indirme ak\u0131s\u0131n\u0131 yonetir."
+    },
+    {
+      "label": "automation.py",
+      "file_type": "code",
+      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_location": "L1",
+      "community": 2,
+      "norm_label": "automation.py",
+      "id": "backend_data_pulling_automation_automation_py"
+    },
+    {
       "label": "OrdersTable.tsx",
       "file_type": "code",
       "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
       "source_location": "L1",
-      "id": "frontend_src_components_dashboard_orderstable_tsx",
       "community": 0,
-      "norm_label": "orderstable.tsx"
+      "norm_label": "orderstable.tsx",
+      "id": "frontend_src_components_dashboard_orderstable_tsx"
     },
     {
       "label": "OrdersTableProps",
       "file_type": "code",
       "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
       "source_location": "L22",
-      "id": "dashboard_orderstable_orderstableprops",
       "community": 0,
-      "norm_label": "orderstableprops"
+      "norm_label": "orderstableprops",
+      "id": "dashboard_orderstable_orderstableprops"
     },
     {
       "label": "STATUS_COLOR",
       "file_type": "code",
       "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
       "source_location": "L29",
-      "id": "dashboard_orderstable_status_color",
       "community": 0,
-      "norm_label": "status_color"
+      "norm_label": "status_color",
+      "id": "dashboard_orderstable_status_color"
     },
     {
       "label": "col",
       "file_type": "code",
       "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
       "source_location": "L35",
-      "id": "dashboard_orderstable_col",
       "community": 0,
-      "norm_label": "col"
+      "norm_label": "col",
+      "id": "dashboard_orderstable_col"
     },
     {
       "label": "OrdersTable()",
       "file_type": "code",
       "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
       "source_location": "L37",
-      "id": "dashboard_orderstable_orderstable",
       "community": 0,
-      "norm_label": "orderstable()"
+      "norm_label": "orderstable()",
+      "id": "dashboard_orderstable_orderstable"
     },
     {
       "label": "Bekleyen_Siparisler_006859e6.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/Bekleyen_Siparisler_006859e6.md",
       "source_location": "L1",
-      "id": "graphify_out_converted_bekleyen_siparisler_006859e6_md",
       "community": 14,
-      "norm_label": "bekleyen_siparisler_006859e6.md"
+      "norm_label": "bekleyen_siparisler_006859e6.md",
+      "id": "graphify_out_converted_bekleyen_siparisler_006859e6_md"
     },
     {
       "label": "Sheet: Sheet1",
       "file_type": "document",
       "source_file": "graphify-out/converted/Bekleyen_Siparisler_006859e6.md",
       "source_location": "L3",
-      "id": "converted_bekleyen_siparisler_006859e6_sheet_sheet1",
       "community": 14,
-      "norm_label": "sheet: sheet1"
+      "norm_label": "sheet: sheet1",
+      "id": "converted_bekleyen_siparisler_006859e6_sheet_sheet1"
     },
     {
       "label": "Bekleyen_Siparisler_c4a7feba.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
       "source_location": "L1",
-      "id": "graphify_out_converted_bekleyen_siparisler_c4a7feba_md",
       "community": 14,
-      "norm_label": "bekleyen_siparisler_c4a7feba.md"
+      "norm_label": "bekleyen_siparisler_c4a7feba.md",
+      "id": "graphify_out_converted_bekleyen_siparisler_c4a7feba_md"
     },
     {
       "label": "Sheet: Sheet1",
       "file_type": "document",
       "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
       "source_location": "L3",
-      "id": "converted_bekleyen_siparisler_c4a7feba_sheet_sheet1",
       "community": 14,
-      "norm_label": "sheet: sheet1"
+      "norm_label": "sheet: sheet1",
+      "id": "converted_bekleyen_siparisler_c4a7feba_sheet_sheet1"
     },
     {
       "label": "Hazir_Siparisler_d229c32f.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
       "source_location": "L1",
-      "id": "graphify_out_converted_hazir_siparisler_d229c32f_md",
       "community": 14,
-      "norm_label": "hazir_siparisler_d229c32f.md"
+      "norm_label": "hazir_siparisler_d229c32f.md",
+      "id": "graphify_out_converted_hazir_siparisler_d229c32f_md"
     },
     {
       "label": "Sheet: Sheet1",
       "file_type": "document",
       "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
       "source_location": "L3",
-      "id": "converted_hazir_siparisler_d229c32f_sheet_sheet1",
       "community": 14,
-      "norm_label": "sheet: sheet1"
+      "norm_label": "sheet: sheet1",
+      "id": "converted_hazir_siparisler_d229c32f_sheet_sheet1"
     },
     {
       "label": "Hazir_Siparisler_ef59ec85.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/Hazir_Siparisler_ef59ec85.md",
       "source_location": "L1",
-      "id": "graphify_out_converted_hazir_siparisler_ef59ec85_md",
       "community": 14,
-      "norm_label": "hazir_siparisler_ef59ec85.md"
+      "norm_label": "hazir_siparisler_ef59ec85.md",
+      "id": "graphify_out_converted_hazir_siparisler_ef59ec85_md"
     },
     {
       "label": "Sheet: Sheet1",
       "file_type": "document",
       "source_file": "graphify-out/converted/Hazir_Siparisler_ef59ec85.md",
       "source_location": "L3",
-      "id": "converted_hazir_siparisler_ef59ec85_sheet_sheet1",
       "community": 14,
-      "norm_label": "sheet: sheet1"
+      "norm_label": "sheet: sheet1",
+      "id": "converted_hazir_siparisler_ef59ec85_sheet_sheet1"
     },
     {
       "label": "OrdersTable.tsx",
@@ -305,7 +746,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L12",
-      "community": 3,
+      "community": 31,
       "norm_label": "dependencies",
       "id": "frontend_package_dependencies"
     },
@@ -314,7 +755,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L13",
-      "community": 3,
+      "community": 31,
       "norm_label": "@fontsource-variable/geist",
       "id": "frontend_package_dependencies_fontsource_variable_geist"
     },
@@ -323,7 +764,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L14",
-      "community": 3,
+      "community": 31,
       "norm_label": "@geoman-io/leaflet-geoman-free",
       "id": "frontend_package_dependencies_geoman_io_leaflet_geoman_free"
     },
@@ -332,7 +773,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L15",
-      "community": 3,
+      "community": 31,
       "norm_label": "@tanstack/react-table",
       "id": "frontend_package_dependencies_tanstack_react_table"
     },
@@ -341,7 +782,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L16",
-      "community": 3,
+      "community": 31,
       "norm_label": "@types/leaflet",
       "id": "frontend_package_dependencies_types_leaflet"
     },
@@ -350,7 +791,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L17",
-      "community": 3,
+      "community": 31,
       "norm_label": "axios",
       "id": "frontend_package_dependencies_axios"
     },
@@ -359,7 +800,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L18",
-      "community": 3,
+      "community": 31,
       "norm_label": "class-variance-authority",
       "id": "frontend_package_dependencies_class_variance_authority"
     },
@@ -377,7 +818,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L20",
-      "community": 3,
+      "community": 31,
       "norm_label": "leaflet",
       "id": "frontend_package_dependencies_leaflet"
     },
@@ -386,7 +827,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L21",
-      "community": 3,
+      "community": 31,
       "norm_label": "leaflet-lasso",
       "id": "frontend_package_dependencies_leaflet_lasso"
     },
@@ -395,7 +836,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L22",
-      "community": 3,
+      "community": 31,
       "norm_label": "leaflet.heat",
       "id": "frontend_package_dependencies_leaflet_heat"
     },
@@ -404,7 +845,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L23",
-      "community": 3,
+      "community": 31,
       "norm_label": "lucide-react",
       "id": "frontend_package_dependencies_lucide_react"
     },
@@ -413,7 +854,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L24",
-      "community": 3,
+      "community": 31,
       "norm_label": "radix-ui",
       "id": "frontend_package_dependencies_radix_ui"
     },
@@ -422,7 +863,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L25",
-      "community": 3,
+      "community": 31,
       "norm_label": "react",
       "id": "frontend_package_dependencies_react"
     },
@@ -431,7 +872,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L26",
-      "community": 3,
+      "community": 31,
       "norm_label": "react-dom",
       "id": "frontend_package_dependencies_react_dom"
     },
@@ -440,7 +881,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L27",
-      "community": 3,
+      "community": 31,
       "norm_label": "react-leaflet",
       "id": "frontend_package_dependencies_react_leaflet"
     },
@@ -449,7 +890,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L28",
-      "community": 3,
+      "community": 31,
       "norm_label": "react-resizable-panels",
       "id": "frontend_package_dependencies_react_resizable_panels"
     },
@@ -458,7 +899,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L29",
-      "community": 3,
+      "community": 31,
       "norm_label": "react-router-dom",
       "id": "frontend_package_dependencies_react_router_dom"
     },
@@ -467,7 +908,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L30",
-      "community": 3,
+      "community": 31,
       "norm_label": "recharts",
       "id": "frontend_package_dependencies_recharts"
     },
@@ -476,7 +917,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L31",
-      "community": 3,
+      "community": 31,
       "norm_label": "shadcn",
       "id": "frontend_package_dependencies_shadcn"
     },
@@ -485,7 +926,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L32",
-      "community": 3,
+      "community": 31,
       "norm_label": "tailwind-merge",
       "id": "frontend_package_dependencies_tailwind_merge"
     },
@@ -494,7 +935,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L33",
-      "community": 3,
+      "community": 31,
       "norm_label": "tw-animate-css",
       "id": "frontend_package_dependencies_tw_animate_css"
     },
@@ -863,7 +1304,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L27",
-      "community": 40,
+      "community": 16,
       "norm_label": ".get_coordinate_by_id()",
       "id": "services_data_processor_copy_dataprocessor_get_coordinate_by_id"
     },
@@ -908,7 +1349,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L58",
-      "community": 16,
+      "community": 40,
       "norm_label": ".get_st_bazli()",
       "id": "services_data_processor_copy_dataprocessor_get_st_bazli"
     },
@@ -953,7 +1394,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L145",
-      "community": 41,
+      "community": 16,
       "norm_label": ".get_summary()",
       "id": "services_data_processor_copy_dataprocessor_get_summary"
     },
@@ -1007,7 +1448,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L28",
-      "community": 40,
+      "community": 16,
       "norm_label": "return a single coordinate by id.",
       "id": "services_data_processor_copy_rationale_28"
     },
@@ -1052,7 +1493,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L59",
-      "community": 16,
+      "community": 40,
       "norm_label": "return all st bazli as list of dicts.",
       "id": "services_data_processor_copy_rationale_59"
     },
@@ -1088,7 +1529,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L146",
-      "community": 41,
+      "community": 16,
       "norm_label": "return an overall logistics summary computed with polars.",
       "id": "services_data_processor_copy_rationale_146"
     },
@@ -1295,7 +1736,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L10",
-      "community": 33,
+      "community": 1,
       "norm_label": "get_all_coordinates()",
       "id": "api_coordinates_get_all_coordinates"
     },
@@ -1304,7 +1745,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L21",
-      "community": 33,
+      "community": 1,
       "norm_label": "get_sale_rep_list()",
       "id": "api_coordinates_get_sale_rep_list"
     },
@@ -1313,7 +1754,7 @@
       "file_type": "code",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L29",
-      "community": 1,
+      "community": 3,
       "norm_label": "get_ambalaj()",
       "id": "api_coordinates_get_ambalaj"
     },
@@ -1349,7 +1790,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L13",
-      "community": 33,
+      "community": 1,
       "norm_label": "get all delivery coordinates, optionally filtered.",
       "id": "api_coordinates_rationale_13"
     },
@@ -1358,7 +1799,7 @@
       "file_type": "rationale",
       "source_file": "backend/api/coordinates.py",
       "source_location": "L30",
-      "community": 1,
+      "community": 3,
       "norm_label": "get all ambalajs as list of dicts.",
       "id": "api_coordinates_rationale_30"
     },
@@ -1529,7 +1970,7 @@
       "file_type": "code",
       "source_file": "backend/Data-pulling-Automation/config.json",
       "source_location": "L2",
-      "community": 12,
+      "community": 7,
       "norm_label": "credentials",
       "id": "data_pulling_automation_config_credentials"
     },
@@ -1538,7 +1979,7 @@
       "file_type": "code",
       "source_file": "backend/Data-pulling-Automation/config.json",
       "source_location": "L3",
-      "community": 12,
+      "community": 7,
       "norm_label": "username",
       "id": "data_pulling_automation_config_credentials_username"
     },
@@ -1547,7 +1988,7 @@
       "file_type": "code",
       "source_file": "backend/Data-pulling-Automation/config.json",
       "source_location": "L4",
-      "community": 12,
+      "community": 7,
       "norm_label": "password",
       "id": "data_pulling_automation_config_credentials_password"
     },
@@ -1556,7 +1997,7 @@
       "file_type": "code",
       "source_file": "backend/Data-pulling-Automation/config.json",
       "source_location": "L6",
-      "community": 12,
+      "community": 7,
       "norm_label": "settings",
       "id": "data_pulling_automation_config_settings"
     },
@@ -1565,7 +2006,7 @@
       "file_type": "code",
       "source_file": "backend/Data-pulling-Automation/config.json",
       "source_location": "L7",
-      "community": 12,
+      "community": 7,
       "norm_label": "base_url",
       "id": "data_pulling_automation_config_settings_base_url"
     },
@@ -1574,7 +2015,7 @@
       "file_type": "code",
       "source_file": "backend/Data-pulling-Automation/config.json",
       "source_location": "L8",
-      "community": 12,
+      "community": 7,
       "norm_label": "timeout_seconds",
       "id": "data_pulling_automation_config_settings_timeout_seconds"
     },
@@ -1583,7 +2024,7 @@
       "file_type": "code",
       "source_file": "backend/Data-pulling-Automation/config.json",
       "source_location": "L9",
-      "community": 12,
+      "community": 7,
       "norm_label": "yasland\u0131rma_calistirilsin_mi",
       "id": "data_pulling_automation_config_settings_yasland\u0131rma_calistirilsin_mi"
     },
@@ -1592,7 +2033,7 @@
       "file_type": "code",
       "source_file": "backend/Data-pulling-Automation/config.json",
       "source_location": "L11",
-      "community": 12,
+      "community": 7,
       "norm_label": "locations",
       "id": "data_pulling_automation_config_locations"
     },
@@ -1601,7 +2042,7 @@
       "file_type": "code",
       "source_file": "backend/Data-pulling-Automation/config.json",
       "source_location": "L12",
-      "community": 12,
+      "community": 7,
       "norm_label": "para",
       "id": "data_pulling_automation_config_locations_para"
     },
@@ -1610,7 +2051,7 @@
       "file_type": "code",
       "source_file": "backend/Data-pulling-Automation/config.json",
       "source_location": "L13",
-      "community": 12,
+      "community": 7,
       "norm_label": "gunluk",
       "id": "data_pulling_automation_config_locations_gunluk"
     },
@@ -1619,7 +2060,7 @@
       "file_type": "code",
       "source_file": "backend/Data-pulling-Automation/config.json",
       "source_location": "L14",
-      "community": 12,
+      "community": 7,
       "norm_label": "toplam",
       "id": "data_pulling_automation_config_locations_toplam"
     },
@@ -1676,87 +2117,6 @@
       "community": 2,
       "norm_label": "dagitici_toplam_sutunu_dahil_etme",
       "id": "data_pulling_automation_config_range_dagitici_toplam_sutunu_dahil_etme"
-    },
-    {
-      "label": ".perform_login()",
-      "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L21",
-      "community": 2,
-      "norm_label": ".perform_login()",
-      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_perform_login"
-    },
-    {
-      "label": ".url_git()",
-      "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L79",
-      "community": 2,
-      "norm_label": ".url_git()",
-      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git"
-    },
-    {
-      "label": ".favori_sablon_sec_ve_yukle()",
-      "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L98",
-      "community": 2,
-      "norm_label": ".favori_sablon_sec_ve_yukle()",
-      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle"
-    },
-    {
-      "label": ".tarih_saat_gir()",
-      "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L140",
-      "community": 2,
-      "norm_label": ".tarih_saat_gir()",
-      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir"
-    },
-    {
-      "label": ".rapor_olustur_ve_goruntule()",
-      "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L230",
-      "community": 2,
-      "norm_label": ".rapor_olustur_ve_goruntule()",
-      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_olustur_ve_goruntule"
-    },
-    {
-      "label": ".raporu_excel_indir_onayli()",
-      "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L256",
-      "community": 2,
-      "norm_label": ".raporu_excel_indir_onayli()",
-      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli"
-    },
-    {
-      "label": ".calisma_akisi_gunluk()",
-      "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L304",
-      "community": 2,
-      "norm_label": ".calisma_akisi_gunluk()",
-      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk"
-    },
-    {
-      "label": ".calisma_akisi_aylik()",
-      "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L336",
-      "community": 2,
-      "norm_label": ".calisma_akisi_aylik()",
-      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik"
-    },
-    {
-      "label": ".calisma_akisi_siparisler()",
-      "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L366",
-      "community": 2,
-      "norm_label": ".calisma_akisi_siparisler()",
-      "id": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler"
     },
     {
       "label": "Playwright Page ve Yap\u0131land\u0131rma verilerini alarak t\u00fcm otomasyon ad\u0131mlar\u0131n\u0131",
@@ -1970,7 +2330,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L23",
-      "community": 33,
+      "community": 1,
       "norm_label": "return all coordinates as list of dicts.",
       "id": "services_data_processor_copy_rationale_23"
     },
@@ -1997,7 +2357,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L42",
-      "community": 33,
+      "community": 1,
       "norm_label": "return a list of unique sales representatives.",
       "id": "services_data_processor_copy_rationale_42"
     },
@@ -2447,7 +2807,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.json",
       "source_location": "L1",
-      "community": 12,
+      "community": 7,
       "norm_label": "tsconfig.json",
       "id": "frontend_tsconfig_json"
     },
@@ -2483,7 +2843,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.json",
       "source_location": "L9",
-      "community": 12,
+      "community": 7,
       "norm_label": "files",
       "id": "frontend_tsconfig_files"
     },
@@ -2492,7 +2852,7 @@
       "file_type": "code",
       "source_file": "frontend/tsconfig.json",
       "source_location": "L10",
-      "community": 12,
+      "community": 7,
       "norm_label": "references",
       "id": "frontend_tsconfig_references"
     },
@@ -2528,7 +2888,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/assignmentsApi.ts",
       "source_location": "L38",
-      "community": 0,
+      "community": 4,
       "norm_label": "fetchsummary()",
       "id": "api_assignmentsapi_fetchsummary"
     },
@@ -2537,7 +2897,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/coordinatesApi.ts",
       "source_location": "L10",
-      "community": 0,
+      "community": 3,
       "norm_label": "fetchcoordinates()",
       "id": "api_coordinatesapi_fetchcoordinates"
     },
@@ -2546,7 +2906,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/coordinatesApi.ts",
       "source_location": "L15",
-      "community": 0,
+      "community": 3,
       "norm_label": "fetchcoordinatesbystatus()",
       "id": "api_coordinatesapi_fetchcoordinatesbystatus"
     },
@@ -2555,7 +2915,7 @@
       "file_type": "code",
       "source_file": "frontend/src/api/coordinatesApi.ts",
       "source_location": "L33",
-      "community": 0,
+      "community": 3,
       "norm_label": "fetchcoordinatebyid()",
       "id": "api_coordinatesapi_fetchcoordinatebyid"
     },
@@ -2726,7 +3086,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapHeatmapLayer.tsx",
       "source_location": "L12",
-      "community": 8,
+      "community": 0,
       "norm_label": "mapheatmaplayer()",
       "id": "map_mapheatmaplayer_mapheatmaplayer"
     },
@@ -2735,7 +3095,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapLassoControl.tsx",
       "source_location": "L11",
-      "community": 8,
+      "community": 0,
       "norm_label": "maplassocontrol()",
       "id": "map_maplassocontrol_maplassocontrol"
     },
@@ -2744,7 +3104,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapLassoControl.tsx",
       "source_location": "L86",
-      "community": 8,
+      "community": 0,
       "norm_label": "ispointinpolygon()",
       "id": "map_maplassocontrol_ispointinpolygon"
     },
@@ -2789,7 +3149,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapMarker.tsx",
       "source_location": "L14",
-      "community": 8,
+      "community": 0,
       "norm_label": "colormode",
       "id": "map_mapmarker_colormode"
     },
@@ -2798,7 +3158,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapMarker.tsx",
       "source_location": "L16",
-      "community": 8,
+      "community": 0,
       "norm_label": "mapmarkerprops",
       "id": "map_mapmarker_mapmarkerprops"
     },
@@ -2807,7 +3167,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapMarker.tsx",
       "source_location": "L29",
-      "community": 8,
+      "community": 0,
       "norm_label": "status_colors",
       "id": "map_mapmarker_status_colors"
     },
@@ -2816,7 +3176,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapMarker.tsx",
       "source_location": "L35",
-      "community": 8,
+      "community": 0,
       "norm_label": "mapmarker()",
       "id": "map_mapmarker_mapmarker"
     },
@@ -2825,7 +3185,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapToolbar.tsx",
       "source_location": "L1",
-      "community": 8,
+      "community": 0,
       "norm_label": "maptoolbar.tsx",
       "id": "frontend_src_components_map_maptoolbar_tsx"
     },
@@ -2834,7 +3194,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapToolbar.tsx",
       "source_location": "L5",
-      "community": 8,
+      "community": 0,
       "norm_label": "maptoolbarprops",
       "id": "map_maptoolbar_maptoolbarprops"
     },
@@ -2843,7 +3203,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapToolbar.tsx",
       "source_location": "L13",
-      "community": 8,
+      "community": 0,
       "norm_label": "maptoolbar()",
       "id": "map_maptoolbar_maptoolbar"
     },
@@ -2852,7 +3212,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapView.tsx",
       "source_location": "L1",
-      "community": 8,
+      "community": 0,
       "norm_label": "mapview.tsx",
       "id": "frontend_src_components_map_mapview_tsx"
     },
@@ -2861,7 +3221,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapView.tsx",
       "source_location": "L20",
-      "community": 8,
+      "community": 0,
       "norm_label": "mapviewprops",
       "id": "map_mapview_mapviewprops"
     },
@@ -2870,7 +3230,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapView.tsx",
       "source_location": "L31",
-      "community": 8,
+      "community": 0,
       "norm_label": "sales_rep_palette",
       "id": "map_mapview_sales_rep_palette"
     },
@@ -2879,7 +3239,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapView.tsx",
       "source_location": "L47",
-      "community": 8,
+      "community": 0,
       "norm_label": "fitbounds()",
       "id": "map_mapview_fitbounds"
     },
@@ -2888,7 +3248,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Map/MapView.tsx",
       "source_location": "L60",
-      "community": 8,
+      "community": 0,
       "norm_label": "mapview()",
       "id": "map_mapview_mapview"
     },
@@ -2915,7 +3275,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Sidebar/ActionBar.tsx",
       "source_location": "L1",
-      "community": 38,
+      "community": 0,
       "norm_label": "actionbar.tsx",
       "id": "frontend_src_components_sidebar_actionbar_tsx"
     },
@@ -2924,7 +3284,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Sidebar/ActionBar.tsx",
       "source_location": "L4",
-      "community": 38,
+      "community": 0,
       "norm_label": "actionbarprops",
       "id": "sidebar_actionbar_actionbarprops"
     },
@@ -2933,7 +3293,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Sidebar/ActionBar.tsx",
       "source_location": "L10",
-      "community": 38,
+      "community": 0,
       "norm_label": "actionbar()",
       "id": "sidebar_actionbar_actionbar"
     },
@@ -3041,7 +3401,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/ui/Badge.tsx",
       "source_location": "L1",
-      "community": 8,
+      "community": 12,
       "norm_label": "badge.tsx",
       "id": "frontend_src_components_ui_badge_tsx"
     },
@@ -3050,7 +3410,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/ui/Badge.tsx",
       "source_location": "L9",
-      "community": 8,
+      "community": 12,
       "norm_label": "badgevariant",
       "id": "ui_badge_badgevariant"
     },
@@ -3059,7 +3419,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/ui/Badge.tsx",
       "source_location": "L25",
-      "community": 8,
+      "community": 12,
       "norm_label": "badgeprops",
       "id": "ui_badge_badgeprops"
     },
@@ -3068,7 +3428,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/ui/Badge.tsx",
       "source_location": "L33",
-      "community": 8,
+      "community": 12,
       "norm_label": "badge()",
       "id": "ui_badge_badge"
     },
@@ -3428,7 +3788,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L26",
-      "community": 5,
+      "community": 0,
       "norm_label": "salesrepoption",
       "id": "types_index_salesrepoption"
     },
@@ -3464,7 +3824,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L61",
-      "community": 0,
+      "community": 4,
       "norm_label": "assignresult",
       "id": "types_index_assignresult"
     },
@@ -3473,7 +3833,7 @@
       "file_type": "code",
       "source_file": "frontend/src/types/index.ts",
       "source_location": "L67",
-      "community": 0,
+      "community": 4,
       "norm_label": "autoassignresult",
       "id": "types_index_autoassignresult"
     },
@@ -3768,7 +4128,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "assignments api",
       "id": "backend_api_assignments"
     },
@@ -3781,7 +4141,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 3,
       "norm_label": "coordinates api",
       "id": "backend_api_coordinates"
     },
@@ -3807,7 +4167,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 3,
       "norm_label": "data processor service",
       "id": "backend_services_data_processor"
     },
@@ -3820,7 +4180,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "truck manager service",
       "id": "backend_services_truck_manager"
     },
@@ -3833,7 +4193,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 3,
       "norm_label": "pydantic schemas",
       "id": "backend_models_schemas"
     },
@@ -3859,7 +4219,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "assignments api client",
       "id": "frontend_api_assignments"
     },
@@ -3872,7 +4232,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "uselogistics hook",
       "id": "frontend_hooks_uselogistics"
     },
@@ -3885,7 +4245,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "mapview component",
       "id": "frontend_components_mapview"
     },
@@ -3898,7 +4258,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 3,
       "norm_label": "pending orders data",
       "id": "data_bekleyen_siparisler"
     },
@@ -3924,7 +4284,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 0,
+      "community": 4,
       "norm_label": "trucks inventory",
       "id": "data_trucks_list"
     },
@@ -4046,32 +4406,6 @@
       "id": "truck_manager_py"
     },
     {
-      "label": "automation.py",
-      "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/automation.py",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "automation.py",
-      "id": "automation_py"
-    },
-    {
-      "label": "rapor_otomasyon_servisi.py",
-      "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "rapor_otomasyon_servisi.py",
-      "id": "rapor_otomasyon_servisi_py"
-    },
-    {
       "label": "main.tsx",
       "file_type": "code",
       "source_file": "frontend/src/main.tsx",
@@ -4118,9 +4452,9 @@
       "source_file": "backend/Data-pulling-Automation/automation.py",
       "source_location": "L22",
       "weight": 1.0,
-      "source": "backend_data_pulling_automation_automation_py",
-      "target": "data_pulling_automation_automation_automationworker",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "automation_py",
+      "target": "data_pulling_automation_automation_automationworker"
     },
     {
       "relation": "method",
@@ -4128,9 +4462,9 @@
       "source_file": "backend/Data-pulling-Automation/automation.py",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "data_pulling_automation_automation_automationworker",
-      "target": "data_pulling_automation_automation_automationworker_init",
-      "confidence_score": 1.0
+      "target": "data_pulling_automation_automation_automationworker_init"
     },
     {
       "relation": "method",
@@ -4143,6 +4477,26 @@
       "target": "data_pulling_automation_automation_automationworker_run"
     },
     {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "automation.py",
+      "source_location": "L16",
+      "weight": 0.8,
+      "source": "data_pulling_automation_automation_automationworker",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_data_pulling_automation_automation_py",
+      "target": "data_pulling_automation_automation_automationworker"
+    },
+    {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/Data-pulling-Automation/automation.py",
@@ -4153,16 +4507,6 @@
       "target": "services_truck_manager_truckmanager_init"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/automation.py",
-      "source_location": "L22",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_py",
-      "target": "data_pulling_automation_automation_automationworker"
-    },
-    {
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "backend/Data-pulling-Automation/automation.py",
@@ -4171,6 +4515,17 @@
       "confidence_score": 0.5,
       "source": "data_pulling_automation_automation_automationworker",
       "target": "rapor_otomasyon_servisi_py"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "automation.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "data_pulling_automation_automation_automationworker_run",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi"
     },
     {
       "relation": "calls",
@@ -4193,6 +4548,997 @@
       "weight": 1.0,
       "source": "data_pulling_automation_automation_automationworker_run",
       "target": "rapor_otomasyon_servisi_py"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "browser_profile/component_crx_cache/metadata.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "browser_profile_component_crx_cache_metadata_json",
+      "target": "component_crx_cache_metadata_hashes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chrome_profile/component_crx_cache/metadata.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "chrome_profile_component_crx_cache_metadata_json",
+      "target": "component_crx_cache_metadata_hashes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "browser_profile/extensions_crx_cache/metadata.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "browser_profile_extensions_crx_cache_metadata_json",
+      "target": "extensions_crx_cache_metadata_hashes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "chrome_profile/extensions_crx_cache/metadata.json",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "chrome_profile_extensions_crx_cache_metadata_json",
+      "target": "extensions_crx_cache_metadata_hashes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "rapor_otomasyon_servisi_py",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rapor_otomasyon_servisi_py",
+      "target": "services_truck_manager_truckmanager_init"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rapor_otomasyon_servisi_py",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_perform_login"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rapor_otomasyon_servisi_py",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rapor_otomasyon_servisi_py",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L140",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rapor_otomasyon_servisi_py",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L230",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rapor_otomasyon_servisi_py",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_olustur_ve_goruntule"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L256",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rapor_otomasyon_servisi_py",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L304",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rapor_otomasyon_servisi_py",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L336",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rapor_otomasyon_servisi_py",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L366",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "rapor_otomasyon_servisi_py",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_8",
+      "target": "rapor_otomasyon_servisi_py"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_perform_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L241",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_olustur_ve_goruntule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L267",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L316",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L348",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L378",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L409",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_st_sec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L471",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_select_grid_by_customer_id_fast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L515",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_select_documents_by_id_list",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L578",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_select_document_domain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L613",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_select_document_e_belge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L660",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_git_temsilci_yukleme_listesi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L695",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_kapat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L718",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_telerik_print_pdf_kaydet",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L789",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_sipraris_duzenle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L805",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_faturalasmis_duzenle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_14",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_29",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_perform_login",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_perform_login",
+      "target": "data_pulling_automation_config_range"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_22",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_perform_login"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L310",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L342",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L372",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L795",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_sipraris_duzenle",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L811",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_faturalasmis_duzenle",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_87",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_80",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L314",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L346",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L376",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_106",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle",
+      "target": "data_pulling_automation_config_range"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_99",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L318",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L350",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L380",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L797",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_sipraris_duzenle",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L813",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_faturalasmis_duzenle",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_148",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L141",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_141",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L326",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_olustur_ve_goruntule"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L356",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_olustur_ve_goruntule"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L386",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_olustur_ve_goruntule"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L242",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_242",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_olustur_ve_goruntule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L231",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_231",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_olustur_ve_goruntule"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L330",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L360",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L390",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L688",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_git_temsilci_yukleme_listesi",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L268",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_268",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L266",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli",
+      "target": "data_pulling_automation_config_range"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L257",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_257",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L317",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_317",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L305",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_305",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L349",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_349",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L337",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_305",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L379",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_379",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
+      "source_location": "L367",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_367",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L801",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_sipraris_duzenle",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_st_sec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L817",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_faturalasmis_duzenle",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_st_sec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L410",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_410",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_st_sec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L472",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_472",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_select_grid_by_customer_id_fast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L802",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_sipraris_duzenle",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_select_documents_by_id_list",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L818",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_faturalasmis_duzenle",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_select_documents_by_id_list",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L516",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_516",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_select_documents_by_id_list",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L579",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_579",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_select_document_domain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L821",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_faturalasmis_duzenle",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_select_document_e_belge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L614",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_614",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_select_document_e_belge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L819",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_faturalasmis_duzenle",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_git_temsilci_yukleme_listesi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L661",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_661",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_git_temsilci_yukleme_listesi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L820",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_faturalasmis_duzenle",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_kapat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L696",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_696",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_kapat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L822",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_faturalasmis_duzenle",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_telerik_print_pdf_kaydet",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L719",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_719",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_telerik_print_pdf_kaydet",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L790",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_790",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_sipraris_duzenle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rapor_otomasyon_servisi.py",
+      "source_location": "L806",
+      "weight": 1.0,
+      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_806",
+      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_faturalasmis_duzenle",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -4223,9 +5569,9 @@
       "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_src_components_dashboard_orderstable_tsx",
-      "target": "ui_multiselect_multiselect",
-      "confidence_score": 1.0
+      "target": "ui_multiselect_multiselect"
     },
     {
       "relation": "contains",
@@ -4387,9 +5733,9 @@
       "source_file": "graphify-out/converted/Bekleyen_Siparisler_006859e6.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_bekleyen_siparisler_006859e6_md",
-      "target": "converted_bekleyen_siparisler_006859e6_sheet_sheet1",
-      "confidence_score": 1.0
+      "target": "converted_bekleyen_siparisler_006859e6_sheet_sheet1"
     },
     {
       "relation": "contains",
@@ -4447,9 +5793,9 @@
       "source_file": "graphify-out/converted/Hazir_Siparisler_ef59ec85.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graphify_out_converted_hazir_siparisler_ef59ec85_md",
-      "target": "converted_hazir_siparisler_ef59ec85_sheet_sheet1",
-      "confidence_score": 1.0
+      "target": "converted_hazir_siparisler_ef59ec85_sheet_sheet1"
     },
     {
       "relation": "contains",
@@ -5378,16 +6724,6 @@
       "weight": 1.0,
       "source": "services_truck_manager_truckmanager_init",
       "target": "read_truck_py"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rapor_otomasyon_servisi_py",
-      "target": "services_truck_manager_truckmanager_init"
     },
     {
       "relation": "method",
@@ -6991,394 +8327,6 @@
       "confidence_score": 1.0,
       "source": "data_pulling_automation_config_range",
       "target": "data_pulling_automation_config_range_dagitici_toplam_sutunu_dahil_etme"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L39",
-      "weight": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_perform_login",
-      "target": "data_pulling_automation_config_range"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L105",
-      "weight": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle",
-      "target": "data_pulling_automation_config_range"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L266",
-      "weight": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli",
-      "target": "data_pulling_automation_config_range"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rapor_otomasyon_servisi_py",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_perform_login"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L22",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_22",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_perform_login"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L79",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rapor_otomasyon_servisi_py",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L310",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L342",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L372",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L80",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_80",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_url_git"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L98",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rapor_otomasyon_servisi_py",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L314",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L346",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L376",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L99",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_99",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_favori_sablon_sec_ve_yukle"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L140",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rapor_otomasyon_servisi_py",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L318",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L350",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L380",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L141",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_141",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_tarih_saat_gir"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L230",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rapor_otomasyon_servisi_py",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_olustur_ve_goruntule"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L326",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_olustur_ve_goruntule"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L356",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_olustur_ve_goruntule"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L386",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_olustur_ve_goruntule"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L231",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_231",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_rapor_olustur_ve_goruntule"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L256",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rapor_otomasyon_servisi_py",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L330",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L360",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L390",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L257",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_257",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_raporu_excel_indir_onayli"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L304",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rapor_otomasyon_servisi_py",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L305",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_305",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_gunluk"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L336",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rapor_otomasyon_servisi_py",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L337",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_305",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_aylik"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L366",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "rapor_otomasyon_servisi_py",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L367",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_367",
-      "target": "data_pulling_automation_rapor_otomasyon_servisi_raporotomasyonservisi_calisma_akisi_siparisler"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/rapor_otomasyon_servisi.py",
-      "source_location": "L8",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_rapor_otomasyon_servisi_rationale_8",
-      "target": "rapor_otomasyon_servisi_py"
     },
     {
       "relation": "contains",
@@ -10320,5 +11268,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9e017c28561f2002f2dd7488d5612a0bc33f93c6"
+  "built_at_commit": "2fad6fd0b63d77013fc8d737328f00fc0f311c63"
 }

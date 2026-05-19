@@ -155,3 +155,12 @@
 | BEV-ANTAKYA | ANTAKYA-HATAY DEPO | 11982 | PET PC MAX KOLA 1L 12X BANTLAMA BEDELSIZ | 12 | 80 | 1L |  |  |  |  |
 | BEV-ANTAKYA | ANTAKYA-HATAY DEPO | 11983 | PET 7UP GAZOZ 1L 12X BANTLAMA BEDELSIZ | 12 | 80 | 1L |  |  |  |  |
 | BEV-ANTAKYA | ANTAKYA-HATAY DEPO | 11984 | PET YDG PRTKL 1L 12X LS BANTLAMA BEDELSIZ | 12 | 80 | 1L |  |  |  |  |
+|  |  | 11952 | PET LIP SPARK LIM YUZU 1L 4X | 4 |  | 1L |  |  |  |  |
+|  |  | 11955 | PET LIP SPARK TRPKL 1L 4X | 4 |  | 1L |  |  |  |  |
+|  |  | 11944 | CAN LIP MANGO 500ML 12X FE 2026 | 12 |  | 500ML |  |  |  |  |
+|  |  | 11943 | CAN LIP SEFT 500ML 12X FE 2026 | 12 |  | 500ML |  |  |  |  |
+|  |  | 11867 | GRB YDG PRTKL 200ML 24X LS | 24 |  | 200ML |  |  |  |  |
+|  |  | 11811 | PET PC KOLA 330ML 12X 70KCAL | 12 |  | 330ML |  |  |  |  |
+|  |  | 11947 | PET PC KOLA 2.5L 6X 70KCAL | 6 |  | 2.5L |  |  |  |  |
+|  |  | 11814 | #N/A |  |  | #N/A |  |  |  |  |
+|  |  | 11796 | GRB PC MAX KOLA 200ML 24X | 24 |  | 200ML |  |  |  |  |
