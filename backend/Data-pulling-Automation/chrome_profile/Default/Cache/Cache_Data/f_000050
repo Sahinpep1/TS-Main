@@ -1,0 +1,569 @@
+﻿/// <reference path="jquery-1.9.1.intellisense.js" />
+/// <reference path="jquery.cookie.js" />
+
+
+/////////////////////////////////////////////////////////////////////
+// Extensions
+/////////////////////////////////////////////////////////////////////
+Date.prototype.addDays = function (days) {
+    var dat = new Date(this.valueOf())
+    dat.setDate(dat.getDate() + days);
+    return dat;
+}
+
+
+String.prototype.removeTurkishCharacters = function () {
+    var string = this;
+    var letters = {
+        "ı": "i", "ş": "s", "ğ": "g", "ü": "u", "ö": "o", "ç": "c",
+        "İ": "I", "Ş": "S", "Ğ": "G", "Ü": "U", "Ö": "O", "Ç": "C"
+    };
+    return string.replace(/(([ışğüöçIŞĞÜÖÇ]))/g, function (letter) { return letters[letter]; })
+}
+/////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////
+// Confirm
+/////////////////////////////////////////////////////////////////////
+var confirmWindowId = "ctl00_confirmWindow";
+var btnYesId = "btnYes";
+var btnNoId = "btnNo";
+var lblConfirmId = "lblConfirm";
+
+//Custom RadWindow Confirm
+function CustomRadWindowConfirm(sender, args, cid, text) {
+    //Open the window
+    $find(confirmWindowId).show();
+
+    // Already added events has been removing before inserting new one
+    // to prevent the duplication of same event
+    $find(btnYesId).get_events()._list.clicked = null;
+    $find(btnNoId).get_events()._list.clicked = null;
+
+    $find(btnYesId).add_clicked(function (button, args) { YesClicked(button, args, cid) });
+    $find(btnNoId).add_clicked(NoClicked);
+
+    $find(btnYesId).focus();
+
+    document.getElementById('lblConfirm').innerHTML = text;
+
+
+    //Cancel the postback
+    args.set_cancel(true);
+}
+
+function YesClicked(sender, args, cid) {
+    $find(confirmWindowId).close();
+    $find(cid).click();
+}
+
+function NoClicked(sender, args) {
+    $find(confirmWindowId).close();
+}
+
+function CustomRadWindowConfirmToolbarItem(sender, args, cid, text, toolbarItemValue) {
+
+    var toolBar = sender;
+    var toolbarItem = args.get_item();
+
+    if (toolbarItem.get_value() == toolbarItemValue && toolBar.get_attributes().getAttribute("DisableConfirm") == undefined) {
+
+        //Open the window
+        $find(confirmWindowId).show();
+
+        var x = function (button, args) { YesClickedToolbarItem(button, args, toolBar.get_id(), toolbarItem.get_value()) };
+
+        $find(btnYesId).remove_clicked(x);
+        $find(btnNoId).remove_clicked(NoClickedToolbarItem);
+
+        //$find(btnYesId).get_events()._removeHandlers(); //20.06.2012 
+        //$find(btnNoId).get_events()._removeHandlers();
+
+        $find(btnYesId).add_clicked(x);
+        $find(btnNoId).add_clicked(NoClickedToolbarItem);
+
+        $find(btnYesId).focus();
+
+        document.getElementById('lblConfirm').innerHTML = text;
+
+        //Cancel the postback
+        args.set_cancel(true);
+    }
+}
+
+function YesClickedToolbarItem(sender, args, cid, itemvalue) {
+    $find(confirmWindowId).close();
+
+    var toolbar = $find(cid);
+    if (toolbar !== null) {
+        toolbar.get_attributes().setAttribute("DisableConfirm", true);
+        toolbar.findItemByValue(itemvalue).click();
+        toolbar.get_attributes().removeAttribute("DisableConfirm", true);
+    }
+
+}
+
+function NoClickedToolbarItem(sender, args) {
+    $find(confirmWindowId).close();
+}
+/////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////
+// Session Timeout
+/////////////////////////////////////////////////////////////////////
+var toRedirect = true;
+
+function OnClientHidden(sender, args) {
+    if (toRedirect) {
+        window.location.href = sender.get_value();
+    }
+}
+
+function OnClientShowing() {
+    //raise the flaga again so that a redirect will occur if the notification autocloses
+    toRedirect = true;
+
+    var remainingSeconds = 60;
+
+    setInterval(function () {
+        remainingSeconds--;
+        $('#timeLbl').text(remainingSeconds.toString());
+    }, 1000);
+}
+
+function ContinueSession(SessionTimeoutNotificationId) {
+    var notification = $find(SessionTimeoutNotificationId);
+    //we need to contact the server to restart the Session - the fastest way is via callback
+    //calling update() automatically performs the callback, no need for any additional code or control
+    notification.update();
+    notification.hide();
+
+    //resets the showInterval for the scenario where the Notification is not disposed (e.g. an AJAX request is made)
+    //You need to inject a call to the ContinueSession() function from the code behind in such a request
+    var showIntervalStorage = notification.get_showInterval();//store the original value
+    notification.set_showInterval(0);//change the timer to avoid untimely showing, 0 disables automatic showing
+    notification.set_showInterval(showIntervalStorage);//sets back the original interval which will start counting from its full value again
+    toRedirect = false;
+}
+/////////////////////////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////////////////////////
+// Validation
+/////////////////////////////////////////////////////////////////////
+function ValidateControl(source, args) {
+    var validatedControl = $('#' + source.attributes['data-val-controltovalidate'].value);
+
+    if (/\S/.test(args.Value)) { // string is not empty and not just whitespace
+        validatedControl.removeClass('validation-error');
+        //args.IsValid = true;
+    }
+    else {
+        validatedControl.addClass('validation-error');
+        //args.IsValid = false;
+    }
+}
+
+//Şimdilik kullanılmıyor, kullanılması için Control.InvalidStyle verilmeli.
+function ValidateTelerikControl(source, args) {
+    var validatedTelerikControl = $find(source.attributes['data-val-controltovalidate'].value); //telerik
+
+    if (validatedTelerikControl) {
+        if (/\S/.test(args.Value)) { // string is not empty and not just whitespace
+            validatedTelerikControl._invalid = false;
+            validatedTelerikControl.updateCssClass();
+            args.IsValid = true;
+        }
+        else {
+            validatedTelerikControl._invalid = true;
+            validatedTelerikControl.updateCssClass();
+            args.IsValid = false;
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////////////////////////
+// Help Tooltips
+/////////////////////////////////////////////////////////////////////
+function ShowPageHelp() {
+    if ($.cookie('ShowNotes') && $.cookie('ShowNotes') == 'true') {
+        $('.notes').show();
+    }
+}
+
+function TogglePageHelp() {
+    if ($.cookie) {
+        if ($.cookie('ShowNotes') && $.cookie('ShowNotes') == 'true') {
+            $('.notes').hide('slow');
+            $.cookie('ShowNotes', 'false', { path: '/', expires: 7 });
+        } else {
+            $('.notes').show('slow');
+            $.cookie('ShowNotes', 'true', { path: '/', expires: 7 });
+        }
+    }
+}
+
+$(function () {
+    ShowPageHelp();
+});
+/////////////////////////////////////////////////////////////////////
+
+function numeric_textbox(e) {
+    // deal with unicode character sets
+    var AKey = 65, aKey = 97, CKey = 67, cKey = 99, VKey = 86, vKey = 118, XKey = 88, xKey = 120;
+    var unicode = e.charCode ? e.charCode : e.keyCode;
+
+    if (unicode == 8 || unicode == 9 || (unicode >= 48 && unicode <= 57)) {
+        // we allow the key press
+        return true;
+    } else if (e.ctrlKey && (unicode == AKey || unicode == aKey || unicode == CKey || unicode == cKey || unicode == VKey || unicode == vKey || unicode == XKey || unicode == xKey)) {
+        return true;
+    } else {
+        // otherwise we don't
+        return false;
+    }
+}
+
+
+function clickButton(e, buttonid) {
+    var bt = document.getElementById(buttonid);
+    if (typeof bt == 'object') {
+        if (navigator.appName.indexOf("Netscape") > (-1)) {
+            if (e.keyCode == 13) {
+                bt.click();
+                return false;
+            }
+        }
+        if (navigator.appName.indexOf("Microsoft Internet Explorer") > (-1)) {
+            if (event.keyCode == 13) {
+                bt.click();
+                return false;
+            }
+        }
+    }
+}
+
+///Bu fonksiyon telerik kontrolleri için çalışıyor. Örneğin RadNumericTextBox, OnKeyPress'de bunu çağırabilir
+function triggerButtonWithEnter(sender, args, targetButtonClientId) {
+
+    if (args.get_keyCode() == 13) {
+        $telerik.cancelRawEvent(args.get_domEvent()); document.getElementById(targetButtonClientId).click();
+    }
+}
+/////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////
+// Bu kısım, RadAjaxManager içerisindeki herhangi bir control'un, postback yaptırıp yaptırmayacağını belirliyor.
+// Herhangi bir kontrol postback yaptırmın isteniyorsa, PostBackControlArray dizisine ID'si eklenmelidir..
+var DoPostbackControl = false;
+var divHeight = 500;
+var SkipMenuItemDisable = false;
+
+function MainAjaxManagerRequestStart(sender, eventArgs) {
+    if (DoPostbackControl)
+    { eventArgs.set_enableAjax(false); }
+    DoPostbackControl = false;
+}
+
+function DoPostbackFunction(sender, args, skipMenuDisable) {
+
+    if (!sender || !sender.constructor) {
+        DoPostbackControl = true;
+    } else if (sender.constructor.getName() == "Telerik.Web.UI.RadToolBar") {
+        SkipMenuItemDisable = skipMenuDisable;
+        var button = args.get_item();
+        var btnValue = button.get_value();
+        if (btnValue != "Search" && btnValue != "QuickSearch") {
+
+            /// Menu items disable process ///
+            if (SkipMenuItemDisable == undefined || SkipMenuItemDisable == false)
+                sender.get_items().forEach(function (item) {
+                    item.set_enabled(false);
+                });
+            /// Menu items disable process ///
+
+            if (btnValue == "Clear")
+                ReloadPage();
+            else {
+                DoPostbackControl = true;
+            }
+        }
+        SkipMenuItemDisable = false;
+        //} else if (sender.constructor.getName() == 'Telerik.Web.UI.RadSearchBox') {
+        //    //RadSearchBox için geliyor
+        //    DoPostbackControl = true;
+    } else {
+        DoPostbackControl = true;
+    }
+}
+/////////////////////////////////////////////////////////////////////
+
+$(window).resize(function () {
+    resizeContentPlaceHolderDivison();
+});
+
+function viewport() {
+    var e = window
+    , a = 'inner';
+    if (!('innerWidth' in window)) {
+        a = 'client';
+        e = document.documentElement || document.body;
+    }
+    return { width: e[a + 'Width'], height: e[a + 'Height'] }
+}
+
+function resizeContentPlaceHolderDivison() {
+    //divHeight = screen.availHeight - ($.browser.webkit ? 111 : 150);
+    divHeight = viewport().height;
+    $('#ContentPlaceHolderDivison').height(divHeight);
+    $('#divMainContent').height(divHeight - 64);
+    //$('#hdnHeight').val(divHeight - 64);
+}
+
+// Telerik gridlerinde Edit Mode olarak Popup kullanıyorsak,
+// Popup'ı ekranda ortalamak için OnPopUpShowing eventinde bunu çağırmamız yeterli.
+// Popup'ın Width ve Height değerleri önceden verilmiş olmalı.
+function CenterPopup(sender, e) {
+    try {
+        var vp = viewport();
+        var popUp = e.get_popUp();
+        var popUpWidth = parseInt(popUp.style.width);
+        var popUpHeight = parseInt(popUp.style.height);
+
+        popUp.style.top = Math.floor((vp.height - popUpHeight) / 2) + "px";
+        popUp.style.left = Math.floor((vp.width - popUpWidth) / 2) + "px";
+        popUp.style.position = "fixed";
+
+    } catch (ex) {
+        //alert(ex);
+    }
+}
+
+var currentLoadingPanel = null;
+var contentPlaceHolderDivisonID = 'ContentPlaceHolderDivison';
+$(function () {
+    Sys.WebForms.PageRequestManager.getInstance().add_beginRequest(BeginRequestHandler);
+    Sys.WebForms.PageRequestManager.getInstance().add_endRequest(EndRequestHandler);
+});
+
+//Samet buldu: http://disturbedbuddha.wordpress.com/2007/12/03/maintain-scroll-position-after-asynchronous-postback/
+var divMainContentScrollTop;
+
+function BeginRequestHandler(sender, args) {
+    currentLoadingPanel = $find('MainLoadingPanel');
+    if (currentLoadingPanel)
+        currentLoadingPanel.show(contentPlaceHolderDivisonID);
+
+    var divMainContent = $('#divMainContent');
+    if (divMainContent)
+        divMainContentScrollTop = divMainContent.scrollTop();
+}
+
+function EndRequestHandler(sender, args) {
+    if (currentLoadingPanel)
+        currentLoadingPanel.hide(contentPlaceHolderDivisonID);
+
+    var divMainContent = $('#divMainContent');
+    if (divMainContent) {
+        divMainContent.height(divHeight - 64);
+        divMainContent.scrollTop(divMainContentScrollTop);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////
+// Disable BackSpace
+$(document).keydown(function (e) {
+    if (e.keyCode === 8) {
+        var element = e.target.nodeName.toLowerCase();
+        if (element == 'input' || element == 'textarea') {
+            if (e.target.readOnly)
+                return false;
+        } else
+            return false;
+    }
+});
+/////////////////////////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////////////////////////
+// Grid / Shared RadDatePicker
+// http://demos.telerik.com/aspnet-ajax/calendar/examples/datepicker/shareddatepicker/defaultcs.aspx?product=grid
+/////////////////////////////////////////////////////////////////////
+var currentTextBox = null;
+var currentDatePicker = null;
+
+//This method is called to handle the onclick and onfocus client side events for the texbox
+function showMainDatePickerPopup(sender, e) {
+    //this is a reference to the texbox which raised the event
+    //see the methods exposed through the $telerik static client library here:
+    //http://www.telerik.com/help/aspnet-ajax/telerik-static-client-library.html 
+
+    currentTextBox = sender.tagName == "IMG" ? $find($telerik.getPreviousHtmlNode(sender).children[0].id) : sender;
+    var textBoxNode = currentTextBox.get_element();
+
+    if (!textBoxNode.disabled) {
+        //this gets a reference to the datepicker, which will be shown, to facilitate the selection of a date
+        var datePicker = $find('MainDatePicker');
+
+        //this variable is used to store a reference to the date picker, which is currently active
+        currentDatePicker = datePicker;
+
+        //this method first parses the date, that the user entered or selected, and then
+        //sets it as a selected date to the picker
+        datePicker.set_selectedDate(currentDatePicker.get_dateInput().parseDate(currentTextBox.get_value()));
+
+        //the code lines below show the calendar, which is used to select a date. The showPopup
+        //function takes three arguments - the x and y coordinates where to show the calendar, as 
+        //well as its height, derived from the offsetHeight property of the textbox
+        //var position = datePicker.getElementPosition(textBoxNode);
+        //var position = $(textBoxNode).position();
+        var position = $telerik.originalGetLocation(textBoxNode)
+        datePicker.hidePopup();
+        var viewportHeight = $(window).height();
+        var offsetToFitScreen = 0;
+        if (viewportHeight - position.y < 206) {
+            offsetToFitScreen = 206;
+        }
+
+        datePicker.showPopup(position.x - (220 - textBoxNode.offsetWidth) / 2, (position.y + textBoxNode.offsetHeight + 3 - offsetToFitScreen));
+    }
+}
+
+function closeMainDatePickerPopup() {
+    //popup hemen kapatılırsa, tarih parse edilip textbox'a yazılmıyordu.
+    setTimeout(
+        function () {
+            if (currentDatePicker)
+                currentDatePicker.hidePopup();
+        }, 250);
+}
+
+
+
+//this handler is used to set the text of the TextBox to the value of selected from the popup 
+function mainDatePickerDateSelected(sender, args) {
+    if (currentTextBox != null) {
+        //currentTextBox is the currently selected TextBox. Its value is set to the newly selected
+        //value of the picker
+        currentTextBox.set_value(args.get_newValue());
+    }
+}
+
+var now = new Date();
+var specialDays = new Array(
+                         { DayNames: ["CHRISTMAS"], Date: new Date(now.getFullYear(), 11, 25) },
+                         { DayNames: ["TODAY", "BUGUN"], Date: new Date() },
+                         { DayNames: ["TOMORROW", "YARIN"], Date: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1) },
+                         { DayNames: ["YESTERDAY", "DUN"], Date: new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1) },
+                         { DayNames: ["FIRST DAY", "AYBASI"], Date: new Date(now.getFullYear(), now.getMonth(), 1) },
+                         { DayNames: ["LAST WEEK", "LW", "GECEN HAFTA", "GH"], Date: now.addDays(-7) }
+                         );
+
+
+//this function is used to parse the date entered or selected by the user
+function parseDate(sender, e) {
+    if (currentDatePicker != null) {
+        var date = currentDatePicker.get_dateInput().parseDate(sender.get_value());
+        var dateInput = currentDatePicker.get_dateInput();
+
+        if (date == null) {
+            var cleanSenderValue = sender.get_value().trim().removeTurkishCharacters().toUpperCase();
+            for (var i = 0; i < specialDays.length; i++) {
+                if ($.inArray(cleanSenderValue, specialDays[i].DayNames) != -1) {
+                    date = specialDays[i].Date;
+                    break;
+                }
+            }
+        }
+
+        if (date == null && sender.get_value())
+            date = currentDatePicker.get_selectedDate();
+
+        var formattedDate = dateInput.get_dateFormatInfo().FormatDate(date, dateInput.get_displayDateFormat());
+        sender.set_value(formattedDate);
+    }
+}
+
+
+////////////////////////////////////////
+
+function ReloadPage() {
+    //Bir sayfayı clientside temizlemek için. btnNew'lerde kullanılmak için tasarlandı.
+    //var fullURL = location.protocol + '//' + location.hostname + (location.port ? ":" + location.port : "") + location.pathname + (location.search ? location.search : "");
+    var mode = getQueryParameter("mode");
+    window.location.href = location.protocol + '//' + location.hostname + (location.port ? ":" + location.port : "") + location.pathname + (mode ? "?mode=" + mode : "");
+    return false;
+}
+
+////////////////////////////////////////
+
+///QueryString parser
+function getQueryParameter(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regexS = "[\\?&]" + name + "=([^&#]*)";
+    var regex = new RegExp(regexS);
+    var results = regex.exec(window.location.search);
+    if (results == null)
+        return "";
+    else
+        return decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+////////////////////////////////////////
+function getAttributeValue(attributes, key) {
+    //AutoComplete servisinden gelen attribute'ları okumak için hazırlandı.
+    var results = $.grep(attributes, function (e) { return e.Key == key })
+    return (results.length == 0) ? null : results[0].Value;
+}
+
+////////////////////////////////////////
+// Printing
+////////////////////////////////////////
+function PrintHtml(htmlData) {
+    var styleContent = '<style type="text/css">@media print {hr {display:none;} br { page-break-after: always;}}</style>';
+    var metaContent = '<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">';
+
+    var printWindow = window.open('', '_blank', 'height=600,width=700');
+    printWindow.document.open();
+    printWindow.document.write('<!DOCTYPE html><html><head>' + metaContent + styleContent + '</head><body>' + htmlData + '</body></html>');
+    printWindow.document.close();
+
+    printWindow.focus();
+    printWindow.print();
+    printWindow.close();
+
+    return true;
+}
+
+//Disable Toolbar Items
+function DisableToolbarItems(sender, args) {
+    sender.get_items().forEach(function (item) {
+        item.set_enabled(false);
+    });
+}
+
+//AutoSize=true olan RadWindow'larda, Chrome'da (rastgele) ScrollBar çıkmasını engelleyemedik.
+//WorkAround'umuz şimdilik bu
+function RadWindowOnClientAutoSizeEnd(sender, e) {
+    if ($telerik.isChrome) {
+        sender.set_height(sender.get_height() + 10);
+        sender.set_width(sender.get_width() + 10);
+    };
+}
+
+//RadSearchBox kontrollerinde, arama öncesi bekleme süresi 1000 = 1 saniye
+function RadSearchBoxOnClientLoad(sender, args) {
+    sender._requestDelay = 600;
+    //alert(1);
+}

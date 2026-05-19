@@ -31,7 +31,7 @@ class AutomationWorker():
             config = load_config(os.path.join(os.path.dirname(__file__), "config.json"))
             
             with sync_playwright() as p:
-                browser = p.chromium.launch(headless=False , args=["--no-sandbox", "--disable-gpu"])
+                browser = p.chromium.launch(headless=True , args=["--no-sandbox", "--disable-gpu"])
                 context = browser.new_context(viewport={"width": 1920, "height": 1080}, accept_downloads=True)
                 page = context.new_page()
                 
@@ -75,7 +75,7 @@ if __name__ == "__main__":
     # Example usage
     today = datetime.now()
     five_days_ago = today - timedelta(days=5)
-    target_date = today +timedelta(days=2)
+    target_date = today +timedelta(days=1)
 
     target_date = target_date.strftime("%d.%m.%Y")
     five_days_ago_str = five_days_ago.strftime("%d.%m.%Y")

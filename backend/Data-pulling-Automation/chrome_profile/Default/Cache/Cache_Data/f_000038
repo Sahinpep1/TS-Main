@@ -1,0 +1,325 @@
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+        <meta http-equiv="refresh" content="1802" />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" /><meta http-equiv="Content-Type" content="text/html; charset=windows-1254" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        
+
+        <link rel="shortcut icon" href="../Images/Pepsell.png" />
+        <link rel="stylesheet" type="text/css" href="../Lib/AngulrTheme/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="../Lib/AngulrTheme/animate.css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="../Lib/AngulrTheme/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="../Lib/AngulrTheme/font-awesome/css/font-awesome-animation.min.css" />
+        <link rel="stylesheet" type="text/css" href="../Lib/AngulrTheme/simple-line-icons/css/simple-line-icons.css" />
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&subset=latin-ext" />
+        <link rel="stylesheet" type="text/css" href="../Lib/AngulrTheme/css/app.css" />
+        <link rel="stylesheet" type="text/css" href="../Lib/AngulrTheme/telerik-angulr-skin/Menu.Angulr.css" />
+        <link rel="stylesheet" type="text/css" href="../Styles/MasterPage.css" />
+        <link rel="stylesheet" type="text/css" href="../Lib/Hover/hover-min.css" />
+        <link rel="stylesheet" type="text/css" href="../Lib/Toastr/toastr.min.css" />
+        <link rel="stylesheet" type="text/css" href="../Styles/bootstrap-xlgrid.css" />
+        <style type="text/css">
+            #toast-container > div {
+                opacity: 1;
+            }
+        </style>
+    
+
+        
+
+        <script type="text/javascript" src="../Lib/AngulrTheme/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="../Lib/JQuery/jquery.browser.js"></script>
+        <script type="text/javascript" src="../Lib/JQuery/jquery.cookie.js"></script>
+        <script type="text/javascript" src="../Lib/AngulrTheme/bootstrap/dist/js/bootstrap.js"></script>
+        <script type="text/javascript" src="../Lib/jQueryUI/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../Lib/AngulrTheme/js/ui-load.js"></script>
+        <script type="text/javascript" src="../Lib/AngulrTheme/js/ui-jp.config.js"></script>
+        <script type="text/javascript" src="../Lib/AngulrTheme/js/ui-jp.js"></script>
+        <script type="text/javascript" src="../Lib/AngulrTheme/js/ui-nav.js"></script>
+        <script type="text/javascript" src="../Lib/AngulrTheme/js/ui-toggle.js"></script>
+        <script type="text/javascript" src="../Scripts/mustache.js"></script>
+        <script type="text/javascript" src="../Scripts/ContentPage.js"></script>
+        <script type="text/javascript" src="../Lib/Toastr/toastr.min.js"></script>
+        <script type="text/javascript" src="../Lib/Angular/angular.min.js"></script>
+        <script type="text/javascript" src="../Scripts/MasterPage.js?v=1.0.0.36413"></script>
+
+
+        <script type="text/javascript" src="/Lib/AngularOcLazyLoad/ocLazyLoad.min.js"></script>
+
+        
+        <script src="/Scripts/app/app.js"></script>
+        <script src="/Scripts/app/services/base.service.js"></script>
+        <script src="/Scripts/app/services/lazy-load.service.js"></script>
+        <script src="/Scripts/app/services/customer.service.js"></script>
+        <script src="/Scripts/app/services/point.service.js"></script>
+        <script src="/Scripts/app/services/workable.service.js"></script>
+        <script src="/Scripts/app/services/user.service.js"></script>
+        <script src="/Scripts/app/services/dashboard.service.js"></script>
+
+
+        
+        
+        
+    
+<link href="/WebResource.axd?d=U4fmqBE__aLMLwH7DJyJBMzta3Y3YZAG_sT-hqwKvN8eZZaDtRoOs5GZt2Afdk3bXhMrp0-d5W62sPGR-eIAbbxfVSb38-BZbMxIO_UYnhrOj1ss-AEYqPgk81-805xHb2QEcw2&amp;t=638623752062905867" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=OCeXsoOGHt8E5oeDdHDzD4e4jgWL-IrxsreAzWIvN3ESDqlYxyG3CkHznuMLcgsrzV34sFWvyERlL4G5L1JmgvwG0s5WzOALE4IBDzaNM6jLbn6rnvOi5sFh2_GHUKT_-bButro0IzMF_QIaTQ1ubC2MsIw1&amp;t=638623752060874251" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=6d0ORl_GDQ8il0vfaye5Yaa5UT7_H4bbuzUUDzPtkTl04il7mrHF4Z7E0lTaFySEPh_ciOkngH8_CI3laavnrEsUabhZeeuKuzuoexaNG5GjAPQNsiHLrN3v_YOUcz_sqT49YA2&amp;t=638623752062905867" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=VdPoLqp1pEU6N0-IfFplZBaCLOUH2HfWgBhsxrszlAZOGTbL5IV9qb6GT6H_WOB1OFMn7BJfCcJw0WiW6aQHIDkeZuCKTeAe0aRjZNcNX6Y01oG90KJ1_AnB2gJCPJe9_2ap2A2&amp;t=638623752062905867" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=urCACUaUZeT6oPoIZXShblR8IeOU2zUBtSteqKbux_u5_LC1zk6cyHEJkRgaq8mrL_6G7YyA0GQYXK_D3uRAlJafuN1vIDqacs12_zFkXbxybnVg0&amp;t=638623752062905867" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><link href="/WebResource.axd?d=grn4njdz1PFT8FJRl5HMDYVPB-Bib-bAj1ycqgulMTx1-LBCXThUXegbgzUCVLu6VEWLOJk0c6yvXPwfPuIOTCyo7NAFtvqddUnFKO1Mkq0DUe5Sl0YvoTmDncg-mkABdF412mcUp78HfRgqFrqzMXBIWPE1&amp;t=638623752060874251" type="text/css" rel="stylesheet" class="Telerik_stylesheet" /><title>
+
+</title></head>
+<body>
+    <form method="post" action="./TimeOut.aspx" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnDoNothing')" id="MainForm" style="min-height: 100%; height: 100%;">
+<div class="aspNetHidden">
+<input type="hidden" name="MainRadScriptManager_TSM" id="MainRadScriptManager_TSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="+Fu708V3iveVGzGlmB8fbgTHMHm8ZOE/CxaTQ6gC9CTiN0Yw1XCPttT4CvoDqsIRjO4l63kd+c5s8KpB7TUP44GQW7ZdLEhc3Os+FLnNd58mUiWwG54N5NbrmW626z3CIafz/q+VItIDzEyI66IH3IO3I6qrj2hY2Rv5HulqfVawM+xwF6tIZeCqOM8iRLDlpVGLK4VZk+Nqc09elkWS2/wyunSI5Y2SJ8vtUU4FRoSDKbo35XB2sHY8NAPauZDpoYUUG09Rog9NCcHYsWxhpKT9fmgnuZeH1i8NpDYF7M+YAc36d06dpCobC4ohc2Cs1oqUi5oeKFAw9K4Q0nC9glE8hkw6p+JSX0OotOgmRMvB1vLNYDCl8YboaulaSO024KEDXH40RKxZXG+JNg+oisKnrogOa61RZX+GTVx1u2CLZt5/eQzR4IdKrheuzm7IubTYBJ3hnAWgIqheGQNHTXK8BSpjT6hFPpwC25oeqQOM9CaG0looFlJtAao5aY3Tfznrmw==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['MainForm'];
+if (!theForm) {
+    theForm = document.MainForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZDdRj7SZ1RHHuwz2GvEuB1g4QM3rUDSW1_GR9qAFeisH8_M5iw2&amp;t=638901644248157332" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvoGimVQoxkHL6vlQSnOJFZ9MltnY1owb54qEtKTgeQ4mnUakTqGgCclZcHjfs6N0sQ06LeXzOAWzqDW_DbNqeGGPhOnIPo4ibfxts_p4gApB70fW9I7xoqk4Qv4lnsVlWZZ1pY81&amp;t=5c0e0825" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OHVLD_Zww8WTlleu_HxU8pH2wA7RQNQmhIFVUhmvNpeQaZCL_GIEj30F10N2tMwRDYyrapTnlR4LKJuQC-JbsegQRUXFnG_KOQEy-ajqjf2OV02TS6tpDkWWirpgPH2PZrQNGV41&amp;t=5c0e0825" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=TDVjdgRbdvNAY3tnbizUcPjDPgRM5Fwm62LrDeHW6uyDYeXbGPxnnMAeCCq-YMpD32bD4GwR8Pb1aqUmGcb4EBK5TmMvoakTqb2aXBrq0nzcnvKt0&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mbGZm65DzNC0tMTq0ElbcXMXMpKOq1YB21M_0CKwaEOR1c5431zMkVCGyYvY_dv4NawUJh7XXKK5lHadMOfSMUIME36F49NLVpg8ti6jUyw7TRI-9x-s5VF72sAwtbPw8mBFLw2&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=cmIcXiVJ__exjjpjrN730gjm9ijYghWRcYMWzi16XvPaimuvoMG3pbZIfOyrImBihjGdOs5ZZPDvoSnVOEOb7tTLHKZaR1D4p9Z96Bswr20LFQ9orlc5itwgYXMYO0Fe5jGH_Q2&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=aoSSiMnLNTC20U5L7LFIKiwc5nAb5RTVlWE-5Jjlc3wdWpb-nz2_joWU0EZOoHqoh1KpqRJ5Ro0I75TteY8BcQJHm7BShYU8RvPfQIv46xcIa9FWhnqlbOp62n32gxMXcXTLB_1RnCj6TDF52RdNKHUZfZU1&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=GUyLPMOEFhffuIMm6XZ0oAGCDhABTTleZcSiPGgQmqMKKMFe1On-jV_VdA1BevjyvSj8x_UCqfJ2Hul4HovH7lb6IbdqdNCnYgt-18Ij4Qy3jP3j2ydSNKSWQ3vmNTjl1xTKZsWCKDWzy9XDL55ifnHshP81&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=86EhAqQjfuMKlbK4FWyenG2W77L4HusyZiPiivSjihD8P-96a-3CrdpJLg9s8JFQznOeyE4FgCJPJZ1IhwTsKz8V_g-klcnXvb73pVlg-k7WA2_ilD3dsEW_ZRxSkj8m-HwIsPVoOBE9SlkC1k0XVYD2fE01&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=mxxObI9nroQxDBLgf-QlAv_HR9HJcKhf4Dfa44yrkW9_W9yY1Y5w2xfpNav79XnoInNtpR6_r-bZ9fxT6-zeugf_4RxraRpBqbz_7i6jwcDDMK-lDI5bFrhXJeki8Pc2BnzK6tyNoZGmiIXKJf5FsXS1mgE1&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=ei_BvuPu_kfWuvcXX4wAODBMJwpXc4zzLdWg20EWjZaQsvmoJE3D1orbofmNRbIgeAQtGYfTLkOPQkLhWF_tHenFTtBbkJdkhG8gFi1ia0z_Lwrz-5ahQxfxifICO8YXv2VaMQ2&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=qsRpKh5Y3Y02fhrPxQCAxd6E_ErHgi4xFBEcP9S8plsQcH20ojqtgwM8iPPg5qG2t5tDqjzco0LP4gYMo77xd9_VA5hkyTbtxEUT4NV7v8caYfFi3Y23cxkE1AEveqEcxRVEFQ2&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=LxjRs3XOu8Cy2bbYGMzbCuNzLWlZOUVoYcUOgs9wurni4aNnl7VlphQxsZc28fp5fuzJ5sDduariq0JAMH5tJOXqBKdbZjR2boZVwPrUjInYx2n_KKsxxaaYYk1BUDBY3kSMXM2wGPgEWiz5ZqPuHNi7n64xSz1fYVnH5wcewnZrCqE00&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=A22-SyJgKhJ5FWUJePaPlPfCXfJn9UiqQIbrJnyZOHQY5IUgzFXbe4eWQc9jMb-1_N_Megly7IH24N1JEbsZt61JwHs7qfWqBNcpMCUPtiLk2xtfhkiGIqKLrDXdA9PliI5lgQ2&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=utaAJrK4EroNO-KNr3p19OpgIYmpkAX8DVJIN-xy6w9lA7xSbez-wIrLm5iBrtT99B7TCxeQdw8KtQmKdZZizMh9JxG9M5O7o4USmz5rrtj-6AC3AMSE6MgM9ckp8_uLRiYw3w2&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=wl5RKBCXTWDacHhxsSq8QxK6MKmCg3Kgip1xtK9_u1xZ3i8Y7fP6P2TMtwqemXgQQmShCB1KhWGUSGw-NgIQnd18SR1UmmSgBgmGEQNs-dCp9wUOmo07a82D0yQaQ6QyAhrTuQ2&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=OhiQVM8i2feYV04aiMKgwgTbK219HqbISfwerNMOCQKptxh2nEG2v284b6lrqNDrW1yqOyvVnHfJfHTWmWD6HemtDTiOr0SIGmupXhDaomC4eUQMh5NOsGEC2413clOjjbr4AA2&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=sF8Y0c2qLAfpveBK9gLo7FAdNBeDsbnYsD0Xh8pPtZAZfP6YMkc1X_1UYstCt2MBgqKsLOiIcRkyVodAziNMDr0ByOptpEFRBsujWs84BZ1QNDey0&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=uZyysmNAhs23bID72ZUaSsaYZ885ce4CigvwTM3AdUz-42TlHI9LBHVnKYtmfJThfbzYRHKkaZIYWarMVsr8DmJNeAEVgc9cFMVWqIPcuxRLle_GpEmt8YWDCE_k2SsgIdRbGpOrRT4-_JgU-7HqkIdXWJQ1&amp;t=5a539fa8" type="text/javascript"></script>
+<script src="/WebResource.axd?d=JoBkLzP19aTuxbWOhHobYpx-Y1tQMF9pqwyDaC0fkAgImBDFweT92jZdKctzOyLj10xdkA2&amp;t=638901644248157332" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B7CE49EC" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="H1O9eOS3m1cbsuXM8jh7wN7P9n+rpihjQL3HEidAvUHytm4h0mMqZgnVK1ZoCAd5oA95M9qgx2Edemvu/NLhYP7bec0euR7XiIyguY0GmhNRUn8VLCmSvEfV20oytx85XAbf5rqa99fQmgQvnU+9EgKSd3A=" />
+</div>
+        <input type="submit" name="ctl00$btnDoNothing" value="" id="btnDoNothing" disabled="disabled" class="aspNetDisabled" style="display: none;" />
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$MainRadScriptManager', 'MainForm', ['tctl00$updMessages','updMessages','tctl00$ucConfirm$updTitle','ucConfirm_updTitle','tctl00$ucConfirm$updMain','ucConfirm_updMain','tctl00$MainAjaxManagerSU','MainAjaxManagerSU'], [], [], 180, 'ctl00');
+//]]>
+</script>
+
+        <div id="ctl00_ctl08" style="display:none;">
+	<!-- 2016.2.607.45 --><div id="ctl00_ctl08_alerttemplate" style="display:none;">
+		<div class="rwDialog rwAlertDialog">
+			<div class="rwDialogContent">
+				<div class="rwDialogMessage">{1}</div>
+			</div>
+			<div class="rwDialogButtons">
+				<button class="rwOkBtn" onclick="$find('{0}').close(true); return false;" >##LOC[OK]##</button>
+			</div>
+		</div>
+		</div><div id="ctl00_ctl08_prompttemplate" style="display:none;">
+		 <div class="rwDialog rwPromptDialog">
+			<div class="rwDialogContent">
+				<div class="rwDialogMessage">{1}</div>
+				<div class="rwPromptInputContainer">
+					<script type="text/javascript">
+						function RadWindowprompt_detectenter(id, ev, input) {
+							if (!ev) ev = window.event;
+							if (ev.keyCode == 13) {
+								var but = input.parentNode.parentNode.parentNode.getElementsByTagName("button")[0];
+								if (but) {
+									if (but.click) {
+										but.click();
+									}
+									else if (but.onclick) {
+										but.focus();
+										var click = but.onclick;
+										but.onclick = null;
+										if (click) click.call(but);
+									}
+								}
+								return false;
+							}
+							else return true;
+						}
+						</script>
+					<input title="Enter Value" onkeydown="return RadWindowprompt_detectenter('{0}', event, this);" type="text"  class="rwPromptInput radPreventDecorate" value="{2}" />
+				</div>
+			</div>
+			<div class="rwDialogButtons">
+				<button class="rwOkBtn" onclick="$find('{0}').close(this.parentNode.parentNode.getElementsByTagName('input')[0].value); return false;" >##LOC[OK]##</button>
+				<button class="rwCancelBtn" onclick="$find('{0}').close(null); return false;" >##LOC[Cancel]##</button>
+			</div>
+		</div>
+
+		</div><div id="ctl00_ctl08_confirmtemplate" style="display:none;">
+		<div class="rwDialog rwConfirmDialog">
+			<div class="rwDialogContent">
+				<div class="rwDialogMessage">{1}</div>
+			</div>
+			<div class="rwDialogButtons">
+				<button class="rwOkBtn" onclick="$find('{0}').close(true); return false;" >##LOC[OK]##</button>
+				<button class="rwCancelBtn" onclick="$find('{0}').close(false); return false;" >##LOC[Cancel]##</button>
+			</div>
+		</div>
+		</div><input id="ctl00_ctl08_ClientState" name="ctl00_ctl08_ClientState" type="hidden" />
+</div>
+
+        
+        <div id="MessageDialog" class="modal fade" style="z-index: 9999999 !important;" data-backdrop="static" tabindex="-1">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Mesajlar</h4>
+                    </div>
+
+                    <div class="wrapper-sm" style="overflow: auto;">
+                        <div class="panel-body" style="max-height: 500px">
+                            <div id="updMessages">
+	
+                                    
+                                
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        
+        
+
+
+
+        <div id="app-division">
+            
+
+    <div class="app app-header-fixed  ">
+
+
+        <div class="container w-xxl w-auto-xs" ng-init="app.settings.container = false;">
+            <div class="text-center m-b-lg">
+                <h1 class="text-shadow text-white">TİME OUT</h1>
+            </div>
+            <div class="text-center">
+                <p>
+                    <small class="text-muted">Copyright © 2016. MCS</small>
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+        </div>
+        
+        
+        <div id="MainAjaxManagerSU">
+	<span id="ctl00_MainAjaxManager" style="display:none;"></span>
+</div>
+        <div id="MainLoadingPanel" class="RadAjax RadAjax_Bootstrap" style="display:none;">
+	<div class="raDiv">
+
+	</div><div class="raColor raTransp">
+
+	</div>
+</div>
+        
+            <script type="text/javascript" src="../Scripts/UserProfileSelection.js?v=1.0.0.36413"></script>
+        
+
+        <div id="ucConfirm_ConfirmDialog" class="modal fade" data-backdrop="static" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    <div id="ucConfirm_updTitle">
+	
+                            <span id="ucConfirm_lblTitle">Onay</span>
+                        
+</div>
+                </h4>
+            </div>
+            <div class="wrapper-md" style="overflow-y: auto; max-height: calc(100vh - 150px)">
+                <div id="ucConfirm_divCriteria" class="row">
+                    <div class="col-sm-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="form-horizontal">
+                                    <div id="ucConfirm_updMain">
+	
+
+                                            <div>
+                                                <span id="ucConfirm_lblMessage"></span>
+                                            </div>
+
+                                            <div class="row padder">
+                                                <button onclick="__doPostBack('ctl00$ucConfirm$btnNo','')" id="ucConfirm_btnNo" type="button" class="btn btn-danger btn-addon pull-right">
+                                                    <i class="fa fa-stop"></i>Hayır</button>
+                                                <button onclick="__doPostBack('ctl00$ucConfirm$btnYes','')" id="ucConfirm_btnYes" type="button" class="btn btn-success btn-addon pull-right">
+                                                    <i class="fa fa-play"></i>
+                                                    Evet
+                                                </button>
+                                            </div>
+
+                                        
+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+WebForm_AutoFocus('btnDoNothing');Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindowManager, {"_renderMode":2,"clientStateFieldID":"ctl00_ctl08_ClientState","formID":"MainForm","iconUrl":"","minimizeIconUrl":"","name":"ctl08","skin":"Bootstrap","windowControls":"[]"}, null, null, $get("ctl00_ctl08"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxManager, {"_updatePanels":"","ajaxSettings":[],"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"defaultLoadingPanelID":"","enableAJAX":true,"enableHistory":false,"links":[],"styles":[],"uniqueID":"ctl00$MainAjaxManager","updatePanelsRenderMode":1}, null, null, $get("ctl00_MainAjaxManager"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxLoadingPanel, {"_modal":true,"initialDelayTime":0,"isSticky":false,"minDisplayTime":0,"skin":"Bootstrap","uniqueID":"ctl00$MainLoadingPanel","zIndex":90000}, null, null, $get("MainLoadingPanel"));
+});
+//]]>
+</script>
+</form>
+
+    <script>
+        $(".rmLink.rmRootLink.rmExpand.rmExpandRight").addClass("hidden-folded");
+        $(".rmLink.rmRootLink.rmExpand.rmExpandRight").html("<i class='glyphicon glyphicon-envelope icon text-info-lter'></i>");
+    </script>
+</body>
+</html>

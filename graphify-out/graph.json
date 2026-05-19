@@ -4,18 +4,54 @@
   "graph": {},
   "nodes": [
     {
+      "label": "automation.py",
+      "file_type": "code",
+      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_location": "L1",
+      "id": "backend_data_pulling_automation_automation_py",
+      "community": 4,
+      "norm_label": "automation.py"
+    },
+    {
+      "label": "AutomationWorker",
+      "file_type": "code",
+      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_location": "L22",
+      "id": "data_pulling_automation_automation_automationworker",
+      "community": 4,
+      "norm_label": "automationworker"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_location": "L24",
+      "id": "data_pulling_automation_automation_automationworker_init",
+      "community": 4,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".run()",
+      "file_type": "code",
+      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_location": "L28",
+      "id": "data_pulling_automation_automation_automationworker_run",
+      "community": 2,
+      "norm_label": ".run()"
+    },
+    {
       "label": "OrdersTable.tsx",
       "file_type": "code",
-      "source_file": "OrdersTable.tsx",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
       "source_location": "L1",
-      "id": "orderstable_tsx",
+      "id": "frontend_src_components_dashboard_orderstable_tsx",
       "community": 0,
       "norm_label": "orderstable.tsx"
     },
     {
       "label": "OrdersTableProps",
       "file_type": "code",
-      "source_file": "OrdersTable.tsx",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
       "source_location": "L22",
       "id": "dashboard_orderstable_orderstableprops",
       "community": 0,
@@ -24,7 +60,7 @@
     {
       "label": "STATUS_COLOR",
       "file_type": "code",
-      "source_file": "OrdersTable.tsx",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
       "source_location": "L29",
       "id": "dashboard_orderstable_status_color",
       "community": 0,
@@ -33,7 +69,7 @@
     {
       "label": "col",
       "file_type": "code",
-      "source_file": "OrdersTable.tsx",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
       "source_location": "L35",
       "id": "dashboard_orderstable_col",
       "community": 0,
@@ -42,11 +78,92 @@
     {
       "label": "OrdersTable()",
       "file_type": "code",
-      "source_file": "OrdersTable.tsx",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
       "source_location": "L37",
       "id": "dashboard_orderstable_orderstable",
       "community": 0,
       "norm_label": "orderstable()"
+    },
+    {
+      "label": "Bekleyen_Siparisler_006859e6.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Bekleyen_Siparisler_006859e6.md",
+      "source_location": "L1",
+      "id": "graphify_out_converted_bekleyen_siparisler_006859e6_md",
+      "community": 14,
+      "norm_label": "bekleyen_siparisler_006859e6.md"
+    },
+    {
+      "label": "Sheet: Sheet1",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Bekleyen_Siparisler_006859e6.md",
+      "source_location": "L3",
+      "id": "converted_bekleyen_siparisler_006859e6_sheet_sheet1",
+      "community": 14,
+      "norm_label": "sheet: sheet1"
+    },
+    {
+      "label": "Bekleyen_Siparisler_c4a7feba.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
+      "source_location": "L1",
+      "id": "graphify_out_converted_bekleyen_siparisler_c4a7feba_md",
+      "community": 14,
+      "norm_label": "bekleyen_siparisler_c4a7feba.md"
+    },
+    {
+      "label": "Sheet: Sheet1",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
+      "source_location": "L3",
+      "id": "converted_bekleyen_siparisler_c4a7feba_sheet_sheet1",
+      "community": 14,
+      "norm_label": "sheet: sheet1"
+    },
+    {
+      "label": "Hazir_Siparisler_d229c32f.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
+      "source_location": "L1",
+      "id": "graphify_out_converted_hazir_siparisler_d229c32f_md",
+      "community": 14,
+      "norm_label": "hazir_siparisler_d229c32f.md"
+    },
+    {
+      "label": "Sheet: Sheet1",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
+      "source_location": "L3",
+      "id": "converted_hazir_siparisler_d229c32f_sheet_sheet1",
+      "community": 14,
+      "norm_label": "sheet: sheet1"
+    },
+    {
+      "label": "Hazir_Siparisler_ef59ec85.md",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Hazir_Siparisler_ef59ec85.md",
+      "source_location": "L1",
+      "id": "graphify_out_converted_hazir_siparisler_ef59ec85_md",
+      "community": 14,
+      "norm_label": "hazir_siparisler_ef59ec85.md"
+    },
+    {
+      "label": "Sheet: Sheet1",
+      "file_type": "document",
+      "source_file": "graphify-out/converted/Hazir_Siparisler_ef59ec85.md",
+      "source_location": "L3",
+      "id": "converted_hazir_siparisler_ef59ec85_sheet_sheet1",
+      "community": 14,
+      "norm_label": "sheet: sheet1"
+    },
+    {
+      "label": "OrdersTable.tsx",
+      "file_type": "code",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "orderstable.tsx",
+      "id": "orderstable_tsx"
     },
     {
       "label": "-yeni-algorthim-palet_sayisi - Copy.py",
@@ -94,20 +211,11 @@
       "id": "data_de_main"
     },
     {
-      "label": "OrdersTable.tsx",
-      "file_type": "code",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L1",
-      "community": 0,
-      "norm_label": "orderstable.tsx",
-      "id": "frontend_src_components_dashboard_orderstable_tsx"
-    },
-    {
       "label": "package.json",
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L1",
-      "community": 3,
+      "community": 31,
       "norm_label": "package.json",
       "id": "package_json"
     },
@@ -116,7 +224,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L2",
-      "community": 3,
+      "community": 31,
       "norm_label": "name",
       "id": "frontend_package_name"
     },
@@ -125,7 +233,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L3",
-      "community": 3,
+      "community": 31,
       "norm_label": "private",
       "id": "frontend_package_private"
     },
@@ -134,7 +242,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L4",
-      "community": 3,
+      "community": 31,
       "norm_label": "version",
       "id": "frontend_package_version"
     },
@@ -143,7 +251,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L5",
-      "community": 3,
+      "community": 31,
       "norm_label": "type",
       "id": "frontend_package_type"
     },
@@ -152,7 +260,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L6",
-      "community": 3,
+      "community": 31,
       "norm_label": "scripts",
       "id": "frontend_package_scripts"
     },
@@ -161,7 +269,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L7",
-      "community": 3,
+      "community": 31,
       "norm_label": "dev",
       "id": "frontend_package_scripts_dev"
     },
@@ -170,7 +278,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L8",
-      "community": 3,
+      "community": 31,
       "norm_label": "build",
       "id": "frontend_package_scripts_build"
     },
@@ -179,7 +287,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L9",
-      "community": 3,
+      "community": 31,
       "norm_label": "lint",
       "id": "frontend_package_scripts_lint"
     },
@@ -188,7 +296,7 @@
       "file_type": "code",
       "source_file": "package.json",
       "source_location": "L10",
-      "community": 3,
+      "community": 31,
       "norm_label": "preview",
       "id": "frontend_package_scripts_preview"
     },
@@ -697,42 +805,6 @@
       "id": "services_truck_manager_rationale_94"
     },
     {
-      "label": "Bekleyen_Siparisler_c4a7feba.md",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
-      "source_location": "L1",
-      "community": 14,
-      "norm_label": "bekleyen_siparisler_c4a7feba.md",
-      "id": "graphify_out_converted_bekleyen_siparisler_c4a7feba_md"
-    },
-    {
-      "label": "Sheet: Sheet1",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
-      "source_location": "L3",
-      "community": 14,
-      "norm_label": "sheet: sheet1",
-      "id": "converted_bekleyen_siparisler_c4a7feba_sheet_sheet1"
-    },
-    {
-      "label": "Hazir_Siparisler_d229c32f.md",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
-      "source_location": "L1",
-      "community": 14,
-      "norm_label": "hazir_siparisler_d229c32f.md",
-      "id": "graphify_out_converted_hazir_siparisler_d229c32f_md"
-    },
-    {
-      "label": "Sheet: Sheet1",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
-      "source_location": "L3",
-      "community": 14,
-      "norm_label": "sheet: sheet1",
-      "id": "converted_hazir_siparisler_d229c32f_sheet_sheet1"
-    },
-    {
       "label": "trucks_ed6e51a3.md",
       "file_type": "document",
       "source_file": "graphify-out/converted/trucks_ed6e51a3.md",
@@ -782,7 +854,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L23",
-      "community": 38,
+      "community": 16,
       "norm_label": ".get_all_coordinates()",
       "id": "services_data_processor_copy_dataprocessor_get_all_coordinates"
     },
@@ -791,7 +863,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L27",
-      "community": 16,
+      "community": 40,
       "norm_label": ".get_coordinate_by_id()",
       "id": "services_data_processor_copy_dataprocessor_get_coordinate_by_id"
     },
@@ -827,7 +899,7 @@
       "file_type": "code",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L54",
-      "community": 40,
+      "community": 16,
       "norm_label": ".get_ambalaj()",
       "id": "services_data_processor_copy_dataprocessor_get_ambalaj"
     },
@@ -926,7 +998,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L24",
-      "community": 38,
+      "community": 16,
       "norm_label": "return all coordinates as list of dicts.",
       "id": "services_data_processor_copy_rationale_24"
     },
@@ -935,7 +1007,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L28",
-      "community": 16,
+      "community": 40,
       "norm_label": "return a single coordinate by id.",
       "id": "services_data_processor_copy_rationale_28"
     },
@@ -971,7 +1043,7 @@
       "file_type": "rationale",
       "source_file": "backend/services/data_processor_copy.py",
       "source_location": "L55",
-      "community": 40,
+      "community": 16,
       "norm_label": "return all ambalajs as list of dicts.",
       "id": "services_data_processor_copy_rationale_55"
     },
@@ -1451,24 +1523,6 @@
       "community": 4,
       "norm_label": "read_data()",
       "id": "data_read_data_read_data"
-    },
-    {
-      "label": "AutomationWorker",
-      "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/automation.py",
-      "source_location": "L22",
-      "community": 2,
-      "norm_label": "automationworker",
-      "id": "data_pulling_automation_automation_automationworker"
-    },
-    {
-      "label": ".run()",
-      "file_type": "code",
-      "source_file": "backend/Data-pulling-Automation/automation.py",
-      "source_location": "L28",
-      "community": 2,
-      "norm_label": ".run()",
-      "id": "data_pulling_automation_automation_automationworker_run"
     },
     {
       "label": "credentials",
@@ -2204,7 +2258,7 @@
       "file_type": "code",
       "source_file": "frontend/package.json",
       "source_location": "L1",
-      "community": 3,
+      "community": 31,
       "norm_label": "package.json",
       "id": "frontend_package_json"
     },
@@ -2861,7 +2915,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Sidebar/ActionBar.tsx",
       "source_location": "L1",
-      "community": 0,
+      "community": 38,
       "norm_label": "actionbar.tsx",
       "id": "frontend_src_components_sidebar_actionbar_tsx"
     },
@@ -2870,7 +2924,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Sidebar/ActionBar.tsx",
       "source_location": "L4",
-      "community": 0,
+      "community": 38,
       "norm_label": "actionbarprops",
       "id": "sidebar_actionbar_actionbarprops"
     },
@@ -2879,7 +2933,7 @@
       "file_type": "code",
       "source_file": "frontend/src/components/Sidebar/ActionBar.tsx",
       "source_location": "L10",
-      "community": 0,
+      "community": 38,
       "norm_label": "actionbar()",
       "id": "sidebar_actionbar_actionbar"
     },
@@ -3257,7 +3311,7 @@
       "file_type": "code",
       "source_file": "frontend/src/hooks/useLogistics.ts",
       "source_location": "L20",
-      "community": 5,
+      "community": 0,
       "norm_label": "uselogistics()",
       "id": "hooks_uselogistics_uselogistics"
     },
@@ -3512,24 +3566,6 @@
       "community": 18,
       "norm_label": "sheet: ozet",
       "id": "converted_palet_koli_raporu_a7a2c99e_sheet_\u00f6zet"
-    },
-    {
-      "label": "Bekleyen_Siparisler_006859e6.md",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/Bekleyen_Siparisler_006859e6.md",
-      "source_location": "L1",
-      "community": 14,
-      "norm_label": "bekleyen_siparisler_006859e6.md",
-      "id": "graphify_out_converted_bekleyen_siparisler_006859e6_md"
-    },
-    {
-      "label": "Hazir_Siparisler_ef59ec85.md",
-      "file_type": "document",
-      "source_file": "graphify-out/converted/Hazir_Siparisler_ef59ec85.md",
-      "source_location": "L1",
-      "community": 14,
-      "norm_label": "hazir_siparisler_ef59ec85.md",
-      "id": "graphify_out_converted_hazir_siparisler_ef59ec85_md"
     },
     {
       "label": "README.md",
@@ -4018,7 +4054,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 4,
       "norm_label": "automation.py",
       "id": "automation_py"
     },
@@ -4077,76 +4113,118 @@
   ],
   "links": [
     {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "OrdersTable.tsx",
-      "source_location": "L18",
-      "weight": 1.0,
-      "source": "orderstable_tsx",
-      "target": "types_index_coordinate",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "OrdersTable.tsx",
-      "source_location": "L18",
-      "weight": 1.0,
-      "source": "orderstable_tsx",
-      "target": "types_index_truck",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "OrdersTable.tsx",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "orderstable_tsx",
-      "target": "ui_multiselect_multiselect",
-      "confidence_score": 1.0
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "OrdersTable.tsx",
+      "source_file": "backend/Data-pulling-Automation/automation.py",
       "source_location": "L22",
       "weight": 1.0,
-      "source": "orderstable_tsx",
-      "target": "dashboard_orderstable_orderstableprops",
+      "source": "backend_data_pulling_automation_automation_py",
+      "target": "data_pulling_automation_automation_automationworker",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "data_pulling_automation_automation_automationworker",
+      "target": "data_pulling_automation_automation_automationworker_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_automation_automationworker",
+      "target": "data_pulling_automation_automation_automationworker_run"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "data_pulling_automation_automation_automationworker",
+      "target": "services_truck_manager_truckmanager_init"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "OrdersTable.tsx",
-      "source_location": "L29",
+      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_location": "L22",
       "weight": 1.0,
-      "source": "orderstable_tsx",
-      "target": "dashboard_orderstable_status_color",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "automation_py",
+      "target": "data_pulling_automation_automation_automationworker"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "OrdersTable.tsx",
-      "source_location": "L35",
-      "weight": 1.0,
-      "source": "orderstable_tsx",
-      "target": "dashboard_orderstable_col",
-      "confidence_score": 1.0
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_location": "L16",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "data_pulling_automation_automation_automationworker",
+      "target": "rapor_otomasyon_servisi_py"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "OrdersTable.tsx",
-      "source_location": "L37",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_location": "L31",
       "weight": 1.0,
-      "source": "orderstable_tsx",
-      "target": "dashboard_orderstable_orderstable",
+      "source": "data_pulling_automation_automation_automationworker_run",
+      "target": "data_pulling_automation_yapilandirma_yoneticisi_load_config"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "backend/Data-pulling-Automation/automation.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "data_pulling_automation_automation_automationworker_run",
+      "target": "rapor_otomasyon_servisi_py"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "target": "types_index_coordinate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "target": "types_index_truck"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "target": "ui_multiselect_multiselect",
       "confidence_score": 1.0
     },
     {
@@ -4157,16 +4235,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "frontend_src_components_dashboard_orderstable_tsx",
-      "target": "dashboard_orderstable_orderstableprops"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L20",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "dashboard_orderstable_orderstable",
       "target": "dashboard_orderstable_orderstableprops"
     },
     {
@@ -4193,6 +4261,56 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "target": "dashboard_orderstable_orderstable"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "orderstable_tsx",
+      "target": "dashboard_orderstable_orderstableprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "dashboard_orderstable_orderstable",
+      "target": "dashboard_orderstable_orderstableprops"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "orderstable_tsx",
+      "target": "dashboard_orderstable_status_color"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "orderstable_tsx",
+      "target": "dashboard_orderstable_col"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
       "source_location": "L33",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -4202,11 +4320,11 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L36",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L37",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "frontend_src_components_dashboard_orderstable_tsx",
+      "source": "orderstable_tsx",
       "target": "dashboard_orderstable_orderstable"
     },
     {
@@ -4266,6 +4384,119 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Bekleyen_Siparisler_006859e6.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "graphify_out_converted_bekleyen_siparisler_006859e6_md",
+      "target": "converted_bekleyen_siparisler_006859e6_sheet_sheet1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Bekleyen_Siparisler_006859e6.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_bekleyen_siparisler_006859e6_md",
+      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_bekleyen_siparisler_c4a7feba_md",
+      "target": "converted_bekleyen_siparisler_c4a7feba_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_bekleyen_siparisler_c4a7feba_md",
+      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_hazir_siparisler_d229c32f_md",
+      "target": "converted_hazir_siparisler_d229c32f_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_hazir_siparisler_d229c32f_md",
+      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Hazir_Siparisler_ef59ec85.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "graphify_out_converted_hazir_siparisler_ef59ec85_md",
+      "target": "converted_hazir_siparisler_ef59ec85_sheet_sheet1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify-out/converted/Hazir_Siparisler_ef59ec85.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_out_converted_hazir_siparisler_ef59ec85_md",
+      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "orderstable_tsx",
+      "target": "types_index_coordinate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "orderstable_tsx",
+      "target": "types_index_truck"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "OrdersTable.tsx",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "orderstable_tsx",
+      "target": "ui_multiselect_multiselect"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "backend/data/-yeni-algorthim-palet_sayisi - Copy.py",
       "source_location": "L3",
       "weight": 1.0,
@@ -4292,28 +4523,6 @@
       "confidence_score": 1.0,
       "source": "backend_data_de_py",
       "target": "data_de_main"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_src_components_dashboard_orderstable_tsx",
-      "target": "types_index_coordinate"
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "frontend/src/components/Dashboard/OrdersTable.tsx",
-      "source_location": "L18",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "frontend_src_components_dashboard_orderstable_tsx",
-      "target": "types_index_truck"
     },
     {
       "relation": "contains",
@@ -5160,16 +5369,6 @@
       "target": "data_read_data_read_data"
     },
     {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/automation.py",
-      "source_location": "L24",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_automation_automationworker",
-      "target": "services_truck_manager_truckmanager_init"
-    },
-    {
       "relation": "calls",
       "context": "call",
       "confidence": "INFERRED",
@@ -5356,46 +5555,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_bekleyen_siparisler_c4a7feba_md",
-      "target": "converted_bekleyen_siparisler_c4a7feba_sheet_sheet1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/Bekleyen_Siparisler_c4a7feba.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_bekleyen_siparisler_c4a7feba_md",
-      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_hazir_siparisler_d229c32f_md",
-      "target": "converted_hazir_siparisler_d229c32f_sheet_sheet1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/Hazir_Siparisler_d229c32f.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_hazir_siparisler_d229c32f_md",
-      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "graphify-out/converted/trucks_ed6e51a3.md",
       "source_location": "L3",
       "weight": 1.0,
@@ -5411,26 +5570,6 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "graphify_out_converted_m\u00fc\u015fteri_listesi_2c2757a4_md",
-      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/Bekleyen_Siparisler_006859e6.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_bekleyen_siparisler_006859e6_md",
-      "target": "converted_trucks_ed6e51a3_sheet_sheet1"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "graphify-out/converted/Hazir_Siparisler_ef59ec85.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graphify_out_converted_hazir_siparisler_ef59ec85_md",
       "target": "converted_trucks_ed6e51a3_sheet_sheet1"
     },
     {
@@ -6682,58 +6821,6 @@
       "confidence_score": 1.0,
       "source": "read_data_py",
       "target": "data_read_data_read_data"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/automation.py",
-      "source_location": "L22",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "automation_py",
-      "target": "data_pulling_automation_automation_automationworker"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "backend/Data-pulling-Automation/automation.py",
-      "source_location": "L28",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "data_pulling_automation_automation_automationworker",
-      "target": "data_pulling_automation_automation_automationworker_run"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "backend/Data-pulling-Automation/automation.py",
-      "source_location": "L16",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "data_pulling_automation_automation_automationworker",
-      "target": "rapor_otomasyon_servisi_py"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/Data-pulling-Automation/automation.py",
-      "source_location": "L31",
-      "weight": 1.0,
-      "source": "data_pulling_automation_automation_automationworker_run",
-      "target": "data_pulling_automation_yapilandirma_yoneticisi_load_config"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "backend/Data-pulling-Automation/automation.py",
-      "source_location": "L38",
-      "weight": 1.0,
-      "source": "data_pulling_automation_automation_automationworker_run",
-      "target": "rapor_otomasyon_servisi_py"
     },
     {
       "relation": "contains",
@@ -10233,5 +10320,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d118b59bbbf35d1494d5cfcb0e8e88d0d7bb1e70"
+  "built_at_commit": "9e017c28561f2002f2dd7488d5612a0bc33f93c6"
 }
