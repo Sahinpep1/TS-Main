@@ -102,10 +102,9 @@ export default function MapView({
         className="leaflet-map"
       >
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
-          url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-        />
-        <FitBounds coordinates={coordinates} />
+          attribution='&copy; Google Maps'
+          url="https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}"
+        />        <FitBounds coordinates={coordinates} />
 
         {isHeatmapVisible && (
           <MapHeatmapLayer coordinates={coordinates} />

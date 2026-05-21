@@ -27,7 +27,7 @@ interface OrdersTableProps {
 }
 
 const STATUS_COLOR: Record<string, string> = {
-  pending:  "#f59e0b",
+  pending: "#f59e0b",
   assigned: "#6366f1",
   delivered: "#22c55e",
 };
@@ -35,12 +35,12 @@ const STATUS_COLOR: Record<string, string> = {
 const col = createColumnHelper<Coordinate>();
 
 export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: OrdersTableProps) {
-  const [sorting, setSorting]             = useState<SortingState>([]);
+  const [sorting, setSorting] = useState<SortingState>([]);
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
-  const [globalFilter, setGlobalFilter]   = useState("");
-  const [assigningId, setAssigningId]     = useState<number | null>(null);
-  const [loadingIds, setLoadingIds]       = useState<number[]>([]);
-  const [rowSelection, setRowSelection]   = useState<RowSelectionState>({});
+  const [globalFilter, setGlobalFilter] = useState("");
+  const [assigningId, setAssigningId] = useState<number | null>(null);
+  const [loadingIds, setLoadingIds] = useState<number[]>([]);
+  const [rowSelection, setRowSelection] = useState<RowSelectionState>({});
   const [selectedStatuses, setSelectedStatuses] = useState<Set<string>>(new Set());
   const [selectedReps, setSelectedReps] = useState<Set<string>>(new Set());
   const [selectedTrucks, setSelectedTrucks] = useState<Set<string>>(new Set());
@@ -68,7 +68,7 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
         <input
           type="checkbox"
           checked={table.getIsAllPageRowsSelected()}
-          onChange={table.getToggleAllPageRowsSelectedHandler()}
+          onChange={table.getToggleAllRowsSelectedHandler()}
           aria-label="Select all"
         />
       ),
@@ -145,7 +145,7 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
       cell: ({ row }) => {
         const c = row.original;
         const isAnyLoading = loadingIds.length > 0;
-        
+
         if (loadingIds.includes(c.id)) return <span className="cell-muted">…</span>;
 
         if (c.status === "delivered") {
@@ -205,17 +205,17 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
   const doBulkAssign = async (truckId: number) => {
     const selectedRows = table.getSelectedRowModel().rows;
     if (!selectedRows.length) return;
-    
+
     const coords = selectedRows.map((r) => r.original);
     setLoadingIds((prev) => [...prev, ...coords.map(c => c.id)]);
-    
+
     for (const c of coords) {
       if (c.assigned_truck_id) {
         await onUnassign(c.id);
       }
       await onAssign(c.id, truckId);
     }
-    
+
     setLoadingIds((prev) => prev.filter((id) => !coords.some(c => c.id === id)));
     setRowSelection({});
   };
@@ -223,14 +223,14 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
   const doBulkUnassign = async () => {
     const selectedRows = table.getSelectedRowModel().rows;
     if (!selectedRows.length) return;
-    
+
     const ids = selectedRows.map((r) => r.original.id);
     setLoadingIds((prev) => [...prev, ...ids]);
-    
+
     for (const id of ids) {
       await onUnassign(id);
     }
-    
+
     setLoadingIds((prev) => prev.filter((id) => !ids.includes(id)));
     setRowSelection({});
   };
@@ -302,8 +302,8 @@ export function OrdersTable({ coordinates, trucks, onAssign, onUnassign }: Order
                 <option key={t.id} value={t.id}>{t.Plaka}</option>
               ))}
             </select>
-            <button 
-              className="btn-unassign" 
+            <button
+              className="btn-unassign"
               onClick={doBulkUnassign}
               style={{ padding: "4px 8px", fontSize: "13px", height: "auto" }}
             >
